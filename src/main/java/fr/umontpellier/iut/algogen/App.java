@@ -9,12 +9,8 @@ class App {
 
     public static void main(String[] args) {
 
-        boolean[][] p = {
-                {true, false, false, false, true},
-                {false, false, false, false, false},
-                {false, false, false, true, false},
-        };
-
+        boolean[][] p = { { true, false, false, false, true }, { false, false, false, false, false },
+                { false, false, false, true, false }, };
 
         Coord sp = new Coord(2, 2);
         int k = 4;
@@ -22,14 +18,14 @@ class App {
         System.out.println(in1);
 
         /////////////////////////////////////////////////
-        // définition des instances  ////////////////////
+        // définition des instances ////////////////////
         /////////////////////////////////////////////////
         boolean[][] p0 = new boolean[10][10];
         for (int i = 0; i < p0.length; i++) {
-            for (int j = 0; j < p0[0].length; j+=2) {
-                
-                    p0[i][j] = true;
-                
+            for (int j = 0; j < p0[0].length; j += 2) {
+
+                p0[i][j] = true;
+
             }
         }
         Coord sp0 = new Coord(9, 5);
@@ -74,12 +70,12 @@ class App {
         Instance in4 = new Instance(p4, sp4, k4);
         System.out.println("in4 \n" + in4);
 
-
-        // in5 : avec paquets de pieces dont position du coin haut gauche tiree au hasard
+        // in5 : avec paquets de pieces dont position du coin haut gauche tiree au
+        // hasard
         boolean[][] p5 = new boolean[40][40];
         int nbpaquets = r.nextInt(p5.length * 3 / 2);
         for (int i = 0; i < nbpaquets; i++) {
-            //on tire coin haut gauche du rectangle, et ses dimensions
+            // on tire coin haut gauche du rectangle, et ses dimensions
             int l = r.nextInt(p5.length);
             int c = r.nextInt(p5[0].length);
             int larg = r.nextInt(p5[0].length / 5);

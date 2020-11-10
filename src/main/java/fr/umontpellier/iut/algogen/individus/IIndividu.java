@@ -14,7 +14,4 @@ public interface IIndividu<T extends IIndividu<T>> {
 
     public Instance getInstance();
 
-   
-
 }
-

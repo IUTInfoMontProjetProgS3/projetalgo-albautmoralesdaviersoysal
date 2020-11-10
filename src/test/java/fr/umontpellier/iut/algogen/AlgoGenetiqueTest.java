@@ -41,9 +41,9 @@ public class AlgoGenetiqueTest {
 		individu_.trajet.add('d');
 		individu_.trajet.add('d');
 		individu_.trajet.add('b');
-		
-		AlgoGenetique ag =new AlgoGenetique(in4,  new CreationIndividuGDBHSmartCrossingSmartMutViaPermut());
-        assertDoesNotThrow(() -> ag.run(2, 30));
+
+		AlgoGenetique ag = new AlgoGenetique(in4, new CreationIndividuGDBHSmartCrossingSmartMutViaPermut());
+		assertDoesNotThrow(() -> ag.run(2, 30));
 
 		;
 	}

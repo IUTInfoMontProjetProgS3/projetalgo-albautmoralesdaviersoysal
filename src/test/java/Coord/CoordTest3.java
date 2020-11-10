@@ -64,7 +64,8 @@ public class CoordTest3 {
     public void test0502() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0502");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean5 = coord2.estDansPlateau(101, 32);
         int int6 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord9 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -96,7 +97,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int6 = coord5.getL();
         int int7 = coord5.getC();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -224,7 +226,8 @@ public class CoordTest3 {
     public void test0506() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0506");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
@@ -282,7 +285,8 @@ public class CoordTest3 {
     public void test0508() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0508");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -445,14 +449,16 @@ public class CoordTest3 {
         boolean boolean46 = coord2.equals((java.lang.Object) coord38);
         boolean boolean49 = coord38.estDansPlateau((-1), 32);
         boolean boolean51 = coord38.equals((java.lang.Object) 1L);
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int55 = coord54.getL();
         int int56 = coord54.getC();
         int int57 = coord54.getL();
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         java.lang.String str61 = coord60.toString();
         boolean boolean62 = coord54.estADistanceUn(coord60);
-        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean68 = coord65.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -503,7 +509,8 @@ public class CoordTest3 {
     public void test0515() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0515");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -538,7 +545,8 @@ public class CoordTest3 {
         java.lang.String str58 = coord46.toString();
         int int59 = coord46.getL();
         boolean boolean62 = coord46.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean68 = coord65.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean69 = coord46.estADistanceUn(coord65);
         int int70 = coord65.getL();
@@ -598,7 +606,8 @@ public class CoordTest3 {
         java.lang.String str23 = coord11.toString();
         int int24 = coord11.getL();
         boolean boolean27 = coord11.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean33 = coord30.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean34 = coord11.estADistanceUn(coord30);
         java.lang.String str35 = coord30.toString();
@@ -765,8 +774,10 @@ public class CoordTest3 {
     public void test0519() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0519");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         int int9 = coord5.getC();
         int int10 = coord5.getC();
@@ -783,7 +794,8 @@ public class CoordTest3 {
         boolean boolean33 = coord21.estADistanceUn(coord28);
         boolean boolean34 = coord14.estADistanceUn(coord21);
         boolean boolean37 = coord21.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean41 = coord21.estADistanceUn(coord40);
         boolean boolean44 = coord40.estDansPlateau((int) (short) 100, (int) 'a');
         int int45 = coord40.getC();
@@ -799,7 +811,8 @@ public class CoordTest3 {
         boolean boolean67 = coord55.estADistanceUn(coord62);
         boolean boolean68 = coord48.estADistanceUn(coord55);
         boolean boolean71 = coord55.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord77 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord80 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int81 = coord77.distanceFrom(coord80);
@@ -865,7 +878,8 @@ public class CoordTest3 {
     public void test0522() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0522");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -885,7 +899,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -934,14 +949,16 @@ public class CoordTest3 {
     public void test0523() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0523");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         java.lang.String str9 = coord8.toString();
         boolean boolean10 = coord2.estADistanceUn(coord8);
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean16 = coord13.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -952,14 +969,16 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord(33, (int) (byte) 0);
         boolean boolean31 = coord13.estADistanceUn(coord30);
         boolean boolean32 = coord8.estADistanceUn(coord30);
-        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int36 = coord35.getL();
         int int37 = coord35.getC();
         int int38 = coord35.getL();
         fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         java.lang.String str42 = coord41.toString();
         boolean boolean43 = coord35.estADistanceUn(coord41);
-        fr.umontpellier.iut.algogen.Coord coord46 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord46 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean49 = coord46.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -1006,7 +1025,8 @@ public class CoordTest3 {
             System.out.format("%n%s%n", "RegressionTest1.test0524");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         boolean boolean4 = coord2.equals((java.lang.Object) 'a');
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int14 = coord10.distanceFrom(coord13);
@@ -1033,7 +1053,8 @@ public class CoordTest3 {
         java.lang.String str53 = coord41.toString();
         int int54 = coord41.getL();
         boolean boolean55 = coord25.equals((java.lang.Object) int54);
-        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int65 = coord61.distanceFrom(coord64);
@@ -1045,7 +1066,8 @@ public class CoordTest3 {
         int int71 = coord10.distanceFrom(coord61);
         boolean boolean72 = coord7.estADistanceUn(coord10);
         boolean boolean73 = coord2.equals((java.lang.Object) coord7);
-        fr.umontpellier.iut.algogen.Coord coord76 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord76 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         int int77 = coord76.getC();
         fr.umontpellier.iut.algogen.Coord coord80 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         boolean boolean81 = coord76.equals((java.lang.Object) (byte) 100);
@@ -1102,7 +1124,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -1183,7 +1206,8 @@ public class CoordTest3 {
     public void test0528() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0528");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         int int6 = coord2.getC();
         int int7 = coord2.getC();
@@ -1202,14 +1226,16 @@ public class CoordTest3 {
         boolean boolean32 = coord12.estADistanceUn(coord19);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int36 = coord35.getL();
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int40 = coord39.getL();
         int int41 = coord39.getC();
         int int42 = coord39.getL();
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         java.lang.String str46 = coord45.toString();
         boolean boolean47 = coord39.estADistanceUn(coord45);
-        fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean53 = coord50.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -1467,13 +1493,15 @@ public class CoordTest3 {
         int int8 = coord2.getC();
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) 0);
         boolean boolean14 = coord2.equals((java.lang.Object) coord13);
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int18 = coord17.getC();
         boolean boolean21 = coord17.estDansPlateau((int) (byte) 0, 33);
         int int22 = coord17.getL();
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         int int29 = coord25.getC();
         int int30 = coord25.getC();
@@ -1484,7 +1512,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int38 = coord37.getL();
         int int39 = coord37.getC();
-        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean45 = coord42.estDansPlateau((int) (byte) -1, (int) ' ');
         int int46 = coord42.getC();
         int int47 = coord42.getC();
@@ -1561,7 +1590,8 @@ public class CoordTest3 {
         java.lang.String str13 = coord7.toString();
         int int14 = coord7.getL();
         int int15 = coord2.distanceFrom(coord7);
-        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int19 = coord18.getL();
         int int20 = coord18.getC();
         int int21 = coord2.distanceFrom(coord18);
@@ -1828,7 +1858,8 @@ public class CoordTest3 {
     public void test0545() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0545");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean5 = coord2.estDansPlateau(101, 32);
         int int6 = coord2.getC();
         int int7 = coord2.getL();
@@ -1885,7 +1916,8 @@ public class CoordTest3 {
     public void test0547() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0547");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -1953,7 +1985,8 @@ public class CoordTest3 {
         int int70 = coord66.distanceFrom(coord69);
         boolean boolean71 = coord59.estADistanceUn(coord66);
         boolean boolean72 = coord50.equals((java.lang.Object) coord59);
-        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean78 = coord75.estDansPlateau((int) (byte) -1, (int) ' ');
         int int79 = coord75.getC();
         int int80 = coord75.getC();
@@ -2003,10 +2036,12 @@ public class CoordTest3 {
     public void test0549() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0549");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean12 = coord2.estADistanceUn(coord11);
         fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -2091,7 +2126,8 @@ public class CoordTest3 {
         int int16 = coord5.distanceFrom(coord13);
         int int17 = coord5.getC();
         fr.umontpellier.iut.algogen.Coord coord20 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) 'a');
-        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) (short) -1);
+        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1,
+                (int) (short) -1);
         boolean boolean24 = coord20.estADistanceUn(coord23);
         int int25 = coord5.distanceFrom(coord23);
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
@@ -2108,7 +2144,8 @@ public class CoordTest3 {
     public void test0552() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0552");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -2128,7 +2165,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -2221,7 +2259,8 @@ public class CoordTest3 {
         int int6 = coord2.distanceFrom(coord5);
         boolean boolean8 = coord2.equals((java.lang.Object) (byte) 1);
         java.lang.String str9 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean13 = coord2.estADistanceUn(coord12);
         boolean boolean16 = coord2.estDansPlateau(49, (int) '#');
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
@@ -2295,7 +2334,8 @@ public class CoordTest3 {
     public void test0559() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0559");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
@@ -2363,7 +2403,8 @@ public class CoordTest3 {
     public void test0560() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0560");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -2383,7 +2424,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -2409,7 +2451,8 @@ public class CoordTest3 {
     public void test0561() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0561");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -2444,7 +2487,7 @@ public class CoordTest3 {
             int int7 = coord2.distanceFrom(coord6);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
     }
@@ -2477,7 +2520,8 @@ public class CoordTest3 {
     public void test0564() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0564");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -2569,7 +2613,8 @@ public class CoordTest3 {
         boolean boolean45 = coord33.estADistanceUn(coord40);
         boolean boolean46 = coord26.estADistanceUn(coord33);
         boolean boolean49 = coord33.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean53 = coord33.estADistanceUn(coord52);
         boolean boolean54 = coord23.equals((java.lang.Object) boolean53);
         boolean boolean57 = coord23.estDansPlateau(100, 101);
@@ -2686,7 +2731,8 @@ public class CoordTest3 {
     public void test0570() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0570");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str7 = coord6.toString();
@@ -2699,7 +2745,8 @@ public class CoordTest3 {
         java.lang.String str18 = coord6.toString();
         int int19 = coord6.getL();
         boolean boolean22 = coord6.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean29 = coord6.estADistanceUn(coord25);
         boolean boolean30 = coord2.equals((java.lang.Object) coord25);
@@ -2789,7 +2836,8 @@ public class CoordTest3 {
         java.lang.String str44 = coord32.toString();
         int int45 = coord32.getL();
         boolean boolean48 = coord32.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean54 = coord51.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean55 = coord32.estADistanceUn(coord51);
         int int56 = coord51.getL();
@@ -2822,7 +2870,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0572");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int12 = coord8.distanceFrom(coord11);
@@ -2856,7 +2905,8 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         java.lang.String str26 = coord2.toString();
@@ -2929,7 +2979,8 @@ public class CoordTest3 {
     public void test0574() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0574");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -2938,10 +2989,12 @@ public class CoordTest3 {
         int int12 = coord5.getL();
         boolean boolean13 = coord2.estADistanceUn(coord5);
         boolean boolean16 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean22 = coord19.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord19.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean29 = coord19.estADistanceUn(coord28);
         boolean boolean30 = coord2.estADistanceUn(coord19);
         int int31 = coord2.getL();
@@ -3092,7 +3145,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0579");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int12 = coord8.distanceFrom(coord11);
@@ -3103,7 +3157,8 @@ public class CoordTest3 {
         boolean boolean17 = coord2.estADistanceUn(coord5);
         java.lang.String str18 = coord5.toString();
         boolean boolean21 = coord5.estDansPlateau(33, 21);
-        fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean27 = coord24.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean30 = coord24.estDansPlateau((int) ' ', (int) (byte) 1);
         int int31 = coord24.getL();
@@ -3154,7 +3209,8 @@ public class CoordTest3 {
     public void test0580() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0580");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -3174,7 +3230,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -3189,14 +3246,16 @@ public class CoordTest3 {
         java.lang.String str63 = coord51.toString();
         int int64 = coord51.getL();
         boolean boolean65 = coord45.equals((java.lang.Object) int64);
-        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean71 = coord68.estDansPlateau((int) (byte) -1, (int) ' ');
         int int72 = coord68.getC();
         int int73 = coord68.getC();
         java.lang.String str74 = coord68.toString();
         boolean boolean77 = coord68.estDansPlateau((int) (byte) 100, 100);
         boolean boolean78 = coord45.estADistanceUn(coord68);
-        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord84 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str85 = coord84.toString();
         java.lang.String str86 = coord84.toString();
@@ -3416,7 +3475,8 @@ public class CoordTest3 {
         boolean boolean66 = coord42.estADistanceUn(coord65);
         boolean boolean68 = coord65.equals((java.lang.Object) 10.0d);
         boolean boolean69 = coord5.estADistanceUn(coord65);
-        fr.umontpellier.iut.algogen.Coord coord72 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord72 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int79 = coord75.distanceFrom(coord78);
@@ -3425,7 +3485,8 @@ public class CoordTest3 {
         int int82 = coord75.getL();
         boolean boolean83 = coord72.estADistanceUn(coord75);
         boolean boolean85 = coord72.equals((java.lang.Object) 100.0d);
-        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean91 = coord88.estDansPlateau((int) (byte) -1, (int) ' ');
         int int92 = coord88.getC();
         int int93 = coord88.getC();
@@ -3516,7 +3577,7 @@ public class CoordTest3 {
             int int59 = coord18.distanceFrom(coord58);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(0,-1)" + "'", str3, "(0,-1)");
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "(0,-1)" + "'", str4, "(0,-1)");
@@ -3666,7 +3727,8 @@ public class CoordTest3 {
         boolean boolean34 = coord23.estADistanceUn(coord28);
         int int35 = coord18.distanceFrom(coord23);
         int int36 = coord2.distanceFrom(coord18);
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean42 = coord39.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -3710,7 +3772,8 @@ public class CoordTest3 {
     public void test0589() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0589");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -3719,10 +3782,12 @@ public class CoordTest3 {
         int int12 = coord5.getL();
         boolean boolean13 = coord2.estADistanceUn(coord5);
         boolean boolean16 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean22 = coord19.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord19.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean29 = coord19.estADistanceUn(coord28);
         boolean boolean30 = coord2.estADistanceUn(coord19);
         fr.umontpellier.iut.algogen.Coord coord33 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -3901,7 +3966,8 @@ public class CoordTest3 {
         int int6 = coord2.distanceFrom(coord5);
         boolean boolean8 = coord2.equals((java.lang.Object) (byte) 1);
         java.lang.String str9 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean13 = coord2.estADistanceUn(coord12);
         int int14 = coord12.getL();
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
@@ -3938,10 +4004,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int43 = coord42.getL();
         boolean boolean44 = coord38.estADistanceUn(coord42);
-        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int51 = coord50.getC();
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean57 = coord54.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -3997,7 +4065,8 @@ public class CoordTest3 {
     public void test0595() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0595");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -4024,7 +4093,8 @@ public class CoordTest3 {
         java.lang.String str48 = coord36.toString();
         int int49 = coord36.getL();
         boolean boolean50 = coord20.equals((java.lang.Object) int49);
-        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int60 = coord56.distanceFrom(coord59);
@@ -4095,7 +4165,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -4213,7 +4284,8 @@ public class CoordTest3 {
     public void test0599() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0599");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 1);
         int int3 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int7 = coord6.getC();
@@ -4322,7 +4394,8 @@ public class CoordTest3 {
         java.lang.String str18 = coord6.toString();
         int int19 = coord6.getL();
         boolean boolean22 = coord6.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean29 = coord6.estADistanceUn(coord25);
         java.lang.String str30 = coord25.toString();
@@ -4410,7 +4483,8 @@ public class CoordTest3 {
     public void test0606() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0606");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -4442,7 +4516,8 @@ public class CoordTest3 {
     public void test0607() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0607");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str6 = coord5.toString();
         java.lang.String str7 = coord5.toString();
@@ -4459,7 +4534,7 @@ public class CoordTest3 {
             boolean boolean20 = coord2.estADistanceUn(coord19);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "(0,-1)" + "'", str6, "(0,-1)");
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "(0,-1)" + "'", str7, "(0,-1)");
@@ -4474,9 +4549,11 @@ public class CoordTest3 {
     public void test0608() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0608");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 1);
         boolean boolean5 = coord2.estDansPlateau((int) (short) 10, 12);
-        fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int15 = coord11.distanceFrom(coord14);
@@ -4485,10 +4562,12 @@ public class CoordTest3 {
         int int18 = coord11.getL();
         boolean boolean19 = coord8.estADistanceUn(coord11);
         boolean boolean22 = coord8.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean31 = coord25.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean35 = coord25.estADistanceUn(coord34);
         boolean boolean36 = coord8.estADistanceUn(coord25);
         fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
@@ -4557,7 +4636,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) ' ', 0);
@@ -4634,7 +4714,8 @@ public class CoordTest3 {
         int int55 = coord54.getL();
         boolean boolean56 = coord50.estADistanceUn(coord54);
         int int57 = coord41.distanceFrom(coord54);
-        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int67 = coord63.distanceFrom(coord66);
@@ -4730,14 +4811,16 @@ public class CoordTest3 {
         boolean boolean46 = coord2.equals((java.lang.Object) coord38);
         boolean boolean49 = coord38.estDansPlateau((-1), 32);
         boolean boolean51 = coord38.equals((java.lang.Object) 1L);
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int55 = coord54.getL();
         int int56 = coord54.getC();
         int int57 = coord54.getL();
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         java.lang.String str61 = coord60.toString();
         boolean boolean62 = coord54.estADistanceUn(coord60);
-        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean68 = coord65.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -4971,7 +5054,8 @@ public class CoordTest3 {
         java.lang.String str55 = coord43.toString();
         int int56 = coord43.getL();
         boolean boolean59 = coord43.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean65 = coord62.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean66 = coord43.estADistanceUn(coord62);
         int int67 = coord62.getL();
@@ -5030,7 +5114,8 @@ public class CoordTest3 {
         java.lang.String str21 = coord15.toString();
         int int22 = coord15.getL();
         int int23 = coord10.distanceFrom(coord15);
-        fr.umontpellier.iut.algogen.Coord coord26 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord26 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int27 = coord26.getL();
         int int28 = coord26.getC();
         int int29 = coord10.distanceFrom(coord26);
@@ -5151,7 +5236,8 @@ public class CoordTest3 {
             System.out.format("%n%s%n", "RegressionTest1.test0618");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         boolean boolean4 = coord2.equals((java.lang.Object) 'a');
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int14 = coord10.distanceFrom(coord13);
@@ -5178,7 +5264,8 @@ public class CoordTest3 {
         java.lang.String str53 = coord41.toString();
         int int54 = coord41.getL();
         boolean boolean55 = coord25.equals((java.lang.Object) int54);
-        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int65 = coord61.distanceFrom(coord64);
@@ -5196,7 +5283,7 @@ public class CoordTest3 {
             int int75 = coord2.distanceFrom(coord74);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
         org.junit.Assert.assertTrue("'" + int14 + "' != '" + 0 + "'", int14 == 0);
@@ -5247,7 +5334,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
         int int30 = coord29.getC();
         boolean boolean31 = coord13.estADistanceUn(coord29);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean37 = coord34.estDansPlateau((int) (byte) -1, (int) ' ');
         int int38 = coord34.getC();
         int int39 = coord29.distanceFrom(coord34);
@@ -5300,7 +5388,8 @@ public class CoordTest3 {
         java.lang.String str37 = coord25.toString();
         int int38 = coord25.getL();
         boolean boolean39 = coord9.equals((java.lang.Object) int38);
-        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int49 = coord45.distanceFrom(coord48);
@@ -5412,7 +5501,8 @@ public class CoordTest3 {
         int int9 = coord5.distanceFrom(coord8);
         boolean boolean11 = coord5.equals((java.lang.Object) (byte) 1);
         java.lang.String str12 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean16 = coord5.estADistanceUn(coord15);
         boolean boolean17 = coord2.equals((java.lang.Object) boolean16);
         fr.umontpellier.iut.algogen.Coord coord20 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -5573,7 +5663,8 @@ public class CoordTest3 {
     public void test0627() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0627");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -5592,13 +5683,15 @@ public class CoordTest3 {
         boolean boolean33 = coord5.estADistanceUn(coord29);
         int int34 = coord2.distanceFrom(coord5);
         java.lang.String str35 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean41 = coord38.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean44 = coord38.estDansPlateau((int) ' ', (int) (byte) 1);
         int int45 = coord38.getL();
         boolean boolean47 = coord38.equals((java.lang.Object) 33);
         boolean boolean48 = coord5.estADistanceUn(coord38);
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean54 = coord51.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord57 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -5611,7 +5704,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int74 = coord64.distanceFrom(coord73);
         boolean boolean75 = coord51.estADistanceUn(coord64);
-        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean81 = coord78.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord84 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord87 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -5762,7 +5856,8 @@ public class CoordTest3 {
         boolean boolean11 = coord5.equals((java.lang.Object) (byte) 1);
         int int12 = coord5.getL();
         java.lang.String str13 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord16 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord16 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int23 = coord19.distanceFrom(coord22);
@@ -5772,7 +5867,8 @@ public class CoordTest3 {
         boolean boolean27 = coord16.estADistanceUn(coord19);
         boolean boolean30 = coord16.estDansPlateau((int) '#', 1);
         int int31 = coord5.distanceFrom(coord16);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean37 = coord34.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord34.estDansPlateau((int) ' ', (int) (byte) 1);
         int int41 = coord34.getL();
@@ -5783,7 +5879,8 @@ public class CoordTest3 {
         int int49 = coord48.getC();
         boolean boolean52 = coord48.estDansPlateau((int) (byte) 0, 33);
         int int53 = coord48.getL();
-        fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean59 = coord56.estDansPlateau((int) (byte) -1, (int) ' ');
         int int60 = coord56.getC();
         int int61 = coord56.getC();
@@ -5830,10 +5927,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(33, (int) (byte) 0);
         int int3 = coord2.getC();
         int int4 = coord2.getL();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean13 = coord7.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord16 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord16 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean17 = coord7.estADistanceUn(coord16);
         fr.umontpellier.iut.algogen.Coord coord20 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -5984,7 +6083,8 @@ public class CoordTest3 {
         java.lang.String str45 = coord33.toString();
         int int46 = coord33.getL();
         boolean boolean49 = coord33.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean56 = coord33.estADistanceUn(coord52);
         boolean boolean57 = coord2.equals((java.lang.Object) coord52);
@@ -5992,7 +6092,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int64 = coord63.getL();
         int int65 = coord63.getC();
-        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean71 = coord68.estDansPlateau((int) (byte) -1, (int) ' ');
         int int72 = coord68.getC();
         int int73 = coord68.getC();
@@ -6042,7 +6143,8 @@ public class CoordTest3 {
     public void test0635() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0635");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -6053,7 +6155,8 @@ public class CoordTest3 {
         int int17 = coord2.getL();
         int int18 = coord2.getC();
         boolean boolean21 = coord2.estDansPlateau((int) (short) 10, (int) '#');
-        fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int25 = coord24.getL();
         int int26 = coord24.getC();
         boolean boolean29 = coord24.estDansPlateau((int) (short) 1, 1);
@@ -6088,12 +6191,15 @@ public class CoordTest3 {
     public void test0636() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0636");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         boolean boolean5 = coord2.estDansPlateau(101, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean11 = coord8.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean14 = coord8.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean18 = coord8.estADistanceUn(coord17);
         int int19 = coord17.getC();
         boolean boolean20 = coord2.equals((java.lang.Object) int19);
@@ -6145,7 +6251,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord69 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int70 = coord69.getL();
         int int71 = coord69.getC();
-        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean77 = coord74.estDansPlateau((int) (byte) -1, (int) ' ');
         int int78 = coord74.getC();
         int int79 = coord74.getC();
@@ -6325,7 +6432,8 @@ public class CoordTest3 {
     public void test0641() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0641");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -6345,7 +6453,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -6360,14 +6469,16 @@ public class CoordTest3 {
         java.lang.String str63 = coord51.toString();
         int int64 = coord51.getL();
         boolean boolean65 = coord45.equals((java.lang.Object) int64);
-        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean71 = coord68.estDansPlateau((int) (byte) -1, (int) ' ');
         int int72 = coord68.getC();
         int int73 = coord68.getC();
         java.lang.String str74 = coord68.toString();
         boolean boolean77 = coord68.estDansPlateau((int) (byte) 100, 100);
         boolean boolean78 = coord45.estADistanceUn(coord68);
-        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord84 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str85 = coord84.toString();
         java.lang.String str86 = coord84.toString();
@@ -6444,7 +6555,8 @@ public class CoordTest3 {
         int int36 = coord32.distanceFrom(coord35);
         int int37 = coord35.getC();
         int int38 = coord27.distanceFrom(coord35);
-        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int42 = coord41.getL();
         int int43 = coord41.getC();
         int int44 = coord41.getL();
@@ -6728,7 +6840,8 @@ public class CoordTest3 {
         int int8 = coord2.getC();
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) 0);
         boolean boolean14 = coord2.equals((java.lang.Object) coord13);
         java.lang.Class<?> wildcardClass15 = coord13.getClass();
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
@@ -6783,7 +6896,8 @@ public class CoordTest3 {
     public void test0652() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0652");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -6798,7 +6912,7 @@ public class CoordTest3 {
             int int19 = coord2.distanceFrom(coord18);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
@@ -6822,7 +6936,8 @@ public class CoordTest3 {
         boolean boolean16 = coord10.equals((java.lang.Object) (byte) 1);
         int int17 = coord10.getL();
         java.lang.String str18 = coord10.toString();
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int28 = coord24.distanceFrom(coord27);
@@ -6832,7 +6947,8 @@ public class CoordTest3 {
         boolean boolean32 = coord21.estADistanceUn(coord24);
         boolean boolean35 = coord21.estDansPlateau((int) '#', 1);
         int int36 = coord10.distanceFrom(coord21);
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean42 = coord39.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean45 = coord39.estDansPlateau((int) ' ', (int) (byte) 1);
         int int46 = coord39.getL();
@@ -6866,7 +6982,8 @@ public class CoordTest3 {
     public void test0654() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0654");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         java.lang.Class<?> wildcardClass3 = coord2.getClass();
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
@@ -6893,7 +7010,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
         int int30 = coord29.getC();
         boolean boolean31 = coord13.estADistanceUn(coord29);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         int int35 = coord34.getC();
         java.lang.String str36 = coord34.toString();
         int int37 = coord29.distanceFrom(coord34);
@@ -6941,10 +7059,12 @@ public class CoordTest3 {
         boolean boolean41 = coord29.estADistanceUn(coord36);
         boolean boolean42 = coord22.estADistanceUn(coord29);
         boolean boolean45 = coord29.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean49 = coord29.estADistanceUn(coord48);
         boolean boolean50 = coord19.equals((java.lang.Object) boolean49);
-        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean56 = coord53.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7021,12 +7141,14 @@ public class CoordTest3 {
         java.lang.String str45 = coord33.toString();
         int int46 = coord33.getL();
         boolean boolean49 = coord33.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean56 = coord33.estADistanceUn(coord52);
         boolean boolean57 = coord2.equals((java.lang.Object) coord52);
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(21, 10);
-        fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int64 = coord63.getL();
         int int65 = coord63.getC();
         int int66 = coord63.getL();
@@ -7141,7 +7263,8 @@ public class CoordTest3 {
     public void test0660() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0660");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
@@ -7286,7 +7409,8 @@ public class CoordTest3 {
         java.lang.String str29 = coord17.toString();
         int int30 = coord17.getL();
         boolean boolean33 = coord17.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord17.estADistanceUn(coord36);
         int int41 = coord36.getL();
@@ -7363,7 +7487,8 @@ public class CoordTest3 {
     public void test0665() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0665");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7376,7 +7501,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -7447,7 +7573,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) ' ', (int) ' ');
         int int33 = coord28.getC();
@@ -7519,7 +7646,8 @@ public class CoordTest3 {
     public void test0669() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0669");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean5 = coord2.estDansPlateau(101, 32);
         int int6 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord9 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7540,7 +7668,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         boolean boolean49 = coord45.estDansPlateau((int) (short) 100, (int) 'a');
         int int50 = coord45.getC();
@@ -7556,7 +7685,8 @@ public class CoordTest3 {
         boolean boolean72 = coord60.estADistanceUn(coord67);
         boolean boolean73 = coord53.estADistanceUn(coord60);
         boolean boolean76 = coord60.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord82 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord85 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int86 = coord82.distanceFrom(coord85);
@@ -7671,7 +7801,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0674");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int12 = coord8.distanceFrom(coord11);
@@ -7683,7 +7814,8 @@ public class CoordTest3 {
         java.lang.String str18 = coord5.toString();
         boolean boolean21 = coord5.estDansPlateau(33, 21);
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) 'a');
-        fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) (short) -1);
+        fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1,
+                (int) (short) -1);
         boolean boolean28 = coord24.estADistanceUn(coord27);
         java.lang.String str29 = coord24.toString();
         int int30 = coord5.distanceFrom(coord24);
@@ -7719,10 +7851,12 @@ public class CoordTest3 {
         boolean boolean24 = coord12.estADistanceUn(coord19);
         boolean boolean25 = coord5.estADistanceUn(coord12);
         boolean boolean28 = coord12.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean32 = coord12.estADistanceUn(coord31);
         boolean boolean35 = coord31.estDansPlateau((int) ' ', (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean41 = coord38.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7765,7 +7899,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0676");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(21, 10);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int6 = coord5.getL();
         int int7 = coord5.getC();
         int int8 = coord5.getL();
@@ -7777,7 +7912,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) ' ', 32);
         int int19 = coord18.getC();
         boolean boolean20 = coord2.estADistanceUn(coord18);
-        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean26 = coord23.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord32 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7790,7 +7926,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int46 = coord36.distanceFrom(coord45);
         boolean boolean47 = coord23.estADistanceUn(coord36);
-        fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int51 = coord50.getL();
         int int52 = coord50.getC();
         boolean boolean53 = coord23.estADistanceUn(coord50);
@@ -7848,7 +7985,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0677");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, (int) '#');
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -7868,7 +8006,8 @@ public class CoordTest3 {
         boolean boolean41 = coord29.estADistanceUn(coord36);
         boolean boolean42 = coord22.estADistanceUn(coord29);
         boolean boolean45 = coord29.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean49 = coord29.estADistanceUn(coord48);
         int int50 = coord48.getL();
         boolean boolean51 = coord11.estADistanceUn(coord48);
@@ -7883,7 +8022,8 @@ public class CoordTest3 {
         java.lang.String str66 = coord54.toString();
         int int67 = coord54.getL();
         boolean boolean68 = coord48.equals((java.lang.Object) int67);
-        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean74 = coord71.estDansPlateau((int) (byte) -1, (int) ' ');
         int int75 = coord71.getC();
         int int76 = coord71.getC();
@@ -8003,7 +8143,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         fr.umontpellier.iut.algogen.Coord coord32 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -8013,7 +8154,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         boolean boolean45 = coord35.equals((java.lang.Object) (byte) 100);
         boolean boolean46 = coord32.equals((java.lang.Object) (byte) 100);
-        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean52 = coord49.estDansPlateau((int) ' ', (int) 'a');
         int int53 = coord49.getC();
         java.lang.Class<?> wildcardClass54 = coord49.getClass();
@@ -8062,7 +8204,8 @@ public class CoordTest3 {
         boolean boolean29 = coord26.equals((java.lang.Object) 0);
         boolean boolean30 = coord2.estADistanceUn(coord26);
         fr.umontpellier.iut.algogen.Coord coord33 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int43 = coord39.distanceFrom(coord42);
@@ -8104,7 +8247,8 @@ public class CoordTest3 {
         boolean boolean8 = coord2.equals((java.lang.Object) (byte) 1);
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord16 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int20 = coord16.distanceFrom(coord19);
@@ -8114,7 +8258,8 @@ public class CoordTest3 {
         boolean boolean24 = coord13.estADistanceUn(coord16);
         boolean boolean27 = coord13.estDansPlateau((int) '#', 1);
         int int28 = coord2.distanceFrom(coord13);
-        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean34 = coord31.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean37 = coord31.estDansPlateau((int) ' ', (int) (byte) 1);
         int int38 = coord31.getL();
@@ -8158,10 +8303,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int24 = coord23.getL();
         boolean boolean25 = coord19.estADistanceUn(coord23);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int32 = coord31.getC();
-        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean38 = coord35.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -8174,7 +8321,8 @@ public class CoordTest3 {
         boolean boolean52 = coord19.estADistanceUn(coord28);
         int int53 = coord2.distanceFrom(coord28);
         boolean boolean56 = coord28.estDansPlateau(52, 0);
-        fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str63 = coord62.toString();
         java.lang.String str64 = coord62.toString();
@@ -8311,7 +8459,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) (short) 100, (int) 'a');
         int int33 = coord28.getC();
@@ -8327,7 +8476,8 @@ public class CoordTest3 {
         boolean boolean55 = coord43.estADistanceUn(coord50);
         boolean boolean56 = coord36.estADistanceUn(coord43);
         boolean boolean59 = coord43.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int69 = coord65.distanceFrom(coord68);
@@ -8394,7 +8544,7 @@ public class CoordTest3 {
             int int39 = coord17.distanceFrom(coord38);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
@@ -8427,7 +8577,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int6 = coord5.getL();
         int int7 = coord5.getC();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -8535,10 +8686,12 @@ public class CoordTest3 {
         java.lang.String str45 = coord38.toString();
         boolean boolean46 = coord2.equals((java.lang.Object) coord38);
         boolean boolean49 = coord38.estDansPlateau((-1), 32);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean58 = coord52.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean62 = coord52.estADistanceUn(coord61);
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -8611,7 +8764,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -8750,7 +8904,8 @@ public class CoordTest3 {
         java.lang.String str81 = coord69.toString();
         int int82 = coord69.getL();
         boolean boolean85 = coord69.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean91 = coord88.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean92 = coord69.estADistanceUn(coord88);
         int int93 = coord88.getL();
@@ -8809,7 +8964,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int13 = coord9.distanceFrom(coord12);
         boolean boolean14 = coord2.estADistanceUn(coord9);
-        fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean20 = coord17.estDansPlateau((int) (byte) -1, (int) ' ');
         int int21 = coord17.getC();
         int int22 = coord17.getC();
@@ -8987,7 +9143,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int6 = coord5.getL();
         int int7 = coord5.getC();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -9023,7 +9180,8 @@ public class CoordTest3 {
     public void test0702() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0702");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
@@ -9157,14 +9315,16 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         java.lang.String str26 = coord2.toString();
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean37 = coord34.estDansPlateau((int) (byte) -1, (int) ' ');
         int int38 = coord34.getC();
         int int39 = coord34.getC();
@@ -9254,10 +9414,12 @@ public class CoordTest3 {
     public void test0706() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0706");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean12 = coord2.estADistanceUn(coord11);
         int int13 = coord2.getL();
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
@@ -9270,7 +9432,8 @@ public class CoordTest3 {
     public void test0707() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0707");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -9368,7 +9531,8 @@ public class CoordTest3 {
         int int7 = coord2.getC();
         java.lang.String str8 = coord2.toString();
         int int9 = coord2.getL();
-        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord12 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean15 = coord12.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -9388,7 +9552,8 @@ public class CoordTest3 {
         boolean boolean48 = coord36.estADistanceUn(coord43);
         boolean boolean49 = coord29.estADistanceUn(coord36);
         boolean boolean52 = coord36.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean56 = coord36.estADistanceUn(coord55);
         int int57 = coord55.getL();
         boolean boolean58 = coord18.estADistanceUn(coord55);
@@ -9408,7 +9573,8 @@ public class CoordTest3 {
         int int82 = coord78.distanceFrom(coord81);
         boolean boolean84 = coord78.equals((java.lang.Object) (byte) 1);
         java.lang.String str85 = coord78.toString();
-        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord88 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean89 = coord78.estADistanceUn(coord88);
         boolean boolean92 = coord88.estDansPlateau(100, 101);
         int int93 = coord55.distanceFrom(coord88);
@@ -9475,10 +9641,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int43 = coord42.getL();
         boolean boolean44 = coord38.estADistanceUn(coord42);
-        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int51 = coord50.getC();
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean57 = coord54.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -9662,7 +9830,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0717");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int12 = coord8.distanceFrom(coord11);
@@ -9674,7 +9843,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord20 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int21 = coord20.getL();
         int int22 = coord20.getC();
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         int int29 = coord25.getC();
         int int30 = coord25.getC();
@@ -9925,13 +10095,15 @@ public class CoordTest3 {
     public void test0725() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0725");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
         int int6 = coord2.getL();
         boolean boolean8 = coord2.equals((java.lang.Object) (-1L));
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int12 = coord11.getL();
         fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str16 = coord15.toString();
@@ -9944,7 +10116,8 @@ public class CoordTest3 {
         java.lang.String str27 = coord15.toString();
         int int28 = coord15.getL();
         boolean boolean31 = coord15.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean37 = coord34.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean38 = coord15.estADistanceUn(coord34);
         boolean boolean39 = coord11.equals((java.lang.Object) coord34);
@@ -9953,7 +10126,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 0, (int) '4');
         boolean boolean45 = coord34.equals((java.lang.Object) coord44);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord57 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int58 = coord54.distanceFrom(coord57);
@@ -9965,7 +10139,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int67 = coord66.getL();
         int int68 = coord66.getC();
-        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean74 = coord71.estDansPlateau((int) (byte) -1, (int) ' ');
         int int75 = coord71.getC();
         int int76 = coord71.getC();
@@ -10034,7 +10209,8 @@ public class CoordTest3 {
         boolean boolean25 = coord19.equals((java.lang.Object) (byte) 1);
         int int26 = coord19.getL();
         java.lang.String str27 = coord19.toString();
-        fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord33 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int37 = coord33.distanceFrom(coord36);
@@ -10188,7 +10364,8 @@ public class CoordTest3 {
         boolean boolean48 = coord36.estADistanceUn(coord43);
         boolean boolean49 = coord29.estADistanceUn(coord36);
         boolean boolean52 = coord36.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean56 = coord36.estADistanceUn(coord55);
         boolean boolean57 = coord2.equals((java.lang.Object) coord36);
         java.lang.String str58 = coord2.toString();
@@ -10255,7 +10432,8 @@ public class CoordTest3 {
         java.lang.String str29 = coord17.toString();
         int int30 = coord17.getL();
         boolean boolean33 = coord17.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord17.estADistanceUn(coord36);
         int int41 = coord36.getL();
@@ -10314,7 +10492,8 @@ public class CoordTest3 {
     public void test0732() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0732");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         int int9 = coord2.getL();
@@ -10370,7 +10549,8 @@ public class CoordTest3 {
         java.lang.String str37 = coord25.toString();
         int int38 = coord25.getL();
         boolean boolean39 = coord9.equals((java.lang.Object) int38);
-        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int49 = coord45.distanceFrom(coord48);
@@ -10381,7 +10561,8 @@ public class CoordTest3 {
         boolean boolean54 = coord9.estADistanceUn(coord45);
         int int55 = coord9.getL();
         java.lang.String str56 = coord9.toString();
-        fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean62 = coord59.estDansPlateau((int) (byte) -1, (int) ' ');
         int int63 = coord59.getC();
         boolean boolean64 = coord9.equals((java.lang.Object) coord59);
@@ -10464,7 +10645,8 @@ public class CoordTest3 {
         java.lang.String str39 = coord27.toString();
         int int40 = coord27.getL();
         boolean boolean43 = coord27.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord46 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord46 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean49 = coord46.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean50 = coord27.estADistanceUn(coord46);
         java.lang.String str51 = coord46.toString();
@@ -10556,7 +10738,8 @@ public class CoordTest3 {
     public void test0738() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0738");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
@@ -10639,12 +10822,14 @@ public class CoordTest3 {
         java.lang.String str29 = coord17.toString();
         int int30 = coord17.getL();
         boolean boolean33 = coord17.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord17.estADistanceUn(coord36);
         int int41 = coord36.getL();
         boolean boolean42 = coord7.estADistanceUn(coord36);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean48 = coord45.estDansPlateau((int) (byte) -1, (int) ' ');
         int int49 = coord45.getC();
         int int50 = coord45.getC();
@@ -10657,7 +10842,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int66 = coord62.distanceFrom(coord65);
         boolean boolean67 = coord55.estADistanceUn(coord62);
-        fr.umontpellier.iut.algogen.Coord coord70 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord70 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean73 = coord70.estDansPlateau((int) (byte) -1, (int) ' ');
         int int74 = coord70.getC();
         int int75 = coord70.getC();
@@ -10827,7 +11013,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         int int11 = coord7.getC();
         int int12 = coord7.getC();
@@ -10956,7 +11143,8 @@ public class CoordTest3 {
     public void test0750() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0750");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -10969,7 +11157,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -11042,12 +11231,14 @@ public class CoordTest3 {
         java.lang.String str36 = coord24.toString();
         int int37 = coord24.getL();
         boolean boolean40 = coord24.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord43 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord43 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean46 = coord43.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean47 = coord24.estADistanceUn(coord43);
         int int48 = coord43.getL();
         boolean boolean49 = coord14.estADistanceUn(coord43);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         int int56 = coord52.getC();
         int int57 = coord52.getC();
@@ -11151,7 +11342,8 @@ public class CoordTest3 {
     public void test0754() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0754");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         int int9 = coord2.getL();
@@ -11163,7 +11355,8 @@ public class CoordTest3 {
         boolean boolean22 = coord16.equals((java.lang.Object) (byte) 1);
         int int23 = coord16.getL();
         int int24 = coord2.distanceFrom(coord16);
-        fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int28 = coord27.getL();
         int int29 = coord27.getC();
         int int30 = coord27.getL();
@@ -11179,7 +11372,8 @@ public class CoordTest3 {
         java.lang.String str46 = coord34.toString();
         int int47 = coord34.getL();
         boolean boolean50 = coord34.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean56 = coord53.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean57 = coord34.estADistanceUn(coord53);
         int int58 = coord27.distanceFrom(coord34);
@@ -11266,7 +11460,8 @@ public class CoordTest3 {
         int int14 = coord10.distanceFrom(coord13);
         int int15 = coord13.getC();
         int int16 = coord5.distanceFrom(coord13);
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int20 = coord19.getL();
         int int21 = coord19.getC();
         int int22 = coord19.getL();
@@ -11318,7 +11513,8 @@ public class CoordTest3 {
     public void test0758() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0758");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -11338,7 +11534,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -11353,7 +11550,8 @@ public class CoordTest3 {
         java.lang.String str63 = coord51.toString();
         int int64 = coord51.getL();
         boolean boolean65 = coord45.equals((java.lang.Object) int64);
-        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean71 = coord68.estDansPlateau((int) (byte) -1, (int) ' ');
         int int72 = coord68.getC();
         int int73 = coord68.getC();
@@ -11424,7 +11622,8 @@ public class CoordTest3 {
         java.lang.String str39 = coord18.toString();
         boolean boolean40 = coord7.equals((java.lang.Object) str39);
         java.lang.String str41 = coord7.toString();
-        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean47 = coord44.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -11520,7 +11719,8 @@ public class CoordTest3 {
         int int3 = coord2.getC();
         boolean boolean6 = coord2.estDansPlateau((int) (byte) 0, 33);
         int int7 = coord2.getL();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -11529,16 +11729,19 @@ public class CoordTest3 {
         int int18 = coord2.distanceFrom(coord10);
         fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord(11, 87);
         boolean boolean22 = coord2.estADistanceUn(coord21);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
         int int29 = coord28.getC();
         fr.umontpellier.iut.algogen.Coord coord32 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int33 = coord32.getL();
         boolean boolean34 = coord28.estADistanceUn(coord32);
-        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int41 = coord40.getC();
-        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean47 = coord44.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -11593,7 +11796,8 @@ public class CoordTest3 {
         int int15 = coord11.distanceFrom(coord14);
         boolean boolean17 = coord11.equals((java.lang.Object) (byte) 1);
         java.lang.String str18 = coord11.toString();
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean22 = coord11.estADistanceUn(coord21);
         boolean boolean25 = coord21.estDansPlateau(100, 101);
         java.lang.String str26 = coord21.toString();
@@ -11714,7 +11918,8 @@ public class CoordTest3 {
         boolean boolean60 = coord9.estADistanceUn(coord25);
         java.lang.String str61 = coord25.toString();
         boolean boolean62 = coord2.estADistanceUn(coord25);
-        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int72 = coord68.distanceFrom(coord71);
@@ -11799,7 +12004,8 @@ public class CoordTest3 {
     public void test0766() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0766");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
@@ -11814,7 +12020,8 @@ public class CoordTest3 {
     public void test0767() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0767");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         boolean boolean10 = coord2.equals((java.lang.Object) true);
@@ -11836,16 +12043,19 @@ public class CoordTest3 {
     public void test0768() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0768");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
         int int6 = coord5.getC();
         fr.umontpellier.iut.algogen.Coord coord9 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int10 = coord9.getL();
         boolean boolean11 = coord5.estADistanceUn(coord9);
-        fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int18 = coord17.getC();
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord30 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -11963,7 +12173,8 @@ public class CoordTest3 {
     public void test0772() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0772");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -12077,7 +12288,8 @@ public class CoordTest3 {
         int int12 = coord7.getC();
         boolean boolean13 = coord2.estADistanceUn(coord7);
         boolean boolean16 = coord2.estDansPlateau((int) (byte) 1, (int) (short) 10);
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean22 = coord19.estDansPlateau((int) (byte) -1, (int) ' ');
         int int23 = coord19.getC();
         int int24 = coord19.getC();
@@ -12179,7 +12391,8 @@ public class CoordTest3 {
     public void test0777() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0777");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         int int6 = coord2.getC();
         int int7 = coord2.getC();
@@ -12196,7 +12409,8 @@ public class CoordTest3 {
         boolean boolean30 = coord18.estADistanceUn(coord25);
         boolean boolean31 = coord11.estADistanceUn(coord18);
         boolean boolean34 = coord18.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean38 = coord18.estADistanceUn(coord37);
         boolean boolean41 = coord37.estDansPlateau((int) (short) 100, (int) 'a');
         int int42 = coord37.getC();
@@ -12212,7 +12426,8 @@ public class CoordTest3 {
         boolean boolean64 = coord52.estADistanceUn(coord59);
         boolean boolean65 = coord45.estADistanceUn(coord52);
         boolean boolean68 = coord52.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord77 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int78 = coord74.distanceFrom(coord77);
@@ -12276,7 +12491,8 @@ public class CoordTest3 {
         int int8 = coord2.getC();
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) 0);
         boolean boolean14 = coord2.equals((java.lang.Object) coord13);
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 32);
         int int18 = coord17.getC();
@@ -12362,7 +12578,8 @@ public class CoordTest3 {
     public void test0780() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0780");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -12371,7 +12588,8 @@ public class CoordTest3 {
         int int12 = coord5.getL();
         boolean boolean13 = coord2.estADistanceUn(coord5);
         boolean boolean15 = coord2.equals((java.lang.Object) 100.0d);
-        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean21 = coord18.estDansPlateau((int) (byte) -1, (int) ' ');
         int int22 = coord18.getC();
         int int23 = coord18.getC();
@@ -12411,7 +12629,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -12470,10 +12689,12 @@ public class CoordTest3 {
     public void test0782() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0782");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean12 = coord2.estADistanceUn(coord11);
         fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -12500,7 +12721,8 @@ public class CoordTest3 {
         int int55 = coord50.getL();
         boolean boolean58 = coord50.estDansPlateau((int) (byte) 100, (int) (byte) 0);
         int int59 = coord15.distanceFrom(coord50);
-        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int69 = coord65.distanceFrom(coord68);
@@ -12509,7 +12731,8 @@ public class CoordTest3 {
         int int72 = coord65.getL();
         boolean boolean73 = coord62.estADistanceUn(coord65);
         boolean boolean75 = coord62.equals((java.lang.Object) 100.0d);
-        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean81 = coord78.estDansPlateau((int) (byte) -1, (int) ' ');
         int int82 = coord78.getC();
         int int83 = coord78.getC();
@@ -12565,7 +12788,8 @@ public class CoordTest3 {
     public void test0784() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0784");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) -1);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -12601,7 +12825,8 @@ public class CoordTest3 {
     public void test0785() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0785");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         boolean boolean10 = coord2.equals((java.lang.Object) true);
@@ -12632,7 +12857,8 @@ public class CoordTest3 {
     public void test0787() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0787");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -12643,7 +12869,8 @@ public class CoordTest3 {
         int int17 = coord2.getL();
         int int18 = coord2.getC();
         int int19 = coord2.getL();
-        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int23 = coord2.distanceFrom(coord22);
         int int24 = coord2.getL();
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
@@ -12695,10 +12922,12 @@ public class CoordTest3 {
         boolean boolean24 = coord12.estADistanceUn(coord19);
         boolean boolean25 = coord5.estADistanceUn(coord12);
         boolean boolean28 = coord12.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean32 = coord12.estADistanceUn(coord31);
         boolean boolean33 = coord2.equals((java.lang.Object) boolean32);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean39 = coord36.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -12762,7 +12991,8 @@ public class CoordTest3 {
         boolean boolean45 = coord33.estADistanceUn(coord40);
         boolean boolean46 = coord26.estADistanceUn(coord33);
         boolean boolean49 = coord33.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean53 = coord33.estADistanceUn(coord52);
         boolean boolean54 = coord23.equals((java.lang.Object) boolean53);
         boolean boolean57 = coord23.estDansPlateau(100, 101);
@@ -12853,7 +13083,8 @@ public class CoordTest3 {
         int int47 = coord2.getL();
         java.lang.String str48 = coord2.toString();
         int int49 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -13018,7 +13249,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -13077,10 +13309,12 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0798");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(54, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean11 = coord5.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean15 = coord5.estADistanceUn(coord14);
         int int16 = coord14.getC();
         int int17 = coord2.distanceFrom(coord14);
@@ -13218,7 +13452,8 @@ public class CoordTest3 {
         java.lang.String str57 = coord45.toString();
         int int58 = coord45.getL();
         boolean boolean61 = coord45.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean67 = coord64.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean68 = coord45.estADistanceUn(coord64);
         int int69 = coord64.getL();
@@ -13316,7 +13551,8 @@ public class CoordTest3 {
         java.lang.String str59 = coord47.toString();
         int int60 = coord47.getL();
         boolean boolean61 = coord31.equals((java.lang.Object) int60);
-        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord70 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int71 = coord67.distanceFrom(coord70);
@@ -13327,7 +13563,8 @@ public class CoordTest3 {
         boolean boolean76 = coord31.estADistanceUn(coord67);
         int int77 = coord31.getL();
         java.lang.String str78 = coord31.toString();
-        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord81 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean84 = coord81.estDansPlateau((int) (byte) -1, (int) ' ');
         int int85 = coord81.getC();
         boolean boolean86 = coord31.equals((java.lang.Object) coord81);
@@ -13396,7 +13633,7 @@ public class CoordTest3 {
             int int38 = coord12.distanceFrom(coord37);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
@@ -13468,7 +13705,8 @@ public class CoordTest3 {
         int int55 = coord54.getL();
         boolean boolean56 = coord50.estADistanceUn(coord54);
         int int57 = coord41.distanceFrom(coord54);
-        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int67 = coord63.distanceFrom(coord66);
@@ -13585,7 +13823,8 @@ public class CoordTest3 {
         int int3 = coord2.getC();
         boolean boolean6 = coord2.estDansPlateau((int) (byte) 0, 33);
         int int7 = coord2.getL();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -13594,16 +13833,19 @@ public class CoordTest3 {
         int int18 = coord2.distanceFrom(coord10);
         fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord(11, 87);
         boolean boolean22 = coord2.estADistanceUn(coord21);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
         int int29 = coord28.getC();
         fr.umontpellier.iut.algogen.Coord coord32 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int33 = coord32.getL();
         boolean boolean34 = coord28.estADistanceUn(coord32);
-        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord37 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int41 = coord40.getC();
-        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean47 = coord44.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -13690,7 +13932,7 @@ public class CoordTest3 {
             int int24 = coord2.distanceFrom(coord23);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(0,-1)" + "'", str3, "(0,-1)");
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "(0,-1)" + "'", str4, "(0,-1)");
@@ -13709,7 +13951,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0813");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', (int) (short) -1);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int12 = coord8.distanceFrom(coord11);
@@ -13720,7 +13963,8 @@ public class CoordTest3 {
         boolean boolean17 = coord2.estADistanceUn(coord5);
         java.lang.String str18 = coord5.toString();
         java.lang.String str19 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean25 = coord22.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -13830,14 +14074,16 @@ public class CoordTest3 {
         java.lang.String str29 = coord17.toString();
         int int30 = coord17.getL();
         boolean boolean33 = coord17.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord17.estADistanceUn(coord36);
         int int41 = coord36.getL();
         boolean boolean42 = coord7.estADistanceUn(coord36);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, 21);
         int int46 = coord36.distanceFrom(coord45);
-        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean52 = coord49.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -13918,7 +14164,8 @@ public class CoordTest3 {
         java.lang.String str57 = coord45.toString();
         int int58 = coord45.getL();
         boolean boolean61 = coord45.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean67 = coord64.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean68 = coord45.estADistanceUn(coord64);
         int int69 = coord64.getL();
@@ -13933,7 +14180,8 @@ public class CoordTest3 {
         java.lang.String str85 = coord79.toString();
         int int86 = coord79.getL();
         int int87 = coord74.distanceFrom(coord79);
-        fr.umontpellier.iut.algogen.Coord coord90 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord90 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int91 = coord90.getL();
         int int92 = coord90.getC();
         int int93 = coord74.distanceFrom(coord90);
@@ -13997,7 +14245,8 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         java.lang.String str26 = coord2.toString();
@@ -14075,7 +14324,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         int int11 = coord7.getC();
         int int12 = coord7.getC();
@@ -14099,7 +14349,8 @@ public class CoordTest3 {
         int int44 = coord7.distanceFrom(coord29);
         boolean boolean47 = coord7.estDansPlateau((int) (short) 0, 2);
         int int48 = coord7.getC();
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean54 = coord51.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord57 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -14112,7 +14363,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int74 = coord64.distanceFrom(coord73);
         boolean boolean75 = coord51.estADistanceUn(coord64);
-        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int79 = coord78.getL();
         int int80 = coord78.getC();
         boolean boolean81 = coord51.estADistanceUn(coord78);
@@ -14159,7 +14411,8 @@ public class CoordTest3 {
     public void test0818() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0818");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -14168,10 +14421,12 @@ public class CoordTest3 {
         int int12 = coord5.getL();
         boolean boolean13 = coord2.estADistanceUn(coord5);
         boolean boolean16 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean22 = coord19.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord19.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean29 = coord19.estADistanceUn(coord28);
         boolean boolean30 = coord2.estADistanceUn(coord19);
         fr.umontpellier.iut.algogen.Coord coord33 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
@@ -14289,7 +14544,8 @@ public class CoordTest3 {
     public void test0822() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0822");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 0, (int) (short) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 0,
+                (int) (short) -1);
         int int3 = coord2.getL();
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
     }
@@ -14369,7 +14625,8 @@ public class CoordTest3 {
     public void test0824() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0824");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str6 = coord5.toString();
         java.lang.String str7 = coord5.toString();
@@ -14395,7 +14652,8 @@ public class CoordTest3 {
     public void test0825() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0825");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean5 = coord2.estDansPlateau(101, 32);
         int int6 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord9 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -14578,7 +14836,8 @@ public class CoordTest3 {
     public void test0830() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0830");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -14621,7 +14880,8 @@ public class CoordTest3 {
         int int74 = coord63.distanceFrom(coord73);
         int int75 = coord8.distanceFrom(coord63);
         int int76 = coord8.getL();
-        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int80 = coord79.getL();
         int int81 = coord79.getC();
         int int82 = coord79.getL();
@@ -14694,14 +14954,16 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         java.lang.String str26 = coord2.toString();
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean37 = coord34.estDansPlateau((int) (byte) -1, (int) ' ');
         int int38 = coord34.getC();
         int int39 = coord34.getC();
@@ -14830,7 +15092,8 @@ public class CoordTest3 {
     public void test0836() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0836");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -14843,7 +15106,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -14862,7 +15126,8 @@ public class CoordTest3 {
         java.lang.String str57 = coord45.toString();
         int int58 = coord45.getL();
         boolean boolean61 = coord45.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean67 = coord64.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean68 = coord45.estADistanceUn(coord64);
         java.lang.String str69 = coord45.toString();
@@ -14940,8 +15205,10 @@ public class CoordTest3 {
     public void test0838() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0838");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         int int9 = coord5.getC();
         int int10 = coord5.getC();
@@ -14958,7 +15225,8 @@ public class CoordTest3 {
         boolean boolean33 = coord21.estADistanceUn(coord28);
         boolean boolean34 = coord14.estADistanceUn(coord21);
         boolean boolean37 = coord21.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean41 = coord21.estADistanceUn(coord40);
         boolean boolean44 = coord40.estDansPlateau((int) (short) 100, (int) 'a');
         int int45 = coord40.getC();
@@ -14974,7 +15242,8 @@ public class CoordTest3 {
         boolean boolean67 = coord55.estADistanceUn(coord62);
         boolean boolean68 = coord48.estADistanceUn(coord55);
         boolean boolean71 = coord55.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord77 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord80 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int81 = coord77.distanceFrom(coord80);
@@ -15056,7 +15325,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int7 = coord6.getL();
         int int8 = coord6.getC();
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean14 = coord11.estDansPlateau((int) (byte) -1, (int) ' ');
         int int15 = coord11.getC();
         int int16 = coord11.getC();
@@ -15103,7 +15373,8 @@ public class CoordTest3 {
         java.lang.String str33 = coord21.toString();
         int int34 = coord21.getL();
         boolean boolean37 = coord21.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean43 = coord40.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean44 = coord21.estADistanceUn(coord40);
         fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15219,7 +15490,8 @@ public class CoordTest3 {
         int int3 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 100);
         int int7 = coord2.distanceFrom(coord6);
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int11 = coord10.getL();
         int int12 = coord10.getC();
         boolean boolean15 = coord10.estDansPlateau((int) (short) 1, 1);
@@ -15466,10 +15738,12 @@ public class CoordTest3 {
         boolean boolean27 = coord15.estADistanceUn(coord22);
         boolean boolean28 = coord8.estADistanceUn(coord15);
         boolean boolean31 = coord15.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean35 = coord15.estADistanceUn(coord34);
         boolean boolean36 = coord5.equals((java.lang.Object) boolean35);
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean42 = coord39.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15521,7 +15795,8 @@ public class CoordTest3 {
     public void test0851() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0851");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str7 = coord6.toString();
@@ -15534,7 +15809,8 @@ public class CoordTest3 {
         java.lang.String str18 = coord6.toString();
         int int19 = coord6.getL();
         boolean boolean22 = coord6.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean29 = coord6.estADistanceUn(coord25);
         boolean boolean30 = coord2.equals((java.lang.Object) coord25);
@@ -15572,7 +15848,8 @@ public class CoordTest3 {
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
         int int19 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean25 = coord22.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15701,7 +15978,8 @@ public class CoordTest3 {
     public void test0855() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0855");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15714,12 +15992,14 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
         java.lang.String str33 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         boolean boolean39 = coord36.estDansPlateau(101, (int) ' ');
         boolean boolean42 = coord36.estDansPlateau((int) (byte) 100, 49);
         int int43 = coord2.distanceFrom(coord36);
@@ -15762,7 +16042,8 @@ public class CoordTest3 {
         java.lang.String str21 = coord15.toString();
         int int22 = coord15.getL();
         int int23 = coord10.distanceFrom(coord15);
-        fr.umontpellier.iut.algogen.Coord coord26 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord26 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int27 = coord26.getL();
         int int28 = coord26.getC();
         int int29 = coord10.distanceFrom(coord26);
@@ -15829,7 +16110,8 @@ public class CoordTest3 {
     public void test0860() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0860");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -15848,13 +16130,15 @@ public class CoordTest3 {
         boolean boolean33 = coord5.estADistanceUn(coord29);
         int int34 = coord2.distanceFrom(coord5);
         java.lang.String str35 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean41 = coord38.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean44 = coord38.estDansPlateau((int) ' ', (int) (byte) 1);
         int int45 = coord38.getL();
         boolean boolean47 = coord38.equals((java.lang.Object) 33);
         boolean boolean48 = coord5.estADistanceUn(coord38);
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean54 = coord51.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord57 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15867,7 +16151,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int74 = coord64.distanceFrom(coord73);
         boolean boolean75 = coord51.estADistanceUn(coord64);
-        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord78 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean81 = coord78.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord84 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord87 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15931,10 +16216,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int24 = coord23.getL();
         boolean boolean25 = coord19.estADistanceUn(coord23);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int32 = coord31.getC();
-        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean38 = coord35.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -15999,7 +16286,8 @@ public class CoordTest3 {
         java.lang.String str29 = coord17.toString();
         int int30 = coord17.getL();
         boolean boolean33 = coord17.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean40 = coord17.estADistanceUn(coord36);
         int int41 = coord36.getL();
@@ -16072,7 +16360,8 @@ public class CoordTest3 {
     public void test0865() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0865");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -16100,7 +16389,8 @@ public class CoordTest3 {
         boolean boolean47 = coord37.estDansPlateau(65, 0);
         int int48 = coord37.getL();
         fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) 'a');
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1, (int) (short) -1);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (byte) -1,
+                (int) (short) -1);
         boolean boolean55 = coord51.estADistanceUn(coord54);
         int int56 = coord51.getL();
         int int57 = coord37.distanceFrom(coord51);
@@ -16241,7 +16531,8 @@ public class CoordTest3 {
         java.lang.String str17 = coord5.toString();
         java.lang.String str18 = coord5.toString();
         java.lang.String str19 = coord5.toString();
-        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int29 = coord25.distanceFrom(coord28);
@@ -16250,10 +16541,12 @@ public class CoordTest3 {
         int int32 = coord25.getL();
         boolean boolean33 = coord22.estADistanceUn(coord25);
         boolean boolean36 = coord22.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean42 = coord39.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean45 = coord39.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean49 = coord39.estADistanceUn(coord48);
         boolean boolean50 = coord22.estADistanceUn(coord39);
         fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -16363,7 +16656,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -16418,8 +16712,10 @@ public class CoordTest3 {
     public void test0874() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0874");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         int int9 = coord5.getC();
         int int10 = coord5.getC();
@@ -16436,7 +16732,8 @@ public class CoordTest3 {
         boolean boolean33 = coord21.estADistanceUn(coord28);
         boolean boolean34 = coord14.estADistanceUn(coord21);
         boolean boolean37 = coord21.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean41 = coord21.estADistanceUn(coord40);
         boolean boolean44 = coord40.estDansPlateau((int) (short) 100, (int) 'a');
         int int45 = coord40.getC();
@@ -16452,7 +16749,8 @@ public class CoordTest3 {
         boolean boolean67 = coord55.estADistanceUn(coord62);
         boolean boolean68 = coord48.estADistanceUn(coord55);
         boolean boolean71 = coord55.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord77 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord80 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int81 = coord77.distanceFrom(coord80);
@@ -16464,7 +16762,8 @@ public class CoordTest3 {
         boolean boolean87 = coord40.estADistanceUn(coord74);
         int int88 = coord5.distanceFrom(coord40);
         boolean boolean89 = coord2.estADistanceUn(coord5);
-        fr.umontpellier.iut.algogen.Coord coord92 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord92 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         int int93 = coord5.distanceFrom(coord92);
         int int94 = coord92.getC();
         java.lang.Class<?> wildcardClass95 = coord92.getClass();
@@ -16596,7 +16895,8 @@ public class CoordTest3 {
     public void test0878() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0878");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -16616,7 +16916,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -16688,7 +16989,8 @@ public class CoordTest3 {
     public void test0880() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0880");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -16722,10 +17024,12 @@ public class CoordTest3 {
         int int59 = coord19.distanceFrom(coord54);
         boolean boolean60 = coord8.equals((java.lang.Object) int59);
         boolean boolean63 = coord8.estDansPlateau(35, 52);
-        fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean69 = coord66.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean72 = coord66.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean76 = coord66.estADistanceUn(coord75);
         boolean boolean77 = coord8.equals((java.lang.Object) coord75);
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
@@ -16773,7 +17077,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         java.lang.String str33 = coord9.toString();
@@ -16784,7 +17089,7 @@ public class CoordTest3 {
             int int38 = coord9.distanceFrom(coord37);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
@@ -16814,7 +17119,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord9.estDansPlateau((int) (byte) 10, (int) (short) -1);
         java.lang.String str33 = coord9.toString();
@@ -16844,7 +17150,8 @@ public class CoordTest3 {
         boolean boolean84 = coord72.estADistanceUn(coord79);
         boolean boolean85 = coord63.equals((java.lang.Object) coord72);
         boolean boolean86 = coord39.estADistanceUn(coord72);
-        fr.umontpellier.iut.algogen.Coord coord89 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord89 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean92 = coord89.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean95 = coord89.estDansPlateau((int) ' ', (int) (byte) 1);
         boolean boolean97 = coord89.equals((java.lang.Object) true);
@@ -16885,7 +17192,8 @@ public class CoordTest3 {
     public void test0883() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0883");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -16912,7 +17220,8 @@ public class CoordTest3 {
         java.lang.String str48 = coord36.toString();
         int int49 = coord36.getL();
         boolean boolean50 = coord20.equals((java.lang.Object) int49);
-        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int60 = coord56.distanceFrom(coord59);
@@ -16989,7 +17298,8 @@ public class CoordTest3 {
         boolean boolean57 = coord46.estADistanceUn(coord51);
         int int58 = coord41.distanceFrom(coord46);
         int int59 = coord25.distanceFrom(coord41);
-        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean65 = coord62.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord71 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -17011,7 +17321,7 @@ public class CoordTest3 {
             boolean boolean91 = coord7.estADistanceUn(coord90);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(0,-1)" + "'", str3, "(0,-1)");
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "(0,-1)" + "'", str4, "(0,-1)");
@@ -17089,10 +17399,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int7 = coord6.getL();
         boolean boolean8 = coord2.estADistanceUn(coord6);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int15 = coord14.getC();
-        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean21 = coord18.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord27 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -17135,7 +17447,8 @@ public class CoordTest3 {
     public void test0887() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0887");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         boolean boolean7 = coord2.estDansPlateau((int) (byte) 100, (int) (short) 0);
@@ -17207,7 +17520,8 @@ public class CoordTest3 {
     public void test0889() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0889");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -17227,7 +17541,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -17245,11 +17560,13 @@ public class CoordTest3 {
         boolean boolean72 = coord60.estADistanceUn(coord67);
         boolean boolean73 = coord53.estADistanceUn(coord60);
         boolean boolean76 = coord60.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord79 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean80 = coord60.estADistanceUn(coord79);
         boolean boolean81 = coord45.estADistanceUn(coord79);
         int int82 = coord79.getC();
-        fr.umontpellier.iut.algogen.Coord coord85 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord85 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean88 = coord85.estDansPlateau((int) (byte) -1, (int) ' ');
         java.lang.Class<?> wildcardClass89 = coord85.getClass();
         boolean boolean90 = coord79.equals((java.lang.Object) wildcardClass89);
@@ -17290,7 +17607,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         int int11 = coord7.getC();
         int int12 = coord7.getC();
@@ -17339,7 +17657,8 @@ public class CoordTest3 {
         int int87 = coord81.getC();
         int int88 = coord81.getL();
         java.lang.String str89 = coord81.toString();
-        fr.umontpellier.iut.algogen.Coord coord92 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) 0);
+        fr.umontpellier.iut.algogen.Coord coord92 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) 0);
         boolean boolean93 = coord81.equals((java.lang.Object) coord92);
         fr.umontpellier.iut.algogen.Coord coord96 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 32);
         int int97 = coord96.getC();
@@ -17402,7 +17721,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) ' ', (int) ' ');
         int int33 = coord28.getC();
@@ -17499,7 +17819,8 @@ public class CoordTest3 {
         boolean boolean42 = coord2.estDansPlateau(62, 123);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(76, 178);
         int int46 = coord2.distanceFrom(coord45);
-        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord49 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int56 = coord52.distanceFrom(coord55);
@@ -17508,10 +17829,12 @@ public class CoordTest3 {
         int int59 = coord52.getL();
         boolean boolean60 = coord49.estADistanceUn(coord52);
         boolean boolean63 = coord49.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean69 = coord66.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean72 = coord66.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord75 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean76 = coord66.estADistanceUn(coord75);
         boolean boolean77 = coord49.estADistanceUn(coord66);
         fr.umontpellier.iut.algogen.Coord coord80 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
@@ -17590,7 +17913,8 @@ public class CoordTest3 {
     public void test0895() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0895");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -17603,7 +17927,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -17674,7 +17999,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int7 = coord6.getL();
         boolean boolean8 = coord2.estADistanceUn(coord6);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean14 = coord11.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord20 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -17687,7 +18013,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord33 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int34 = coord24.distanceFrom(coord33);
         boolean boolean35 = coord11.estADistanceUn(coord24);
-        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int39 = coord38.getL();
         int int40 = coord38.getC();
         boolean boolean41 = coord11.estADistanceUn(coord38);
@@ -17747,7 +18074,8 @@ public class CoordTest3 {
     public void test0897() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0897");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -17756,7 +18084,8 @@ public class CoordTest3 {
         int int12 = coord5.getL();
         boolean boolean13 = coord2.estADistanceUn(coord5);
         boolean boolean15 = coord2.equals((java.lang.Object) 100.0d);
-        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean21 = coord18.estDansPlateau((int) (byte) -1, (int) ' ');
         int int22 = coord18.getC();
         int int23 = coord18.getC();
@@ -17946,7 +18275,8 @@ public class CoordTest3 {
     public void test0903() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0903");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -17982,7 +18312,8 @@ public class CoordTest3 {
     public void test0904() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0904");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10, (int) (byte) 100);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 10,
+                (int) (byte) 100);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str6 = coord5.toString();
         java.lang.String str7 = coord5.toString();
@@ -18012,7 +18343,8 @@ public class CoordTest3 {
     public void test0905() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0905");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, (int) (byte) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100,
+                (int) (byte) 1);
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int9 = coord5.distanceFrom(coord8);
@@ -18039,7 +18371,8 @@ public class CoordTest3 {
         java.lang.String str48 = coord36.toString();
         int int49 = coord36.getL();
         boolean boolean50 = coord20.equals((java.lang.Object) int49);
-        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord53 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord56 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord59 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int60 = coord56.distanceFrom(coord59);
@@ -18108,10 +18441,12 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) ' ', (int) (short) 1);
         int int43 = coord42.getL();
         boolean boolean44 = coord38.estADistanceUn(coord42);
-        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord47 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) 0);
         int int51 = coord50.getC();
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean57 = coord54.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18172,10 +18507,12 @@ public class CoordTest3 {
         boolean boolean27 = coord15.estADistanceUn(coord22);
         boolean boolean28 = coord8.estADistanceUn(coord15);
         boolean boolean31 = coord15.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean35 = coord15.estADistanceUn(coord34);
         boolean boolean36 = coord5.equals((java.lang.Object) boolean35);
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean42 = coord39.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18227,7 +18564,8 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         java.lang.String str15 = coord2.toString();
         java.lang.String str16 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord19 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord22 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int26 = coord22.distanceFrom(coord25);
@@ -18236,10 +18574,12 @@ public class CoordTest3 {
         int int29 = coord22.getL();
         boolean boolean30 = coord19.estADistanceUn(coord22);
         boolean boolean33 = coord19.estDansPlateau((int) (byte) -1, (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord36 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean39 = coord36.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean42 = coord36.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean46 = coord36.estADistanceUn(coord45);
         boolean boolean47 = coord19.estADistanceUn(coord36);
         fr.umontpellier.iut.algogen.Coord coord50 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18294,10 +18634,12 @@ public class CoordTest3 {
     public void test0909() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0909");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean12 = coord2.estADistanceUn(coord11);
         fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18411,7 +18753,8 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18443,7 +18786,8 @@ public class CoordTest3 {
         int int79 = coord75.distanceFrom(coord78);
         boolean boolean81 = coord75.equals((java.lang.Object) (byte) 1);
         java.lang.String str82 = coord75.toString();
-        fr.umontpellier.iut.algogen.Coord coord85 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100, (int) (short) 10);
+        fr.umontpellier.iut.algogen.Coord coord85 = new fr.umontpellier.iut.algogen.Coord((int) (short) 100,
+                (int) (short) 10);
         boolean boolean86 = coord75.estADistanceUn(coord85);
         boolean boolean89 = coord85.estDansPlateau(100, 101);
         java.lang.String str90 = coord85.toString();
@@ -18532,7 +18876,8 @@ public class CoordTest3 {
     public void test0914() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0914");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18545,7 +18890,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean32 = coord29.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord38 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18742,7 +19088,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int6 = coord5.getL();
         int int7 = coord5.getC();
-        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord10 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean13 = coord10.estDansPlateau((int) (byte) -1, (int) ' ');
         int int14 = coord10.getC();
         int int15 = coord10.getC();
@@ -18768,10 +19115,12 @@ public class CoordTest3 {
         int int49 = coord44.getC();
         boolean boolean50 = coord39.estADistanceUn(coord44);
         boolean boolean51 = coord35.equals((java.lang.Object) coord39);
-        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean57 = coord54.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean60 = coord54.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean64 = coord54.estADistanceUn(coord63);
         fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord70 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18816,7 +19165,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         int int11 = coord7.getC();
         int int12 = coord7.getC();
@@ -18961,7 +19311,8 @@ public class CoordTest3 {
     public void test0925() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0925");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -18974,7 +19325,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -18993,7 +19345,8 @@ public class CoordTest3 {
         java.lang.String str57 = coord45.toString();
         int int58 = coord45.getL();
         boolean boolean61 = coord45.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord64 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean67 = coord64.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean68 = coord45.estADistanceUn(coord64);
         java.lang.String str69 = coord45.toString();
@@ -19052,7 +19405,8 @@ public class CoordTest3 {
     public void test0926() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0926");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 1);
         boolean boolean5 = coord2.estDansPlateau((int) (short) 10, 12);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(100, (int) (short) 0);
         boolean boolean11 = coord8.estDansPlateau((int) '#', (int) 'a');
@@ -19100,7 +19454,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int35 = coord31.distanceFrom(coord34);
@@ -19151,7 +19506,8 @@ public class CoordTest3 {
         java.lang.String str14 = coord2.toString();
         int int15 = coord2.getL();
         boolean boolean18 = coord2.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord21 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean24 = coord21.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean25 = coord2.estADistanceUn(coord21);
         fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -19393,7 +19749,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
-        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord7 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean10 = coord7.estDansPlateau((int) (byte) -1, (int) ' ');
         int int11 = coord7.getC();
         int int12 = coord7.getC();
@@ -19440,7 +19797,8 @@ public class CoordTest3 {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0935");
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(111, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord5 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean8 = coord5.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean11 = coord5.estDansPlateau((int) ' ', (int) (byte) 1);
         boolean boolean13 = coord5.equals((java.lang.Object) true);
@@ -19457,7 +19815,8 @@ public class CoordTest3 {
     public void test0936() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0936");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -19477,7 +19836,8 @@ public class CoordTest3 {
         boolean boolean38 = coord26.estADistanceUn(coord33);
         boolean boolean39 = coord19.estADistanceUn(coord26);
         boolean boolean42 = coord26.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean46 = coord26.estADistanceUn(coord45);
         int int47 = coord45.getL();
         boolean boolean48 = coord8.estADistanceUn(coord45);
@@ -19524,7 +19884,8 @@ public class CoordTest3 {
     public void test0937() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0937");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, (int) (short) 1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10,
+                (int) (short) 1);
         boolean boolean5 = coord2.estDansPlateau((int) (short) 10, 12);
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(100, (int) (short) 0);
         boolean boolean11 = coord8.estDansPlateau((int) '#', (int) 'a');
@@ -19563,13 +19924,15 @@ public class CoordTest3 {
     public void test0939() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0939");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
         int int6 = coord2.getL();
         boolean boolean8 = coord2.equals((java.lang.Object) (-1L));
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord14 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int18 = coord14.distanceFrom(coord17);
@@ -19626,7 +19989,7 @@ public class CoordTest3 {
             boolean boolean27 = coord2.estADistanceUn(coord26);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
-        // Expected exception.
+            // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
         org.junit.Assert.assertTrue("'" + int16 + "' != '" + 0 + "'", int16 == 0);
@@ -19654,7 +20017,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) (short) 100, (int) 'a');
         int int33 = coord28.getC();
@@ -19670,7 +20034,8 @@ public class CoordTest3 {
         boolean boolean55 = coord43.estADistanceUn(coord50);
         boolean boolean56 = coord36.estADistanceUn(coord43);
         boolean boolean59 = coord43.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord62 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int69 = coord65.distanceFrom(coord68);
@@ -19748,7 +20113,8 @@ public class CoordTest3 {
         int int22 = coord21.getC();
         boolean boolean25 = coord21.estDansPlateau((int) (byte) 0, 33);
         int int26 = coord21.getL();
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean32 = coord29.estDansPlateau((int) (byte) -1, (int) ' ');
         int int33 = coord29.getC();
         int int34 = coord29.getC();
@@ -19858,7 +20224,8 @@ public class CoordTest3 {
         boolean boolean35 = coord29.equals((java.lang.Object) (byte) 1);
         int int36 = coord29.getL();
         java.lang.String str37 = coord29.toString();
-        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord40 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord43 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord46 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int47 = coord43.distanceFrom(coord46);
@@ -19868,7 +20235,8 @@ public class CoordTest3 {
         boolean boolean51 = coord40.estADistanceUn(coord43);
         boolean boolean54 = coord40.estDansPlateau((int) '#', 1);
         int int55 = coord29.distanceFrom(coord40);
-        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord58 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean61 = coord58.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean64 = coord58.estDansPlateau((int) ' ', (int) (byte) 1);
         int int65 = coord58.getL();
@@ -19930,10 +20298,12 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) ' ', (int) ' ');
-        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord35 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean38 = coord35.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord44 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -19984,7 +20354,8 @@ public class CoordTest3 {
         int int8 = coord2.getC();
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) 0);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) 0);
         boolean boolean14 = coord2.equals((java.lang.Object) coord13);
         fr.umontpellier.iut.algogen.Coord coord17 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 32);
         int int18 = coord17.getC();
@@ -20039,7 +20410,8 @@ public class CoordTest3 {
     public void test0951() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0951");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         int int9 = coord2.getL();
@@ -20078,7 +20450,8 @@ public class CoordTest3 {
         boolean boolean34 = coord22.estADistanceUn(coord29);
         boolean boolean35 = coord15.estADistanceUn(coord22);
         boolean boolean38 = coord22.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean42 = coord22.estADistanceUn(coord41);
         fr.umontpellier.iut.algogen.Coord coord45 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord48 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -20137,7 +20510,8 @@ public class CoordTest3 {
     public void test0953() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0953");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
         int int9 = coord2.getL();
@@ -20156,7 +20530,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord(101, 101);
         int int35 = coord34.getL();
         int int36 = coord34.getC();
-        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord39 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean42 = coord39.estDansPlateau((int) (byte) -1, (int) ' ');
         int int43 = coord39.getC();
         int int44 = coord39.getC();
@@ -20254,7 +20629,8 @@ public class CoordTest3 {
     public void test0956() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0956");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -20267,7 +20643,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -20347,7 +20724,8 @@ public class CoordTest3 {
         int int36 = coord32.distanceFrom(coord35);
         int int37 = coord35.getC();
         int int38 = coord27.distanceFrom(coord35);
-        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord41 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int42 = coord41.getL();
         int int43 = coord41.getC();
         int int44 = coord41.getL();
@@ -20419,7 +20797,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean29 = coord9.estADistanceUn(coord28);
         boolean boolean32 = coord28.estDansPlateau((int) ' ', (int) ' ');
         boolean boolean35 = coord28.estDansPlateau(1, 67);
@@ -20474,7 +20853,8 @@ public class CoordTest3 {
         boolean boolean62 = coord51.estADistanceUn(coord56);
         int int63 = coord46.distanceFrom(coord51);
         int int64 = coord30.distanceFrom(coord46);
-        fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean70 = coord67.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord76 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -20566,7 +20946,8 @@ public class CoordTest3 {
         boolean boolean62 = coord51.estADistanceUn(coord56);
         int int63 = coord46.distanceFrom(coord51);
         int int64 = coord30.distanceFrom(coord46);
-        fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord67 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean70 = coord67.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord76 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -20658,10 +21039,12 @@ public class CoordTest3 {
         java.lang.String str45 = coord38.toString();
         boolean boolean46 = coord2.equals((java.lang.Object) coord38);
         boolean boolean49 = coord38.estDansPlateau((-1), 32);
-        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord52 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean55 = coord52.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean58 = coord52.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord61 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean62 = coord52.estADistanceUn(coord61);
         fr.umontpellier.iut.algogen.Coord coord65 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord68 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -20765,7 +21148,8 @@ public class CoordTest3 {
     public void test0967() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0967");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         int int4 = coord2.getC();
         int int5 = coord2.getL();
@@ -20881,7 +21265,8 @@ public class CoordTest3 {
         int int55 = coord54.getL();
         boolean boolean56 = coord50.estADistanceUn(coord54);
         int int57 = coord41.distanceFrom(coord54);
-        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord60 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord63 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord66 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int67 = coord63.distanceFrom(coord66);
@@ -20949,7 +21334,8 @@ public class CoordTest3 {
     public void test0972() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0972");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         int int3 = coord2.getC();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         boolean boolean7 = coord2.equals((java.lang.Object) (byte) 100);
@@ -21083,14 +21469,16 @@ public class CoordTest3 {
         boolean boolean8 = coord2.estDansPlateau((int) '#', 0);
         int int9 = coord2.getL();
         java.lang.String str10 = coord2.toString();
-        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord13 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int14 = coord13.getL();
         int int15 = coord13.getC();
         int int16 = coord13.getL();
         int int17 = coord13.getL();
         boolean boolean19 = coord13.equals((java.lang.Object) (-1L));
         java.lang.String str20 = coord13.toString();
-        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord23 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean26 = coord23.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord32 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -21197,10 +21585,12 @@ public class CoordTest3 {
     public void test0977() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0977");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean5 = coord2.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean8 = coord2.estDansPlateau((int) ' ', (int) (byte) 1);
-        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean12 = coord2.estADistanceUn(coord11);
         fr.umontpellier.iut.algogen.Coord coord15 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord18 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -21292,7 +21682,8 @@ public class CoordTest3 {
         boolean boolean21 = coord9.estADistanceUn(coord16);
         boolean boolean22 = coord2.estADistanceUn(coord9);
         boolean boolean25 = coord9.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord28 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord31 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord34 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int35 = coord31.distanceFrom(coord34);
@@ -21628,10 +22019,12 @@ public class CoordTest3 {
         boolean boolean62 = coord50.estADistanceUn(coord57);
         boolean boolean63 = coord43.estADistanceUn(coord50);
         boolean boolean66 = coord50.estDansPlateau(0, (int) (short) 1);
-        fr.umontpellier.iut.algogen.Coord coord69 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord69 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean70 = coord50.estADistanceUn(coord69);
         int int71 = coord69.getL();
-        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord74 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int75 = coord74.getL();
         int int76 = coord74.getC();
         boolean boolean79 = coord74.estDansPlateau((int) (short) 1, 1);
@@ -21717,13 +22110,15 @@ public class CoordTest3 {
         java.lang.String str37 = coord31.toString();
         int int38 = coord31.getL();
         int int39 = coord26.distanceFrom(coord31);
-        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord42 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int43 = coord42.getL();
         int int44 = coord42.getC();
         int int45 = coord42.getL();
         int int46 = coord42.getL();
         boolean boolean48 = coord42.equals((java.lang.Object) (-1L));
-        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord51 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         fr.umontpellier.iut.algogen.Coord coord54 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord57 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         int int58 = coord54.distanceFrom(coord57);
@@ -21847,7 +22242,8 @@ public class CoordTest3 {
         java.lang.String str66 = coord54.toString();
         int int67 = coord54.getL();
         boolean boolean70 = coord54.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord73 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean76 = coord73.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean77 = coord54.estADistanceUn(coord73);
         java.lang.String str78 = coord73.toString();
@@ -21886,7 +22282,8 @@ public class CoordTest3 {
     public void test0991() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0991");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         boolean boolean5 = coord2.estDansPlateau((int) ' ', (int) 'a');
         fr.umontpellier.iut.algogen.Coord coord8 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         fr.umontpellier.iut.algogen.Coord coord11 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
@@ -21899,7 +22296,8 @@ public class CoordTest3 {
         fr.umontpellier.iut.algogen.Coord coord24 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 100, 0);
         int int25 = coord15.distanceFrom(coord24);
         boolean boolean26 = coord2.estADistanceUn(coord15);
-        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord29 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int30 = coord29.getL();
         int int31 = coord29.getC();
         boolean boolean32 = coord2.estADistanceUn(coord29);
@@ -22036,7 +22434,8 @@ public class CoordTest3 {
     public void test0995() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest1.test0995");
-        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int3 = coord2.getL();
         fr.umontpellier.iut.algogen.Coord coord6 = new fr.umontpellier.iut.algogen.Coord(0, (int) (short) -1);
         java.lang.String str7 = coord6.toString();
@@ -22049,7 +22448,8 @@ public class CoordTest3 {
         java.lang.String str18 = coord6.toString();
         int int19 = coord6.getL();
         boolean boolean22 = coord6.estDansPlateau((int) (short) -1, (int) (short) 0);
-        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (short) 0);
+        fr.umontpellier.iut.algogen.Coord coord25 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (short) 0);
         boolean boolean28 = coord25.estDansPlateau((int) (byte) -1, (int) ' ');
         boolean boolean29 = coord6.estADistanceUn(coord25);
         boolean boolean30 = coord2.equals((java.lang.Object) coord25);
@@ -22262,7 +22662,8 @@ public class CoordTest3 {
         java.lang.String str50 = coord13.toString();
         java.lang.String str51 = coord13.toString();
         int int52 = coord2.distanceFrom(coord13);
-        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1, (int) (byte) -1);
+        fr.umontpellier.iut.algogen.Coord coord55 = new fr.umontpellier.iut.algogen.Coord((int) (short) -1,
+                (int) (byte) -1);
         int int56 = coord55.getL();
         int int57 = coord55.getC();
         boolean boolean60 = coord55.estDansPlateau((int) (short) 1, 1);
@@ -22332,4 +22733,3 @@ public class CoordTest3 {
         org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
     }
 }
-

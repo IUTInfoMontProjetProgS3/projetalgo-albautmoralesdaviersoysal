@@ -15,8 +15,6 @@ import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSmartCrossingTest {
 
-
-
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
@@ -55,41 +53,41 @@ public class GDBHSmartCrossingTest {
 		individu1.trajet.add('b');
 		individu1.trajet.add('d');
 		individu1.trajet.add('d');
-		int distance= 0;
+		int distance = 0;
 		Coord previous = sp4;
-		for(char c : individu.trajet) {
+		for (char c : individu.trajet) {
 			Coord next = individu.calculerNextCoord(previous, c);
-			distance+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
-		int distance1= 0;
+		int distance1 = 0;
 		previous = sp4;
-		for(char c : individu1.trajet) {
+		for (char c : individu1.trajet) {
 			Coord next = individu1.calculerNextCoord(previous, c);
-			distance1+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance1 += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
 		GDBHSmartCrossing result = individu1.calculerCroisement(individu);
-		int distance2= 0;
+		int distance2 = 0;
 		previous = sp4;
-		for(char c : result.trajet) {
+		for (char c : result.trajet) {
 			Coord next = result.calculerNextCoord(previous, c);
-			distance2+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance2 += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
-		assertEquals(10,distance);
-		assertEquals(10,distance1);
-		assertEquals(10,distance2);
+		assertEquals(10, distance);
+		assertEquals(10, distance1);
+		assertEquals(10, distance2);
 
 		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
 		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
-	
+
 	}
 
 	@Test
@@ -128,8 +126,6 @@ public class GDBHSmartCrossingTest {
 		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
 		assertTrue(in4.estValide(individu.calculerSol()));
 
-	
-	
 	}
 
 }

@@ -18,7 +18,6 @@ public class GDBHSmartCrossingSmartMutTest {
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
-
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
@@ -54,41 +53,41 @@ public class GDBHSmartCrossingSmartMutTest {
 		individu1.trajet.add('b');
 		individu1.trajet.add('d');
 		individu1.trajet.add('d');
-		int distance= 0;
+		int distance = 0;
 		Coord previous = sp4;
-		for(char c : individu.trajet) {
+		for (char c : individu.trajet) {
 			Coord next = individu.calculerNextCoord(previous, c);
-			distance+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
-		int distance1= 0;
+		int distance1 = 0;
 		previous = sp4;
-		for(char c : individu1.trajet) {
+		for (char c : individu1.trajet) {
 			Coord next = individu1.calculerNextCoord(previous, c);
-			distance1+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance1 += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
 		GDBHSmartCrossing result = individu1.calculerCroisement(individu);
-		int distance2= 0;
+		int distance2 = 0;
 		previous = sp4;
-		for(char c : result.trajet) {
+		for (char c : result.trajet) {
 			Coord next = result.calculerNextCoord(previous, c);
-			distance2+=(next.distanceFrom(previous));
-			previous=next;
-			
+			distance2 += (next.distanceFrom(previous));
+			previous = next;
+
 		}
 
-		assertEquals(10,distance);
-		assertEquals(10,distance1);
-		assertEquals(10,distance2);
+		assertEquals(10, distance);
+		assertEquals(10, distance1);
+		assertEquals(10, distance2);
 
 		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
 		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
-	
+
 	}
 
 	@Test
@@ -148,17 +147,13 @@ public class GDBHSmartCrossingSmartMutTest {
 		individu2.trajet.add('d');
 		individu2.trajet.add('b');
 
+		assertTrue(individu.trajet.equals(individu2.trajet));
+		individu1.normaliseTrajet();
+		individu2.normaliseTrajet();
 
-		
-
-			assertTrue(individu.trajet.equals(individu2.trajet));
-			individu1.normaliseTrajet();
-			individu2.normaliseTrajet();
-		
 		assertTrue(in4.estValide(individu1.calculerSol()));
 		assertTrue(in4.estValide(individu2.calculerSol()));
 
-	
 	}
 
 	@Test
@@ -211,22 +206,20 @@ public class GDBHSmartCrossingSmartMutTest {
 		individu4.trajet.add('d');
 		individu4.trajet.add('b');
 		individu4.trajet.add('d');
-		GDBHSmartCrossingSmartMut 	result = null;
+		GDBHSmartCrossingSmartMut result = null;
 		ArrayList<Boolean> equals = new ArrayList<>();
-		for(int i =0 ;i<30 ;i++) {
-		result = individu.calculerMutation();
-		assertTrue(result.trajet.equals(individu1.trajet)||result.trajet.equals(individu2.trajet));
-		result = individu_.calculerMutation();
-		assertTrue(result.trajet.equals(individu3.trajet)||result.trajet.equals(individu4.trajet));
+		for (int i = 0; i < 30; i++) {
+			result = individu.calculerMutation();
+			assertTrue(result.trajet.equals(individu1.trajet) || result.trajet.equals(individu2.trajet));
+			result = individu_.calculerMutation();
+			assertTrue(result.trajet.equals(individu3.trajet) || result.trajet.equals(individu4.trajet));
 
 		}
-		
-		
+
 		assertNotEquals(30, Collections.frequency(equals, true));
 		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
 		assertTrue(in4.estValide(individu.calculerSol()));
 
-	
 	}
 
 }
