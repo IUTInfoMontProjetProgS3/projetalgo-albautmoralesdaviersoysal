@@ -4,6 +4,7 @@ import fr.umontpellier.iut.algogen.fabriques.*;
 import fr.umontpellier.iut.algogen.individus.*;
 
 import java.util.Random;
+//test ~ pablito
 
 class App {
 
