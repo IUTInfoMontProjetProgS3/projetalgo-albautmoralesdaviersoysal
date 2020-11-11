@@ -28,3 +28,6 @@ Class principal:
  - src/main/java/fr/umontpellier/iut/algogen/AlgoGenetique.java
  - src/main/java/fr/umontpellier/iut/algogen/Solution.java
  - src/main/java/fr/umontpellier/iut/algogen/App.java
+
+Test:
+ - src/test/**
