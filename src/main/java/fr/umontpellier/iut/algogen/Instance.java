@@ -4,6 +4,23 @@ import fr.umontpellier.iut.algogen.individus.PermutSimple;
 
 import java.util.ArrayList;
 
+/**
+ * <b>Instance est la classe représentant l'instance d'un jeu.</b>
+ * <p>
+ * Un objet Instance est caractérisé par les informations suivantes :
+ * <ul>
+ * <li>Une plateau de taille nxm.</li>
+ * <li>Une case de départ.</li>
+ * <li>Un nombre de pas autorisé.</li>
+ * <li>Une liste des coordonnées des pièces sur le plateau.</li>
+ * </ul>
+ * </p>
+ * <p>
+ * De plus, une Instance si une solution proposée est valide ou pas.
+ * </p>
+ * 
+ * @version 1.0
+ */
 public class Instance {
     private Coord startingP;
     private int k;

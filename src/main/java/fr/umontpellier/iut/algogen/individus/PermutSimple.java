@@ -4,6 +4,14 @@ import java.util.ArrayList;
 
 import fr.umontpellier.iut.algogen.Instance;
 
+/**
+ * PermutSimple est la classe représentant un encodage qui fournit une
+ * ifnormation sur le positionnement des pièces dans al grille, il est généré en
+ * fonction de l'ordre avec le quel on récolte les pièces.
+ * 
+ * @see IIndividu
+ * @version 1.0
+ */
 public class PermutSimple extends IndividuPermut<PermutSimple> {
     public PermutSimple(Instance instance, ArrayList<Integer> p) {
         super(instance, p);

@@ -6,6 +6,25 @@ import fr.umontpellier.iut.algogen.fabriques.ICreator;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
 
+/**
+ * <b>AlgoGenetique est la classe représentant un système de résolution.</b>
+ * <p>
+ * Une instance de AlgoGenetique est caractérisé par les informations suivantes :
+ * <ul>
+ * <li>Une {@code Instance}.</li>
+ * <li>Un {@code ICreator} createur d'individu.</li>
+ * <li>et optionnellement {@code StrategieCalculNextGen}.</li>
+ * </ul>
+ * </p>
+ * <p>
+ * De plus, un Zéro a une liste d'amis Zéro. Le membre pourra ajouter ou enlever
+ * des amis à cette liste.
+ * </p>
+ * 
+ * @see IIndividu
+ * 
+ * @version 1.0
+ */
 class AlgoGenetique<T extends IIndividu<T>> {
 
     /**

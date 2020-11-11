@@ -4,6 +4,14 @@ import java.util.ArrayList;
 
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 
+/**
+ * StrategieCalculNextGen est la classe qui permet de récupérer la nouvelle
+ * génération en fonction de la population initial et en suivant trois étapes
+ * principales (Sélection, Mutation, Croisement).
+ * 
+ * @see IIndividu
+ * @version 1.0
+ */
 public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
 
    /**

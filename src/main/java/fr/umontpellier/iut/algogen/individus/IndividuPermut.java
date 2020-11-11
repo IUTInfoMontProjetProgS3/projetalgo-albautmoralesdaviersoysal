@@ -6,6 +6,14 @@ import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
+/**
+ * IndividuPermut est la classe représentant un encodage qui fournit une
+ * ifnormation sur le positionnement des pièces dans al grille, il est généré en
+ * fonction de l'ordre avec le quel on récolte les pièces.
+ * 
+ * @see IIndividu
+ * @version 1.0
+ */
 public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIndividu<T> {
     protected Instance instance;
     protected ArrayList<Integer> permut;

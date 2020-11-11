@@ -7,6 +7,14 @@ import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
+/**
+ * IndividuGDBH est la classe représentant un encodage consistant à créer k
+ * mouvement aléatoire ou chaque mouvement peut prendre une des 4 direction : G,
+ * D, H, B
+ * 
+ * @see IIndividu
+ * @version 1.0
+ */
 public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndividu<T> {
     protected Instance instance;
     public ArrayList<Character> trajet;

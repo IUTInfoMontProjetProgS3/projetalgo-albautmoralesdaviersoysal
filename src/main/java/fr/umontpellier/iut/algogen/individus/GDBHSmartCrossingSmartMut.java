@@ -32,8 +32,10 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     /**
      * @param individu2 : Un deuxieme individu Faire le croisement intelligent entre this
      *           et i2 comme dans le texte.
-     * @return un individu fils de type GDBHSimple.
+     * @return un individu fils de type GDBHSmartCrossingSmartMut.
      * 
+     * 
+     * Cette fonction est la même que GDBHSmartCrossing
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
         return null;
