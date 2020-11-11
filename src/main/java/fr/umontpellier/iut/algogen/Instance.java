@@ -11,9 +11,9 @@ public class Instance {
     private ArrayList<Coord> listeCoordPieces;
 
     /**
-     * @param plateau  : grille du jeu
-     * @param coordDepart  : coordonnée de depart
-     * @param k : nombre de pas autorisé
+     * @param plateau     : grille du jeu
+     * @param coordDepart : coordonnée de depart
+     * @param k           : nombre de pas autorisé
      * 
      **/
     public Instance(boolean[][] plateau, Coord coordDepart, int k) {
@@ -120,14 +120,11 @@ public class Instance {
             for (int c = 0; c < getNbC(); c++) {
                 if (solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("!");
-                }
-                if (!solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
+                } else if (!solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("x");
-                }
-                if (solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                } else if (solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append("o");
-                }
-                if (!solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                } else if (!solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append(".");
                 }
             }
