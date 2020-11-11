@@ -1,0 +1,33 @@
+Individu:
+ - src/main/java/fr/umontpellier/iut/algogen/individus/*
+
+Stratégie:
+ - src/main/java/fr/umontpellier/iut/algogen/strategies/*
+
+Fabrique:
+ - src/main/java/fr/umontpellier/iut/algogen/fabriques/*
+
+Coord:
+ - src/main/java/fr/umontpellier/iut/algogen/Coord.java
+
+Instance:
+ - src/main/java/fr/umontpellier/iut/algogen/Instance.java
+
+AlgoGenetique:
+ - src/main/java/fr/umontpellier/iut/algogen/AlgoGenetique.java
+
+Solution:
+ - src/main/java/fr/umontpellier/iut/algogen/Solution.java
+
+App:
+ - src/main/java/fr/umontpellier/iut/algogen/App.java
+
+Class principal:
+ - src/main/java/fr/umontpellier/iut/algogen/Instance.java
+ - src/main/java/fr/umontpellier/iut/algogen/Coord.java
+ - src/main/java/fr/umontpellier/iut/algogen/AlgoGenetique.java
+ - src/main/java/fr/umontpellier/iut/algogen/Solution.java
+ - src/main/java/fr/umontpellier/iut/algogen/App.java
+
+Test:
+ - src/test/**
