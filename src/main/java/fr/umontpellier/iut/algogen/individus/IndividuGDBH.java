@@ -32,17 +32,21 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     static Coord calculerNextCoord(Coord coordonnee, char direction) {
         int prochaineLigne = coordonnee.getL();
         int prochaineColonne = coordonnee.getC();
-        if (direction == 'h') {
-            prochaineLigne--;
-        }
-        if (direction == 'b') {
-            prochaineLigne++;
-        }
-        if (direction == 'g') {
-            prochaineColonne--;
-        }
-        if (direction == 'd') {
-            prochaineColonne++;
+        switch (direction) {
+            case 'h':
+                prochaineLigne--;
+                break;
+            case 'b':
+                prochaineLigne++;
+                break;
+            case 'g':
+                prochaineColonne--;
+                break;
+            case 'd':
+                prochaineColonne++;
+                break;
+            default:
+                break;
         }
         return new Coord(prochaineLigne, prochaineColonne);
     }
