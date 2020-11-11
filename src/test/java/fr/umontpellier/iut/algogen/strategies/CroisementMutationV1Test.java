@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -16,6 +17,7 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
 
 public class CroisementMutationV1Test<T extends IIndividu<T>> {
 
+	@Ignore
 	@Test
 	public void testCroisementPuisMutation() throws Exception {
 
@@ -58,6 +60,7 @@ public class CroisementMutationV1Test<T extends IIndividu<T>> {
 
 	}
 
+	@Ignore
 	@Test
 	public void testSelectionRoulette() throws Exception {
 
@@ -124,6 +127,7 @@ public class CroisementMutationV1Test<T extends IIndividu<T>> {
 		return sum;
 	}
 
+	@Ignore
 	@Test
 	public void testSelectionParents() throws Exception {
 

@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -18,6 +19,7 @@ import fr.umontpellier.iut.algogen.fabriques.CreationIndividuPermut;
 
 public class IndividuPermutTest {
 
+	@Disabled
 	@Test
 	public void testIndividuPermutInstance() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -40,6 +42,7 @@ public class IndividuPermutTest {
 		assertEquals(50, individu.get(0).permut.size());
 	}
 
+	@Disabled
 	@Test
 	public void testPlusCourtChemin() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -65,6 +68,7 @@ public class IndividuPermutTest {
 		assertTrue(res.equals(individu.get(0).plusCourtChemin(sp4, new Coord(4, 4))));
 	}
 
+	@Disabled
 	@Test
 	public void testCalculerSol() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -100,6 +104,7 @@ public class IndividuPermutTest {
 		assertTrue(s.equals(individu.get(0).calculerSol()));
 	}
 
+	@Disabled
 	@Test
 	public void testEvaluerFitness() throws Exception {
 		boolean[][] p4 = new boolean[10][10];

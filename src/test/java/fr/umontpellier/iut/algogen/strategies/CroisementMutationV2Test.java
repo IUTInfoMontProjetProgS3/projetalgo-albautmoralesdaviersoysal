@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -15,6 +16,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
 
 public class CroisementMutationV2Test {
 
+	@Ignore
 	@Test
 	public void testCalculerNextGen() throws Exception {
 
@@ -56,6 +58,7 @@ public class CroisementMutationV2Test {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testSelectionRoulette() throws Exception {
 
@@ -122,6 +125,7 @@ public class CroisementMutationV2Test {
 		return sum;
 	}
 
+	@Ignore
 	@Test
 	public void testSelectionParents() throws Exception {
 
