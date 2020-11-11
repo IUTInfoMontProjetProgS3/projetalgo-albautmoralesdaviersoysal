@@ -3,12 +3,14 @@ package Coord;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import fr.umontpellier.iut.algogen.Coord;
 
 public class CoordTest1 {
 
+	@Ignore
 	@Test
 	public void testEstDansPlateau() throws Exception {
 		int nbL = 10, nbC = 10;
@@ -25,6 +27,7 @@ public class CoordTest1 {
 		assertTrue(new Coord(49, 49).estDansPlateau(nbL2, nbC2));
 	}
 
+	@Ignore
 	@Test
 	public void testEstADistanceUn() throws Exception {
 		int l = 0, c = 1;
@@ -35,6 +38,7 @@ public class CoordTest1 {
 
 	}
 
+	@Ignore
 	@Test
 	public void testDistanceFrom() throws Exception {
 		Coord start = new Coord(0, 0);

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -16,6 +17,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 
 public class IndividuGDBHTest {
 
+	@Ignore
 	@Test
 	public void testIndividuGDBHInstance() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -43,6 +45,7 @@ public class IndividuGDBHTest {
 
 	}
 
+	@Ignore
 	@Test
 	public void testIndividuGDBHInstanceSolution() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -84,6 +87,7 @@ public class IndividuGDBHTest {
 		assertTrue(trajet.equals(individu.trajet));
 	}
 
+	@Ignore
 	@Test
 	public void testCalculerSol() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -126,6 +130,7 @@ public class IndividuGDBHTest {
 
 	}
 
+	@Ignore
 	@Test
 	public void testEvaluerFitness() throws Exception {
 		boolean[][] p4 = new boolean[10][10];

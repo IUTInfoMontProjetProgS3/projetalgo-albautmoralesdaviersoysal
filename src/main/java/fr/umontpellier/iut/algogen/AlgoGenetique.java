@@ -1,5 +1,7 @@
 package fr.umontpellier.iut.algogen;
 
+import java.util.ArrayList;
+
 import fr.umontpellier.iut.algogen.fabriques.ICreator;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;

@@ -2,6 +2,7 @@ package Coord;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.runners.MethodSorters;
 
 import fr.umontpellier.iut.algogen.Coord;
@@ -11,6 +12,7 @@ public class CoordTest6 {
 
     public static boolean debug = false;
 
+    @Ignore
     @Test
     public void test2001() throws Throwable {
         if (debug)
@@ -60,6 +62,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + true + "'", boolean44 == true);
     }
 
+    @Ignore
     @Test
     public void test2002() throws Throwable {
         if (debug)
@@ -112,6 +115,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str43 + "' != '" + "(100,0)" + "'", str43, "(100,0)");
     }
 
+    @Ignore
     @Test
     public void test2003() throws Throwable {
         if (debug)
@@ -197,6 +201,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int86 + "' != '" + 151 + "'", int86 == 151);
     }
 
+    @Ignore
     @Test
     public void test2004() throws Throwable {
         if (debug)
@@ -204,6 +209,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(279, 135);
     }
 
+    @Ignore
     @Test
     public void test2005() throws Throwable {
         if (debug)
@@ -213,6 +219,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
+    @Ignore
     @Test
     public void test2006() throws Throwable {
         if (debug)
@@ -289,6 +296,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int81 + "' != '" + (-1) + "'", int81 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2007() throws Throwable {
         if (debug)
@@ -336,6 +344,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
     }
 
+    @Ignore
     @Test
     public void test2008() throws Throwable {
         if (debug)
@@ -419,6 +428,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
     }
 
+    @Ignore
     @Test
     public void test2009() throws Throwable {
         if (debug)
@@ -473,6 +483,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2010() throws Throwable {
         if (debug)
@@ -511,6 +522,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int42 + "' != '" + 110 + "'", int42 == 110);
     }
 
+    @Ignore
     @Test
     public void test2011() throws Throwable {
         if (debug)
@@ -551,6 +563,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
     }
 
+    @Ignore
     @Test
     public void test2012() throws Throwable {
         if (debug)
@@ -575,6 +588,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
     }
 
+    @Ignore
     @Test
     public void test2013() throws Throwable {
         if (debug)
@@ -655,6 +669,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + false + "'", boolean72 == false);
     }
 
+    @Ignore
     @Test
     public void test2014() throws Throwable {
         if (debug)
@@ -707,6 +722,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int50 + "' != '" + 111 + "'", int50 == 111);
     }
 
+    @Ignore
     @Test
     public void test2015() throws Throwable {
         if (debug)
@@ -743,6 +759,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int22 + "' != '" + 100 + "'", int22 == 100);
     }
 
+    @Ignore
     @Test
     public void test2016() throws Throwable {
         if (debug)
@@ -812,6 +829,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + true + "'", boolean68 == true);
     }
 
+    @Ignore
     @Test
     public void test2017() throws Throwable {
         if (debug)
@@ -821,6 +839,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
     }
 
+    @Ignore
     @Test
     public void test2018() throws Throwable {
         if (debug)
@@ -916,6 +935,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int94 + "' != '" + 0 + "'", int94 == 0);
     }
 
+    @Ignore
     @Test
     public void test2019() throws Throwable {
         if (debug)
@@ -925,6 +945,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
     }
 
+    @Ignore
     @Test
     public void test2020() throws Throwable {
         if (debug)
@@ -987,6 +1008,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str53 + "' != '" + "(-1,0)" + "'", str53, "(-1,0)");
     }
 
+    @Ignore
     @Test
     public void test2021() throws Throwable {
         if (debug)
@@ -994,6 +1016,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(271, 0);
     }
 
+    @Ignore
     @Test
     public void test2022() throws Throwable {
         if (debug)
@@ -1030,6 +1053,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
     }
 
+    @Ignore
     @Test
     public void test2023() throws Throwable {
         if (debug)
@@ -1103,6 +1127,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int72 + "' != '" + 32 + "'", int72 == 32);
     }
 
+    @Ignore
     @Test
     public void test2024() throws Throwable {
         if (debug)
@@ -1112,6 +1137,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(1,35)" + "'", str3, "(1,35)");
     }
 
+    @Ignore
     @Test
     public void test2025() throws Throwable {
         if (debug)
@@ -1167,6 +1193,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int50 + "' != '" + (-1) + "'", int50 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2026() throws Throwable {
         if (debug)
@@ -1176,6 +1203,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(-1,52)" + "'", str3, "(-1,52)");
     }
 
+    @Ignore
     @Test
     public void test2027() throws Throwable {
         if (debug)
@@ -1226,6 +1254,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
     }
 
+    @Ignore
     @Test
     public void test2028() throws Throwable {
         if (debug)
@@ -1299,6 +1328,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean71 + "' != '" + false + "'", boolean71 == false);
     }
 
+    @Ignore
     @Test
     public void test2029() throws Throwable {
         if (debug)
@@ -1337,6 +1367,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
     }
 
+    @Ignore
     @Test
     public void test2030() throws Throwable {
         if (debug)
@@ -1421,6 +1452,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str79 + "' != '" + "(0,-1)" + "'", str79, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2031() throws Throwable {
         if (debug)
@@ -1497,6 +1529,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass71);
     }
 
+    @Ignore
     @Test
     public void test2032() throws Throwable {
         if (debug)
@@ -1530,6 +1563,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str35 + "' != '" + "(0,-1)" + "'", str35, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2033() throws Throwable {
         if (debug)
@@ -1579,6 +1613,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
     }
 
+    @Ignore
     @Test
     public void test2034() throws Throwable {
         if (debug)
@@ -1603,6 +1638,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + 100 + "'", int18 == 100);
     }
 
+    @Ignore
     @Test
     public void test2035() throws Throwable {
         if (debug)
@@ -1610,6 +1646,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(151, (int) (short) 10);
     }
 
+    @Ignore
     @Test
     public void test2036() throws Throwable {
         if (debug)
@@ -1634,6 +1671,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
     }
 
+    @Ignore
     @Test
     public void test2037() throws Throwable {
         if (debug)
@@ -1673,6 +1711,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int40 + "' != '" + 210 + "'", int40 == 210);
     }
 
+    @Ignore
     @Test
     public void test2038() throws Throwable {
         if (debug)
@@ -1761,6 +1800,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int83 + "' != '" + 123 + "'", int83 == 123);
     }
 
+    @Ignore
     @Test
     public void test2039() throws Throwable {
         if (debug)
@@ -1850,6 +1890,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean85 + "' != '" + false + "'", boolean85 == false);
     }
 
+    @Ignore
     @Test
     public void test2040() throws Throwable {
         if (debug)
@@ -1925,6 +1966,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int71 + "' != '" + 31 + "'", int71 == 31);
     }
 
+    @Ignore
     @Test
     public void test2041() throws Throwable {
         if (debug)
@@ -2005,6 +2047,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
     }
 
+    @Ignore
     @Test
     public void test2042() throws Throwable {
         if (debug)
@@ -2029,6 +2072,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int22 + "' != '" + 0 + "'", int22 == 0);
     }
 
+    @Ignore
     @Test
     public void test2043() throws Throwable {
         if (debug)
@@ -2117,6 +2161,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean86 + "' != '" + false + "'", boolean86 == false);
     }
 
+    @Ignore
     @Test
     public void test2044() throws Throwable {
         if (debug)
@@ -2192,6 +2237,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean74 + "' != '" + false + "'", boolean74 == false);
     }
 
+    @Ignore
     @Test
     public void test2045() throws Throwable {
         if (debug)
@@ -2199,6 +2245,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(200, 9);
     }
 
+    @Ignore
     @Test
     public void test2046() throws Throwable {
         if (debug)
@@ -2206,6 +2253,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(21, (int) (short) 0);
     }
 
+    @Ignore
     @Test
     public void test2047() throws Throwable {
         if (debug)
@@ -2239,6 +2287,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int33 + "' != '" + (-1) + "'", int33 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2048() throws Throwable {
         if (debug)
@@ -2262,6 +2311,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass19);
     }
 
+    @Ignore
     @Test
     public void test2049() throws Throwable {
         if (debug)
@@ -2349,6 +2399,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean82 + "' != '" + false + "'", boolean82 == false);
     }
 
+    @Ignore
     @Test
     public void test2050() throws Throwable {
         if (debug)
@@ -2390,6 +2441,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int35 + "' != '" + 0 + "'", int35 == 0);
     }
 
+    @Ignore
     @Test
     public void test2051() throws Throwable {
         if (debug)
@@ -2455,6 +2507,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str61 + "' != '" + "(33,0)" + "'", str61, "(33,0)");
     }
 
+    @Ignore
     @Test
     public void test2052() throws Throwable {
         if (debug)
@@ -2523,6 +2576,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean71 + "' != '" + true + "'", boolean71 == true);
     }
 
+    @Ignore
     @Test
     public void test2053() throws Throwable {
         if (debug)
@@ -2530,6 +2584,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(210, 31);
     }
 
+    @Ignore
     @Test
     public void test2054() throws Throwable {
         if (debug)
@@ -2608,6 +2663,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean74 + "' != '" + true + "'", boolean74 == true);
     }
 
+    @Ignore
     @Test
     public void test2055() throws Throwable {
         if (debug)
@@ -2617,6 +2673,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(133,127)" + "'", str3, "(133,127)");
     }
 
+    @Ignore
     @Test
     public void test2056() throws Throwable {
         if (debug)
@@ -2624,6 +2681,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(276, (int) (byte) 1);
     }
 
+    @Ignore
     @Test
     public void test2057() throws Throwable {
         if (debug)
@@ -2684,6 +2742,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
     }
 
+    @Ignore
     @Test
     public void test2058() throws Throwable {
         if (debug)
@@ -2787,6 +2846,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean98 + "' != '" + false + "'", boolean98 == false);
     }
 
+    @Ignore
     @Test
     public void test2059() throws Throwable {
         if (debug)
@@ -2794,6 +2854,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(43, 68);
     }
 
+    @Ignore
     @Test
     public void test2060() throws Throwable {
         if (debug)
@@ -2872,6 +2933,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean85 + "' != '" + false + "'", boolean85 == false);
     }
 
+    @Ignore
     @Test
     public void test2061() throws Throwable {
         if (debug)
@@ -2955,6 +3017,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean91 + "' != '" + false + "'", boolean91 == false);
     }
 
+    @Ignore
     @Test
     public void test2062() throws Throwable {
         if (debug)
@@ -2972,6 +3035,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2063() throws Throwable {
         if (debug)
@@ -3076,6 +3140,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass92);
     }
 
+    @Ignore
     @Test
     public void test2064() throws Throwable {
         if (debug)
@@ -3145,6 +3210,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int68 + "' != '" + 100 + "'", int68 == 100);
     }
 
+    @Ignore
     @Test
     public void test2065() throws Throwable {
         if (debug)
@@ -3170,6 +3236,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
     }
 
+    @Ignore
     @Test
     public void test2066() throws Throwable {
         if (debug)
@@ -3219,6 +3286,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
     }
 
+    @Ignore
     @Test
     public void test2067() throws Throwable {
         if (debug)
@@ -3231,6 +3299,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 100 + "'", int6 == 100);
     }
 
+    @Ignore
     @Test
     public void test2068() throws Throwable {
         if (debug)
@@ -3307,6 +3376,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + false + "'", boolean69 == false);
     }
 
+    @Ignore
     @Test
     public void test2069() throws Throwable {
         if (debug)
@@ -3314,6 +3384,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(140, 480);
     }
 
+    @Ignore
     @Test
     public void test2070() throws Throwable {
         if (debug)
@@ -3321,6 +3392,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(31, 236);
     }
 
+    @Ignore
     @Test
     public void test2071() throws Throwable {
         if (debug)
@@ -3330,6 +3402,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 54 + "'", int3 == 54);
     }
 
+    @Ignore
     @Test
     public void test2072() throws Throwable {
         if (debug)
@@ -3423,6 +3496,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int84 + "' != '" + 0 + "'", int84 == 0);
     }
 
+    @Ignore
     @Test
     public void test2073() throws Throwable {
         if (debug)
@@ -3496,6 +3570,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int76 + "' != '" + 164 + "'", int76 == 164);
     }
 
+    @Ignore
     @Test
     public void test2074() throws Throwable {
         if (debug)
@@ -3568,6 +3643,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str74 + "' != '" + "(0,-1)" + "'", str74, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2075() throws Throwable {
         if (debug)
@@ -3601,6 +3677,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str34 + "' != '" + "(1,35)" + "'", str34, "(1,35)");
     }
 
+    @Ignore
     @Test
     public void test2076() throws Throwable {
         if (debug)
@@ -3616,6 +3693,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass10);
     }
 
+    @Ignore
     @Test
     public void test2077() throws Throwable {
         if (debug)
@@ -3625,6 +3703,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 231 + "'", int3 == 231);
     }
 
+    @Ignore
     @Test
     public void test2078() throws Throwable {
         if (debug)
@@ -3677,6 +3756,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str51 + "' != '" + "(-1,-1)" + "'", str51, "(-1,-1)");
     }
 
+    @Ignore
     @Test
     public void test2079() throws Throwable {
         if (debug)
@@ -3699,6 +3779,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
     }
 
+    @Ignore
     @Test
     public void test2080() throws Throwable {
         if (debug)
@@ -3721,6 +3802,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
     }
 
+    @Ignore
     @Test
     public void test2081() throws Throwable {
         if (debug)
@@ -3774,6 +3856,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + false + "'", boolean48 == false);
     }
 
+    @Ignore
     @Test
     public void test2082() throws Throwable {
         if (debug)
@@ -3843,6 +3926,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str68 + "' != '" + "(100,10)" + "'", str68, "(100,10)");
     }
 
+    @Ignore
     @Test
     public void test2083() throws Throwable {
         if (debug)
@@ -3893,6 +3977,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2084() throws Throwable {
         if (debug)
@@ -3978,6 +4063,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean89 + "' != '" + false + "'", boolean89 == false);
     }
 
+    @Ignore
     @Test
     public void test2085() throws Throwable {
         if (debug)
@@ -4055,6 +4141,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass67);
     }
 
+    @Ignore
     @Test
     public void test2086() throws Throwable {
         if (debug)
@@ -4118,6 +4205,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + false + "'", boolean59 == false);
     }
 
+    @Ignore
     @Test
     public void test2087() throws Throwable {
         if (debug)
@@ -4131,6 +4219,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2088() throws Throwable {
         if (debug)
@@ -4187,6 +4276,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str56 + "' != '" + "(0,-1)" + "'", str56, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2089() throws Throwable {
         if (debug)
@@ -4199,6 +4289,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "(35,52)" + "'", str7, "(35,52)");
     }
 
+    @Ignore
     @Test
     public void test2090() throws Throwable {
         if (debug)
@@ -4236,6 +4327,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
     }
 
+    @Ignore
     @Test
     public void test2091() throws Throwable {
         if (debug)
@@ -4311,6 +4403,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str67 + "' != '" + "(32,0)" + "'", str67, "(32,0)");
     }
 
+    @Ignore
     @Test
     public void test2092() throws Throwable {
         if (debug)
@@ -4334,6 +4427,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "(0,-1)" + "'", str15, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2093() throws Throwable {
         if (debug)
@@ -4421,6 +4515,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean90 + "' != '" + false + "'", boolean90 == false);
     }
 
+    @Ignore
     @Test
     public void test2094() throws Throwable {
         if (debug)
@@ -4428,6 +4523,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(149, 74);
     }
 
+    @Ignore
     @Test
     public void test2095() throws Throwable {
         if (debug)
@@ -4468,6 +4564,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 100 + "'", int20 == 100);
     }
 
+    @Ignore
     @Test
     public void test2096() throws Throwable {
         if (debug)
@@ -4500,6 +4597,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass31);
     }
 
+    @Ignore
     @Test
     public void test2097() throws Throwable {
         if (debug)
@@ -4507,6 +4605,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(85, 105);
     }
 
+    @Ignore
     @Test
     public void test2098() throws Throwable {
         if (debug)
@@ -4587,6 +4686,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int78 + "' != '" + 2 + "'", int78 == 2);
     }
 
+    @Ignore
     @Test
     public void test2099() throws Throwable {
         if (debug)
@@ -4641,6 +4741,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass51);
     }
 
+    @Ignore
     @Test
     public void test2100() throws Throwable {
         if (debug)
@@ -4723,6 +4824,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean85 + "' != '" + false + "'", boolean85 == false);
     }
 
+    @Ignore
     @Test
     public void test2101() throws Throwable {
         if (debug)
@@ -4783,6 +4885,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int60 + "' != '" + (-1) + "'", int60 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2102() throws Throwable {
         if (debug)
@@ -4792,6 +4895,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 32 + "'", int3 == 32);
     }
 
+    @Ignore
     @Test
     public void test2103() throws Throwable {
         if (debug)
@@ -4814,6 +4918,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
     }
 
+    @Ignore
     @Test
     public void test2104() throws Throwable {
         if (debug)
@@ -4858,6 +4963,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str40 + "' != '" + "(99,11)" + "'", str40, "(99,11)");
     }
 
+    @Ignore
     @Test
     public void test2105() throws Throwable {
         if (debug)
@@ -4904,6 +5010,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass38);
     }
 
+    @Ignore
     @Test
     public void test2106() throws Throwable {
         if (debug)
@@ -4997,6 +5104,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass93);
     }
 
+    @Ignore
     @Test
     public void test2107() throws Throwable {
         if (debug)
@@ -5079,6 +5187,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int90 + "' != '" + 33 + "'", int90 == 33);
     }
 
+    @Ignore
     @Test
     public void test2108() throws Throwable {
         if (debug)
@@ -5149,6 +5258,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + false + "'", boolean68 == false);
     }
 
+    @Ignore
     @Test
     public void test2109() throws Throwable {
         if (debug)
@@ -5199,6 +5309,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int48 + "' != '" + 0 + "'", int48 == 0);
     }
 
+    @Ignore
     @Test
     public void test2110() throws Throwable {
         if (debug)
@@ -5234,6 +5345,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "(-1,-1)" + "'", str30, "(-1,-1)");
     }
 
+    @Ignore
     @Test
     public void test2111() throws Throwable {
         if (debug)
@@ -5243,6 +5355,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 101 + "'", int3 == 101);
     }
 
+    @Ignore
     @Test
     public void test2112() throws Throwable {
         if (debug)
@@ -5300,6 +5413,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + false + "'", boolean56 == false);
     }
 
+    @Ignore
     @Test
     public void test2113() throws Throwable {
         if (debug)
@@ -5353,6 +5467,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + false + "'", boolean51 == false);
     }
 
+    @Ignore
     @Test
     public void test2114() throws Throwable {
         if (debug)
@@ -5454,6 +5569,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean98 + "' != '" + false + "'", boolean98 == false);
     }
 
+    @Ignore
     @Test
     public void test2115() throws Throwable {
         if (debug)
@@ -5533,6 +5649,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int92 + "' != '" + 122 + "'", int92 == 122);
     }
 
+    @Ignore
     @Test
     public void test2116() throws Throwable {
         if (debug)
@@ -5567,6 +5684,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str27 + "' != '" + "(102,0)" + "'", str27, "(102,0)");
     }
 
+    @Ignore
     @Test
     public void test2117() throws Throwable {
         if (debug)
@@ -5615,6 +5733,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int49 + "' != '" + (-1) + "'", int49 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2118() throws Throwable {
         if (debug)
@@ -5622,6 +5741,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) '4', 210);
     }
 
+    @Ignore
     @Test
     public void test2119() throws Throwable {
         if (debug)
@@ -5667,6 +5787,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
     }
 
+    @Ignore
     @Test
     public void test2120() throws Throwable {
         if (debug)
@@ -5702,6 +5823,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass34);
     }
 
+    @Ignore
     @Test
     public void test2121() throws Throwable {
         if (debug)
@@ -5734,6 +5856,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str28 + "' != '" + "(0,-1)" + "'", str28, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2122() throws Throwable {
         if (debug)
@@ -5771,6 +5894,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass28);
     }
 
+    @Ignore
     @Test
     public void test2123() throws Throwable {
         if (debug)
@@ -5842,6 +5966,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str74 + "' != '" + "(0,-1)" + "'", str74, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2124() throws Throwable {
         if (debug)
@@ -5939,6 +6064,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str91 + "' != '" + "(100,0)" + "'", str91, "(100,0)");
     }
 
+    @Ignore
     @Test
     public void test2125() throws Throwable {
         if (debug)
@@ -5999,6 +6125,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + false + "'", boolean62 == false);
     }
 
+    @Ignore
     @Test
     public void test2126() throws Throwable {
         if (debug)
@@ -6072,6 +6199,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
     }
 
+    @Ignore
     @Test
     public void test2127() throws Throwable {
         if (debug)
@@ -6081,6 +6209,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(101,0)" + "'", str3, "(101,0)");
     }
 
+    @Ignore
     @Test
     public void test2128() throws Throwable {
         if (debug)
@@ -6135,6 +6264,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int54 + "' != '" + (-1) + "'", int54 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2129() throws Throwable {
         if (debug)
@@ -6142,6 +6272,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(57, 135);
     }
 
+    @Ignore
     @Test
     public void test2130() throws Throwable {
         if (debug)
@@ -6233,6 +6364,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean82 + "' != '" + false + "'", boolean82 == false);
     }
 
+    @Ignore
     @Test
     public void test2131() throws Throwable {
         if (debug)
@@ -6240,6 +6372,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (short) 10, 31);
     }
 
+    @Ignore
     @Test
     public void test2132() throws Throwable {
         if (debug)
@@ -6321,6 +6454,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str79 + "' != '" + "(32,0)" + "'", str79, "(32,0)");
     }
 
+    @Ignore
     @Test
     public void test2133() throws Throwable {
         if (debug)
@@ -6332,6 +6466,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int4 + "' != '" + 101 + "'", int4 == 101);
     }
 
+    @Ignore
     @Test
     public void test2134() throws Throwable {
         if (debug)
@@ -6358,6 +6493,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
     }
 
+    @Ignore
     @Test
     public void test2135() throws Throwable {
         if (debug)
@@ -6416,6 +6552,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int62 + "' != '" + 54 + "'", int62 == 54);
     }
 
+    @Ignore
     @Test
     public void test2136() throws Throwable {
         if (debug)
@@ -6450,6 +6587,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int34 + "' != '" + (-1) + "'", int34 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2137() throws Throwable {
         if (debug)
@@ -6496,6 +6634,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + true + "'", boolean49 == true);
     }
 
+    @Ignore
     @Test
     public void test2138() throws Throwable {
         if (debug)
@@ -6512,6 +6651,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int11 + "' != '" + 69 + "'", int11 == 69);
     }
 
+    @Ignore
     @Test
     public void test2139() throws Throwable {
         if (debug)
@@ -6603,6 +6743,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean99 + "' != '" + false + "'", boolean99 == false);
     }
 
+    @Ignore
     @Test
     public void test2140() throws Throwable {
         if (debug)
@@ -6665,6 +6806,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int62 + "' != '" + 37 + "'", int62 == 37);
     }
 
+    @Ignore
     @Test
     public void test2141() throws Throwable {
         if (debug)
@@ -6674,6 +6816,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + 10 + "'", int3 == 10);
     }
 
+    @Ignore
     @Test
     public void test2142() throws Throwable {
         if (debug)
@@ -6740,6 +6883,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int54 + "' != '" + 0 + "'", int54 == 0);
     }
 
+    @Ignore
     @Test
     public void test2143() throws Throwable {
         if (debug)
@@ -6747,6 +6891,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(164, (int) (short) 1);
     }
 
+    @Ignore
     @Test
     public void test2144() throws Throwable {
         if (debug)
@@ -6754,6 +6899,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(21, 103);
     }
 
+    @Ignore
     @Test
     public void test2145() throws Throwable {
         if (debug)
@@ -6793,6 +6939,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int36 + "' != '" + 100 + "'", int36 == 100);
     }
 
+    @Ignore
     @Test
     public void test2146() throws Throwable {
         if (debug)
@@ -6883,6 +7030,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str80 + "' != '" + "(0,-1)" + "'", str80, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2147() throws Throwable {
         if (debug)
@@ -6931,6 +7079,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
     }
 
+    @Ignore
     @Test
     public void test2148() throws Throwable {
         if (debug)
@@ -6938,6 +7087,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(100, 12);
     }
 
+    @Ignore
     @Test
     public void test2149() throws Throwable {
         if (debug)
@@ -6945,6 +7095,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(152, (int) (byte) 10);
     }
 
+    @Ignore
     @Test
     public void test2150() throws Throwable {
         if (debug)
@@ -6993,6 +7144,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int48 + "' != '" + 100 + "'", int48 == 100);
     }
 
+    @Ignore
     @Test
     public void test2151() throws Throwable {
         if (debug)
@@ -7069,6 +7221,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str76 + "' != '" + "(0,-1)" + "'", str76, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2152() throws Throwable {
         if (debug)
@@ -7129,6 +7282,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
     }
 
+    @Ignore
     @Test
     public void test2153() throws Throwable {
         if (debug)
@@ -7198,6 +7352,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + false + "'", boolean72 == false);
     }
 
+    @Ignore
     @Test
     public void test2154() throws Throwable {
         if (debug)
@@ -7281,6 +7436,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass89);
     }
 
+    @Ignore
     @Test
     public void test2155() throws Throwable {
         if (debug)
@@ -7305,6 +7461,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
     }
 
+    @Ignore
     @Test
     public void test2156() throws Throwable {
         if (debug)
@@ -7341,6 +7498,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int34 + "' != '" + (-1) + "'", int34 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2157() throws Throwable {
         if (debug)
@@ -7352,6 +7510,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 11 + "'", int6 == 11);
     }
 
+    @Ignore
     @Test
     public void test2158() throws Throwable {
         if (debug)
@@ -7359,6 +7518,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(214, 279);
     }
 
+    @Ignore
     @Test
     public void test2159() throws Throwable {
         if (debug)
@@ -7406,6 +7566,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
     }
 
+    @Ignore
     @Test
     public void test2160() throws Throwable {
         if (debug)
@@ -7425,6 +7586,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass12);
     }
 
+    @Ignore
     @Test
     public void test2161() throws Throwable {
         if (debug)
@@ -7456,6 +7618,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int27 + "' != '" + 100 + "'", int27 == 100);
     }
 
+    @Ignore
     @Test
     public void test2162() throws Throwable {
         if (debug)
@@ -7476,6 +7639,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "(-1,0)" + "'", str14, "(-1,0)");
     }
 
+    @Ignore
     @Test
     public void test2163() throws Throwable {
         if (debug)
@@ -7501,6 +7665,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2164() throws Throwable {
         if (debug)
@@ -7511,6 +7676,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
     }
 
+    @Ignore
     @Test
     public void test2165() throws Throwable {
         if (debug)
@@ -7572,6 +7738,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int71 + "' != '" + 321 + "'", int71 == 321);
     }
 
+    @Ignore
     @Test
     public void test2166() throws Throwable {
         if (debug)
@@ -7680,6 +7847,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int93 + "' != '" + 1 + "'", int93 == 1);
     }
 
+    @Ignore
     @Test
     public void test2167() throws Throwable {
         if (debug)
@@ -7709,6 +7877,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int26 + "' != '" + 100 + "'", int26 == 100);
     }
 
+    @Ignore
     @Test
     public void test2168() throws Throwable {
         if (debug)
@@ -7793,6 +7962,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int83 + "' != '" + (-1) + "'", int83 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2169() throws Throwable {
         if (debug)
@@ -7805,6 +7975,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int9 + "' != '" + 83 + "'", int9 == 83);
     }
 
+    @Ignore
     @Test
     public void test2170() throws Throwable {
         if (debug)
@@ -7894,6 +8065,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str81 + "' != '" + "(101,101)" + "'", str81, "(101,101)");
     }
 
+    @Ignore
     @Test
     public void test2171() throws Throwable {
         if (debug)
@@ -7905,6 +8077,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
     }
 
+    @Ignore
     @Test
     public void test2172() throws Throwable {
         if (debug)
@@ -7966,6 +8139,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
     }
 
+    @Ignore
     @Test
     public void test2173() throws Throwable {
         if (debug)
@@ -8007,6 +8181,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int39 + "' != '" + 87 + "'", int39 == 87);
     }
 
+    @Ignore
     @Test
     public void test2174() throws Throwable {
         if (debug)
@@ -8022,6 +8197,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
     }
 
+    @Ignore
     @Test
     public void test2175() throws Throwable {
         if (debug)
@@ -8029,6 +8205,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(97, 210);
     }
 
+    @Ignore
     @Test
     public void test2176() throws Throwable {
         if (debug)
@@ -8092,6 +8269,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
     }
 
+    @Ignore
     @Test
     public void test2177() throws Throwable {
         if (debug)
@@ -8099,6 +8277,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord((int) (byte) 0, 202);
     }
 
+    @Ignore
     @Test
     public void test2178() throws Throwable {
         if (debug)
@@ -8135,6 +8314,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
     }
 
+    @Ignore
     @Test
     public void test2179() throws Throwable {
         if (debug)
@@ -8154,6 +8334,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
     }
 
+    @Ignore
     @Test
     public void test2180() throws Throwable {
         if (debug)
@@ -8161,6 +8342,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(139, 457);
     }
 
+    @Ignore
     @Test
     public void test2181() throws Throwable {
         if (debug)
@@ -8170,6 +8352,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(137,151)" + "'", str3, "(137,151)");
     }
 
+    @Ignore
     @Test
     public void test2182() throws Throwable {
         if (debug)
@@ -8272,6 +8455,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean95 + "' != '" + false + "'", boolean95 == false);
     }
 
+    @Ignore
     @Test
     public void test2183() throws Throwable {
         if (debug)
@@ -8348,6 +8532,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str71 + "' != '" + "(0,-1)" + "'", str71, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2184() throws Throwable {
         if (debug)
@@ -8408,6 +8593,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
     }
 
+    @Ignore
     @Test
     public void test2185() throws Throwable {
         if (debug)
@@ -8487,6 +8673,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass74);
     }
 
+    @Ignore
     @Test
     public void test2186() throws Throwable {
         if (debug)
@@ -8503,6 +8690,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "(0,-1)" + "'", str9, "(0,-1)");
     }
 
+    @Ignore
     @Test
     public void test2187() throws Throwable {
         if (debug)
@@ -8583,6 +8771,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean91 + "' != '" + false + "'", boolean91 == false);
     }
 
+    @Ignore
     @Test
     public void test2188() throws Throwable {
         if (debug)
@@ -8666,6 +8855,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass69);
     }
 
+    @Ignore
     @Test
     public void test2189() throws Throwable {
         if (debug)
@@ -8747,6 +8937,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int67 + "' != '" + (-1) + "'", int67 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2190() throws Throwable {
         if (debug)
@@ -8766,6 +8957,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
     }
 
+    @Ignore
     @Test
     public void test2191() throws Throwable {
         if (debug)
@@ -8850,6 +9042,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean76 + "' != '" + false + "'", boolean76 == false);
     }
 
+    @Ignore
     @Test
     public void test2192() throws Throwable {
         if (debug)
@@ -8894,6 +9087,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int39 + "' != '" + 35 + "'", int39 == 35);
     }
 
+    @Ignore
     @Test
     public void test2193() throws Throwable {
         if (debug)
@@ -8907,6 +9101,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 35 + "'", int5 == 35);
     }
 
+    @Ignore
     @Test
     public void test2194() throws Throwable {
         if (debug)
@@ -8914,6 +9109,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(43, 9);
     }
 
+    @Ignore
     @Test
     public void test2195() throws Throwable {
         if (debug)
@@ -8921,6 +9117,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(137, 85);
     }
 
+    @Ignore
     @Test
     public void test2196() throws Throwable {
         if (debug)
@@ -8985,6 +9182,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean74 + "' != '" + true + "'", boolean74 == true);
     }
 
+    @Ignore
     @Test
     public void test2197() throws Throwable {
         if (debug)
@@ -9055,6 +9253,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int71 + "' != '" + 23 + "'", int71 == 23);
     }
 
+    @Ignore
     @Test
     public void test2198() throws Throwable {
         if (debug)
@@ -9121,6 +9320,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass54);
     }
 
+    @Ignore
     @Test
     public void test2199() throws Throwable {
         if (debug)
@@ -9174,6 +9374,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str41 + "' != '" + "(-1,-1)" + "'", str41, "(-1,-1)");
     }
 
+    @Ignore
     @Test
     public void test2200() throws Throwable {
         if (debug)
@@ -9247,6 +9448,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str77 + "' != '" + "(130,140)" + "'", str77, "(130,140)");
     }
 
+    @Ignore
     @Test
     public void test2201() throws Throwable {
         if (debug)
@@ -9324,6 +9526,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int80 + "' != '" + 10 + "'", int80 == 10);
     }
 
+    @Ignore
     @Test
     public void test2202() throws Throwable {
         if (debug)
@@ -9358,6 +9561,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
     }
 
+    @Ignore
     @Test
     public void test2203() throws Throwable {
         if (debug)
@@ -9450,6 +9654,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass95);
     }
 
+    @Ignore
     @Test
     public void test2204() throws Throwable {
         if (debug)
@@ -9533,6 +9738,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean76 + "' != '" + false + "'", boolean76 == false);
     }
 
+    @Ignore
     @Test
     public void test2205() throws Throwable {
         if (debug)
@@ -9615,6 +9821,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean79 + "' != '" + false + "'", boolean79 == false);
     }
 
+    @Ignore
     @Test
     public void test2206() throws Throwable {
         if (debug)
@@ -9647,6 +9854,7 @@ public class CoordTest6 {
         org.junit.Assert.assertEquals("'" + str27 + "' != '" + "(1,35)" + "'", str27, "(1,35)");
     }
 
+    @Ignore
     @Test
     public void test2207() throws Throwable {
         if (debug)
@@ -9702,6 +9910,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass52);
     }
 
+    @Ignore
     @Test
     public void test2208() throws Throwable {
         if (debug)
@@ -9711,6 +9920,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
     }
 
+    @Ignore
     @Test
     public void test2209() throws Throwable {
         if (debug)
@@ -9720,6 +9930,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
+    @Ignore
     @Test
     public void test2210() throws Throwable {
         if (debug)
@@ -9749,6 +9960,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
     }
 
+    @Ignore
     @Test
     public void test2211() throws Throwable {
         if (debug)
@@ -9813,6 +10025,7 @@ public class CoordTest6 {
         org.junit.Assert.assertNotNull(wildcardClass71);
     }
 
+    @Ignore
     @Test
     public void test2212() throws Throwable {
         if (debug)
@@ -9820,6 +10033,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(133, 20);
     }
 
+    @Ignore
     @Test
     public void test2213() throws Throwable {
         if (debug)
@@ -9829,6 +10043,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
     }
 
+    @Ignore
     @Test
     public void test2214() throws Throwable {
         if (debug)
@@ -9836,6 +10051,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(152, 11);
     }
 
+    @Ignore
     @Test
     public void test2215() throws Throwable {
         if (debug)
@@ -9843,6 +10059,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(69, 214);
     }
 
+    @Ignore
     @Test
     public void test2216() throws Throwable {
         if (debug)
@@ -9850,6 +10067,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(21, 20);
     }
 
+    @Ignore
     @Test
     public void test2217() throws Throwable {
         if (debug)
@@ -9874,6 +10092,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + 1 + "'", int18 == 1);
     }
 
+    @Ignore
     @Test
     public void test2218() throws Throwable {
         if (debug)
@@ -9945,6 +10164,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + boolean73 + "' != '" + false + "'", boolean73 == false);
     }
 
+    @Ignore
     @Test
     public void test2219() throws Throwable {
         if (debug)
@@ -9952,6 +10172,7 @@ public class CoordTest6 {
         fr.umontpellier.iut.algogen.Coord coord2 = new fr.umontpellier.iut.algogen.Coord(457, 33);
     }
 
+    @Ignore
     @Test
     public void test2220() throws Throwable {
         if (debug)
@@ -10025,6 +10246,7 @@ public class CoordTest6 {
         org.junit.Assert.assertTrue("'" + int69 + "' != '" + 12 + "'", int69 == 12);
     }
 
+    @Ignore
     @Test
     public void test2221() throws Throwable {
         if (debug)

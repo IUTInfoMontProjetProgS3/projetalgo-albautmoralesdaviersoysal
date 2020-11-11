@@ -4,6 +4,7 @@
 #VSCode
 .project
 .classpath
+.vscode
 
 # Log file
 *.log
