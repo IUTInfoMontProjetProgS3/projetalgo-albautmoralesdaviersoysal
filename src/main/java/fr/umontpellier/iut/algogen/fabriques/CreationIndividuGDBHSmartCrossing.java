@@ -6,7 +6,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossing;
 public class CreationIndividuGDBHSmartCrossing extends ICreator<GDBHSmartCrossing> {
 
     @Override
-    protected GDBHSmartCrossing create(Instance in) {
+    protected GDBHSmartCrossing create(Instance instance) {
         return null;
     }
 }

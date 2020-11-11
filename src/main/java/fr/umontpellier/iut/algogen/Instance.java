@@ -11,12 +11,12 @@ public class Instance {
     private ArrayList<Coord> listeCoordPieces;
 
     /**
-     * @param p  : grille du jeu
-     * @param s  : coordonnée de depart
-     * @param kk : nombre de pas autorisé
+     * @param plateau  : grille du jeu
+     * @param coordDepart  : coordonnée de depart
+     * @param k : nombre de pas autorisé
      * 
      **/
-    public Instance(boolean[][] p, Coord s, int kk) {
+    public Instance(boolean[][] plateau, Coord coordDepart, int k) {
 
     }
 
@@ -48,31 +48,31 @@ public class Instance {
     }
 
     /**
-     * @param c : coordonnées
+     * @param coordonnee : coordonnées
      * @return vrai si la piéce de coordonées c est presente dans la grille
      * 
      **/
-    public boolean piecePresente(Coord c) {
+    public boolean piecePresente(Coord coordonnee) {
         return false;
     }
 
     /**
-     * @param s : Solution
+     * @param solution : Solution
      * @return vrai la solutions est valide, c-a-d depuis le point de départ on a
      *         fait k pas sans sortir de la grille.
      * 
      **/
-    public boolean estValide(Solution s) {
+    public boolean estValide(Solution solution) {
         return false;
     }
 
     /**
-     * @param s : Solution
+     * @param solution : Solution
      * @return le nombre de piéces récolté
      * 
      **/
 
-    public int evaluerSolution(Solution s) {
+    public int evaluerSolution(Solution solution) {
         return 0;
     }
 
@@ -95,7 +95,7 @@ public class Instance {
         return res.toString();
     }
 
-    public String toString(Solution s) {
+    public String toString(Solution solution) {
         // prérequis : s est valide
         // retourne une chaine sous la forme suivante
         // o!..
@@ -118,16 +118,16 @@ public class Instance {
                                                   // "\n");
         for (int l = 0; l < getNbL(); l++) {
             for (int c = 0; c < getNbC(); c++) {
-                if (s.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
+                if (solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("!");
                 }
-                if (!s.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
+                if (!solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("x");
                 }
-                if (s.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                if (solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append("o");
                 }
-                if (!s.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                if (!solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append(".");
                 }
             }

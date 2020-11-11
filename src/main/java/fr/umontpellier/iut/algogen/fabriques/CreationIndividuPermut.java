@@ -6,7 +6,7 @@ import fr.umontpellier.iut.algogen.individus.PermutSimple;
 public class CreationIndividuPermut extends ICreator<PermutSimple> {
 
     @Override
-    protected PermutSimple create(Instance in) {
+    protected PermutSimple create(Instance instance) {
         return null;
     }
 }

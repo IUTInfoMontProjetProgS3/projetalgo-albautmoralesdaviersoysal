@@ -5,32 +5,32 @@ import java.util.ArrayList;
 import fr.umontpellier.iut.algogen.Instance;
 
 public class PermutSimple extends IndividuPermut<PermutSimple> {
-    public PermutSimple(Instance in, ArrayList<Integer> p) {
-        super(in, p);
+    public PermutSimple(Instance instance, ArrayList<Integer> p) {
+        super(instance, p);
     }
 
-    public PermutSimple(Instance in) {
-        super(in);
+    public PermutSimple(Instance instance) {
+        super(instance);
     }
 
     /**
-     * @param i2 : Un deuxieme individu Execute le croisement entre this et i2 comme
+     * @param individu2 : Un deuxieme individu Execute le croisement entre this et i2 comme
      *           dans le texte.
      * @return un individu fils de type GDBHSimple.
      * 
      **/
 
-    public PermutSimple calculerCroisement(PermutSimple i2) {
+    public PermutSimple calculerCroisement(PermutSimple individu2) {
         return null;
     }
 
     /**
-     * @param x : indice du premier mouvement
-     * @param y : indice du deuxieme mouvement faire un echange entre les valeurs
+     * @param indice1 : indice du premier mouvement
+     * @param indice2 : indice du deuxieme mouvement faire un echange entre les valeurs
      *          des indices x y
      * 
      **/
-    private void mutationAux(int x, int y) {
+    private void mutationAux(int indice1, int indice2) {
 
     }
 

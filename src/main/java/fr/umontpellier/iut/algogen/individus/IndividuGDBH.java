@@ -8,43 +8,43 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndividu<T> {
-    protected Instance inst;
+    protected Instance instance;
     public ArrayList<Character> trajet;
 
-    public IndividuGDBH(Instance in, ArrayList<Character> t) {
+    public IndividuGDBH(Instance instance, ArrayList<Character> trajet) {
 
     }
 
-    public IndividuGDBH(Instance in) {
+    public IndividuGDBH(Instance instance) {
 
         normaliseTrajet();
     }
 
-    public IndividuGDBH(Instance in, Solution s) {
+    public IndividuGDBH(Instance instance, Solution solution) {
     }
 
     /**
-     * @param cour : coordonnées du mouvement courant
-     * @param c    : mouvement prochain Calcule les coordonnées du mouvement c
+     * @param coordonnee : coordonnées du mouvement courant
+     * @param direction  : mouvement prochain Calcule les coordonnées du mouvement c
      * @return les coordonnées de c
      * 
      **/
-    static Coord calculerNextCoord(Coord cour, char c) {
-        int nextL = cour.getL();
-        int nextC = cour.getC();
-        if (c == 'h') {
-            nextL--;
+    static Coord calculerNextCoord(Coord coordonnee, char direction) {
+        int prochaineLigne = coordonnee.getL();
+        int prochaineColonne = coordonnee.getC();
+        if (direction == 'h') {
+            prochaineLigne--;
         }
-        if (c == 'b') {
-            nextL++;
+        if (direction == 'b') {
+            prochaineLigne++;
         }
-        if (c == 'g') {
-            nextC--;
+        if (direction == 'g') {
+            prochaineColonne--;
         }
-        if (c == 'd') {
-            nextC++;
+        if (direction == 'd') {
+            prochaineColonne++;
         }
-        return new Coord(nextL, nextC);
+        return new Coord(prochaineLigne, prochaineColonne);
     }
 
     @Override
@@ -83,38 +83,38 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * 
      **/
     public void normaliseTrajet() {
-        Coord cour = inst.getStartingP();
-        ArrayList<Character> newL = new ArrayList<>();
-        for (char c : trajet) {
+        Coord coordonnee = instance.getStartingP();
+        ArrayList<Character> nouveauTrajet = new ArrayList<>();
+        for (char direction : trajet) {
 
-            Coord next = calculerNextCoord(cour, c);
-            if (next.estDansPlateau(inst.getNbL(), inst.getNbC())) {
-                newL.add(c);
-                cour = next;
+            Coord next = calculerNextCoord(coordonnee, direction);
+            if (next.estDansPlateau(instance.getNbL(), instance.getNbC())) {
+                nouveauTrajet.add(direction);
+                coordonnee = next;
             }
         }
 
-        ArrayList<Character> dictio = new ArrayList<>();
-        dictio.add('h');
-        dictio.add('b');
-        dictio.add('g');
-        dictio.add('d');
+        ArrayList<Character> directionPossible = new ArrayList<>();
+        directionPossible.add('h');
+        directionPossible.add('b');
+        directionPossible.add('g');
+        directionPossible.add('d');
         Random r = new Random();
 
-        while (newL.size() < trajet.size()) {
+        while (nouveauTrajet.size() < trajet.size()) {
             boolean ok = false;
             while (!ok) {
-                char cc = dictio.get(r.nextInt(4));
-                Coord next = calculerNextCoord(cour, cc);
-                if (next.estDansPlateau(inst.getNbL(), inst.getNbC())) {
-                    newL.add(cc);
-                    cour = next;
+                char directionRandom = directionPossible.get(r.nextInt(4));
+                Coord prochaineCoord = calculerNextCoord(coordonnee, directionRandom);
+                if (prochaineCoord.estDansPlateau(instance.getNbL(), instance.getNbC())) {
+                    nouveauTrajet.add(directionRandom);
+                    coordonnee = prochaineCoord;
                     ok = true;
                 }
             }
 
         }
-        trajet = newL;
+        trajet = nouveauTrajet;
     }
 
 }

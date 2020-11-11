@@ -7,46 +7,46 @@ import fr.umontpellier.iut.algogen.Solution;
 
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
-    public GDBHSmartCrossingSmartMut(Instance in, ArrayList<Character> t) {
-        super(in, t);
+    public GDBHSmartCrossingSmartMut(Instance instance, ArrayList<Character> trajet) {
+        super(instance, trajet);
     }
 
-    public GDBHSmartCrossingSmartMut(Instance in) {
-        super(in);
+    public GDBHSmartCrossingSmartMut(Instance instance) {
+        super(instance);
     }
 
-    public GDBHSmartCrossingSmartMut(Instance in, Solution s) {
-        super(in, s);
+    public GDBHSmartCrossingSmartMut(Instance instance, Solution solution) {
+        super(instance, solution);
     }
 
     /**
-     * @param c : Un mouvement
+     * @param direction : Une direction emprinté
      * 
-     * @return L'inverse du mouvement.
+     * @return L'inverse de la direction.
      * 
      **/
-    private static char inv(char c) {
+    private static char inv(char direction) {
         return '-';
     }
 
     /**
-     * @param i2 : Un deuxieme individu Faire le croisement intelligent entre this
+     * @param individu2 : Un deuxieme individu Faire le croisement intelligent entre this
      *           et i2 comme dans le texte.
      * @return un individu fils de type GDBHSimple.
      * 
      **/
-    public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut i2) {
+    public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
         return null;
     }
 
     /**
-     * @param x    : Un indice
-     * @param new1 : Un premier Mouvement
-     * @param new2 : Un deuxieme Mouvement Mettre new2 dans l'indice x et mettre
+     * @param indice    : Un indice
+     * @param direction1 : Un premier Mouvement
+     * @param direction2 : Un deuxieme Mouvement Mettre new2 dans l'indice x et mettre
      *             new1 dans l'indice x+1 et enlever deux mouvements a la fin.
      * 
      **/
-    public void mutationAux(int x, char new1, char new2) {
+    public void mutationAux(int indice, char direction1, char direction2) {
 
     }
 

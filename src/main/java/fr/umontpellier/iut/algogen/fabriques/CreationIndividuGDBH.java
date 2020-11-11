@@ -6,7 +6,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 public class CreationIndividuGDBH extends ICreator<GDBHSimple> {
 
     @Override
-    protected GDBHSimple create(Instance in) {
+    protected GDBHSimple create(Instance instance) {
         return null;
     }
 }

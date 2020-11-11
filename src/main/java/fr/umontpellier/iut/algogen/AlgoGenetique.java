@@ -9,33 +9,33 @@ import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
 class AlgoGenetique<T extends IIndividu<T>> {
 
     /**
-     * @param inn : instance ,
-     * @param utt : strategie de caclcul des nouvelles generations
-     * @param crr : createur d'individus
+     * @param instance : instance ,
+     * @param calculGen : strategie de calcul des nouvelles generations
+     * @param createurIndividu : createur d'individus
      *
      */
-    public AlgoGenetique(Instance inn, StrategieCalculNextGen<T> utt, ICreator<T> crr) {
+    public AlgoGenetique(Instance instance, StrategieCalculNextGen<T> calculGen, ICreator<T> createurIndividu) {
 
     }
 
     /**
-     * @param inn : instance ,
-     * @param crr : createur d'individus
+     * @param instance : instance ,
+     * @param createurIndividu : createur d'individus
      *
      */
-    public AlgoGenetique(Instance inn, ICreator<T> crr) {
+    public AlgoGenetique(Instance instance, ICreator<T> createurIndividu) {
 
     }
 
     /**
      * @param taillePop : taille de la Population ,
-     * @param nbGen     : nombre de generations Créer population initiale Lancer
+     * @param nbGeneration     : nombre de generations Créer population initiale Lancer
      *                  Strategie de calcule de nouvelles generations nbGen fois
      * @return retourne la meilleur solution
      *
      */
 
-    public Solution run(int taillePop, int nbGen) {
+    public Solution run(int taillePop, int nbGeneration) {
         return null;
     }
 

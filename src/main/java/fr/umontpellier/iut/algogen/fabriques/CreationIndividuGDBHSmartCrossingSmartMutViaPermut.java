@@ -6,7 +6,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
 public class CreationIndividuGDBHSmartCrossingSmartMutViaPermut extends ICreator<GDBHSmartCrossingSmartMut> {
 
     @Override
-    protected GDBHSmartCrossingSmartMut create(Instance in) {
+    protected GDBHSmartCrossingSmartMut create(Instance instance) {
         return null;
     }
 }

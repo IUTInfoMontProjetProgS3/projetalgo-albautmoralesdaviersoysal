@@ -6,35 +6,35 @@ public class Coord {
     private final int l = 0;
     private final int c = 0;
 
-    public Coord(int ll, int cc) {
+    public Coord(int nbLinge, int nbColonne) {
 
     }
 
     /**
-     * @param nbL : nombre de lignes de la grille
-     * @param nbC : nombre de colonnes de la grille
+     * @param nbLigne : nombre de lignes de la grille
+     * @param nbColonne : nombre de colonnes de la grille
      * @return true si la coordonnée ne dépace pas les bordures de la grille
      * 
      **/
-    public boolean estDansPlateau(int nbL, int nbC) {
+    public boolean estDansPlateau(int nbLigne, int nbColonne) {
         return false;
     }
 
     /**
-     * @param cd : Coordonnée
+     * @param coord : Coordonnée
      * @return true si this est de distance 1 de la coordonnée cd
      * 
      **/
-    public boolean estADistanceUn(Coord cd) {
+    public boolean estADistanceUn(Coord coord) {
         return false;
     }
 
     /**
-     * @param cd : Coordonnée
+     * @param coord : Coordonnée
      * @return distance entre this et la coordonnée cd
      * 
      **/
-    public int distanceFrom(Coord cd) {
+    public int distanceFrom(Coord coord) {
         return 0;
     }
 

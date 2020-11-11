@@ -8,7 +8,7 @@ public interface IIndividu<T extends IIndividu<T>> {
 
     public int evaluerFitness();
 
-    public T calculerCroisement(T i2);
+    public T calculerCroisement(T individu2);
 
     public T calculerMutation();
 

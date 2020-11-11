@@ -7,14 +7,14 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIndividu<T> {
-    protected Instance inst;
+    protected Instance instance;
     protected ArrayList<Integer> permut;
 
-    public IndividuPermut(Instance in, ArrayList<Integer> p) {
+    public IndividuPermut(Instance instance, ArrayList<Integer> p) {
 
     }
 
-    public IndividuPermut(Instance in) {
+    public IndividuPermut(Instance instace) {
 
     }
 
