@@ -1,20 +1,16 @@
 package fr.umontpellier.iut.algogen;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
+import org.junit.Ignore;
 import org.junit.Test;
 
 import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBHSmartCrossingSmartMutViaPermut;
 import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
-import fr.umontpellier.iut.algogen.strategies.CroisementMutationV1;
 
 public class AlgoGenetiqueTest {
 
+	@Ignore
 	@Test
 	public void testRun() throws Exception {
 

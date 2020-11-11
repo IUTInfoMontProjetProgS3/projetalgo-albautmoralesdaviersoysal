@@ -9,12 +9,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSmartCrossingTest {
 
+	@Disabled
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
@@ -90,6 +92,7 @@ public class GDBHSmartCrossingTest {
 
 	}
 
+	@Disabled
 	@Test
 	public void testCalculerMutation() throws Exception {
 

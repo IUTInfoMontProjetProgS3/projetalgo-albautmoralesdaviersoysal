@@ -9,12 +9,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSmartCrossingSmartMutTest {
 
+	@Ignore
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
@@ -90,6 +92,7 @@ public class GDBHSmartCrossingSmartMutTest {
 
 	}
 
+	@Ignore
 	@Test
 	public void testMutationAux() throws Exception {
 
@@ -156,6 +159,7 @@ public class GDBHSmartCrossingSmartMutTest {
 
 	}
 
+	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 

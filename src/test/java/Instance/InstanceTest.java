@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -14,6 +15,7 @@ import fr.umontpellier.iut.algogen.Solution;
 
 public class InstanceTest {
 
+        @Ignore
         @Test
         public void testPiecePresente() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -36,6 +38,7 @@ public class InstanceTest {
                 }
         }
 
+        @Ignore
         @Test
         public void testEstValide() throws Exception {
 
@@ -66,6 +69,7 @@ public class InstanceTest {
 
         }
 
+        @Ignore
         @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -94,6 +98,7 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
+        @Ignore
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -122,6 +127,7 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
+        @Ignore
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];

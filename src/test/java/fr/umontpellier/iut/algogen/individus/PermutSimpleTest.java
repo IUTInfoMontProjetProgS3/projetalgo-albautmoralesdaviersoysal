@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
@@ -15,6 +16,7 @@ import fr.umontpellier.iut.algogen.fabriques.CreationIndividuPermut;
 
 public class PermutSimpleTest {
 
+	@Ignore
 	@Test
 	public void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -43,6 +45,7 @@ public class PermutSimpleTest {
 		assertFalse(Collections.disjoint(result.permut, individu.get(1).permut));
 	}
 
+	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 		boolean[][] p4 = new boolean[10][10];

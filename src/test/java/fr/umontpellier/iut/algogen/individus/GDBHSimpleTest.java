@@ -6,15 +6,15 @@ import static org.junit.Assert.assertNotEquals;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
-import fr.umontpellier.iut.algogen.individus.GDBHSimple;
-import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 
 public class GDBHSimpleTest {
 
+	@Disabled
 	@Test
 	public void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -59,6 +59,7 @@ public class GDBHSimpleTest {
 
 	}
 
+	@Disabled
 	@Test
 	public void testCalculerMutation() throws Exception {
 
