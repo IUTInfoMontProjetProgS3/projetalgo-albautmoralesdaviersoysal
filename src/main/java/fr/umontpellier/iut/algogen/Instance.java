@@ -15,9 +15,6 @@ import java.util.ArrayList;
  * <li>Une liste des coordonnées des pièces sur le plateau.</li>
  * </ul>
  * </p>
- * <p>
- * De plus, une Instance si une solution proposée est valide ou pas.
- * </p>
  * 
  * @version 1.0
  */
