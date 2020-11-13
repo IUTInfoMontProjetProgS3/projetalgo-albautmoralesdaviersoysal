@@ -30,22 +30,23 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     /**
-     * @param individu2 : Un deuxieme individu Faire le croisement intelligent entre this
-     *           et i2 comme dans le texte.
+     * @param individu2 : Un deuxieme individu
      * @return un individu fils de type GDBHSmartCrossingSmartMut.
      * 
      * 
-     * Cette fonction est la même que GDBHSmartCrossing
+     *         Cette fonction est la même que GDBHSmartCrossing
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
         return null;
     }
 
     /**
-     * @param indice    : Un indice
+     * Mettre new2 dans l'indice x et mettre new1 dans l'indice x+1 et enlever deux
+     * mouvements a la fin.
+     * 
+     * @param indice     : Un indice
      * @param direction1 : Un premier Mouvement
-     * @param direction2 : Un deuxieme Mouvement Mettre new2 dans l'indice x et mettre
-     *             new1 dans l'indice x+1 et enlever deux mouvements a la fin.
+     * @param direction2 : Un deuxieme Mouvement
      * 
      **/
     public void mutationAux(int indice, char direction1, char direction2) {
@@ -58,7 +59,6 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @return un individu fils muté de type GDBHSimple.
      * 
      **/
-
     public GDBHSmartCrossingSmartMut calculerMutation() {
         return null;
     }
