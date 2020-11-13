@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
+/**
+ * GDBHSmartCrossingSmartMut est la classe représentant une fonctionnalité de
+ * croisement idantique à {@link GDBHSmartCrossing} mais avec une mutation plus
+ * intéligente.
+ * 
+ * @see IndividuGDBH
+ * @version 1.0
+ */
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
     public GDBHSmartCrossingSmartMut(Instance instance, ArrayList<Character> trajet) {
@@ -30,19 +38,19 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     /**
+     * Cette fonction est la même que
+     * {@link GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)}
+     * 
      * @param individu2 : Un deuxieme individu
      * @return un individu fils de type GDBHSmartCrossingSmartMut.
-     * 
-     * 
-     *         Cette fonction est la même que GDBHSmartCrossing
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
         return null;
     }
 
     /**
-     * Mettre new2 dans l'indice x et mettre new1 dans l'indice x+1 et enlever deux
-     * mouvements a la fin.
+     * Mettre direction2 dans l'indice x et mettre direction1 dans l'indice x+1 et enlever deux
+     * directions a la fin.
      * 
      * @param indice     : Un indice
      * @param direction1 : Un premier Mouvement
