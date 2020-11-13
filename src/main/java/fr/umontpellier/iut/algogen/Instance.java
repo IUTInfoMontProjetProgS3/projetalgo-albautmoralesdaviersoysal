@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * <p>
  * Un objet Instance est caractérisé par les informations suivantes :
  * <ul>
- * <li>Une plateau de taille nxm.</li>
+ * <li>Un plateau de taille nxm.</li>
  * <li>Une case de départ.</li>
  * <li>Un nombre de pas autorisé.</li>
  * <li>Une liste des coordonnées des pièces sur le plateau.</li>
@@ -22,9 +22,37 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class Instance {
-    private Coord startingP;
-    private int k;
+    /**
+     * Cet attribut repérenste la grille du jeu.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     */
     private boolean[][] plateau;
+
+    /**
+     * La case de départ du jeu. Cet attribut n'est pas modifiable.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     * @see Instance#getStartingP()
+     * @see Instance#getNbC()
+     * @see Instance#getNbL()
+     */
+    private Coord startingP;
+
+    /**
+     * Nombre de pas maximum autorisé dans le jeu. Cet ID n'est pas modifiable.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     * @see Instance#getK()
+     */
+    private int k;
+
+    /**
+     * La liste des coordoonées des pièces sur la grille.
+     * 
+     * @see Zero#Zero(int, String)
+     * @see Zero#getId()
+     */
     private ArrayList<Coord> listeCoordPieces;
 
     /**
@@ -37,14 +65,30 @@ public class Instance {
 
     }
 
+    /**
+     * @return {@code int} nombre de ligne du plateau de jeu.
+     * 
+     * @see Instance#plateau
+     */
     public int getNbL() {
         return plateau.length;
     }
 
+    /**
+     * @return {@code int} nombre de colonne du plateau de jeu.
+     * 
+     * @see Instance#plateau
+     */
     public int getNbC() {
         return plateau[0].length;
     }
 
+    /**
+     * @return {@code Coord} Case de départ du jeu.
+     * 
+     * @see Instance#startingP
+     * @see Coord
+     */
     public Coord getStartingP() {
         return startingP;
     }
@@ -66,18 +110,24 @@ public class Instance {
 
     /**
      * @param coordonnee : coordonnées
-     * @return vrai si la piéce de coordonées c est presente dans la grille
+     * @return {@code true} s'il y a une pièce aux coordonnées indiqués
      * 
+     * @see Coord
+     * @see Instance#plateau
      **/
     public boolean piecePresente(Coord coordonnee) {
         return false;
     }
 
     /**
-     * @param solution : Solution
-     * @return vrai la solutions est valide, c-a-d depuis le point de départ on a
-     *         fait k pas sans sortir de la grille.
+     * Vérifie que toute les cases emprunté par la {@code Solution} sont bien
+     * comprit dans la grille et ne déborde pas. Et respect le nombre de pas
+     * autorisé.
      * 
+     * @param solution : {@code Solution} qui doit être vérifié
+     * @return {@code true} si la solutions est valide.
+     * 
+     * @see Solution
      **/
     public boolean estValide(Solution solution) {
         return false;
@@ -85,10 +135,10 @@ public class Instance {
 
     /**
      * @param solution : Solution
-     * @return le nombre de piéces récolté
+     * @return {@code int} le nombre de piéces récolté
      * 
+     * @see Solution
      **/
-
     public int evaluerSolution(Solution solution) {
         return 0;
     }
@@ -154,11 +204,18 @@ public class Instance {
      * Le solveur glouton
      * 
      * @return Une solution de l'instance.
+     * 
+     * @see Solution
      **/
     public Solution greedySolver() {
         return new Solution();
     }
 
+    /**
+     * @return {@code int} Nombre de pas autorisé dans le jeu.
+     * 
+     * @see Instance#k
+     */
     public int getK() {
         // TODO Auto-generated method stub
         return 0;
@@ -169,6 +226,12 @@ public class Instance {
         return null;
     }
 
+    /**
+     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du plateau.
+     * 
+     * @see Instance#listeCoordPieces
+     * @see java.util.ArrayList
+     */
     public ArrayList<Coord> getListeCoordPieces() {
         // TODO Auto-generated method stub
         return null;
