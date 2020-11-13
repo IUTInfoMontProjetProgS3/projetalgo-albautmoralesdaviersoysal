@@ -12,7 +12,8 @@ import fr.umontpellier.iut.algogen.Solution;
  * mouvement aléatoire ou chaque mouvement peut prendre une des 4 direction : G,
  * D, H, B</b>
  * <p>
- * Un individu de type IndividuGDBH est caractérisé par les informations suivantes :
+ * Un individu de type IndividuGDBH est caractérisé par les informations
+ * suivantes :
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
  * <li>Du trajet effectué {@code ArrayList<Character>}.</li>
@@ -56,14 +57,18 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     /**
-     * @param coordonnee : coordonnées du mouvement courant
-     * @param direction  : mouvement prochain Calcule les coordonnées du mouvement c
-     * @return les coordonnées de c
+     * Renvoi les coordonnées {@code Coord} résultante après avoir faire un pas dans
+     * la {@code direction} donnée en paramètre. A partir des coordonnée initial
+     * {@code coordInitial} qui ont étaient données en paramètre.
+     * 
+     * @param coordInitial : coordonnées initial avant de faire un pas
+     * @param direction    : la direction dans la quelle le pas doit être effectué
+     * @return {@code Coord} les coordonnées final une fois le pas effectué
      * 
      **/
-    static Coord calculerNextCoord(Coord coordonnee, char direction) {
-        int prochaineLigne = coordonnee.getL();
-        int prochaineColonne = coordonnee.getC();
+    static Coord calculerNextCoord(Coord coordInitial, char direction) {
+        int prochaineLigne = coordInitial.getL();
+        int prochaineColonne = coordInitial.getC();
         switch (direction) {
             case 'h':
                 prochaineLigne--;
@@ -104,7 +109,8 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     /**
-     * La fitness d'un individu est la fonction qui prend en compte le nombre de pièces récolté après le trajet.
+     * La fitness d'un individu est la fonction qui prend en compte le nombre de
+     * pièces récolté après le trajet.
      * 
      * @return {@code int} fitness
      */
