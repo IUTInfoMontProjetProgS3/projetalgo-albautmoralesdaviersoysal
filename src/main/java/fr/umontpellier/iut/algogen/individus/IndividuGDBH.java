@@ -8,15 +8,39 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 /**
- * IndividuGDBH est la classe représentant un encodage consistant à créer k
+ * <b>IndividuGDBH est la classe représentant un encodage consistant à créer k
  * mouvement aléatoire ou chaque mouvement peut prendre une des 4 direction : G,
- * D, H, B
+ * D, H, B</b>
+ * <p>
+ * Un individu de type IndividuGDBH est caractérisé par les informations suivantes :
+ * <ul>
+ * <li>L'instance du jeu {@code instance}.</li>
+ * <li>Du trajet effectué {@code ArrayList<Character>}.</li>
+ * </ul>
+ * </p>
+ * <p>
+ * De plus, IndividuGDBH possède une méthode permettant de normaliser un trajet.
+ * </p>
  * 
  * @see IIndividu
  * @version 1.0
  */
 public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndividu<T> {
+
+    /**
+     * Cette attribut représente l'instance du jeu.
+     * 
+     * @see IndividuGDBH#IndividuGDBH(Instance)
+     * @see IndividuGDBH#IndividuGDBH(Instance, ArrayList)
+     * @see IndividuGDBH#IndividuGDBH(Instance, Solution)
+     */
     protected Instance instance;
+
+    /**
+     * Un {@code trajet} contient l'ensemble des directions emprunté par l'individu.
+     * 
+     * @see IndividuGDBH#IndividuGDBH(Instance, ArrayList)
+     */
     public ArrayList<Character> trajet;
 
     public IndividuGDBH(Instance instance, ArrayList<Character> trajet) {
@@ -80,10 +104,10 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     /**
+     * La fitness d'un individu est la fonction qui prend en compte le nombre de pièces récolté après le trajet.
      * 
-     * @return la valeur fitness de l'individu comme dans le texte du TD
-     * 
-     **/
+     * @return {@code int} fitness
+     */
     @Override
     public int evaluerFitness() {
         return 0;
