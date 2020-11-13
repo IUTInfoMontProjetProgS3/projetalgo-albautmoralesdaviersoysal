@@ -6,7 +6,7 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 /**
- * GDBHsimple est la classe représentant une fonctionnalité de croisementet
+ * GDBHsimple est la classe représentant une fonctionnalité de croisement
  * mutation basique.
  * 
  * @see IndividuGDBH
@@ -26,8 +26,8 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
     }
 
     /**
-     * Les individus this et {@code individu2} sont croisés avec des partitions aléatoire, puis l'individu
-     * résultant est normalisé.
+     * Les individus this et {@code individu2} sont croisés avec des partitions
+     * aléatoire, puis l'individu résultant est normalisé.
      * 
      * @param individu2 : individu avec le quel le croisement doit être opéré
      * 

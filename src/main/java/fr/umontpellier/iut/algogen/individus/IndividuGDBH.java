@@ -29,7 +29,7 @@ import fr.umontpellier.iut.algogen.Solution;
 public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndividu<T> {
 
     /**
-     * Cette attribut représente l'instance du jeu.
+     * Cet attribut représente l'instance du jeu.
      * 
      * @see IndividuGDBH#IndividuGDBH(Instance)
      * @see IndividuGDBH#IndividuGDBH(Instance, ArrayList)
