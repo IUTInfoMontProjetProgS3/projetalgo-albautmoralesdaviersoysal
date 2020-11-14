@@ -22,7 +22,7 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getL()
      */
-    private final int ligne = 0;
+    private final int ligne;
 
     /**
      * La colonne sur laquelle se trouve this.
@@ -30,11 +30,13 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getC()
      */
-    private final int colonne = 0;
+    private final int colonne;
 
     public Coord(int ligne, int colonne) {
-
+        this.ligne = ligne;
+        this.colonne = colonne;
     }
+
 
     /**
      * Vérifie si this peut être dans une grille avec {@code nbLigne} et
@@ -46,7 +48,7 @@ public class Coord {
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return false;
+        return (colonne<nbColonne && ligne<nbLigne);
     }
 
     /**
@@ -57,7 +59,7 @@ public class Coord {
      * 
      **/
     public boolean estADistanceUn(Coord coordCible) {
-        return false;
+        return distanceFrom(coordCible) ==  1;
     }
 
     /**
@@ -69,7 +71,10 @@ public class Coord {
      * 
      **/
     public int distanceFrom(Coord coordCible) {
-        return 0;
+        int coordLigne = coordCible.getL();
+        int coordColonne = coordCible.getC();
+
+        return Math.abs(ligne-coordLigne) + Math.abs(colonne-coordColonne);
     }
 
     public String toString() {
@@ -99,8 +104,7 @@ public class Coord {
      * @see Coord#ligne
      */
     public int getL() {
-        // TODO Auto-generated method stub
-        return 0;
+        return ligne;
     }
 
     /**
@@ -111,7 +115,6 @@ public class Coord {
      * @see Coord#colonne
      */
     public int getC() {
-        // TODO Auto-generated method stub
-        return 0;
+        return colonne;
     }
 }
