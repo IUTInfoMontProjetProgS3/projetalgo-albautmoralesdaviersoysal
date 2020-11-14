@@ -5,36 +5,44 @@ import java.util.ArrayList;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
+/**
+ * GDBHSmartCrossing est la classe représentant une fonctionnalité de croisement
+ * un peut plus intélligente.
+ * 
+ * @see IndividuGDBH
+ * @version 1.0
+ */
 public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
 
-    public GDBHSmartCrossing(Instance in, ArrayList<Character> t) {
-        super(in, t);
+    public GDBHSmartCrossing(Instance instance, ArrayList<Character> trajet) {
+        super(instance, trajet);
     }
 
-    public GDBHSmartCrossing(Instance in) {
-        super(in);
+    public GDBHSmartCrossing(Instance instance) {
+        super(instance);
     }
 
-    public GDBHSmartCrossing(Instance in, Solution s) {
-        super(in, s);
+    public GDBHSmartCrossing(Instance instance, Solution solution) {
+        super(instance, solution);
     }
 
     /**
-     * @param i2 : Un deuxieme individu Faire le croisement intelligent entre this
-     *           et i2 comme dans le texte.
-     * @return un individu fils de type GDBHSimple.
+     * Faire le croisement intelligent entre this et individu2 comme dans le texte.
      * 
+     * @param individu2 : Un deuxieme individu
+     * @return un individu fils de type {@code GDBHSimple}.
      **/
-    public GDBHSmartCrossing calculerCroisement(GDBHSmartCrossing i2) {
+    public GDBHSmartCrossing calculerCroisement(GDBHSmartCrossing individu2) {
 
         return null;
     }
 
     /**
-     * Execute la mutation de this comme dans le texte.
+     * Cette fonction est la même que {@link GDBHSimple#calculerMutation()}
      * 
-     * @return un individu fils muté de type GDBHSimple.
+     * @return un individu fils muté de type {@code GDBHSimple}.
      * 
+     * @see GDBHSimple#calculerMutation()
      **/
     public GDBHSmartCrossing calculerMutation() {
         return null;

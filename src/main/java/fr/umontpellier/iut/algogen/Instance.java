@@ -4,30 +4,88 @@ import fr.umontpellier.iut.algogen.individus.PermutSimple;
 
 import java.util.ArrayList;
 
+/**
+ * <b>Instance est la classe représentant l'instance d'un jeu.</b>
+ * <p>
+ * Un objet Instance est caractérisé par les informations suivantes :
+ * <ul>
+ * <li>Un plateau de taille nxm.</li>
+ * <li>Une case de départ.</li>
+ * <li>Un nombre de pas autorisé.</li>
+ * <li>Une liste des coordonnées des pièces sur le plateau.</li>
+ * </ul>
+ * </p>
+ * 
+ * @version 1.0
+ */
 public class Instance {
-    private Coord startingP;
-    private int k;
+    /**
+     * Cet attribut repérenste la grille du jeu.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     */
     private boolean[][] plateau;
+
+    /**
+     * La case de départ du jeu. Cet attribut n'est pas modifiable.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     * @see Instance#getStartingP()
+     * @see Instance#getNbC()
+     * @see Instance#getNbL()
+     */
+    private Coord startingP;
+
+    /**
+     * Nombre de pas maximum autorisé dans le jeu. Cet ID n'est pas modifiable.
+     * 
+     * @see Instance#Instance(boolean[][], Coord, int)
+     * @see Instance#getK()
+     */
+    private int k;
+
+    /**
+     * La liste des coordoonées des pièces sur la grille.
+     * 
+     * @see Zero#Zero(int, String)
+     * @see Zero#getId()
+     */
     private ArrayList<Coord> listeCoordPieces;
 
     /**
-     * @param p  : grille du jeu
-     * @param s  : coordonnée de depart
-     * @param kk : nombre de pas autorisé
+     * @param plateau     : grille du jeu
+     * @param coordDepart : coordonnée de depart
+     * @param k           : nombre de pas autorisé
      * 
      **/
-    public Instance(boolean[][] p, Coord s, int kk) {
+    public Instance(boolean[][] plateau, Coord coordDepart, int k) {
 
     }
 
+    /**
+     * @return {@code int} nombre de ligne du plateau de jeu.
+     * 
+     * @see Instance#plateau
+     */
     public int getNbL() {
         return plateau.length;
     }
 
+    /**
+     * @return {@code int} nombre de colonne du plateau de jeu.
+     * 
+     * @see Instance#plateau
+     */
     public int getNbC() {
         return plateau[0].length;
     }
 
+    /**
+     * @return {@code Coord} Case de départ du jeu.
+     * 
+     * @see Instance#startingP
+     * @see Coord
+     */
     public Coord getStartingP() {
         return startingP;
     }
@@ -48,31 +106,37 @@ public class Instance {
     }
 
     /**
-     * @param c : coordonnées
-     * @return vrai si la piéce de coordonées c est presente dans la grille
+     * @param coordonnee : coordonnées
+     * @return {@code true} s'il y a une pièce aux coordonnées indiqués
      * 
+     * @see Coord
+     * @see Instance#plateau
      **/
-    public boolean piecePresente(Coord c) {
+    public boolean piecePresente(Coord coordonnee) {
         return false;
     }
 
     /**
-     * @param s : Solution
-     * @return vrai la solutions est valide, c-a-d depuis le point de départ on a
-     *         fait k pas sans sortir de la grille.
+     * Vérifie que toute les cases emprunté par la {@code Solution} sont bien
+     * comprit dans la grille et ne déborde pas. Et respect le nombre de pas
+     * autorisé.
      * 
+     * @param solution : {@code Solution} qui doit être vérifié
+     * @return {@code true} si la solutions est valide.
+     * 
+     * @see Solution
      **/
-    public boolean estValide(Solution s) {
+    public boolean estValide(Solution solution) {
         return false;
     }
 
     /**
-     * @param s : Solution
-     * @return le nombre de piéces récolté
+     * @param solution : Solution
+     * @return {@code int} le nombre de piéces récolté
      * 
+     * @see Solution
      **/
-
-    public int evaluerSolution(Solution s) {
+    public int evaluerSolution(Solution solution) {
         return 0;
     }
 
@@ -95,7 +159,7 @@ public class Instance {
         return res.toString();
     }
 
-    public String toString(Solution s) {
+    public String toString(Solution solution) {
         // prérequis : s est valide
         // retourne une chaine sous la forme suivante
         // o!..
@@ -118,16 +182,13 @@ public class Instance {
                                                   // "\n");
         for (int l = 0; l < getNbL(); l++) {
             for (int c = 0; c < getNbC(); c++) {
-                if (s.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
+                if (solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("!");
-                }
-                if (!s.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
+                } else if (!solution.contains(new Coord(l, c)) && piecePresente(new Coord(l, c))) {
                     res.append("x");
-                }
-                if (s.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                } else if (solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append("o");
-                }
-                if (!s.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
+                } else if (!solution.contains(new Coord(l, c)) && !piecePresente(new Coord(l, c))) {
                     res.append(".");
                 }
             }
@@ -140,11 +201,18 @@ public class Instance {
      * Le solveur glouton
      * 
      * @return Une solution de l'instance.
+     * 
+     * @see Solution
      **/
     public Solution greedySolver() {
         return new Solution();
     }
 
+    /**
+     * @return {@code int} Nombre de pas autorisé dans le jeu.
+     * 
+     * @see Instance#k
+     */
     public int getK() {
         // TODO Auto-generated method stub
         return 0;
@@ -155,9 +223,17 @@ public class Instance {
         return null;
     }
 
+    /**
+     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du plateau.
+     * 
+     * @see Instance#listeCoordPieces
+     * @see java.util.ArrayList
+     */
     public ArrayList<Coord> getListeCoordPieces() {
         // TODO Auto-generated method stub
         return null;
+
+        //papillion 
     }
 
 }
