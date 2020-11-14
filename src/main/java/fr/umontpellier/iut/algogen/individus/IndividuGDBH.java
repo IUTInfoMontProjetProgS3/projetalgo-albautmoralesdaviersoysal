@@ -100,8 +100,9 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
 
     /**
      * 
-     * @return les coordonnées des k mouvements comme solution.
+     * @return {@code Solution} les coordonnées des k mouvements comme solution.
      * 
+     * @see Solution
      **/
     @Override
     public Solution calculerSol() {

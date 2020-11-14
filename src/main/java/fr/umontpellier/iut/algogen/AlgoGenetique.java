@@ -13,12 +13,11 @@ import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
  * <ul>
  * <li>Une {@code Instance}.</li>
  * <li>Un {@code ICreator} createur d'individu.</li>
- * <li>et optionnellement {@code StrategieCalculNextGen}.</li>
+ * <li>Un {@code StrategieCalculNextGen}.</li>
  * </ul>
  * </p>
  * <p>
- * De plus, un Zéro a une liste d'amis Zéro. Le membre pourra ajouter ou enlever
- * des amis à cette liste.
+ * De plus, un AlgoGenetique est une liste d'objet qui extend {@link IIndividu}. 
  * </p>
  * 
  * @see IIndividu
