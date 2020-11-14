@@ -114,6 +114,7 @@ public class Instance {
      **/
     public boolean piecePresente(Coord coordonnee) {
         return false;
+        //BONNE CHANCE KEKE
     }
 
     /**
