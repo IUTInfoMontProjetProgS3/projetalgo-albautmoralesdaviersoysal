@@ -59,8 +59,11 @@ public class Instance {
      * 
      **/
     public Instance(boolean[][] plateau, Coord coordDepart, int k) {
-
+        this.plateau = plateau;
+        startingP = coordDepart;
+        this.k = k;
     }
+
 
     /**
      * @return {@code int} nombre de ligne du plateau de jeu.
@@ -113,8 +116,7 @@ public class Instance {
      * @see Instance#plateau
      **/
     public boolean piecePresente(Coord coordonnee) {
-        return false;
-        //BONNE CHANCE KEKE
+        return plateau[coordonnee.getL()][coordonnee.getC()];
     }
 
     /**
@@ -128,7 +130,12 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        return false;
+        if(solution.size()>k && !solution.get(0).equals(startingP)) return false;
+        for (Coord coord: solution) {
+            if(!coord.estDansPlateau(getNbL(),getNbC()))
+                return false;
+        }
+        return true;
     }
 
     /**

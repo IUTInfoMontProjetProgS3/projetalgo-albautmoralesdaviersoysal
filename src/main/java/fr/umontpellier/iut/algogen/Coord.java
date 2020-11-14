@@ -48,7 +48,7 @@ public class Coord {
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return (colonne<nbColonne && ligne<nbLigne);
+        return (colonne<nbColonne && ligne<nbLigne && nbLigne >= 0 && nbColonne >= 0);
     }
 
     /**

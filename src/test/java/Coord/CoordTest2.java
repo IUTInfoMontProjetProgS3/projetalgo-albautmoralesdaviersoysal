@@ -342,7 +342,7 @@ public class CoordTest2 {
         org.junit.Assert.assertNotNull(wildcardClass20);
     }
 
-    @Ignore
+
     @Test
     public void test0018() throws Throwable {
         if (debug)

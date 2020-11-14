@@ -9,7 +9,7 @@ public class InstanceTest1 {
 
     public static boolean debug = false;
 
-    @Ignore
+
     @Test
     public void test0001() throws Throwable {
         if (debug)
@@ -28,7 +28,7 @@ public class InstanceTest1 {
         org.junit.Assert.assertNotNull(wildcardClass10);
     }
 
-    @Ignore
+
     @Test
     public void test0002() throws Throwable {
         if (debug)

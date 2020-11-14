@@ -15,7 +15,7 @@ import fr.umontpellier.iut.algogen.Solution;
 
 public class InstanceTest {
 
-        @Ignore
+
         @Test
         public void testPiecePresente() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -38,7 +38,7 @@ public class InstanceTest {
                 }
         }
 
-        @Ignore
+
         @Test
         public void testEstValide() throws Exception {
 
