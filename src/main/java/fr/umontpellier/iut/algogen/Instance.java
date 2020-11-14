@@ -232,6 +232,8 @@ public class Instance {
     public ArrayList<Coord> getListeCoordPieces() {
         // TODO Auto-generated method stub
         return null;
+
+        //papillion 
     }
 
 }
