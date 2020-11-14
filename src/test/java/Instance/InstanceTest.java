@@ -69,7 +69,7 @@ public class InstanceTest {
 
         }
 
-        @Ignore
+        
         @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -98,7 +98,7 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        @Ignore
+        
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -127,7 +127,7 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        @Ignore
+       
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];

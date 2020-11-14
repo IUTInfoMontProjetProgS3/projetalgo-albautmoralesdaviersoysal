@@ -64,7 +64,6 @@ public class Instance {
         this.k = k;
     }
 
-
     /**
      * @return {@code int} nombre de ligne du plateau de jeu.
      * 
@@ -130,9 +129,10 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        if(solution.size()>k && !solution.get(0).equals(startingP)) return false;
-        for (Coord coord: solution) {
-            if(!coord.estDansPlateau(getNbL(),getNbC()))
+        if (solution.size() > k && !solution.get(0).equals(startingP))
+            return false;
+        for (Coord coord : solution) {
+            if (!coord.estDansPlateau(getNbL(), getNbC()))
                 return false;
         }
         return true;
@@ -145,7 +145,11 @@ public class Instance {
      * @see Solution
      **/
     public int evaluerSolution(Solution solution) {
-        return 0;
+        int nbpieces = 0;
+        for (Coord coord : solution)
+            if (piecePresente(coord))
+                nbpieces += 1;
+        return nbpieces;
     }
 
     @Override
@@ -222,8 +226,7 @@ public class Instance {
      * @see Instance#k
      */
     public int getK() {
-        // TODO Auto-generated method stub
-        return 0;
+        return k;
     }
 
     public ArrayList<Integer> greedyPermut() {
@@ -232,16 +235,16 @@ public class Instance {
     }
 
     /**
-     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du plateau.
+     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du
+     *         plateau.
      * 
-     * @see Instance#listeCoordPieces
+     * @see InslisteCoordPiecese#listeCoordPieces
      * @see java.util.ArrayList
      */
     public ArrayList<Coord> getListeCoordPieces() {
-        // TODO Auto-generated method stub
-        return null;
-
-        //papillion 
+        return listeCoordPieces;
     }
-
+        // papillion
 }
+
+
