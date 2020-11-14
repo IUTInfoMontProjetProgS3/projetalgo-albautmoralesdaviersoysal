@@ -15,7 +15,21 @@ import java.util.Objects;
  * @version 1.0
  */
 public class Coord {
+
+    /**
+     * La ligne sur laquelle se trouve this.
+     * 
+     * @see Coord#Coord(int, int)
+     * @see Coord#getL()
+     */
     private final int ligne = 0;
+
+    /**
+     * La colonne sur laquelle se trouve this.
+     * 
+     * @see Coord#Coord(int, int)
+     * @see Coord#getC()
+     */
     private final int colonne = 0;
 
     public Coord(int ligne, int colonne) {
@@ -23,9 +37,10 @@ public class Coord {
     }
 
     /**
-     * Vérifie si this peut être dans une grille avec {@code nbLigne} et {@code nbColonne}.
+     * Vérifie si this peut être dans une grille avec {@code nbLigne} et
+     * {@code nbColonne}.
      * 
-     * @param nbLigne : nombre de lignes de la grille
+     * @param nbLigne   : nombre de lignes de la grille
      * @param nbColonne : nombre de colonnes de la grille
      * @return true si la coordonnée ne dépace pas les bordures de la grille
      * 
@@ -45,12 +60,12 @@ public class Coord {
         return false;
     }
 
-
     /**
      * Renvoi la distance entre this et {@code coordCible} donné en paramètre
      * 
      * @param coordCible : Coordonnée ciblé
-     * @return {@code int} distance entre this et la coordonnée ciblé {@code coordCible}
+     * @return {@code int} distance entre this et la coordonnée ciblé
+     *         {@code coordCible}
      * 
      **/
     public int distanceFrom(Coord coordCible) {
@@ -87,7 +102,6 @@ public class Coord {
         // TODO Auto-generated method stub
         return 0;
     }
-
 
     /**
      * Retourne le numéro de colonne de this.

@@ -43,6 +43,8 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      * @param individu2 : Un deuxieme individu
      * @return un individu fils de type GDBHSmartCrossingSmartMut.
+     * 
+     * @see GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
         return null;

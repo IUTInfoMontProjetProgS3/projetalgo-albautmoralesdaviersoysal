@@ -30,9 +30,9 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
      * 
      * @see CroisementMutationV1#CroisementMutationV1(double)
      */
-    private double pmutation;
+    private double probaMutation;
 
-    public CroisementMutationV1(double pmut) {
+    public CroisementMutationV1(double probaMutation) {
     }
 
     /**
