@@ -15,6 +15,19 @@ import fr.umontpellier.iut.algogen.Solution;
 
 public class InstanceTest {
 
+        @Ignore
+        @Test
+        public void testConstructeur_initListCoordPiece() throws Exception {
+                Coord result = new Coord(1, 1);
+                boolean[][] plateau = new boolean[][] { //
+                                { false, false, false }, // l0
+                                { false, true, false }, // l1
+                                { false, false, false }// l2
+                };
+
+                Instance instance = new Instance(plateau, new Coord(0, 0), 2);
+                assertEquals(result, instance.getListeCoordPieces().get(0));
+        }
 
         @Test
         public void testPiecePresente() throws Exception {
@@ -37,7 +50,6 @@ public class InstanceTest {
                         }
                 }
         }
-
 
         @Test
         public void testEstValide() throws Exception {
@@ -69,7 +81,6 @@ public class InstanceTest {
 
         }
 
-        
         @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -98,7 +109,6 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -127,7 +137,6 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-       
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
