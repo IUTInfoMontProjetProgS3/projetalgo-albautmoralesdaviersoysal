@@ -48,7 +48,8 @@ public class Coord {
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return (colonne<nbColonne && ligne<nbLigne);
+
+        return (Math.abs(colonne) < Math.abs(nbColonne) && Math.abs(ligne) < Math.abs(nbLigne));
     }
 
     /**
@@ -59,7 +60,7 @@ public class Coord {
      * 
      **/
     public boolean estADistanceUn(Coord coordCible) {
-        return distanceFrom(coordCible) ==  1;
+        return Math.abs(distanceFrom(coordCible))  ==  1;
     }
 
     /**
