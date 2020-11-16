@@ -220,13 +220,33 @@ public class Instance {
      * 
      * @see Solution
      **/
+
+    // V1 De pâblito qui n'est sûrement pas la plus optimisée mais qui à été faite avec amour lol
+    // en cas d'équidistance, c'est la coordonnée avec l'index le plus proche de 0 qui sera retournée.
     public Solution greedySolver() {
         if (listeCoordPieces.isEmpty()) {
             return new Solution();
         }
-
-        startingP.getC();
-        return new Solution();
+        // plateau, coord depart, nb pas  (intance.greedySolver())
+        // listecoordpieces : arraylist des coords des pieces
+        this.initListeCoordPieces(); 
+        Solution sol = new Solution();
+        int distMin = this.k;
+        int dist = 0; 
+        Coord coordMin = listeCoordPieces.get(0);
+        if (listeCoordPieces.contains(startingP)){
+            sol.add(startingP);
+            return sol;
+        }
+        for (Coord coord : sol) {
+            dist = startingP.distanceFrom(coord);
+            if (distMin < dist){
+                distMin = dist;
+                coordMin = coord;
+            }
+        }
+        sol.add(coordMin);        
+        return sol;
     }
 
     /**
