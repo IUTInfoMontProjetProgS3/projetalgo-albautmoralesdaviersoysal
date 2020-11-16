@@ -114,9 +114,7 @@ public class InstanceTest {
                 boolean[][] p4 = new boolean[10][10];
                 for (int i = 0; i < p4.length; i++) {
                         for (int j = 0; j < p4[0].length; j += 2) {
-
                                 p4[i][j] = true;
-
                         }
                 }
                 Coord sp4 = new Coord(9, 5);
@@ -137,14 +135,13 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
+        @Ignore
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
                 for (int i = 0; i < p4.length; i++) {
                         for (int j = 0; j < p4[0].length; j += 2) {
-
                                 p4[i][j] = true;
-
                         }
                 }
                 Coord sp4 = new Coord(9, 5);

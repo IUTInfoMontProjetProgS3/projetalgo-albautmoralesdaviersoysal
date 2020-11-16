@@ -62,6 +62,7 @@ public class Instance {
         this.plateau = plateau;
         startingP = coordDepart;
         this.k = k;
+        initListeCoordPieces();
     }
 
     /**
@@ -129,7 +130,7 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        if (solution.size() > k && !solution.get(0).equals(startingP))
+        if (solution.size() > k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
         for (Coord coord : solution) {
             if (!coord.estDansPlateau(getNbL(), getNbC()))
@@ -145,6 +146,9 @@ public class Instance {
      * @see Solution
      **/
     public int evaluerSolution(Solution solution) {
+        startingP.equals(startingP);
+        if (!estValide(solution))
+            return 0;
         int nbpieces = 0;
         for (Coord coord : solution)
             if (piecePresente(coord))
@@ -217,6 +221,11 @@ public class Instance {
      * @see Solution
      **/
     public Solution greedySolver() {
+        if (listeCoordPieces.isEmpty()) {
+            return new Solution();
+        }
+
+        startingP.getC();
         return new Solution();
     }
 
@@ -230,7 +239,7 @@ public class Instance {
     }
 
     public ArrayList<Integer> greedyPermut() {
-        // TODO Auto-generated method stub
+        startingP.getC();
         return null;
     }
 
@@ -244,7 +253,5 @@ public class Instance {
     public ArrayList<Coord> getListeCoordPieces() {
         return listeCoordPieces;
     }
-        // papillion
+    // papillion
 }
-
-
