@@ -130,8 +130,8 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        int nbMouvements = solution.size() - 1; // -1 car la solution compte aussi la case de départ
-        if (nbMouvements > k || solution.isEmpty())
+        int nbMouvements = solution.size() - 1; // -1 car la solution compte aussi la case de départ (qui n'est pas un mouvement)
+        if (nbMouvements > k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
         for (Coord coord : solution) {
             if (!coord.estDansPlateau(getNbL(), getNbC()))
