@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * </ul>
  * </p>
  * 
- * @version 1.0
+ * @version 1.0.4
  */
 public class Instance {
     /**
@@ -37,7 +37,7 @@ public class Instance {
     private Coord startingP;
 
     /**
-     * Nombre de pas maximum autorisé dans le jeu. Cet ID n'est pas modifiable.
+     * Nombre de pas maximum autorisé dans le jeu. Cet attribut n'est pas modifiable.
      * 
      * @see Instance#Instance(boolean[][], Coord, int)
      * @see Instance#getK()
@@ -130,7 +130,8 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        if (solution.size() < k || !startingP.equals(solution.isEmpty() ? null : solution.get(0)))
+        int nbMouvements = solution.size() - 1; // -1 car la solution compte aussi la case de départ
+        if (nbMouvements > k || solution.isEmpty())
             return false;
         for (Coord coord : solution) {
             if (!coord.estDansPlateau(getNbL(), getNbC()))
