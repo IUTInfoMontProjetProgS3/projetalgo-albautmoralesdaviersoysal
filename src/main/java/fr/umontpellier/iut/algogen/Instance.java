@@ -131,7 +131,7 @@ public class Instance {
      **/
     public boolean estValide(Solution solution) {
         int nbMouvements = solution.size() - 1; // -1 car la solution compte aussi la case de départ (qui n'est pas un mouvement)
-        if (nbMouvements > k || solution.isEmpty() || !solution.get(0).equals(startingP))
+        if (nbMouvements != k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
         for (Coord coord : solution) {
             if (!coord.estDansPlateau(getNbL(), getNbC()))
@@ -147,7 +147,6 @@ public class Instance {
      * @see Solution
      **/
     public int evaluerSolution(Solution solution) {
-        startingP.equals(startingP);
         if (!estValide(solution))
             return 0;
         int nbpieces = 0;

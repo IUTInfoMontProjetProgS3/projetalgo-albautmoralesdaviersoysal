@@ -81,7 +81,6 @@ public class InstanceTest {
 
         }
 
-        @Ignore
         @Test
         public void testEstValide_inferireur_a_K() throws Exception {
 
