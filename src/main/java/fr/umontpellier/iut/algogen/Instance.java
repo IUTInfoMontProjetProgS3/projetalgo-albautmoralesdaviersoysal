@@ -147,6 +147,7 @@ public class Instance {
      * @see Solution
      **/
     public int evaluerSolution(Solution solution) {
+        startingP.equals(startingP);
         if (!estValide(solution))
             return 0;
         int nbpieces = 0;
