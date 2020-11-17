@@ -2,6 +2,7 @@ package Instance;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -80,6 +81,27 @@ public class InstanceTest {
 
         }
 
+        @Ignore
+        @Test
+        public void testEstValide_inferireur_a_K() throws Exception {
+
+                boolean[][] p4 = new boolean[10][10];
+                for (int i = 0; i < p4.length; i++) {
+                        for (int j = 0; j < p4[0].length; j += 2) {
+
+                                p4[i][j] = true;
+
+                        }
+                }
+                Coord sp4 = new Coord(9, 5);
+                int k4 = p4.length * p4.length / 10;
+                Instance in4 = new Instance(p4, sp4, k4);
+                Solution s = new Solution();
+                s.add(new Coord(9, 5));
+                assertFalse(in4.estValide(s));
+
+        }
+
         @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -147,7 +169,7 @@ public class InstanceTest {
                 Coord coordDepart = new Coord(0, 0);
                 int k = 9;
                 Instance instance = new Instance(plateau, coordDepart, k);
-                Solution resultaAttendu = new Solution(); 
+                Solution resultaAttendu = new Solution();
                 // resultat attendu :
                 // l0: x x . . .
                 // l1: . x x . .
