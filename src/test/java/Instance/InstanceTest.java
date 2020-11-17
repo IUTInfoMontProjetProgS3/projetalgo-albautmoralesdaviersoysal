@@ -15,7 +15,6 @@ import fr.umontpellier.iut.algogen.Solution;
 
 public class InstanceTest {
 
-        @Ignore
         @Test
         public void testConstructeur_initListCoordPiece() throws Exception {
                 Coord result = new Coord(1, 1);
@@ -110,7 +109,7 @@ public class InstanceTest {
         }
 
         @Test
-        public void testGreedySolver() throws Exception {
+        public void testEvaluerSolution2() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
                 for (int i = 0; i < p4.length; i++) {
                         for (int j = 0; j < p4[0].length; j += 2) {
@@ -133,6 +132,38 @@ public class InstanceTest {
                 s.add(new Coord(1, 4));
                 s.add(new Coord(0, 4));
                 assertEquals(10, in4.evaluerSolution(s));
+        }
+
+        @Ignore
+        @Test
+        public void testGreedySolver() throws Exception {
+                boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                                { false, true, false, false, false }, // l0: . o . . .
+                                { false, true, true, false, false }, // ,l1: . o o . .
+                                { false, false, true, true, false }, // ,l2: . . o o .
+                                { false, false, false, true, true }, // ,l3: . . . o o
+                                { false, false, false, false, true } // ,l4: . . . . o
+                };
+                Coord coordDepart = new Coord(0, 0);
+                int k = 9;
+                Instance instance = new Instance(plateau, coordDepart, k);
+                Solution resultaAttendu = new Solution(); 
+                // resultat attendu :
+                // l0: x x . . .
+                // l1: . x x . .
+                // l2: . . x x .
+                // l3: . . . x x
+                // l4: . . . . x
+                resultaAttendu.add(new Coord(0, 0));
+                resultaAttendu.add(new Coord(0, 1));
+                resultaAttendu.add(new Coord(1, 1));
+                resultaAttendu.add(new Coord(1, 2));
+                resultaAttendu.add(new Coord(2, 2));
+                resultaAttendu.add(new Coord(2, 3));
+                resultaAttendu.add(new Coord(3, 3));
+                resultaAttendu.add(new Coord(3, 4));
+                resultaAttendu.add(new Coord(4, 4));
+                assertEquals(resultaAttendu, instance.greedySolver());
         }
 
         @Ignore
