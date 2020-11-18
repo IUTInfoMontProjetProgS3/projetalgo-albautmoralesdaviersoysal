@@ -234,23 +234,74 @@ public class Instance {
         }
         // plateau, coord depart, nb pas (intance.greedySolver())
         // listecoordpieces : arraylist des coords des pieces
-        this.initListeCoordPieces();
+        //this.initListeCoordPieces(); déjà init
         Solution sol = new Solution();
+        Solution solCourante = new Solution();
+        int index = 1;
+        int nbpasMax = this.k;
+        
+        Coord coordCourante = startingP;
+        Coord coordAtteindre = startingP;
+        
+        while (index < nbpasMax) {
+            coordAtteindre = piecePlusProcheFrom(coordCourante);
+            
+            if (coordCourante.distanceFrom(coordAtteindre) == 0) {
+                sol.add(coordAtteindre);
+                
+            } else {
+                solCourante = seDeplacerFromTo(coordCourante, coordAtteindre);
+                for (Coord coord : solCourante) {
+                    sol.add(coord);
+                }
+            }
+            listeCoordPieces.remove(coordAtteindre);
+            index ++; 
+        }       
+        return sol;
+    }
+
+    public Coord piecePlusProcheFrom(Coord coordCourante){
         int distMin = this.k;
         int dist = 0;
-        Coord coordMin = listeCoordPieces.get(0);
-        if (listeCoordPieces.contains(startingP)) {
-            sol.add(startingP);
-            return sol;
-        }
-        for (Coord coord : sol) {
-            dist = startingP.distanceFrom(coord);
+        Coord coordMin = this.listeCoordPieces.get(0);
+        
+        for (Coord coord : listeCoordPieces) {
+            dist = coordCourante.distanceFrom(coord);
             if (distMin < dist) {
                 distMin = dist;
                 coordMin = coord;
             }
         }
-        sol.add(coordMin);
+        return coordMin;
+    }
+
+    public Solution seDeplacerFromTo(Coord coordDepart, Coord coordArrivee){
+        
+        Solution sol = new Solution();
+        Coord coordCourante = coordDepart; 
+        while (coordCourante.getL() != coordArrivee.getL()){
+            
+            if (coordCourante.getL() < coordArrivee.getL()){
+                coordCourante = new Coord(coordCourante.getL()+1,coordCourante.getC());
+                sol.add(coordCourante);
+            }
+            if (coordCourante.getL() > coordArrivee.getL()){
+                coordCourante = new Coord(coordCourante.getL()-1,coordCourante.getC());
+                sol.add(coordCourante);
+            }
+        }
+        while (coordCourante.getC() != coordArrivee.getC()){
+            
+            if (coordCourante.getC() < coordArrivee.getC()){
+                coordCourante = new Coord(coordCourante.getL(),coordCourante.getC()+1);
+                sol.add(coordCourante);
+            }
+            if (coordCourante.getC() > coordArrivee.getC()){
+                coordCourante = new Coord(coordCourante.getC(),coordCourante.getC()-1);
+                sol.add(coordCourante);
+            }
+        }
         return sol;
     }
 
