@@ -85,7 +85,6 @@ public class IndividuGDBHTest {
 		assertEquals(trajet, individu.trajet);
 	}
 
-	@Ignore
 	@Test
 	public void testCalculerSol() throws Exception {
 		boolean[][] p4 = new boolean[10][10];

@@ -144,7 +144,14 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      **/
     @Override
     public Solution calculerSol() {
-        return new Solution();
+        Solution solution = new Solution();
+        solution.add(instance.getStartingP());
+        Coord coordCourant = solution.get(0);
+        for (char direction : trajet) {
+            coordCourant = calculerNextCoord(coordCourant, direction);
+            solution.add(coordCourant);
+        }
+        return solution;
     }
 
     /**
