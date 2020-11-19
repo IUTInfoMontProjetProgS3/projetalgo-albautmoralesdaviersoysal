@@ -17,7 +17,6 @@ import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 
 public class IndividuGDBHTest {
 
-	@Ignore
 	@Test
 	public void testIndividuGDBHInstance() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -45,7 +44,6 @@ public class IndividuGDBHTest {
 
 	}
 
-	@Ignore
 	@Test
 	public void testIndividuGDBHInstanceSolution() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -84,7 +82,7 @@ public class IndividuGDBHTest {
 		c.add(new Coord(8, 6));
 		GDBHSimple individu = new GDBHSimple(in4, c);
 
-		assertTrue(trajet.equals(individu.trajet));
+		assertEquals(trajet, individu.trajet);
 	}
 
 	@Ignore
