@@ -184,6 +184,22 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
+        @Ignore("Non validé")
+        @Test
+        public void testGreedySolver_solutionValide() throws Exception {
+                boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                                { false, true, false, false, false }, // l0: . o . . .
+                                { false, true, true, false, false }, // ,l1: . o o . .
+                                { false, false, true, true, false }, // ,l2: . . o o .
+                                { false, false, false, true, true }, // ,l3: . . . o o
+                                { false, false, false, false, true } // ,l4: . . . . o
+                };
+                Coord coordDepart = new Coord(0, 0);
+                int k = 9;
+                Instance instance = new Instance(plateau, coordDepart, k);
+                assertTrue(instance.estValide(instance.greedySolver()));
+        }
+
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
