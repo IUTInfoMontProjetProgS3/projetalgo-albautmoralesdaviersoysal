@@ -101,6 +101,35 @@ public class InstanceTest {
 
         }
 
+        @Ignore
+        @Test
+        public void testEvaluerSolution_avec_doublon() throws Exception {
+                boolean[][] p4 = new boolean[10][10];
+                for (int i = 0; i < p4.length; i++) {
+                        for (int j = 0; j < p4[0].length; j += 2) {
+
+                                p4[i][j] = true;
+
+                        }
+                }
+                Coord sp4 = new Coord(9, 5);
+                int k4 = p4.length * p4.length / 10;
+                Instance in4 = new Instance(p4, sp4, k4);
+                Solution s = new Solution();
+                s.add(new Coord(9, 5));
+                s.add(new Coord(9, 6));
+                s.add(new Coord(9, 6)); // Doublon ici
+                s.add(new Coord(7, 6));
+                s.add(new Coord(6, 6));
+                s.add(new Coord(5, 6));
+                s.add(new Coord(4, 6));
+                s.add(new Coord(3, 6));
+                s.add(new Coord(2, 6));
+                s.add(new Coord(1, 6));
+                s.add(new Coord(0, 6));
+                assertEquals(9, in4.evaluerSolution(s));
+        }
+
         @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -155,7 +184,6 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
