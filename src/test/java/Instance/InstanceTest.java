@@ -195,7 +195,7 @@ public class InstanceTest {
                                 { false, false, false, false, true } // ,l4: . . . . o
                 };
                 Coord coordDepart = new Coord(0, 0);
-                int k = 9;
+                int k = 8;
                 Instance instance = new Instance(plateau, coordDepart, k);
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
@@ -210,7 +210,7 @@ public class InstanceTest {
                                 { false, false, false, false, true } // ,l4: . . . . o
                 };
                 Coord coordDepart = new Coord(0, 0);
-                int k = 9;
+                int k = 8;
                 Instance instance = new Instance(plateau, coordDepart, k);
                 Solution resultaAttendu = new Solution();
                 // resultat attendu :
