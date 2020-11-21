@@ -101,7 +101,7 @@ public class InstanceTest {
 
         }
 
-        @Ignore
+        
         @Test
         public void testEvaluerSolution_avec_doublon() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -184,7 +184,7 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        @Ignore("Non validé")
+        
         @Test
         public void testGreedySolver_solutionValide() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -231,9 +231,9 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        @Ignore("Nom validé")
+        
         @Test
-        void testGreedySolver_SolutionValideQuandPieceTropLoin() throws Exception {
+        public void testGreedySolver_SolutionValideQuandPieceTropLoin() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
                                 { false, true, false, false, false }, // l0: . o . . .
                                 { false, true, true, false, false }, // ,l1: . o o . .
@@ -253,9 +253,9 @@ public class InstanceTest {
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
 
-        @Ignore("Nom validé")
+        
         @Test
-        void testGreedySolver_BonneSolutionQuandPieceTropLoin() throws Exception {
+        public void testGreedySolver_BonneSolutionQuandPieceTropLoin() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
                                 { false, true, false, false, true }, // ,,l0: . o . . o
                                 { false, false, false, false, false }, // l1: . . . . .
@@ -280,7 +280,7 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        @Ignore
+        
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];

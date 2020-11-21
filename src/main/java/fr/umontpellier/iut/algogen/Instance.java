@@ -237,16 +237,18 @@ public class Instance {
         //this.initListeCoordPieces(); déjà init
         Solution sol = new Solution();
         Solution solCourante = new Solution();
-        int index = 1;
+        int index = 2;
         int nbpasMax = this.k;
         
         Coord coordCourante = startingP;
         Coord coordAtteindre = startingP;
+
+        sol.add(coordCourante);
         
         while (index < nbpasMax) {
             coordAtteindre = piecePlusProcheFrom(coordCourante);
             
-            if (coordCourante.distanceFrom(coordAtteindre) == 0) {
+            if (coordCourante.distanceFrom(coordAtteindre) == 1) {
                 sol.add(coordAtteindre);
                 
             } else {
