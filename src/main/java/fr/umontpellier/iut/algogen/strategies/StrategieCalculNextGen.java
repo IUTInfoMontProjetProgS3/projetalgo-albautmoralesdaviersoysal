@@ -1,6 +1,7 @@
 package fr.umontpellier.iut.algogen.strategies;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 
@@ -25,7 +26,7 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
     *         pop.get(0).evaluerFitness() == 2 (l'individu 0 a une fitness de 2)
     *         pop.get(1).evaluerFitness() == 3 (l'individu 1 a une fitness de 3)
     *         pop.get(2).evaluerFitness() == 1 (l'individu 2 a une fitness de 1)
-    *         dans ce cas, on tire un entier r dans [0,S-1] (=[0,5]), puis :
+    *         dans ce cas, on tire un entier r dans [0,6-1] (=[0,5]), puis :
     * 
     *         si r est dans {0,1} , on selectionne l'individu 0
     * 
@@ -35,7 +36,26 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
     * 
     **/
    protected T selectionRoulette(ArrayList<T> pop) {
-      return null;
+      int s=0;
+      Random random = new Random();
+
+      // Calcul de de la somme S
+      for(int i=0 ; i<pop.size() ; i++) {
+         s += pop.get(i).evaluerFitness();
+      }
+
+      // Tirage de r dans [0;s-1]
+      int r = random.nextInt(s);
+
+      // Sélectionne l'individu
+      s=0;
+      for(int i=0 ; i<pop.size() ; i++) {
+         s += pop.get(i).evaluerFitness();
+         if(s>r) {
+            return pop.get(i);
+         }
+      }
+      return pop.get(pop.size()-1);
    }
 
    /**
