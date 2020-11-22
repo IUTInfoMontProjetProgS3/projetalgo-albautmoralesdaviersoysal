@@ -60,13 +60,19 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
 
    /**
     * @param pop : Une population
-    * @return deux individus parents selectinnés par roullette.
+    * @return deux individus parents selectinnés par roulette.
     * 
     **/
    public ArrayList<T> selectionParents(ArrayList<T> pop) {
-      return null;
+      ArrayList<T> pop1 = new ArrayList<T>(pop);
+      ArrayList<T> parents = new ArrayList<>();
+
+      parents.add(selectionRoulette(pop));
+      pop1.remove(parents.get(0));
+      parents.add(selectionRoulette(pop1));
+
+      return parents;
    }
 
    public abstract ArrayList<T> calculerNextGen(ArrayList<T> pop);
-
 }
