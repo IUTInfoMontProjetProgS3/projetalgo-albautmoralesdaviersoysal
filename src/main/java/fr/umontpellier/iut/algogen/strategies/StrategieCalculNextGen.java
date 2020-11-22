@@ -40,8 +40,8 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
       Random random = new Random();
 
       // Calcul de de la somme S
-      for(int i=0 ; i<pop.size() ; i++) {
-         s += pop.get(i).evaluerFitness();
+      for (T t : pop) {
+         s += t.evaluerFitness();
       }
 
       // Tirage de r dans [0;s-1]
@@ -49,10 +49,10 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
 
       // Sélectionne l'individu
       s=0;
-      for(int i=0 ; i<pop.size() ; i++) {
-         s += pop.get(i).evaluerFitness();
-         if(s>r) {
-            return pop.get(i);
+      for (T t : pop) {
+         s += t.evaluerFitness();
+         if (s > r) {
+            return t;
          }
       }
       return pop.get(pop.size()-1);
