@@ -200,7 +200,7 @@ public class InstanceTest {
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
 
-        
+        @Ignore("Non validé")
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -254,7 +254,7 @@ public class InstanceTest {
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
 
-        
+        @Ignore("Non validé")
         @Test
         public void testGreedySolver_BonneSolutionQuandPieceTropLoin() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :

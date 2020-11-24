@@ -3,6 +3,7 @@ package fr.umontpellier.iut.algogen;
 import fr.umontpellier.iut.algogen.individus.PermutSimple;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * <b>Instance est la classe représentant l'instance d'un jeu.</b>
@@ -48,8 +49,7 @@ public class Instance {
     /**
      * La liste des coordoonées des pièces sur la grille.
      * 
-     * @see Zero#Zero(int, String)
-     * @see Zero#getId()
+     * @see Instance#getListeCoordPieces() 
      */
     private ArrayList<Coord> listeCoordPieces;
 
@@ -150,13 +150,18 @@ public class Instance {
      **/
     public int evaluerSolution(Solution solution) {
         int nbpieces = 0;
-        for (Coord coord : solution)
-            if (piecePresente(coord))
+        HashSet<Coord> listeSolution = new HashSet<>(solution);
+        for (Coord coord : listeSolution) {
+            if (piecePresente(coord)) {
                 nbpieces += 1;
+            }
+        }
         return nbpieces;
         // Note importante pour les futurs mise à jour, je viens de discuter avec le
         // prof et il n'est pas obligatoire de valider tous les tests seul les tests
         // dans InstanceTest seront noté
+
+
     }
 
     @Override
