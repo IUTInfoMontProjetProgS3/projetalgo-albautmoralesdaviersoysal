@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import fr.umontpellier.iut.algogen.fabriques.ICreator;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
+import fr.umontpellier.iut.algogen.strategies.CroisementMutationV1;
 import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
 
 /**
@@ -19,12 +20,16 @@ import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
  * <p>
  * De plus, un AlgoGenetique est une liste d'objet qui extend {@link IIndividu}. 
  * </p>
- * 
+ *
  * @see IIndividu
- * 
+ *
  * @version 1.0
  */
 class AlgoGenetique<T extends IIndividu<T>> {
+
+    private Instance instance;
+    private StrategieCalculNextGen<T> calculGen;
+    private ICreator<T> createurIndividu;
 
     /**
      * @param instance : instance ,
@@ -33,7 +38,9 @@ class AlgoGenetique<T extends IIndividu<T>> {
      *
      */
     public AlgoGenetique(Instance instance, StrategieCalculNextGen<T> calculGen, ICreator<T> createurIndividu) {
-
+        this.instance = instance;
+        this.calculGen = calculGen;
+        this.createurIndividu = createurIndividu;
     }
 
     /**
@@ -42,7 +49,9 @@ class AlgoGenetique<T extends IIndividu<T>> {
      *
      */
     public AlgoGenetique(Instance instance, ICreator<T> createurIndividu) {
-
+        this.instance = instance;
+        calculGen = new CroisementMutationV1<>();
+        this.createurIndividu = createurIndividu;
     }
 
     /**
@@ -52,7 +61,6 @@ class AlgoGenetique<T extends IIndividu<T>> {
      * @return retourne la meilleur solution
      *
      */
-
     public Solution run(int taillePop, int nbGeneration) {
         return null;
     }
