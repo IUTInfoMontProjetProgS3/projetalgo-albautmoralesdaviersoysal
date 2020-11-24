@@ -237,40 +237,40 @@ public class Instance {
         //this.initListeCoordPieces(); déjà init
         Solution sol = new Solution();
         Solution solCourante = new Solution();
-        int index = 2;
-        int nbpasMax = this.k;
-        
+        int index = 0;
+        int nbpasMax = this.k; 
         Coord coordCourante = startingP;
         Coord coordAtteindre = startingP;
-
         sol.add(coordCourante);
         
         while (index < nbpasMax) {
-            coordAtteindre = piecePlusProcheFrom(coordCourante);
-            
-            if (coordCourante.distanceFrom(coordAtteindre) == 1) {
+            coordAtteindre = piecePlusProcheFrom(coordCourante);            
+            if (coordCourante.estADistanceUn(coordAtteindre)) {
                 sol.add(coordAtteindre);
-                
+                index ++;                
             } else {
-                solCourante = seDeplacerFromTo(coordCourante, coordAtteindre);
-                for (Coord coord : solCourante) {
-                    sol.add(coord);
-                }
+                solCourante = seDeplacerFromTo(coordCourante, coordAtteindre);          
+                for (int i = 0; i < solCourante.size() && index < nbpasMax; i++) {
+                    
+                    sol.add(solCourante.get(i));
+                    index++;
+                }                    
             }
+            coordCourante = coordAtteindre;
             listeCoordPieces.remove(coordAtteindre);
-            index ++; 
+            
         }       
         return sol;
     }
 
     public Coord piecePlusProcheFrom(Coord coordCourante){
-        int distMin = this.k;
+        int distMin = Integer.MAX_VALUE;
         int dist = 0;
-        Coord coordMin = this.listeCoordPieces.get(0);
+        Coord coordMin = null;
         
         for (Coord coord : listeCoordPieces) {
             dist = coordCourante.distanceFrom(coord);
-            if (distMin < dist) {
+            if (distMin > dist) {
                 distMin = dist;
                 coordMin = coord;
             }
