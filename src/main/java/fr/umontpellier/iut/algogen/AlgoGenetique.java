@@ -55,14 +55,26 @@ class AlgoGenetique<T extends IIndividu<T>> {
     }
 
     /**
+     * Créer population initiale Lancer Strategie de calcule de nouvelles generations nbGen fois
      * @param taillePop : taille de la Population ,
-     * @param nbGeneration     : nombre de generations Créer population initiale Lancer
-     *                  Strategie de calcule de nouvelles generations nbGen fois
+     * @param nbGeneration     : nombre de generations
      * @return retourne la meilleur solution
      *
      */
     public Solution run(int taillePop, int nbGeneration) {
-        return null;
+        ArrayList<T> population  = createurIndividu.creerPopInit(instance, taillePop);
+        for (int i = 0; i < nbGeneration; i++) {
+            population = calculGen.calculerNextGen(population);
+        }
+        T meilleurIndividu = null;
+        int meilleurFitness = 0;
+        for (T individu : population) {
+            if (individu.evaluerFitness() > meilleurFitness) {
+                meilleurFitness = individu.evaluerFitness();
+                meilleurIndividu = individu;
+            }
+        }
+        return meilleurIndividu.calculerSol();
     }
 
 }
