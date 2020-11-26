@@ -229,50 +229,6 @@ public class Instance {
         return greedyLeGlouton.greedySolver();
     }
 
-    public Coord piecePlusProcheFrom(Coord coordCourante){
-        int distMin = Integer.MAX_VALUE;
-        int dist = 0;
-        Coord coordMin = null;
-        
-        for (Coord coord : listeCoordPieces) {
-            dist = coordCourante.distanceFrom(coord);
-            if (distMin > dist) {
-                distMin = dist;
-                coordMin = coord;
-            }
-        }
-        return coordMin;
-    }
-
-    public Solution seDeplacerFromTo(Coord coordDepart, Coord coordArrivee){
-        
-        Solution sol = new Solution();
-        Coord coordCourante = coordDepart; 
-        while (coordCourante.getL() != coordArrivee.getL()){
-            
-            if (coordCourante.getL() < coordArrivee.getL()){
-                coordCourante = new Coord(coordCourante.getL()+1,coordCourante.getC());
-                sol.add(coordCourante);
-            }
-            if (coordCourante.getL() > coordArrivee.getL()){
-                coordCourante = new Coord(coordCourante.getL()-1,coordCourante.getC());
-                sol.add(coordCourante);
-            }
-        }
-        while (coordCourante.getC() != coordArrivee.getC()){
-            
-            if (coordCourante.getC() < coordArrivee.getC()){
-                coordCourante = new Coord(coordCourante.getL(),coordCourante.getC()+1);
-                sol.add(coordCourante);
-            }
-            if (coordCourante.getC() > coordArrivee.getC()){
-                coordCourante = new Coord(coordCourante.getC(),coordCourante.getC()-1);
-                sol.add(coordCourante);
-            }
-        }
-        return sol;
-    }
-
     /**
      * @return {@code int} Nombre de pas autorisé dans le jeu.
      * 
