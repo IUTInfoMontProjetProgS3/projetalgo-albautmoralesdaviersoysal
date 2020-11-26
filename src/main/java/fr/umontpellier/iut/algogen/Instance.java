@@ -1,6 +1,7 @@
 package fr.umontpellier.iut.algogen;
 
 import fr.umontpellier.iut.algogen.individus.PermutSimple;
+import fr.umontpellier.iut.algogen.outils.GreedyLeGlouton;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -157,11 +158,6 @@ public class Instance {
             }
         }
         return nbpieces;
-        // Note importante pour les futurs mise à jour, je viens de discuter avec le
-        // prof et il n'est pas obligatoire de valider tous les tests seul les tests
-        // dans InstanceTest seront noté
-
-
     }
 
     @Override
@@ -228,44 +224,9 @@ public class Instance {
      * 
      * @see Solution
      **/
-
-    // V1 De pâblito qui n'est sûrement pas la plus optimisée mais qui à été faite
-    // avec amour lol
-    // en cas d'équidistance, c'est la coordonnée avec l'index le plus proche de 0
-    // qui sera retournée.
     public Solution greedySolver() {
-        if (listeCoordPieces.isEmpty()) {
-            return new Solution();
-        }
-        // plateau, coord depart, nb pas (intance.greedySolver())
-        // listecoordpieces : arraylist des coords des pieces
-        //this.initListeCoordPieces(); déjà init
-        Solution sol = new Solution();
-        Solution solCourante = new Solution();
-        int index = 0;
-        int nbpasMax = this.k; 
-        Coord coordCourante = startingP;
-        Coord coordAtteindre = startingP;
-        sol.add(coordCourante);
-        
-        while (index < nbpasMax) {
-            coordAtteindre = piecePlusProcheFrom(coordCourante);            
-            if (coordCourante.estADistanceUn(coordAtteindre)) {
-                sol.add(coordAtteindre);
-                index ++;                
-            } else {
-                solCourante = seDeplacerFromTo(coordCourante, coordAtteindre);          
-                for (int i = 0; i < solCourante.size() && index < nbpasMax; i++) {
-                    
-                    sol.add(solCourante.get(i));
-                    index++;
-                }                    
-            }
-            coordCourante = coordAtteindre;
-            listeCoordPieces.remove(coordAtteindre);
-            
-        }       
-        return sol;
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);  
+        return greedyLeGlouton.greedySolver();
     }
 
     public Coord piecePlusProcheFrom(Coord coordCourante){

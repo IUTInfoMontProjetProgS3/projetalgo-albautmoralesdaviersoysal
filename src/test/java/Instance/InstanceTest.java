@@ -101,7 +101,6 @@ public class InstanceTest {
 
         }
 
-        
         @Test
         public void testEvaluerSolution_avec_doublon() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -184,7 +183,6 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        
         @Test
         public void testGreedySolver_solutionValide() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -200,7 +198,6 @@ public class InstanceTest {
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
 
-        @Ignore("Non validé")
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -232,7 +229,6 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        
         @Test
         public void testGreedySolver_SolutionValideQuandPieceTropLoin() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -254,7 +250,6 @@ public class InstanceTest {
                 assertTrue(instance.estValide(instance.greedySolver()));
         }
 
-        @Ignore("Non validé")
         @Test
         public void testGreedySolver_BonneSolutionQuandPieceTropLoin() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -281,7 +276,7 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        
+        @Ignore("Non validé")
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
