@@ -164,29 +164,4 @@ class GreedyLeGloutonTest {
         resultaAttendu.add(new Coord(0, 3));
         assertEquals(resultaAttendu, greedyLeGlouton.greedySolver());
     }
-
-    @ParameterizedTest(name = "Lorsque l'on cherche la pièce la plus proche depuis les coordonées {0} doit retourner les coordonné de la pièce {1}")
-    @MethodSource("genererArgumentsPourtestGetPieacePlusProche")
-    void testGetPieacePlusProche(Coord coordCourante, Coord coordPieceAttendu) {
-        boolean[][] plateau = new boolean[][] { // Disposition des pièces :
-                { false, false, false, false, false }, // l0: . . . . .
-                { false, false, false, false, false }, // l1: . . . . .
-                { false, true, false, false, true }, // ,,l2: . o . . o
-                { false, false, false, false, false }, // l3: . . . . .
-                { false, false, false, false, false } // ,l4: . . . . .
-        };
-        Coord coordDepart = new Coord(0, 0);
-        int k = 3;
-        Instance instance = new Instance(plateau, coordDepart, k);
-        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(instance);
-        assertEquals(coordPieceAttendu, greedyLeGlouton.getPiecePlusProcheFrom(coordCourante));
-    }
-
-    private static Stream<Arguments> genererArgumentsPourtestGetPieacePlusProche() {
-        return Stream.of(//
-                Arguments.of(new Coord(0, 0), new Coord(2, 1)), //
-                Arguments.of(new Coord(2, 3), new Coord(2, 4)), //
-                Arguments.of(new Coord(5, 5), new Coord(2, 4)), //
-                Arguments.of(new Coord(2, 2), new Coord(2, 1)));
-    }
 }

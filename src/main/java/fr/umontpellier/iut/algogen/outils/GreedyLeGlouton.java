@@ -1,5 +1,6 @@
 package fr.umontpellier.iut.algogen.outils;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 import fr.umontpellier.iut.algogen.Coord;
@@ -7,7 +8,8 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 /**
- * <b>GreedyLeGlouton est la classe représentant un algo de résolution.</b>
+ * <b>GreedyLeGlouton est la classe permetant de trouver la {@link Solution}
+ * d'une {@link Instance} en suivant une approche greedy.</b>
  * <p>
  * Une instance GreedyLeGlouton est caractérisé par les informations suivantes :
  * <ul>
@@ -17,7 +19,7 @@ import fr.umontpellier.iut.algogen.Solution;
  * </p>
  * 
  * @author @MathieuSoysal
- * @version 1.0
+ * @version 1.1.0
  */
 public class GreedyLeGlouton {
 
@@ -31,20 +33,13 @@ public class GreedyLeGlouton {
      */
     private Instance instance;
 
-    /**
-     * La liste des pièces récoltées.
-     * 
-     * @see GreedyLeGlouton#GreedyLeGlouton(Instance)
-     * @see GreedyLeGlouton#greedySolver()
-     * @see GreedyLeGlouton#getPiecePlusProcheFrom(Coord)
-     */
-    private HashSet<Coord> piecesRecolte;
+    private DetecteurDePiece detecteurDePiece;
 
     /**
      * @param instance
      */
     public GreedyLeGlouton(Instance instance) {
-        piecesRecolte = new HashSet<>();
+        detecteurDePiece = new DetecteurDePiece(instance);
         this.instance = instance;
     }
 
@@ -57,13 +52,14 @@ public class GreedyLeGlouton {
      * @see Instance
      */
     public Solution greedySolver() {
+        HashSet<Coord> piecesRecolte = new HashSet<>();
         if (instance.getListeCoordPieces().isEmpty())
             return new Solution();
         Solution solution = new Solution();
         solution.add(instance.getStartingP());
         Coord coordCourante = instance.getStartingP();
         while (solution.size() < instance.getK() + 1) {
-            Coord piece = getPiecePlusProcheFrom(coordCourante);
+            Coord piece = detecteurDePiece.getPieceNonRecolteePlusProcheFrom(coordCourante, piecesRecolte);
             piecesRecolte.add(piece);
             if (piece == null)
                 solution.addAll(comblerKPasRestant(coordCourante, instance.getK() + 1 - solution.size()));
@@ -73,8 +69,15 @@ public class GreedyLeGlouton {
         }
         if (solution.size() > instance.getK() + 1)
             tronckerSolution(solution);
-        piecesRecolte.clear();
         return solution;
+    }
+
+    public ArrayList<Integer> greedyPermut() {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (Coord coord : greedySolver())
+            if (instance.piecePresente(coord))
+                result.add(instance.getListeCoordPieces().indexOf(coord));
+        return result;
     }
 
     private void tronckerSolution(Solution solution) {
@@ -98,27 +101,7 @@ public class GreedyLeGlouton {
         return solutionComble;
     }
 
-    /**
-     * Retourne les pièces les plus proche par rapport à la {@link Coord} donnée en
-     * paramètre.
-     * 
-     * @param coordCourante Coordonée courante
-     * 
-     * @return {@link Coord} de la pièce la plus proche de {@code coordCourante}.
-     * 
-     * @see Coord
-     * @see Instance#getListeCoordPieces()
-     */
-    public Coord getPiecePlusProcheFrom(Coord coordCourante) {
-        Coord piecePlusProche = null;
-        int distMin = Integer.MAX_VALUE;
-        for (Coord coord : instance.getListeCoordPieces()) {
-            int dist = coordCourante.distanceFrom(coord);
-            if (dist < distMin && !piecesRecolte.contains(coord)) {
-                distMin = dist;
-                piecePlusProche = coord;
-            }
-        }
-        return piecePlusProche;
+    public Object getPiecePlusProcheFrom(Coord coordCourante) {
+        return null;
     }
 }

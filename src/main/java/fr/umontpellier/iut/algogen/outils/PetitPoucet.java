@@ -5,9 +5,9 @@ import fr.umontpellier.iut.algogen.Solution;
 
 /**
  * <b>PetitPoucet est la classe utilitaire permetant de retrouver le plus court
- * chemin entre deu {@link Coord}.</b>
+ * chemin entre deux {@link Coord}.</b>
  * 
- * @author @MathieuSoysal
+ * @author @MathieuSoysal 
  * @version 1.0
  */
 public class PetitPoucet {

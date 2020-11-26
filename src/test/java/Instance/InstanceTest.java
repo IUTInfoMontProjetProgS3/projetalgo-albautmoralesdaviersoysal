@@ -276,7 +276,6 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        @Ignore("Non validé")
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -292,9 +291,10 @@ public class InstanceTest {
                 int[] values = new int[] { 47, 42, 37, 32, 27, 22, 17, 12, 7, 2, 1, 6, 11, 16, 21, 26, 31, 36, 41, 46,
                                 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 49, 44, 39,
                                 34, 29, 24, 19, 14, 9, 4 };
+                        //TODO: la taille de la liste est plus grand que K normal ? 
                 for (int a : values)
                         s.add(a);
-                assertTrue(s.equals(in4.greedyPermut()));
+                assertEquals(s, in4.greedyPermut());
         }
 
 }

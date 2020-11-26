@@ -239,8 +239,8 @@ public class Instance {
     }
 
     public ArrayList<Integer> greedyPermut() {
-        startingP.getC();
-        return null;
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);
+        return greedyLeGlouton.greedyPermut();
     }
 
     /**
