@@ -33,13 +33,10 @@ public class GreedyLeGlouton {
      */
     private Instance instance;
 
-    private DetecteurDePiece detecteurDePiece;
-
     /**
      * @param instance
      */
     public GreedyLeGlouton(Instance instance) {
-        detecteurDePiece = new DetecteurDePiece(instance);
         this.instance = instance;
     }
 
@@ -52,15 +49,15 @@ public class GreedyLeGlouton {
      * @see Instance
      */
     public Solution greedySolver() {
-        HashSet<Coord> piecesRecolte = new HashSet<>();
+        HashSet<Coord> piecesEnJeu = new HashSet<>(instance.getListeCoordPieces());
         if (instance.getListeCoordPieces().isEmpty())
             return new Solution();
         Solution solution = new Solution();
         solution.add(instance.getStartingP());
         Coord coordCourante = instance.getStartingP();
         while (solution.size() < instance.getK() + 1) {
-            Coord piece = detecteurDePiece.getPieceNonRecolteePlusProcheFrom(coordCourante, piecesRecolte);
-            piecesRecolte.add(piece);
+            Coord piece = DetecteurDePiece.getPiecePlusProcheFrom(coordCourante, piecesEnJeu);
+            piecesEnJeu.remove(piece);
             if (piece == null)
                 solution.addAll(comblerKPasRestant(coordCourante, instance.getK() + 1 - solution.size()));
             else
@@ -74,9 +71,14 @@ public class GreedyLeGlouton {
 
     public ArrayList<Integer> greedyPermut() {
         ArrayList<Integer> result = new ArrayList<>();
-        for (Coord coord : greedySolver())
-            if (instance.piecePresente(coord))
-                result.add(instance.getListeCoordPieces().indexOf(coord));
+        HashSet<Coord> piecesEnJeu = new HashSet<>(instance.getListeCoordPieces());
+        Coord coordCourante = instance.getStartingP();
+        while (!piecesEnJeu.isEmpty()) {
+            Coord piecePlusProche = DetecteurDePiece.getPiecePlusProcheFrom(coordCourante, piecesEnJeu);
+            piecesEnJeu.remove(piecePlusProche);
+            result.add(instance.getListeCoordPieces().indexOf(piecePlusProche));
+            coordCourante = piecePlusProche;
+        }
         return result;
     }
 
@@ -99,9 +101,5 @@ public class GreedyLeGlouton {
             phase1 = !phase1;
         }
         return solutionComble;
-    }
-
-    public Object getPiecePlusProcheFrom(Coord coordCourante) {
-        return null;
     }
 }
