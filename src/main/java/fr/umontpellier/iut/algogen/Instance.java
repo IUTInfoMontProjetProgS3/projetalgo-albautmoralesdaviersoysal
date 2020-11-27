@@ -1,8 +1,10 @@
 package fr.umontpellier.iut.algogen;
 
 import fr.umontpellier.iut.algogen.individus.PermutSimple;
+import fr.umontpellier.iut.algogen.outils.GreedyLeGlouton;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * <b>Instance est la classe représentant l'instance d'un jeu.</b>
@@ -48,8 +50,7 @@ public class Instance {
     /**
      * La liste des coordoonées des pièces sur la grille.
      * 
-     * @see Zero#Zero(int, String)
-     * @see Zero#getId()
+     * @see Instance#getListeCoordPieces() 
      */
     private ArrayList<Coord> listeCoordPieces;
 
@@ -150,13 +151,13 @@ public class Instance {
      **/
     public int evaluerSolution(Solution solution) {
         int nbpieces = 0;
-        for (Coord coord : solution)
-            if (piecePresente(coord))
+        HashSet<Coord> listeSolution = new HashSet<>(solution);
+        for (Coord coord : listeSolution) {
+            if (piecePresente(coord)) {
                 nbpieces += 1;
+            }
+        }
         return nbpieces;
-        // Note importante pour les futurs mise à jour, je viens de discuter avec le
-        // prof et il n'est pas obligatoire de valider tous les tests seul les tests
-        // dans InstanceTest seront noté
     }
 
     @Override
@@ -223,35 +224,9 @@ public class Instance {
      * 
      * @see Solution
      **/
-
-    // V1 De pâblito qui n'est sûrement pas la plus optimisée mais qui à été faite
-    // avec amour lol
-    // en cas d'équidistance, c'est la coordonnée avec l'index le plus proche de 0
-    // qui sera retournée.
     public Solution greedySolver() {
-        if (listeCoordPieces.isEmpty()) {
-            return new Solution();
-        }
-        // plateau, coord depart, nb pas (intance.greedySolver())
-        // listecoordpieces : arraylist des coords des pieces
-        this.initListeCoordPieces();
-        Solution sol = new Solution();
-        int distMin = this.k;
-        int dist = 0;
-        Coord coordMin = listeCoordPieces.get(0);
-        if (listeCoordPieces.contains(startingP)) {
-            sol.add(startingP);
-            return sol;
-        }
-        for (Coord coord : sol) {
-            dist = startingP.distanceFrom(coord);
-            if (distMin < dist) {
-                distMin = dist;
-                coordMin = coord;
-            }
-        }
-        sol.add(coordMin);
-        return sol;
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);  
+        return greedyLeGlouton.greedySolver();
     }
 
     /**
@@ -264,8 +239,8 @@ public class Instance {
     }
 
     public ArrayList<Integer> greedyPermut() {
-        startingP.getC();
-        return null;
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);
+        return greedyLeGlouton.greedyPermut();
     }
 
     /**

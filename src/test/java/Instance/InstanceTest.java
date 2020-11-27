@@ -102,6 +102,34 @@ public class InstanceTest {
         }
 
         @Test
+        public void testEvaluerSolution_avec_doublon() throws Exception {
+                boolean[][] p4 = new boolean[10][10];
+                for (int i = 0; i < p4.length; i++) {
+                        for (int j = 0; j < p4[0].length; j += 2) {
+
+                                p4[i][j] = true;
+
+                        }
+                }
+                Coord sp4 = new Coord(9, 5);
+                int k4 = p4.length * p4.length / 10;
+                Instance in4 = new Instance(p4, sp4, k4);
+                Solution s = new Solution();
+                s.add(new Coord(9, 5));
+                s.add(new Coord(9, 6));
+                s.add(new Coord(9, 6)); // Doublon ici
+                s.add(new Coord(7, 6));
+                s.add(new Coord(6, 6));
+                s.add(new Coord(5, 6));
+                s.add(new Coord(4, 6));
+                s.add(new Coord(3, 6));
+                s.add(new Coord(2, 6));
+                s.add(new Coord(1, 6));
+                s.add(new Coord(0, 6));
+                assertEquals(9, in4.evaluerSolution(s));
+        }
+
+        @Test
         public void testEvaluerSolution() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
                 for (int i = 0; i < p4.length; i++) {
@@ -155,7 +183,21 @@ public class InstanceTest {
                 assertEquals(10, in4.evaluerSolution(s));
         }
 
-        @Ignore
+        @Test
+        public void testGreedySolver_solutionValide() throws Exception {
+                boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                                { false, true, false, false, false }, // l0: . o . . .
+                                { false, true, true, false, false }, // ,l1: . o o . .
+                                { false, false, true, true, false }, // ,l2: . . o o .
+                                { false, false, false, true, true }, // ,l3: . . . o o
+                                { false, false, false, false, true } // ,l4: . . . . o
+                };
+                Coord coordDepart = new Coord(0, 0);
+                int k = 8;
+                Instance instance = new Instance(plateau, coordDepart, k);
+                assertTrue(instance.estValide(instance.greedySolver()));
+        }
+
         @Test
         public void testGreedySolver() throws Exception {
                 boolean[][] plateau = new boolean[][] { // Disposition des pièces :
@@ -166,7 +208,7 @@ public class InstanceTest {
                                 { false, false, false, false, true } // ,l4: . . . . o
                 };
                 Coord coordDepart = new Coord(0, 0);
-                int k = 9;
+                int k = 8;
                 Instance instance = new Instance(plateau, coordDepart, k);
                 Solution resultaAttendu = new Solution();
                 // resultat attendu :
@@ -187,7 +229,53 @@ public class InstanceTest {
                 assertEquals(resultaAttendu, instance.greedySolver());
         }
 
-        @Ignore
+        @Test
+        public void testGreedySolver_SolutionValideQuandPieceTropLoin() throws Exception {
+                boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                                { false, true, false, false, false }, // l0: . o . . .
+                                { false, true, true, false, false }, // ,l1: . o o . .
+                                { false, false, true, true, false }, // ,l2: . . o o .
+                                { false, false, false, true, true }, // ,l3: . . . o o
+                                { false, false, false, false, true } // ,l4: . . . . o
+                };
+                Coord coordDepart = new Coord(0, 0);
+                int k = 3;
+                Instance instance = new Instance(plateau, coordDepart, k);
+                // resultat attendu :
+                // l0: x x . . .
+                // l1: . x x . .
+                // l2: . . . . .
+                // l3: . . . . .
+                // l4: . . . . .
+                assertTrue(instance.estValide(instance.greedySolver()));
+        }
+
+        @Test
+        public void testGreedySolver_BonneSolutionQuandPieceTropLoin() throws Exception {
+                boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                                { false, true, false, false, true }, // ,,l0: . o . . o
+                                { false, false, false, false, false }, // l1: . . . . .
+                                { false, false, false, false, false }, // l2: . . . . .
+                                { false, false, false, false, false }, // l3: . . . . .
+                                { false, false, false, false, false } // ,l4: . . . . .
+                };
+                Coord coordDepart = new Coord(0, 0);
+                int k = 3;
+                Instance instance = new Instance(plateau, coordDepart, k);
+                Solution resultaAttendu = new Solution();
+                // resultat attendu :
+                // l0: x x x x .
+                // l1: . . . . .
+                // l2: . . . . .
+                // l3: . . . . .
+                // l4: . . . . .
+                resultaAttendu.add(new Coord(0, 0));
+                resultaAttendu.add(new Coord(0, 1));
+                resultaAttendu.add(new Coord(0, 2));
+                resultaAttendu.add(new Coord(0, 3));
+                assertEquals(resultaAttendu, instance.greedySolver());
+        }
+
         @Test
         public void testGreedyPermut() throws Exception {
                 boolean[][] p4 = new boolean[10][10];
@@ -203,9 +291,10 @@ public class InstanceTest {
                 int[] values = new int[] { 47, 42, 37, 32, 27, 22, 17, 12, 7, 2, 1, 6, 11, 16, 21, 26, 31, 36, 41, 46,
                                 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 49, 44, 39,
                                 34, 29, 24, 19, 14, 9, 4 };
+                        //TODO: la taille de la liste est plus grand que K normal ? 
                 for (int a : values)
                         s.add(a);
-                assertTrue(s.equals(in4.greedyPermut()));
+                assertEquals(s, in4.greedyPermut());
         }
 
 }
