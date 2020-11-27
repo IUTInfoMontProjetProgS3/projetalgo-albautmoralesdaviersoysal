@@ -125,7 +125,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      */
     @Override
     public int evaluerFitness() {
-        return 0;
+        return 1 + 10 * instance.evaluerSolution(calculerSol());
     }
 
     /**
