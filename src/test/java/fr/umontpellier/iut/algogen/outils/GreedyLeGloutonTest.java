@@ -35,6 +35,34 @@ class GreedyLeGloutonTest {
     }
 
     @Test
+    void testGreedySolver_verrifieSiBonneSolution_avecUnePieceSurLaCaseDeDepart() throws Exception {
+        boolean[][] plateau = new boolean[][] { // Disposition des pièces :
+                { true, false, false, false, true }, // ,,,l0: o . . . o
+                { false, false, false, false, false }, // ,l1: . . . . .
+                { false, false, false, false, false }, // ,l2: . . . . .
+                { false, false, false, false, false }, // ,l3: . . . . .
+                { false, false, false, false, false } // ,,l4: . . . . .
+        };
+        Coord coordDepart = new Coord(0, 0);
+        int k = 4;
+        Instance instance = new Instance(plateau, coordDepart, k);
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(instance);
+        Solution resultaAttendu = new Solution();
+        // resultat attendu :
+        // l0: x x x x x
+        // l1: . . . . .
+        // l2: . . . . .
+        // l3: . . . . .
+        // l4: . . . . .
+        resultaAttendu.add(new Coord(0, 0));
+        resultaAttendu.add(new Coord(0, 1));
+        resultaAttendu.add(new Coord(0, 2));
+        resultaAttendu.add(new Coord(0, 3));
+        resultaAttendu.add(new Coord(0, 4));
+        assertEquals(resultaAttendu, greedyLeGlouton.greedySolver());
+    }
+
+    @Test
     void testGreedySolver() throws Exception {
         boolean[][] plateau = new boolean[][] { // Disposition des pièces :
                 { false, true, false, false, false }, // l0: . o . . .
