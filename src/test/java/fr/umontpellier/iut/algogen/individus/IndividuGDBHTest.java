@@ -2,30 +2,25 @@ package fr.umontpellier.iut.algogen.individus;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import org.junit.Test;
 import org.junit.Ignore;
+import org.junit.Test;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
-import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 
 public class IndividuGDBHTest {
 
-	@Ignore
 	@Test
 	public void testIndividuGDBHInstance() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
-
 				p4[i][j] = true;
-
 			}
 		}
 		Coord sp4 = new Coord(9, 5);
@@ -45,15 +40,12 @@ public class IndividuGDBHTest {
 
 	}
 
-	@Ignore
 	@Test
 	public void testIndividuGDBHInstanceSolution() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
-
 				p4[i][j] = true;
-
 			}
 		}
 		Coord sp4 = new Coord(9, 5);
@@ -84,18 +76,15 @@ public class IndividuGDBHTest {
 		c.add(new Coord(8, 6));
 		GDBHSimple individu = new GDBHSimple(in4, c);
 
-		assertTrue(trajet.equals(individu.trajet));
+		assertEquals(trajet, individu.trajet);
 	}
 
-	@Ignore
 	@Test
 	public void testCalculerSol() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
-
 				p4[i][j] = true;
-
 			}
 		}
 		Coord sp4 = new Coord(9, 5);
@@ -126,11 +115,10 @@ public class IndividuGDBHTest {
 		c.add(new Coord(8, 6));
 		c.add(new Coord(9, 6));
 		c.add(new Coord(8, 6));
-		assertTrue(c.equals(individu.calculerSol()));
+		assertEquals(c, individu.calculerSol());
 
 	}
 
-	@Ignore
 	@Test
 	public void testEvaluerFitness() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
