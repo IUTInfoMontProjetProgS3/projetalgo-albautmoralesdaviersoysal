@@ -11,7 +11,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import fr.umontpellier.iut.algogen.Coord;
-import fr.umontpellier.iut.algogen.Instance;
 
 class DetecteurDePieceTest {
 

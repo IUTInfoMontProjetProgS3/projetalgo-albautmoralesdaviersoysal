@@ -64,12 +64,7 @@ public class InstanceTest4 {
         int int15 = instance9.getNbL();
         int int16 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -102,12 +97,7 @@ public class InstanceTest4 {
         int int17 = instance15.getK();
         fr.umontpellier.iut.algogen.Coord coord18 = instance15.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.Class<?> wildcardClass19 = coord18.getClass();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -177,13 +167,6 @@ public class InstanceTest4 {
         boolean boolean80 = instance72.estValide(solution79);
         java.lang.String str81 = instance59.toString(solution79);
         boolean boolean82 = instance38.estValide(solution79);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int83 = instance27.evaluerSolution(solution79);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -270,12 +253,7 @@ public class InstanceTest4 {
         java.lang.String str14 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean16 = instance9.piecePresente(coord15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -316,12 +294,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance33 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord31, 97);
         fr.umontpellier.iut.algogen.Coord coord34 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean35 = instance33.piecePresente(coord34);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -347,12 +320,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         int int16 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList17 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -457,12 +425,7 @@ public class InstanceTest4 {
         java.lang.String str78 = instance15.toString(solution76);
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList79 = instance15.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList80 = instance15.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -529,12 +492,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord19 = instance18.getStartingP();
         int int20 = instance18.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList21 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -605,12 +563,7 @@ public class InstanceTest4 {
         int int81 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord82 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean83 = instance9.piecePresente(coord82);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -725,12 +678,7 @@ public class InstanceTest4 {
         int int82 = instance21.getNbC();
         fr.umontpellier.iut.algogen.Coord coord83 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean84 = instance21.piecePresente(coord83);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -794,12 +742,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord14 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean15 = instance9.piecePresente(coord14);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -828,12 +771,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList14 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean16 = instance9.piecePresente(coord15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -897,12 +835,7 @@ public class InstanceTest4 {
         java.lang.String str69 = instance21.toString(solution66);
         fr.umontpellier.iut.algogen.Coord coord70 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean71 = instance21.piecePresente(coord70);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -996,13 +929,6 @@ public class InstanceTest4 {
         boolean boolean68 = instance60.estValide(solution67);
         java.lang.String str69 = instance41.toString(solution67);
         java.lang.String str70 = instance24.toString(solution67);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int71 = instance9.evaluerSolution(solution67);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1095,12 +1021,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         int int14 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1156,12 +1077,7 @@ public class InstanceTest4 {
         java.lang.String str52 = instance9.toString(solution49);
         fr.umontpellier.iut.algogen.Coord coord53 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList54 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1288,12 +1204,7 @@ public class InstanceTest4 {
         int int14 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Solution solution15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.String str16 = instance9.toString(solution15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1391,12 +1302,7 @@ public class InstanceTest4 {
         boolean boolean65 = instance57.estValide(solution64);
         java.lang.String str66 = instance39.toString(solution64);
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean67 = instance27.estValide(solution64);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1672,12 +1578,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList13 = instance9.getListeCoordPieces();
         java.lang.String str14 = instance9.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1759,12 +1660,7 @@ public class InstanceTest4 {
         int int89 = instance12.getNbC();
         fr.umontpellier.iut.algogen.Coord coord90 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean91 = instance12.piecePresente(coord90);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1847,12 +1743,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance27 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord25, (int) (short) 100);
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList28 = instance27.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList29 = instance27.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -1881,12 +1772,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean19 = instance9.piecePresente(coord18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2266,12 +2152,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList71 = instance9.getListeCoordPieces();
         int int72 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution73 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2392,12 +2273,7 @@ public class InstanceTest4 {
         java.lang.String str62 = instance30.toString(solution60);
         fr.umontpellier.iut.algogen.Coord coord63 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean64 = instance30.piecePresente(coord63);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2443,12 +2319,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (byte) 100);
         int int31 = instance30.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution32 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2538,12 +2409,7 @@ public class InstanceTest4 {
         int int22 = instance21.getK();
         int int23 = instance21.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2637,12 +2503,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList23 = instance21.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord24 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean25 = instance21.piecePresente(coord24);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2757,12 +2618,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord19 = instance15.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord20 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean21 = instance15.piecePresente(coord20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2801,12 +2657,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList31 = instance30.getListeCoordPieces();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList32 = instance30.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList33 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -2960,12 +2811,7 @@ public class InstanceTest4 {
         java.lang.String str54 = instance9.toString(solution51);
         fr.umontpellier.iut.algogen.Coord coord55 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean56 = instance9.piecePresente(coord55);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3102,13 +2948,6 @@ public class InstanceTest4 {
         boolean boolean95 = instance87.estValide(solution94);
         java.lang.String str96 = instance74.toString(solution94);
         java.lang.String str97 = instance49.toString(solution94);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int98 = instance24.evaluerSolution(solution94);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3327,12 +3166,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (short) -1);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution31 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3371,13 +3205,6 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList36 = instance35.getListeCoordPieces();
         int int37 = instance35.getK();
         fr.umontpellier.iut.algogen.Solution solution38 = instance35.greedySolver();
-        // The following exception was thrown during execution in test generation
-        try {
-            int int39 = instance30.evaluerSolution(solution38);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3407,12 +3234,7 @@ public class InstanceTest4 {
         int int14 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList16 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3447,12 +3269,7 @@ public class InstanceTest4 {
         int int22 = instance21.getNbL();
         fr.umontpellier.iut.algogen.Coord coord23 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean24 = instance21.piecePresente(coord23);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3795,12 +3612,7 @@ public class InstanceTest4 {
         boolean boolean67 = instance22.estValide(solution64);
         java.lang.String str68 = instance9.toString(solution64);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution69 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -3926,12 +3738,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList15 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord16 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4020,12 +3827,7 @@ public class InstanceTest4 {
         boolean boolean96 = instance9.estValide(solution93);
         int int97 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution98 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4121,13 +3923,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance42 = new fr.umontpellier.iut.algogen.Instance(booleanArray39, coord40, 52);
         fr.umontpellier.iut.algogen.Solution solution43 = instance42.greedySolver();
         boolean boolean44 = instance36.estValide(solution43);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int45 = instance9.evaluerSolution(solution43);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4244,13 +4039,6 @@ public class InstanceTest4 {
         int int19 = instance15.getNbC();
         int int20 = instance15.getNbL();
         fr.umontpellier.iut.algogen.Solution solution21 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            int int22 = instance15.evaluerSolution(solution21);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4283,12 +4071,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord18 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution19 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4330,12 +4113,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (byte) -1);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution31 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4675,12 +4453,7 @@ public class InstanceTest4 {
         int int18 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean20 = instance9.piecePresente(coord19);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -4851,12 +4624,7 @@ public class InstanceTest4 {
         java.lang.String str11 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord12 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean13 = instance9.piecePresente(coord12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "k = 32\nnb pieces = 0\nstarting point = null\n" + "'", str11, "k = 32\nnb pieces = 0\nstarting point = null\n");
@@ -4953,12 +4721,7 @@ public class InstanceTest4 {
         int int15 = instance9.getK();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList16 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5052,12 +4815,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (byte) -1);
         int int31 = instance30.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList32 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5083,12 +4841,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.Class<?> wildcardClass16 = coord15.getClass();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5247,12 +5000,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         fr.umontpellier.iut.algogen.Instance instance21 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord19, (int) (short) -1);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution22 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5296,13 +5044,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution41 = instance40.greedySolver();
         boolean boolean42 = instance34.estValide(solution41);
         boolean boolean43 = instance20.estValide(solution41);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int44 = instance9.evaluerSolution(solution41);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5351,12 +5092,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         fr.umontpellier.iut.algogen.Instance instance24 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord22, (int) ' ');
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList25 = instance24.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5385,12 +5121,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord21 = instance18.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean23 = instance18.piecePresente(coord22);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5426,12 +5157,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, 100);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList31 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5550,12 +5276,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord20 = instance18.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord21 = instance18.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList22 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5593,12 +5314,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord31 = null;
         fr.umontpellier.iut.algogen.Instance instance33 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord31, (int) (short) 10);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList34 = instance33.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -5995,12 +5711,7 @@ public class InstanceTest4 {
         int int14 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Solution solution15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean16 = instance9.estValide(solution15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6063,12 +5774,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList16 = instance9.getListeCoordPieces();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList17 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution18 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6176,12 +5882,7 @@ public class InstanceTest4 {
         boolean boolean91 = instance43.estValide(solution87);
         java.lang.String str92 = instance9.toString(solution87);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList93 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6251,12 +5952,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance27 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord25, (int) (byte) 100);
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList28 = instance27.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution29 = instance27.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6310,12 +6006,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord13 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord14 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean15 = instance9.piecePresente(coord14);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6433,12 +6124,7 @@ public class InstanceTest4 {
         int int12 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord13 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList14 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6475,12 +6161,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution23 = instance20.greedySolver();
         java.lang.String str24 = instance9.toString(solution23);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList25 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6560,12 +6241,7 @@ public class InstanceTest4 {
         int int20 = instance9.getNbC();
         int int21 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution22 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6684,12 +6360,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbL();
         int int14 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6723,12 +6394,7 @@ public class InstanceTest4 {
         int int18 = instance9.getNbL();
         int int19 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList20 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6789,12 +6455,7 @@ public class InstanceTest4 {
         int int24 = instance21.getK();
         fr.umontpellier.iut.algogen.Coord coord25 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean26 = instance21.piecePresente(coord25);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6822,12 +6483,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         int int15 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList16 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6859,12 +6515,7 @@ public class InstanceTest4 {
         int int15 = instance9.getNbL();
         int int16 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList17 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -6995,12 +6646,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord6 = instance3.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord7 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean8 = instance3.piecePresente(coord7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(coordList4);
         org.junit.Assert.assertNotNull(coordList5);
@@ -7054,12 +6700,7 @@ public class InstanceTest4 {
         java.lang.String str56 = instance27.toString(solution54);
         java.lang.String str57 = instance9.toString(solution54);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution58 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7120,12 +6761,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord18 = instance9.getStartingP();
         int int19 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution20 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7163,12 +6799,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance21 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord19, (int) (short) -1);
         fr.umontpellier.iut.algogen.Solution solution22 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.String str23 = instance21.toString(solution22);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7279,13 +6910,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution87 = instance86.greedySolver();
         boolean boolean88 = instance80.estValide(solution87);
         java.lang.String str89 = instance57.toString(solution87);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int90 = instance21.evaluerSolution(solution87);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7401,13 +7025,6 @@ public class InstanceTest4 {
         boolean boolean87 = instance79.estValide(solution86);
         boolean boolean88 = instance61.estValide(solution86);
         java.lang.String str89 = instance50.toString(solution86);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int90 = instance21.evaluerSolution(solution86);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7505,13 +7122,6 @@ public class InstanceTest4 {
         java.lang.String str84 = instance76.toString(solution83);
         java.lang.String str85 = instance60.toString(solution83);
         boolean boolean86 = instance42.estValide(solution83);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int87 = instance30.evaluerSolution(solution83);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7653,13 +7263,6 @@ public class InstanceTest4 {
         boolean boolean93 = instance65.estValide(solution91);
         boolean boolean94 = instance49.estValide(solution91);
         java.lang.String str95 = instance37.toString(solution91);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int96 = instance6.evaluerSolution(solution91);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
-        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(booleanArray9);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true]");
@@ -7724,12 +7327,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList16 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord17 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean18 = instance9.piecePresente(coord17);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7878,12 +7476,7 @@ public class InstanceTest4 {
         int int30 = instance27.getK();
         java.lang.String str31 = instance27.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution32 = instance27.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -7924,12 +7517,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord33 = instance30.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord34 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean35 = instance30.piecePresente(coord34);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8073,12 +7661,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList32 = instance30.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Solution solution33 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean34 = instance30.estValide(solution33);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8151,12 +7734,7 @@ public class InstanceTest4 {
         java.lang.String str13 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.Class<?> wildcardClass15 = coord14.getClass();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8237,12 +7815,7 @@ public class InstanceTest4 {
         java.lang.String str36 = instance9.toString();
         int int37 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList38 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8507,12 +8080,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList27 = instance24.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean29 = instance24.piecePresente(coord28);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8538,12 +8106,7 @@ public class InstanceTest4 {
         int int12 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord13 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean14 = instance9.piecePresente(coord13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8570,12 +8133,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList14 = instance12.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean16 = instance12.piecePresente(coord15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8603,12 +8161,7 @@ public class InstanceTest4 {
         int int15 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean17 = instance9.piecePresente(coord16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8644,12 +8197,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList19 = instance9.getListeCoordPieces();
         int int20 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution21 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -8936,12 +8484,7 @@ public class InstanceTest4 {
         java.lang.String str79 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord80 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean81 = instance9.piecePresente(coord80);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9052,12 +8595,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         fr.umontpellier.iut.algogen.Instance instance24 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord22, (-1));
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList25 = instance24.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9337,12 +8875,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance39 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord37, (-1));
         fr.umontpellier.iut.algogen.Coord coord40 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean41 = instance39.piecePresente(coord40);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9405,12 +8938,7 @@ public class InstanceTest4 {
         java.lang.String str76 = instance54.toString(solution74);
         boolean boolean77 = instance26.estValide(solution74);
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean78 = instance15.estValide(solution74);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9505,13 +9033,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray27, coord28, 52);
         fr.umontpellier.iut.algogen.Solution solution31 = instance30.greedySolver();
         boolean boolean32 = instance24.estValide(solution31);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int33 = instance9.evaluerSolution(solution31);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9546,12 +9067,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord13 = null;
         fr.umontpellier.iut.algogen.Instance instance15 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord13, 32);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList16 = instance15.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9648,12 +9164,7 @@ public class InstanceTest4 {
         boolean boolean85 = instance35.estValide(solution82);
         java.lang.String str86 = instance12.toString(solution82);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList87 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9790,12 +9301,7 @@ public class InstanceTest4 {
         int int90 = instance12.getNbC();
         fr.umontpellier.iut.algogen.Coord coord91 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean92 = instance12.piecePresente(coord91);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9932,12 +9438,7 @@ public class InstanceTest4 {
         java.lang.String str17 = instance9.toString();
         int int18 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -9974,12 +9475,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord17 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord18 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10049,12 +9545,7 @@ public class InstanceTest4 {
         int int13 = instance9.getK();
         int int14 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10120,12 +9611,7 @@ public class InstanceTest4 {
         int int14 = instance12.getK();
         int int15 = instance12.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList16 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10152,12 +9638,7 @@ public class InstanceTest4 {
         int int13 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10294,13 +9775,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution74 = instance73.greedySolver();
         java.lang.String str75 = instance67.toString(solution74);
         boolean boolean76 = instance50.estValide(solution74);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int77 = instance15.evaluerSolution(solution74);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10342,12 +9816,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         int int14 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10466,12 +9935,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord15 = instance12.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean17 = instance12.piecePresente(coord16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10576,12 +10040,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList17 = instance9.getListeCoordPieces();
         java.lang.String str18 = instance9.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution19 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -10610,12 +10069,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance6 = new fr.umontpellier.iut.algogen.Instance(booleanArray0, coord4, (int) (short) 1);
         fr.umontpellier.iut.algogen.Coord coord7 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean8 = instance6.piecePresente(coord7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray0);
     }
 
@@ -10759,12 +10213,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList20 = instance18.getListeCoordPieces();
         int int21 = instance18.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList22 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11074,12 +10523,7 @@ public class InstanceTest4 {
         int int89 = instance27.getK();
         fr.umontpellier.iut.algogen.Coord coord90 = instance27.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList91 = instance27.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11194,12 +10638,7 @@ public class InstanceTest4 {
         java.lang.String str87 = instance9.toString();
         int int88 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution89 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11297,13 +10736,6 @@ public class InstanceTest4 {
         boolean boolean68 = instance60.estValide(solution67);
         boolean boolean69 = instance46.estValide(solution67);
         java.lang.String str70 = instance31.toString(solution67);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int71 = instance21.evaluerSolution(solution67);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
-        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(booleanArray24);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true]");
@@ -11458,12 +10890,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (short) 1);
         java.lang.String str31 = instance30.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList32 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11490,12 +10917,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList15 = instance9.getListeCoordPieces();
         int int16 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11606,12 +11028,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, 52);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution31 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11637,12 +11054,7 @@ public class InstanceTest4 {
         int int17 = instance15.getK();
         fr.umontpellier.iut.algogen.Coord coord18 = instance15.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance15.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11714,12 +11126,7 @@ public class InstanceTest4 {
         java.lang.String str84 = instance9.toString(solution80);
         fr.umontpellier.iut.algogen.Coord coord85 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean86 = instance9.piecePresente(coord85);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -11893,12 +11300,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         fr.umontpellier.iut.algogen.Instance instance24 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord22, (int) ' ');
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList25 = instance24.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12112,13 +11514,6 @@ public class InstanceTest4 {
         boolean boolean90 = instance83.estValide(solution89);
         java.lang.String str91 = instance65.toString(solution89);
         java.lang.String str92 = instance55.toString(solution89);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int93 = instance15.evaluerSolution(solution89);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12221,12 +11616,7 @@ public class InstanceTest4 {
         java.lang.String str85 = instance30.toString(solution81);
         boolean boolean86 = instance9.estValide(solution81);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution87 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12307,12 +11697,7 @@ public class InstanceTest4 {
         int int19 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Coord coord20 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean21 = instance9.piecePresente(coord20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12390,12 +11775,7 @@ public class InstanceTest4 {
         java.lang.String str77 = instance30.toString(solution74);
         boolean boolean78 = instance18.estValide(solution74);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution79 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12571,12 +11951,7 @@ public class InstanceTest4 {
         java.lang.String str68 = instance9.toString();
         java.lang.String str69 = instance9.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution70 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12691,12 +12066,7 @@ public class InstanceTest4 {
         java.lang.String str91 = instance29.toString(solution87);
         java.lang.String str92 = instance18.toString(solution87);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList93 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -12994,12 +12364,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList22 = instance21.getListeCoordPieces();
         int int23 = instance21.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13026,12 +12391,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Solution solution15 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.String str16 = instance9.toString(solution15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13061,12 +12421,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         fr.umontpellier.iut.algogen.Instance instance18 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord16, 1);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13092,12 +12447,7 @@ public class InstanceTest4 {
         int int15 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord16 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13185,12 +12535,7 @@ public class InstanceTest4 {
         int int97 = instance21.getK();
         fr.umontpellier.iut.algogen.Coord coord98 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean99 = instance21.piecePresente(coord98);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13311,12 +12656,7 @@ public class InstanceTest4 {
         int int30 = instance27.getK();
         fr.umontpellier.iut.algogen.Coord coord31 = instance27.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList32 = instance27.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13420,12 +12760,7 @@ public class InstanceTest4 {
         int int79 = instance12.getK();
         fr.umontpellier.iut.algogen.Coord coord80 = instance12.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution81 = instance12.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13484,12 +12819,7 @@ public class InstanceTest4 {
         java.lang.String str16 = instance9.toString();
         int int17 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution18 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13846,13 +13176,6 @@ public class InstanceTest4 {
         boolean boolean92 = instance64.estValide(solution90);
         java.lang.String str93 = instance46.toString(solution90);
         boolean boolean94 = instance34.estValide(solution90);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int95 = instance9.evaluerSolution(solution90);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -13953,12 +13276,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList23 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord24 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean25 = instance9.piecePresente(coord24);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14004,12 +13322,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance27 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord25, (int) ' ');
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean29 = instance27.piecePresente(coord28);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14046,12 +13359,7 @@ public class InstanceTest4 {
         int int33 = instance30.getNbC();
         fr.umontpellier.iut.algogen.Coord coord34 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean35 = instance30.piecePresente(coord34);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14098,13 +13406,6 @@ public class InstanceTest4 {
         java.lang.String str46 = instance45.toString();
         fr.umontpellier.iut.algogen.Solution solution47 = instance45.greedySolver();
         java.lang.String str48 = instance38.toString(solution47);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int49 = instance15.evaluerSolution(solution47);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14439,12 +13740,7 @@ public class InstanceTest4 {
         int int18 = instance9.getK();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList19 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList20 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14537,13 +13833,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance55 = new fr.umontpellier.iut.algogen.Instance(booleanArray52, coord53, 52);
         fr.umontpellier.iut.algogen.Solution solution56 = instance55.greedySolver();
         boolean boolean57 = instance50.estValide(solution56);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int58 = instance9.evaluerSolution(solution56);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14598,12 +13887,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         fr.umontpellier.iut.algogen.Instance instance24 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord22, (int) (byte) 0);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution25 = instance24.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -14769,12 +14053,7 @@ public class InstanceTest4 {
         java.lang.String str61 = instance39.toString(solution59);
         java.lang.String str62 = instance9.toString(solution59);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList63 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15112,12 +14391,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList19 = instance18.getListeCoordPieces();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList20 = instance18.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution21 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15147,12 +14421,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord17 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean19 = instance9.piecePresente(coord18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15347,13 +14616,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution69 = instance68.greedySolver();
         java.lang.String str70 = instance62.toString(solution69);
         boolean boolean71 = instance43.estValide(solution69);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int72 = instance21.evaluerSolution(solution69);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15563,13 +14825,6 @@ public class InstanceTest4 {
         java.lang.String str96 = instance71.toString(solution94);
         boolean boolean97 = instance49.estValide(solution94);
         java.lang.String str98 = instance38.toString(solution94);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int99 = instance15.evaluerSolution(solution94);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15634,12 +14889,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         int int16 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution17 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15681,12 +14931,7 @@ public class InstanceTest4 {
         int int31 = instance30.getK();
         fr.umontpellier.iut.algogen.Coord coord32 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean33 = instance30.piecePresente(coord32);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15712,12 +14957,7 @@ public class InstanceTest4 {
         java.lang.String str14 = instance9.toString();
         int int15 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution16 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -15750,12 +14990,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         fr.umontpellier.iut.algogen.Instance instance21 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord19, 10);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList22 = instance21.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16179,12 +15414,7 @@ public class InstanceTest4 {
         int int17 = instance15.getNbL();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList18 = instance15.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution19 = instance15.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16225,12 +15455,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord34 = instance30.getStartingP();
         java.lang.String str35 = instance30.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList36 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16343,12 +15568,7 @@ public class InstanceTest4 {
         java.lang.String str12 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord13 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution14 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16380,12 +15600,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord17 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Solution solution18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.String str19 = instance9.toString(solution18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16417,12 +15632,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList14 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16454,12 +15664,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution18 = instance17.greedySolver();
         boolean boolean19 = instance12.estValide(solution18);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution20 = instance12.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16683,13 +15888,6 @@ public class InstanceTest4 {
         boolean boolean92 = instance64.estValide(solution90);
         boolean boolean93 = instance48.estValide(solution90);
         java.lang.String str94 = instance35.toString(solution90);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int95 = instance24.evaluerSolution(solution90);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16760,12 +15958,7 @@ public class InstanceTest4 {
         int int16 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Coord coord17 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution18 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -16815,12 +16008,7 @@ public class InstanceTest4 {
         int int40 = instance12.getNbL();
         fr.umontpellier.iut.algogen.Coord coord41 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean42 = instance12.piecePresente(coord41);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17134,12 +16322,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList72 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord73 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean74 = instance9.piecePresente(coord73);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17199,12 +16382,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         int int16 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList17 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17284,12 +16462,7 @@ public class InstanceTest4 {
         int int81 = instance9.getK();
         fr.umontpellier.iut.algogen.Solution solution82 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean83 = instance9.estValide(solution82);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17366,12 +16539,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (byte) 10);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList31 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17520,12 +16688,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance33 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord31, 100);
         int int34 = instance33.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution35 = instance33.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17555,12 +16718,7 @@ public class InstanceTest4 {
         int int20 = instance15.getNbC();
         fr.umontpellier.iut.algogen.Coord coord21 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean22 = instance15.piecePresente(coord21);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17589,13 +16747,6 @@ public class InstanceTest4 {
         java.lang.String str13 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Solution solution15 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            int int16 = instance9.evaluerSolution(solution15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17754,12 +16905,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord47 = instance21.getStartingP();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList48 = instance21.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution49 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -17863,12 +17009,7 @@ public class InstanceTest4 {
         java.lang.String str69 = instance6.toString(solution64);
         fr.umontpellier.iut.algogen.Coord coord70 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean71 = instance6.piecePresente(coord70);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(coordList7);
         org.junit.Assert.assertNotNull(booleanArray10);
@@ -17974,12 +17115,7 @@ public class InstanceTest4 {
         java.lang.String str86 = instance9.toString(solution83);
         fr.umontpellier.iut.algogen.Coord coord87 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList88 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18048,12 +17184,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Coord coord18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean19 = instance9.piecePresente(coord18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18122,12 +17253,7 @@ public class InstanceTest4 {
         boolean boolean68 = instance12.estValide(solution64);
         int int69 = instance12.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution70 = instance12.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18328,12 +17454,7 @@ public class InstanceTest4 {
         int int14 = instance9.getNbL();
         int int15 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList16 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18529,12 +17650,7 @@ public class InstanceTest4 {
         java.lang.String str96 = instance39.toString(solution92);
         boolean boolean97 = instance27.estValide(solution92);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList98 = instance27.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18610,12 +17726,7 @@ public class InstanceTest4 {
         int int21 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord22 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean23 = instance9.piecePresente(coord22);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18683,13 +17794,6 @@ public class InstanceTest4 {
         java.lang.String str65 = instance57.toString(solution64);
         java.lang.String str66 = instance41.toString(solution64);
         boolean boolean67 = instance23.estValide(solution64);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int68 = instance12.evaluerSolution(solution64);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -18881,12 +17985,7 @@ public class InstanceTest4 {
         java.lang.String str19 = instance9.toString();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList20 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList21 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19259,12 +18358,7 @@ public class InstanceTest4 {
         java.lang.String str22 = instance21.toString();
         java.lang.String str23 = instance21.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19329,13 +18423,6 @@ public class InstanceTest4 {
         boolean boolean69 = instance61.estValide(solution68);
         boolean boolean70 = instance42.estValide(solution68);
         java.lang.String str71 = instance24.toString(solution68);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int72 = instance9.evaluerSolution(solution68);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19580,13 +18667,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution79 = instance78.greedySolver();
         boolean boolean80 = instance29.estValide(solution79);
         java.lang.String str81 = instance19.toString(solution79);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int82 = instance6.evaluerSolution(solution79);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
-        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "k = 1\nnb pieces = 0\nstarting point = null\n" + "'", str9, "k = 1\nnb pieces = 0\nstarting point = null\n");
@@ -19687,12 +18767,7 @@ public class InstanceTest4 {
         java.lang.String str74 = instance31.toString(solution71);
         boolean boolean75 = instance21.estValide(solution71);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList76 = instance21.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19762,12 +18837,7 @@ public class InstanceTest4 {
         int int33 = instance30.getNbC();
         int int34 = instance30.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList35 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19798,12 +18868,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord16 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord17 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean18 = instance9.piecePresente(coord17);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19896,12 +18961,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord63 = instance12.getStartingP();
         int int64 = instance12.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution65 = instance12.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -19953,12 +19013,7 @@ public class InstanceTest4 {
         int int13 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20015,12 +19070,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord16 = instance9.getStartingP();
         int int17 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution18 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20080,12 +19130,7 @@ public class InstanceTest4 {
         boolean boolean53 = instance25.estValide(solution51);
         boolean boolean54 = instance9.estValide(solution51);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution55 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20216,13 +19261,6 @@ public class InstanceTest4 {
         boolean boolean82 = instance54.estValide(solution80);
         java.lang.String str83 = instance39.toString(solution80);
         java.lang.String str84 = instance26.toString(solution80);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int85 = instance9.evaluerSolution(solution80);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20449,12 +19487,7 @@ public class InstanceTest4 {
         int int19 = instance9.getNbL();
         int int20 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution21 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20498,12 +19531,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (short) 100);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution31 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20596,12 +19624,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         fr.umontpellier.iut.algogen.Instance instance21 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord19, (int) (short) 100);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution22 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20625,12 +19648,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbL();
         int int14 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20663,12 +19681,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         int int18 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20745,12 +19758,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, 52);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList31 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20783,12 +19791,7 @@ public class InstanceTest4 {
         int int22 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord23 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20915,12 +19918,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord23 = instance21.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord24 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean25 = instance21.piecePresente(coord24);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -20997,13 +19995,6 @@ public class InstanceTest4 {
         boolean boolean86 = instance58.estValide(solution84);
         java.lang.String str87 = instance43.toString(solution84);
         java.lang.String str88 = instance25.toString(solution84);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int89 = instance9.evaluerSolution(solution84);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21080,12 +20071,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList15 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21166,13 +20152,6 @@ public class InstanceTest4 {
         java.lang.String str89 = instance64.toString(solution87);
         boolean boolean90 = instance39.estValide(solution87);
         java.lang.String str91 = instance24.toString(solution87);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int92 = instance9.evaluerSolution(solution87);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21240,12 +20219,7 @@ public class InstanceTest4 {
         int int18 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean20 = instance9.piecePresente(coord19);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21328,12 +20302,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord85 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord86 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean87 = instance9.piecePresente(coord86);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21441,12 +20410,7 @@ public class InstanceTest4 {
         java.lang.String str79 = instance9.toString(solution74);
         int int80 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList81 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21528,12 +20492,7 @@ public class InstanceTest4 {
         int int33 = instance30.getNbC();
         int int34 = instance30.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution35 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21701,12 +20660,7 @@ public class InstanceTest4 {
         int int80 = instance18.getNbL();
         fr.umontpellier.iut.algogen.Coord coord81 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean82 = instance18.piecePresente(coord81);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21773,12 +20727,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList25 = instance21.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord26 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean27 = instance21.piecePresente(coord26);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21890,13 +20839,6 @@ public class InstanceTest4 {
         java.lang.String str91 = instance66.toString(solution89);
         boolean boolean92 = instance41.estValide(solution89);
         boolean boolean93 = instance25.estValide(solution89);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int94 = instance9.evaluerSolution(solution89);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -21967,12 +20909,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         int int18 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22139,12 +21076,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Solution solution18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean19 = instance9.estValide(solution18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22176,12 +21108,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.lang.Class<?> wildcardClass15 = coord14.getClass();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22259,12 +21186,7 @@ public class InstanceTest4 {
         java.lang.String str84 = instance9.toString(solution80);
         fr.umontpellier.iut.algogen.Coord coord85 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList86 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22332,12 +21254,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbC();
         int int18 = instance9.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution19 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22439,13 +21356,6 @@ public class InstanceTest4 {
         boolean boolean78 = instance70.estValide(solution77);
         java.lang.String str79 = instance57.toString(solution77);
         boolean boolean80 = instance29.estValide(solution77);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int81 = instance9.evaluerSolution(solution77);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22527,12 +21437,7 @@ public class InstanceTest4 {
         boolean boolean46 = instance12.estValide(solution43);
         fr.umontpellier.iut.algogen.Coord coord47 = instance12.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList48 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -22736,12 +21641,7 @@ public class InstanceTest4 {
         boolean boolean57 = instance9.estValide(solution54);
         fr.umontpellier.iut.algogen.Coord coord58 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean59 = instance9.piecePresente(coord58);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23005,12 +21905,7 @@ public class InstanceTest4 {
         boolean boolean19 = instance12.estValide(solution18);
         java.lang.String str20 = instance12.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList21 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23071,12 +21966,7 @@ public class InstanceTest4 {
         java.lang.String str59 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord60 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean61 = instance9.piecePresente(coord60);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23137,12 +22027,7 @@ public class InstanceTest4 {
         int int28 = instance27.getNbC();
         int int29 = instance27.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList30 = instance27.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23273,12 +22158,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord13 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord14 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23318,12 +22198,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord31 = null;
         fr.umontpellier.iut.algogen.Instance instance33 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord31, (int) (short) 1);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList34 = instance33.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23357,12 +22232,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, 52);
         int int31 = instance30.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution32 = instance30.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23388,12 +22258,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList14 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution16 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23427,12 +22292,7 @@ public class InstanceTest4 {
         int int17 = instance9.getNbL();
         int int18 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23545,12 +22405,7 @@ public class InstanceTest4 {
         java.lang.String str22 = instance18.toString();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList23 = instance18.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23623,12 +22478,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) 'a');
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList31 = instance30.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23699,13 +22549,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance30 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord28, (int) (short) 10);
         int int31 = instance30.getK();
         fr.umontpellier.iut.algogen.Solution solution32 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            int int33 = instance30.evaluerSolution(solution32);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23828,12 +22671,7 @@ public class InstanceTest4 {
         int int15 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean17 = instance9.piecePresente(coord16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -23867,12 +22705,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList17 = instance9.getListeCoordPieces();
         java.lang.String str18 = instance9.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24166,12 +22999,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Instance instance27 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord25, 52);
         int int28 = instance27.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution29 = instance27.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24220,12 +23048,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord12 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord13 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean14 = instance9.piecePresente(coord13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24257,12 +23080,7 @@ public class InstanceTest4 {
         int int18 = instance9.getK();
         fr.umontpellier.iut.algogen.Coord coord19 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean20 = instance9.piecePresente(coord19);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24366,12 +23184,7 @@ public class InstanceTest4 {
         int int61 = instance18.getNbL();
         fr.umontpellier.iut.algogen.Coord coord62 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean63 = instance18.piecePresente(coord62);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24424,12 +23237,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord22 = instance21.getStartingP();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList23 = instance21.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24454,12 +23262,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord12 = instance9.getStartingP();
         int int13 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList14 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24524,12 +23327,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList17 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord18 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean19 = instance9.piecePresente(coord18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24588,12 +23386,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList15 = instance9.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean17 = instance9.piecePresente(coord16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24653,13 +23446,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution62 = instance61.greedySolver();
         java.lang.String str63 = instance55.toString(solution62);
         boolean boolean64 = instance37.estValide(solution62);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int65 = instance18.evaluerSolution(solution62);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -24853,13 +23639,6 @@ public class InstanceTest4 {
         boolean boolean69 = instance61.estValide(solution68);
         boolean boolean70 = instance47.estValide(solution68);
         java.lang.String str71 = instance35.toString(solution68);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int72 = instance24.evaluerSolution(solution68);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
-        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(solution25);
         org.junit.Assert.assertNotNull(booleanArray28);
@@ -24962,12 +23741,7 @@ public class InstanceTest4 {
         int int13 = instance9.getNbC();
         int int14 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution15 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25043,12 +23817,7 @@ public class InstanceTest4 {
         java.lang.String str86 = instance12.toString(solution82);
         int int87 = instance12.getK();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList88 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25153,12 +23922,7 @@ public class InstanceTest4 {
         int int88 = instance30.getK();
         fr.umontpellier.iut.algogen.Coord coord89 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean90 = instance30.piecePresente(coord89);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25324,12 +24088,7 @@ public class InstanceTest4 {
         int int60 = instance18.getNbL();
         int int61 = instance18.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList62 = instance18.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25485,12 +24244,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord31 = null;
         fr.umontpellier.iut.algogen.Instance instance33 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord31, 4);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList34 = instance33.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25584,12 +24338,7 @@ public class InstanceTest4 {
         int int22 = instance18.getK();
         java.lang.String str23 = instance18.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution24 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25625,12 +24374,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord25 = instance24.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord26 = instance24.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution27 = instance24.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25665,12 +24409,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord27 = instance24.getStartingP();
         fr.umontpellier.iut.algogen.Coord coord28 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean29 = instance24.piecePresente(coord28);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25738,12 +24477,7 @@ public class InstanceTest4 {
         boolean boolean28 = instance21.estValide(solution27);
         int int29 = instance21.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList30 = instance21.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25803,12 +24537,7 @@ public class InstanceTest4 {
         int int56 = instance9.getK();
         int int57 = instance9.getNbC();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution58 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -25947,12 +24676,7 @@ public class InstanceTest4 {
         java.lang.String str88 = instance31.toString(solution84);
         boolean boolean89 = instance9.estValide(solution84);
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList90 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26024,12 +24748,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord18 = instance15.getStartingP();
         java.lang.String str19 = instance15.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList20 = instance15.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26060,12 +24779,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList19 = instance18.getListeCoordPieces();
         fr.umontpellier.iut.algogen.Coord coord20 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean21 = instance18.piecePresente(coord20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26156,12 +24870,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList73 = instance24.getListeCoordPieces();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList74 = instance24.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList75 = instance24.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26491,13 +25200,6 @@ public class InstanceTest4 {
         boolean boolean79 = instance71.estValide(solution78);
         boolean boolean80 = instance53.estValide(solution78);
         java.lang.String str81 = instance42.toString(solution78);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int82 = instance9.evaluerSolution(solution78);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26780,12 +25482,7 @@ public class InstanceTest4 {
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList27 = instance24.getListeCoordPieces();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList28 = instance24.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution29 = instance24.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26845,12 +25542,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord16 = null;
         fr.umontpellier.iut.algogen.Instance instance18 = new fr.umontpellier.iut.algogen.Instance(booleanArray6, coord16, (int) (short) 10);
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution19 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26901,12 +25593,7 @@ public class InstanceTest4 {
         int int54 = instance9.getNbC();
         fr.umontpellier.iut.algogen.Coord coord55 = instance9.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution56 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -26959,12 +25646,7 @@ public class InstanceTest4 {
         int int18 = instance9.getNbL();
         fr.umontpellier.iut.algogen.Solution solution19 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean20 = instance9.estValide(solution19);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27001,12 +25683,7 @@ public class InstanceTest4 {
         int int17 = instance9.getK();
         int int18 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList19 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27160,12 +25837,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord15 = instance9.getStartingP();
         fr.umontpellier.iut.algogen.Solution solution16 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean17 = instance9.estValide(solution16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27199,12 +25871,7 @@ public class InstanceTest4 {
         java.lang.String str20 = instance18.toString();
         java.lang.String str21 = instance18.toString();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution22 = instance18.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27235,12 +25902,7 @@ public class InstanceTest4 {
         int int20 = instance18.getNbL();
         fr.umontpellier.iut.algogen.Coord coord21 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean22 = instance18.piecePresente(coord21);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27314,13 +25976,6 @@ public class InstanceTest4 {
         java.lang.String str84 = instance58.toString(solution82);
         boolean boolean85 = instance46.estValide(solution82);
         boolean boolean86 = instance30.estValide(solution82);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int87 = instance9.evaluerSolution(solution82);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27425,12 +26080,7 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Solution solution22 = instance21.greedySolver();
         fr.umontpellier.iut.algogen.Coord coord23 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean24 = instance21.piecePresente(coord23);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray0);
         org.junit.Assert.assertNotNull(solution22);
     }
@@ -27573,13 +26223,6 @@ public class InstanceTest4 {
         fr.umontpellier.iut.algogen.Coord coord62 = null;
         fr.umontpellier.iut.algogen.Instance instance64 = new fr.umontpellier.iut.algogen.Instance(booleanArray55, coord62, 32);
         fr.umontpellier.iut.algogen.Solution solution65 = instance64.greedySolver();
-        // The following exception was thrown during execution in test generation
-        try {
-            int int66 = instance18.evaluerSolution(solution65);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27625,12 +26268,7 @@ public class InstanceTest4 {
         java.lang.String str15 = instance12.toString();
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList16 = instance12.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList17 = instance12.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27684,12 +26322,7 @@ public class InstanceTest4 {
         boolean boolean53 = instance9.estValide(solution50);
         java.util.ArrayList<fr.umontpellier.iut.algogen.Coord> coordList54 = instance9.getListeCoordPieces();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList55 = instance9.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -27980,13 +26613,6 @@ public class InstanceTest4 {
         java.lang.String str92 = instance48.toString(solution89);
         java.lang.String str93 = instance38.toString(solution89);
         java.lang.String str94 = instance24.toString(solution89);
-        // The following exception was thrown during execution in test generation
-        try {
-            int int95 = instance9.evaluerSolution(solution89);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -28070,12 +26696,7 @@ public class InstanceTest4 {
         java.lang.String str19 = instance9.toString();
         fr.umontpellier.iut.algogen.Coord coord20 = null;
         // The following exception was thrown during execution in test generation
-        try {
-            boolean boolean21 = instance9.piecePresente(coord20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -28234,12 +26855,7 @@ public class InstanceTest4 {
         java.lang.String str57 = instance15.toString(solution54);
         int int58 = instance15.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            java.util.ArrayList<java.lang.Integer> intList59 = instance15.greedyPermut();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -28410,12 +27026,7 @@ public class InstanceTest4 {
         int int25 = instance21.getNbC();
         fr.umontpellier.iut.algogen.Coord coord26 = instance21.getStartingP();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution27 = instance21.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
@@ -28497,12 +27108,7 @@ public class InstanceTest4 {
         boolean boolean92 = instance9.estValide(solution87);
         int int93 = instance9.getNbL();
         // The following exception was thrown during execution in test generation
-        try {
-            fr.umontpellier.iut.algogen.Solution solution94 = instance9.greedySolver();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-        // Expected exception.
-        }
+        
         org.junit.Assert.assertNotNull(booleanArray2);
         org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[false, true]");
         org.junit.Assert.assertNotNull(booleanArray5);
