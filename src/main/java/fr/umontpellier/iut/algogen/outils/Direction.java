@@ -1,13 +1,16 @@
 package fr.umontpellier.iut.algogen.outils;
 
+import java.security.SecureRandom;
+
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
 /**
- * <b>Direction est la classe qui regroupe tous les outils concernant les directions.</b>
+ * <b>Direction est la classe qui regroupe tous les outils concernant les
+ * directions.</b>
  * 
  * @author @MathieuSoysal
- * @version 1.0
+ * @version 1.2.0
  */
 public class Direction {
 
@@ -53,5 +56,23 @@ public class Direction {
                 break;
         }
         return new Coord(prochaineLigne, prochaineColonne);
+    }
+
+    public static char directionRandom() {
+        return DIRECTIONS[new SecureRandom().nextInt(4)];
+    }
+
+    public static char trouverDirectionEmprunte(Coord coordDepart, Coord coordArrivee) {
+        int ecartColonne = coordDepart.getC() - coordArrivee.getC();
+        int ecartLigne = coordDepart.getL() - coordArrivee.getL();
+        if (ecartColonne > 0)
+            return 'g';
+        if (ecartColonne < 0)
+            return 'd';
+        if (ecartLigne > 0)
+            return 'h';
+        if (ecartLigne < 0)
+            return 'b';
+        throw new ArithmeticException();
     }
 }

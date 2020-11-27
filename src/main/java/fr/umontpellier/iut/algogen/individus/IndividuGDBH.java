@@ -1,11 +1,11 @@
 package fr.umontpellier.iut.algogen.individus;
 
-import java.security.SecureRandom;
 import java.util.ArrayList;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
+import fr.umontpellier.iut.algogen.outils.Direction;
 
 /**
  * <b>IndividuGDBH est la classe représentant un encodage consistant à créer k
@@ -62,36 +62,17 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
 
     private void initTrajetRandom() {
         trajet = new ArrayList<>();
-        char[] directionPossible = new char[] { 'h', 'b', 'g', 'd' };
         for (int i = 0; i < instance.getK(); i++)
-            trajet.add(directionRandom(directionPossible));
-    }
-
-    private char directionRandom(char[] directionPossible) {
-        return directionPossible[new SecureRandom().nextInt(4)];
+            trajet.add(Direction.directionRandom());
     }
 
     private void genereTrajetFromSolution(Solution solution) {
         trajet = new ArrayList<>();
         Coord coordCourant = solution.get(0);
         for (int i = 1; i < solution.size(); i++) {
-            trajet.add(trouverDirectionEmprunte(coordCourant, solution.get(i)));
+            trajet.add(Direction.trouverDirectionEmprunte(coordCourant, solution.get(i)));
             coordCourant = solution.get(i);
         }
-    }
-
-    private char trouverDirectionEmprunte(Coord coordDepart, Coord coordArrivee) {
-        int ecartColonne = coordDepart.getC() - coordArrivee.getC();
-        int ecartLigne = coordDepart.getL() - coordArrivee.getL();
-        if (ecartColonne > 0)
-            return 'g';
-        if (ecartColonne < 0)
-            return 'd';
-        if (ecartLigne > 0)
-            return 'h';
-        if (ecartLigne < 0)
-            return 'b';
-        throw new ArithmeticException();
     }
 
     /**
@@ -105,25 +86,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * 
      **/
     static Coord calculerNextCoord(Coord coordInitial, char direction) {
-        int prochaineLigne = coordInitial.getL();
-        int prochaineColonne = coordInitial.getC();
-        switch (direction) {
-            case 'h':
-                prochaineLigne--;
-                break;
-            case 'b':
-                prochaineLigne++;
-                break;
-            case 'g':
-                prochaineColonne--;
-                break;
-            case 'd':
-                prochaineColonne++;
-                break;
-            default:
-                break;
-        }
-        return new Coord(prochaineLigne, prochaineColonne);
+        return Direction.calculerProchaineCoord(coordInitial, direction);
     }
 
     @Override
@@ -181,12 +144,10 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
                 coordonnee = next;
             }
         }
-        char[] directionPossible = new char[] { 'h', 'b', 'g', 'd' };
-
         while (nouveauTrajet.size() < trajet.size()) {
             boolean ok = false;
             while (!ok) {
-                char directionRandom = directionRandom(directionPossible);
+                char directionRandom = Direction.directionRandom();
                 Coord prochaineCoord = calculerNextCoord(coordonnee, directionRandom);
                 if (prochaineCoord.estDansPlateau(instance.getNbL(), instance.getNbC())) {
                     nouveauTrajet.add(directionRandom);
@@ -194,7 +155,6 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
                     ok = true;
                 }
             }
-
         }
         trajet = nouveauTrajet;
     }
