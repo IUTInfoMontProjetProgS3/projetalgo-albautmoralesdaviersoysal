@@ -1,8 +1,10 @@
 package fr.umontpellier.iut.algogen;
 
 import fr.umontpellier.iut.algogen.individus.PermutSimple;
+import fr.umontpellier.iut.algogen.outils.GreedyLeGlouton;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * <b>Instance est la classe représentant l'instance d'un jeu.</b>
@@ -16,7 +18,7 @@ import java.util.ArrayList;
  * </ul>
  * </p>
  * 
- * @version 1.0
+ * @version 1.0.4
  */
 public class Instance {
     /**
@@ -37,7 +39,8 @@ public class Instance {
     private Coord startingP;
 
     /**
-     * Nombre de pas maximum autorisé dans le jeu. Cet ID n'est pas modifiable.
+     * Nombre de pas maximum autorisé dans le jeu. Cet attribut n'est pas
+     * modifiable.
      * 
      * @see Instance#Instance(boolean[][], Coord, int)
      * @see Instance#getK()
@@ -47,8 +50,7 @@ public class Instance {
     /**
      * La liste des coordoonées des pièces sur la grille.
      * 
-     * @see Zero#Zero(int, String)
-     * @see Zero#getId()
+     * @see Instance#getListeCoordPieces() 
      */
     private ArrayList<Coord> listeCoordPieces;
 
@@ -59,7 +61,10 @@ public class Instance {
      * 
      **/
     public Instance(boolean[][] plateau, Coord coordDepart, int k) {
-
+        this.plateau = plateau;
+        startingP = coordDepart;
+        this.k = k;
+        initListeCoordPieces();
     }
 
     /**
@@ -113,7 +118,7 @@ public class Instance {
      * @see Instance#plateau
      **/
     public boolean piecePresente(Coord coordonnee) {
-        return false;
+        return plateau[coordonnee.getL()][coordonnee.getC()];
     }
 
     /**
@@ -127,7 +132,15 @@ public class Instance {
      * @see Solution
      **/
     public boolean estValide(Solution solution) {
-        return false;
+        int nbMouvements = solution.size() - 1; // -1 car la solution compte aussi la case de départ (qui n'est pas un
+                                                // mouvement)
+        if (nbMouvements != k || solution.isEmpty() || !solution.get(0).equals(startingP))
+            return false;
+        for (Coord coord : solution) {
+            if (!coord.estDansPlateau(getNbL(), getNbC()))
+                return false;
+        }
+        return true;
     }
 
     /**
@@ -137,7 +150,14 @@ public class Instance {
      * @see Solution
      **/
     public int evaluerSolution(Solution solution) {
-        return 0;
+        int nbpieces = 0;
+        HashSet<Coord> listeSolution = new HashSet<>(solution);
+        for (Coord coord : listeSolution) {
+            if (piecePresente(coord)) {
+                nbpieces += 1;
+            }
+        }
+        return nbpieces;
     }
 
     @Override
@@ -205,7 +225,8 @@ public class Instance {
      * @see Solution
      **/
     public Solution greedySolver() {
-        return new Solution();
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);  
+        return greedyLeGlouton.greedySolver();
     }
 
     /**
@@ -214,26 +235,23 @@ public class Instance {
      * @see Instance#k
      */
     public int getK() {
-        // TODO Auto-generated method stub
-        return 0;
+        return k;
     }
 
     public ArrayList<Integer> greedyPermut() {
-        // TODO Auto-generated method stub
-        return null;
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);
+        return greedyLeGlouton.greedyPermut();
     }
 
     /**
-     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du plateau.
+     * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du
+     *         plateau.
      * 
-     * @see Instance#listeCoordPieces
+     * @see InslisteCoordPiecese#listeCoordPieces
      * @see java.util.ArrayList
      */
     public ArrayList<Coord> getListeCoordPieces() {
-        // TODO Auto-generated method stub
-        return null;
-
-        //papillion 
+        return listeCoordPieces;
     }
-
+    // papillion
 }
