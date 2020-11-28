@@ -48,7 +48,6 @@ class IndividuPermutTest {
 		assertEquals(res, IndividuPermut.plusCourtChemin(sp4, new Coord(4, 4)));
 	}
 
-	@Disabled("non validé")
 	@Test
 	void testCalculerSol() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -83,7 +82,6 @@ class IndividuPermutTest {
 		assertEquals(s, mockIndividu.calculerSol());
 	}
 
-	@Disabled("non validé")
 	@Test
 	void testEvaluerFitness() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
