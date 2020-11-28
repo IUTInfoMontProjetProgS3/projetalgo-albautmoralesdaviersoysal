@@ -1,10 +1,13 @@
 package fr.umontpellier.iut.algogen.individus;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
+import fr.umontpellier.iut.algogen.outils.PetitPoucet;
 
 /**
  * <b>IndividuPermut est la classe représentant un encodage celui-ci fournit une
@@ -20,7 +23,7 @@ import fr.umontpellier.iut.algogen.Solution;
  * </p>
  * 
  * @see IIndividu
- * @version 1.0
+ * @version 1.0.4
  */
 public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIndividu<T> {
 
@@ -33,18 +36,22 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     protected Instance instance;
 
     /**
-     * Cet attribut représente : TODO: Qu'est-ce quelle représente
+     * Cet attribut représente la list des index des pièces récoltés
      * 
      * @see IndividuPermut#IndividuPermut(Instance, ArrayList)
      */
     protected ArrayList<Integer> permut;
 
     public IndividuPermut(Instance instance, ArrayList<Integer> p) {
-
+        this.instance = instance;
+        permut = p;
     }
 
     public IndividuPermut(Instance instance) {
-
+        permut = new ArrayList<>();
+        for (int i = 0; i < instance.getListeCoordPieces().size(); i++)
+            permut.add(i);
+        Collections.shuffle(permut);
     }
 
     /**
@@ -57,7 +64,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
      * 
      **/
     public static ArrayList<Coord> plusCourtChemin(Coord c1, Coord c2) {
-        return null;
+        return PetitPoucet.getPlusCourtChemin(c1, c2);
     }
 
     public Instance getInstance() {
@@ -71,11 +78,25 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
 
     @Override
     public Solution calculerSol() {
-        return new Solution();
+        Solution solution = new Solution();
+        Coord coordCourante = instance.getStartingP();
+        for (Integer indexPiece : permut) {
+            Coord coordPiece = instance.getListeCoordPieces().get(indexPiece);
+            solution.addAll(PetitPoucet.getPlusCourtChemin(coordCourante, coordPiece));
+            coordCourante = coordPiece;
+        }
+        if (solution.size() > instance.getK() + 1)
+            solution.troncker(instance.getK() + 1);
+        return solution;
     }
 
+    /**
+     * La fitness d'un individu est la fonction qui prend en compte le nombre de
+     * pièces récolté après le trajet.
+     * 
+     * @return {@code int} fitness
+     */
     public int evaluerFitness() {
-        return 0;
+        return 1 + 10 * instance.evaluerSolution(calculerSol());
     }
-
 }
