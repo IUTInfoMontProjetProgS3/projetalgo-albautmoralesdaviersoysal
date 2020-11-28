@@ -81,6 +81,33 @@ public class InstanceTest {
 
         }
 
+        @Ignore("nom validé")
+        @Test
+        public void testEstValide_avecSautDeCases() throws Exception {
+                boolean[][] p4 = new boolean[10][10];
+                for (int i = 0; i < p4.length; i++) {
+                        for (int j = 0; j < p4[0].length; j += 2) {
+                                p4[i][j] = true;
+                        }
+                }
+                Coord sp4 = new Coord(9, 5);
+                int k4 = p4.length * p4.length / 10;
+                Instance in4 = new Instance(p4, sp4, k4);
+                Solution s = new Solution();
+                s.add(new Coord(9, 5));
+                s.add(new Coord(9, 6));
+                s.add(new Coord(8, 6));
+                s.add(new Coord(7, 6));
+                s.add(new Coord(6, 6));
+                s.add(new Coord(5, 6));
+                s.add(new Coord(4, 6));
+                s.add(new Coord(3, 4));
+                s.add(new Coord(2, 6));
+                s.add(new Coord(1, 6));
+                s.add(new Coord(0, 6));
+                assertFalse(in4.estValide(s));
+        }
+
         @Test
         public void testEstValide_inferireur_a_K() throws Exception {
 
@@ -291,7 +318,7 @@ public class InstanceTest {
                 int[] values = new int[] { 47, 42, 37, 32, 27, 22, 17, 12, 7, 2, 1, 6, 11, 16, 21, 26, 31, 36, 41, 46,
                                 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 49, 44, 39,
                                 34, 29, 24, 19, 14, 9, 4 };
-                        //TODO: la taille de la liste est plus grand que K normal ? 
+                // TODO: la taille de la liste est plus grand que K normal ?
                 for (int a : values)
                         s.add(a);
                 assertEquals(s, in4.greedyPermut());
