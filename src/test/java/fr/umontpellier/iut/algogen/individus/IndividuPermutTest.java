@@ -15,7 +15,6 @@ import org.mockito.Mockito;
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
-import fr.umontpellier.iut.algogen.outils.PetitPoucet;
 
 class IndividuPermutTest {
 
@@ -36,7 +35,6 @@ class IndividuPermutTest {
 		assertEquals(50, mockIndividu1.permut.size());
 	}
 
-	@Disabled("non validé")
 	@Test
 	void testPlusCourtChemin() throws Exception {
 		Coord sp4 = new Coord(9, 5);
