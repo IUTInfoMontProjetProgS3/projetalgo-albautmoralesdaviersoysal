@@ -43,7 +43,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
 
     }
 
-    public IndividuPermut(Instance instace) {
+    public IndividuPermut(Instance instance) {
 
     }
 
@@ -61,7 +61,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     }
 
     public Instance getInstance() {
-        return null;
+        return instance;
     }
 
     @Override
