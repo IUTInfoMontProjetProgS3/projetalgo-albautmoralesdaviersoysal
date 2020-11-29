@@ -4,12 +4,19 @@ import static org.junit.Assert.assertSame;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyCollection;
+import static org.mockito.ArgumentMatchers.anyCollectionOf;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.anyListOf;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -19,6 +26,8 @@ import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBHSmartCrossingSm
 import fr.umontpellier.iut.algogen.fabriques.ICreator;
 import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
+import fr.umontpellier.iut.algogen.strategies.CroisementMutationV1;
+import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
 
 public class AlgoGenetiqueTest {
 
@@ -55,12 +64,32 @@ public class AlgoGenetiqueTest {
 	public void testRun_AvecMock_retourneMeilleurIndividu() {
 		Solution resultatAttendu = new Solution();
 		ICreator<?> mockICreator = mock(ICreator.class);
-		AlgoGenetique<?> algoGenetique = new AlgoGenetique<>(mock(Instance.class), null, mockICreator);
+		CroisementMutationV1 mockCalculNextGen = mock(CroisementMutationV1.class);
+		AlgoGenetique<?> algoGenetique = new AlgoGenetique<>(mock(Instance.class), mockCalculNextGen, mockICreator);
 		IIndividu mockIIndividu1 = initMockIndividu(resultatAttendu, 50);
 		IIndividu mockIIndividu2 = initMockIndividu(new Solution(), 1);
 		when(mockICreator.creerPopInit(any(Instance.class), anyInt()))
 				.thenReturn(new ArrayList<>(Arrays.asList(mockIIndividu1, mockIIndividu2)));
+
 		assertSame(resultatAttendu, algoGenetique.run(2, 0));
+		verify(mockICreator).creerPopInit(any(Instance.class), anyInt());
+		verifyNoInteractions(mockCalculNextGen);
+	}
+
+	@Test
+	public void testRun_AvecMock_utiliseUneFoisCalculNextGen() {
+		Solution resultatAttendu = new Solution();
+		ICreator<?> mockICreator = mock(ICreator.class);
+		CroisementMutationV1 mockCalculNextGen = mock(CroisementMutationV1.class);
+		AlgoGenetique<?> algoGenetique = new AlgoGenetique<>(mock(Instance.class), mockCalculNextGen, mockICreator);
+		ArrayList<?> value = new ArrayList<>(
+				Arrays.asList(initMockIndividu(resultatAttendu, 50), initMockIndividu(new Solution(), 1)));
+		when(mockICreator.creerPopInit(any(Instance.class), anyInt())).thenReturn((ArrayList) value);
+		when(mockCalculNextGen.calculerNextGen((ArrayList) value)).thenReturn((ArrayList) value);
+
+		assertSame(resultatAttendu, algoGenetique.run(2, 1));
+		verify(mockICreator).creerPopInit(any(Instance.class), anyInt());
+		verify(mockCalculNextGen, times(1)).calculerNextGen((ArrayList) value);
 	}
 
 	private IIndividu initMockIndividu(Solution solution, int fitness) {
