@@ -2,6 +2,7 @@ package fr.umontpellier.iut.algogen.outils;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
@@ -37,5 +38,18 @@ class PetitPoucetTest {
         resultatAttendu.add(new Coord(2, 0));
         resultatAttendu.add(new Coord(3, 0));
         assertEquals(resultatAttendu, PetitPoucet.getPlusCourtChemin(new Coord(0, 0), new Coord(3, 0)));
+    }
+
+    @Test
+    void testPlusCourtChemin() throws Exception {
+        Coord sp4 = new Coord(9, 5);
+        ArrayList<Coord> res = new ArrayList<>();
+        res.add(new Coord(8, 5));
+        res.add(new Coord(7, 5));
+        res.add(new Coord(6, 5));
+        res.add(new Coord(5, 5));
+        res.add(new Coord(4, 5));
+        res.add(new Coord(4, 4));
+        assertEquals(res, PetitPoucet.getPlusCourtChemin(sp4, new Coord(4, 4)));
     }
 }
