@@ -3,13 +3,7 @@ package fr.umontpellier.iut.algogen.outils;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
