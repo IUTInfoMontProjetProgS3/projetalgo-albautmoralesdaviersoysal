@@ -7,12 +7,15 @@ import java.util.Objects;
  * <p>
  * Une instance du Coord est caractérisé par les informations suivantes :
  * <ul>
- * <li>Un numéro de ligne qui indique sur quelle ligne il se trouve.</li>
- * <li>Un numéro de colonne qui indique sur quelle colonne il se trouve.li>
+ * <li>Un numéro de ligne qui indique sur quelle ligne il se trouve. </li>
+ * <li>Un numéro de colonne qui indique sur quelle colonne il se trouve. </li>
  * </ul>
  * </p>
  * 
- * @version 1.0
+ * @version 1.0.4
+ * 
+ * @author @MathieuSoysal 
+ * @author @bastian-albaut
  */
 public class Coord {
 
@@ -22,7 +25,7 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getL()
      */
-    private final int ligne;
+    private final int indexLigne;
 
     /**
      * La colonne sur laquelle se trouve this.
@@ -30,13 +33,12 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getC()
      */
-    private final int colonne;
+    private final int indexColonne;
 
-    public Coord(int ligne, int colonne) {
-        this.ligne = ligne;
-        this.colonne = colonne;
+    public Coord(int indexLigne, int indexColonne) {
+        this.indexLigne = indexLigne;
+        this.indexColonne = indexColonne;
     }
-
 
     /**
      * Vérifie si this peut être dans une grille avec {@code nbLigne} et
@@ -44,11 +46,12 @@ public class Coord {
      * 
      * @param nbLigne   : nombre de lignes de la grille
      * @param nbColonne : nombre de colonnes de la grille
-     * @return true si la coordonnée ne dépace pas les bordures de la grille
+     * @return {@code true} si la coordonnée ne dépace pas les bordures de la grille
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return ((Math.abs(colonne - nbColonne) >= 0) && (Math.abs(ligne - nbLigne) >= 0));
+        return indexColonne < nbColonne && indexLigne < nbLigne && nbLigne >= 0 && nbColonne >= 0 && indexColonne >= 0
+                && indexLigne >= 0;
     }
 
     /**
@@ -59,7 +62,7 @@ public class Coord {
      * 
      **/
     public boolean estADistanceUn(Coord coordCible) {
-        return Math.abs(distanceFrom(coordCible))  ==  1;
+        return distanceFrom(coordCible) == 1;
     }
 
     /**
@@ -73,12 +76,11 @@ public class Coord {
     public int distanceFrom(Coord coordCible) {
         int coordLigne = coordCible.getL();
         int coordColonne = coordCible.getC();
-
-        return Math.abs(ligne-coordLigne) + Math.abs(colonne-coordColonne);
+        return Math.abs(indexLigne - coordLigne) + Math.abs(indexColonne - coordColonne);
     }
 
     public String toString() {
-        return "(" + ligne + "," + colonne + ")";
+        return "(" + indexLigne + "," + indexColonne + ")";
     }
 
     @Override
@@ -88,12 +90,12 @@ public class Coord {
         if (o == null || getClass() != o.getClass())
             return false;
         Coord coord = (Coord) o;
-        return ligne == coord.ligne && colonne == coord.colonne;
+        return indexLigne == coord.indexLigne && indexColonne == coord.indexColonne;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ligne, colonne);
+        return Objects.hash(indexLigne, indexColonne);
     }
 
     /**
@@ -101,10 +103,10 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de ligne de this.
      * 
-     * @see Coord#ligne
+     * @see Coord#indexLigne
      */
     public int getL() {
-        return ligne;
+        return indexLigne;
     }
 
     /**
@@ -112,9 +114,9 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de colonne de this.
      * 
-     * @see Coord#colonne
+     * @see Coord#indexColonne
      */
     public int getC() {
-        return colonne;
+        return indexColonne;
     }
 }
