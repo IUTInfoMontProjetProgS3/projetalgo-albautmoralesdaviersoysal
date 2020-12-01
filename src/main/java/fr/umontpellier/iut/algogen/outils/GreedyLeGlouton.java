@@ -65,7 +65,7 @@ public class GreedyLeGlouton {
             coordCourante = piece;
         }
         if (solution.size() > instance.getK() + 1)
-            tronckerSolution(solution);
+            solution.troncker(instance.getK() + 1);
         return solution;
     }
 

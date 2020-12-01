@@ -7,7 +7,7 @@ import fr.umontpellier.iut.algogen.Solution;
  * <b>PetitPoucet est la classe utilitaire permetant de retrouver le plus court
  * chemin entre deux {@link Coord}.</b>
  * 
- * @author @MathieuSoysal 
+ * @author @MathieuSoysal
  * @version 1.0
  */
 public class PetitPoucet {
@@ -17,7 +17,7 @@ public class PetitPoucet {
     }
 
     /**
-     * Retourne le chemin le plus court entre coordDepart et coordArrivee. 
+     * Retourne le chemin le plus court entre coordDepart et coordArrivee.
      * 
      * @param coordDepart
      * @param coordArrivee
@@ -33,7 +33,8 @@ public class PetitPoucet {
         if (coordDepart.getL() != coordArrivee.getL())
             solution.addAll(getCheminPourObtenirMemeLigne(coordDepart, coordArrivee.getL()));
         if (coordDepart.getC() != coordArrivee.getC())
-            solution.addAll(getCheminPourObtenirMemeColonne(coordDepart, coordArrivee.getC()));
+            solution.addAll(getCheminPourObtenirMemeColonne(new Coord(coordArrivee.getL(), coordDepart.getC()),
+                    coordArrivee.getC()));
         return solution;
     }
 
