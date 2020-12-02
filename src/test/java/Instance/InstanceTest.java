@@ -13,6 +13,7 @@ import org.junit.Ignore;
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
+import jdk.jfr.Name;
 
 public class InstanceTest {
 
@@ -50,6 +51,17 @@ public class InstanceTest {
                         }
                 }
         }
+        
+        @Ignore ("Demander au prof")
+        @Test
+        public void testPiecePresente_Negative() throws Exception {
+                boolean[][] p4 = new boolean[10][10];
+
+                Coord sp4 = new Coord(9, 5);
+                int k4 = p4.length * p4.length / 10;
+                Instance in4 = new Instance(p4, sp4, k4);
+                assertEquals(false, in4.piecePresente(new Coord(-8, -8)));
+        }
 
         @Test
         public void testEstValide() throws Exception {
@@ -81,7 +93,6 @@ public class InstanceTest {
 
         }
 
-        @Ignore("nom validé")
         @Test
         public void testEstValide_avecSautDeCases() throws Exception {
                 boolean[][] p4 = new boolean[10][10];

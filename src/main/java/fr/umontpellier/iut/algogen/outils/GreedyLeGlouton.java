@@ -91,7 +91,7 @@ public class GreedyLeGlouton {
 
     private Solution comblerKPasRestant(Coord coordCourante, int pasRestant) {
         Solution solutionComble = new Solution();
-        boolean phase1 = false;
+        boolean phase1 = true;
         Coord prochaineCoord = Direction.getCoordAdjacentValide(coordCourante, instance);
         while (pasRestant-- != 0) {
             if (phase1)

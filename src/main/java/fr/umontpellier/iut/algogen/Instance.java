@@ -5,6 +5,7 @@ import fr.umontpellier.iut.algogen.outils.GreedyLeGlouton;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * <b>Instance est la classe représentant l'instance d'un jeu.</b>
@@ -50,7 +51,7 @@ public class Instance {
     /**
      * La liste des coordoonées des pièces sur la grille.
      * 
-     * @see Instance#getListeCoordPieces() 
+     * @see Instance#getListeCoordPieces()
      */
     private ArrayList<Coord> listeCoordPieces;
 
@@ -136,10 +137,16 @@ public class Instance {
                                                 // mouvement)
         if (nbMouvements != k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
+
+        Coord coordCourante = solution.get(0);
         for (Coord coord : solution) {
-            if (!coord.estDansPlateau(getNbL(), getNbC()))
+            if (coord != solution.get(0) && !coord.estADistanceUn(coordCourante)
+                    || !coord.estDansPlateau(getNbL(), getNbC())) {
                 return false;
+            }
+            coordCourante = coord;
         }
+
         return true;
     }
 
@@ -225,7 +232,7 @@ public class Instance {
      * @see Solution
      **/
     public Solution greedySolver() {
-        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);  
+        GreedyLeGlouton greedyLeGlouton = new GreedyLeGlouton(this);
         return greedyLeGlouton.greedySolver();
     }
 
