@@ -65,7 +65,7 @@ public class GreedyLeGlouton {
             coordCourante = piece;
         }
         if (solution.size() > instance.getK() + 1)
-            tronckerSolution(solution);
+            solution.troncker(instance.getK() + 1);
         return solution;
     }
 
@@ -91,7 +91,7 @@ public class GreedyLeGlouton {
 
     private Solution comblerKPasRestant(Coord coordCourante, int pasRestant) {
         Solution solutionComble = new Solution();
-        boolean phase1 = false;
+        boolean phase1 = true;
         Coord prochaineCoord = Direction.getCoordAdjacentValide(coordCourante, instance);
         while (pasRestant-- != 0) {
             if (phase1)
