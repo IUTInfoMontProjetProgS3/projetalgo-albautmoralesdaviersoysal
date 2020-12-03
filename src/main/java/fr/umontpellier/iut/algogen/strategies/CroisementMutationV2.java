@@ -12,7 +12,6 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
  * <li>Mutation des parents avec une probabilité de p.</li>
  * <li>Génération du fils.</li>
  * </ul>
- * </p>
  * <p>
  * De plus, on ajoute aussi les deux meilleurs parents de la génération
  * précédente à la nouvelle génération.

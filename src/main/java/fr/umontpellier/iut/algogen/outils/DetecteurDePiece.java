@@ -8,7 +8,7 @@ import fr.umontpellier.iut.algogen.Coord;
  * <b>DetecteurDePiece est la classe utilitaire permetant de recherche de
  * pièces.</b>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 2.0
  */
 public class DetecteurDePiece {

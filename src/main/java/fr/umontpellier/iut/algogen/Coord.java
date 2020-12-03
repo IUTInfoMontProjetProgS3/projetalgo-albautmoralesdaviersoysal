@@ -6,16 +6,16 @@ import java.util.Objects;
  * <b>Coord est la classe représentant une coordonnée sur le plateau de jeu.</b>
  * <p>
  * Une instance du Coord est caractérisé par les informations suivantes :
+ * </p>
  * <ul>
  * <li>Un numéro de ligne qui indique sur quelle ligne il se trouve. </li>
  * <li>Un numéro de colonne qui indique sur quelle colonne il se trouve. </li>
  * </ul>
- * </p>
  * 
  * @version 1.0.4
  * 
- * @author @MathieuSoysal 
- * @author @bastian-albaut
+ * @author MathieuSoysal 
+ * @author bastian-albaut
  */
 public class Coord {
 

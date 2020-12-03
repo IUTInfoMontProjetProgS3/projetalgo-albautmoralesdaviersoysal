@@ -12,13 +12,13 @@ import fr.umontpellier.iut.algogen.Solution;
  * d'une {@link Instance} en suivant une approche greedy.</b>
  * <p>
  * Une instance GreedyLeGlouton est caractérisé par les informations suivantes :
+ * </p>
  * <ul>
  * <li>Une {@link Instance} pour l'instance du jeu.</li>
  * <li>Un une liste des pièces récolté.</li>
  * </ul>
- * </p>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 1.1.0
  */
 public class GreedyLeGlouton {
@@ -34,7 +34,7 @@ public class GreedyLeGlouton {
     private Instance instance;
 
     /**
-     * @param instance
+     * @param instance : instance du jeu
      */
     public GreedyLeGlouton(Instance instance) {
         this.instance = instance;

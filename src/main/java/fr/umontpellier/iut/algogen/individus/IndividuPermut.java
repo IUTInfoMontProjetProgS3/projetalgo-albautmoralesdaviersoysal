@@ -16,11 +16,11 @@ import fr.umontpellier.iut.algogen.outils.PetitPoucet;
  * <p>
  * Un individu de type IndividuGDBH est caractérisé par les informations
  * suivantes :
+ * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
  * <li>Un premut {@code ArrayList<Integer>}.</li>
  * </ul>
- * </p>
  * 
  * @see IIndividu
  * @version 1.0.4

@@ -10,11 +10,11 @@ import fr.umontpellier.iut.algogen.Instance;
  * fonction de l'ordre avec le quel on récolte les pièces.</b>
  * <p>
  * Un individu PermutSimple est caractérisé par les informations suivantes :
+ * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
  * <li>le trajet de l'individu {@code permutations}.</li>
  * </ul>
- * </p>
  * 
  * @see IIndividu
  * @version 1.0

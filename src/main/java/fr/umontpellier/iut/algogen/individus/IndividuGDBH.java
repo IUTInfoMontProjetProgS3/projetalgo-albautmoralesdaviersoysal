@@ -14,11 +14,11 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * <p>
  * Un individu de type IndividuGDBH est caractérisé par les informations
  * suivantes :
+ * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
  * <li>Du trajet effectué {@code ArrayList<Character>}.</li>
  * </ul>
- * </p>
  * <p>
  * De plus, IndividuGDBH possède une méthode permettant de normaliser un trajet.
  * </p>

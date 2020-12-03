@@ -16,7 +16,6 @@ import java.util.HashSet;
  * <li>Un nombre de pas autorisé.</li>
  * <li>Une liste des coordonnées des pièces sur le plateau.</li>
  * </ul>
- * </p>
  * 
  * @version 1.0.4
  */
@@ -247,7 +246,7 @@ public class Instance {
      * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du
      *         plateau.
      * 
-     * @see InslisteCoordPiecese#listeCoordPieces
+     * @see Instance#listeCoordPieces
      * @see java.util.ArrayList
      */
     public ArrayList<Coord> getListeCoordPieces() {
