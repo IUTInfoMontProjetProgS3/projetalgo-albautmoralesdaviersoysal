@@ -14,7 +14,6 @@ import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSimpleTest {
 
-	@Disabled
 	@Test
 	public void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
