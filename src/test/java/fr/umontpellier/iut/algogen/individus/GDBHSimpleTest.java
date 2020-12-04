@@ -2,6 +2,7 @@ package fr.umontpellier.iut.algogen.individus;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doCallRealMethod;
 import static org.mockito.Mockito.doNothing;
@@ -11,6 +12,7 @@ import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.withSettings;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.Ignore;
@@ -66,32 +68,26 @@ class GDBHSimpleTest {
 		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
 	}
 
-	@Ignore("Nom validé")
 	@Test
 	void testCalculerMutation_avecNormalisation() {
 		boolean[][] p4 = new boolean[10][10];
 		Coord sp4 = new Coord(9, 5);
 		int k4 = p4.length * p4.length / 10;
-		Instance in4 = new Instance(p4, sp4, k4);
-		GDBHSimple mockGDBHSimple = Mockito.mock(GDBHSimple.class, withSettings().useConstructor(in4));
-		when(mockGDBHSimple.calculerMutation()).thenCallRealMethod();
-		doCallRealMethod().when(mockGDBHSimple).normaliseTrajet();
-		mockGDBHSimple.calculerMutation();
-		verify(mockGDBHSimple, times(1)).normaliseTrajet();
+		Instance instance = new Instance(p4, sp4, k4);
+		GDBHSimple gdbhSimple = new GDBHSimple(instance,
+				new ArrayList<>(Arrays.asList(new Character[] { 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd' })));
+		assertTrue(instance.estValide(gdbhSimple.calculerCroisement(gdbhSimple).calculerSol()));
 	}
 
-	@Ignore("Nom validé")
 	@Test
 	void testCalculerCroisement_avecNormalisation() {
 		boolean[][] p4 = new boolean[10][10];
 		Coord sp4 = new Coord(9, 5);
 		int k4 = p4.length * p4.length / 10;
-		Instance in4 = new Instance(p4, sp4, k4);
-		GDBHSimple mockGDBHSimple = Mockito.mock(GDBHSimple.class, withSettings().useConstructor(in4));
-		when(mockGDBHSimple.calculerCroisement(any(GDBHSimple.class))).thenCallRealMethod();
-		doCallRealMethod().when(mockGDBHSimple).normaliseTrajet();
-		mockGDBHSimple.calculerCroisement(mockGDBHSimple);
-		verify(mockGDBHSimple, times(1)).normaliseTrajet();
+		Instance instance = new Instance(p4, sp4, k4);
+		GDBHSimple gdbhSimple = new GDBHSimple(instance,
+				new ArrayList<>(Arrays.asList(new Character[] { 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd' })));
+		assertTrue(instance.estValide(gdbhSimple.calculerMutation().calculerSol()));
 	}
 
 	@Test
