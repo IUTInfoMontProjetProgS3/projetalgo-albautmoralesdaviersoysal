@@ -55,6 +55,7 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      **/
     public GDBHSimple calculerMutation() {
         ArrayList<Character> trajetMute = new ArrayList<>(trajet);
+        //TODO: Est-ce que l'on laisse la possibilité de tiré deux fois le même nombre ?
         Collections.swap(trajetMute, indexRandom(), indexRandom());
         GDBHSimple mute = new GDBHSimple(instance, trajetMute);
         mute.normaliseTrajet();
