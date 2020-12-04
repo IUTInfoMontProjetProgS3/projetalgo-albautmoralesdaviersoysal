@@ -12,10 +12,10 @@ import org.junit.jupiter.api.Test;
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
-public class GDBHSimpleTest {
+class GDBHSimpleTest {
 
 	@Test
-	public void testCalculerCroisement() throws Exception {
+	void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
@@ -58,9 +58,8 @@ public class GDBHSimpleTest {
 
 	}
 
-	@Disabled
 	@Test
-	public void testCalculerMutation() throws Exception {
+	void testCalculerMutation() throws Exception {
 
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {

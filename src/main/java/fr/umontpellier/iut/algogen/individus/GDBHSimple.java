@@ -2,6 +2,7 @@ package fr.umontpellier.iut.algogen.individus;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
@@ -11,7 +12,7 @@ import fr.umontpellier.iut.algogen.Solution;
  * mutation basique.
  * 
  * @see IndividuGDBH
- * @version 1.0.1
+ * @version 1.0.3
  */
 public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
     public GDBHSimple(Instance instance, ArrayList<Character> trajet) {
@@ -34,13 +35,12 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      * 
      * @return un individu fils de type GDBHSimple.
      * 
-     * @since 1.0.1
+     * @since 1.0.3
      **/
     public GDBHSimple calculerCroisement(GDBHSimple individu2) {
-        int size = trajet.size();
-        int indexSeparation = new SecureRandom().nextInt(size);
+        int indexSeparation = indexRandom();
         ArrayList<Character> trajetFils = new ArrayList<>(trajet.subList(0, indexSeparation));
-        trajetFils.addAll(individu2.trajet.subList(indexSeparation, size));
+        trajetFils.addAll(individu2.trajet.subList(indexSeparation, trajet.size()));
         return new GDBHSimple(instance, trajetFils);
     }
 
@@ -49,9 +49,18 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      * 
      * @return un individu muté de type GDBHSimple.
      * 
+     * @since 1.0.3
      **/
     public GDBHSimple calculerMutation() {
-        return null;
+        int indexRandom1 = indexRandom();
+        int indexRandom2 = indexRandom();
+        ArrayList<Character> trajetMute = new ArrayList<>(trajet);
+        Collections.swap(trajetMute, indexRandom1, indexRandom2);
+        return new GDBHSimple(instance, trajetMute);
+    }
+
+    private int indexRandom() {
+        return new SecureRandom().nextInt(trajet.size());
     }
 
 }
