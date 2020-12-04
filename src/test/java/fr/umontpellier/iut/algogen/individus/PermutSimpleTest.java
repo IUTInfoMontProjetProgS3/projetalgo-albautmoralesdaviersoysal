@@ -45,7 +45,6 @@ public class PermutSimpleTest {
 		assertFalse(Collections.disjoint(result.permut, individu.get(1).permut));
 	}
 
-	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
