@@ -80,6 +80,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     public Solution calculerSol() {
         Solution solution = new Solution();
         Coord coordCourante = instance.getStartingP();
+        solution.add(coordCourante);
         for (Integer indexPiece : permut) {
             Coord coordPiece = instance.getListeCoordPieces().get(indexPiece);
             solution.addAll(PetitPoucet.getPlusCourtChemin(coordCourante, coordPiece));
