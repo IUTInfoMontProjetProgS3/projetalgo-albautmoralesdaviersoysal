@@ -63,9 +63,9 @@ public class AlgoGenetiqueTest {
 	@Test
 	public void testRun_AvecMock_retourneMeilleurIndividu() {
 		Solution resultatAttendu = new Solution();
-		ICreator<?> mockICreator = mock(ICreator.class);
+		ICreator mockICreator = mock(ICreator.class);
 		CroisementMutationV1 mockCalculNextGen = mock(CroisementMutationV1.class);
-		AlgoGenetique<?> algoGenetique = new AlgoGenetique<>(mock(Instance.class), mockCalculNextGen, mockICreator);
+		AlgoGenetique algoGenetique = new AlgoGenetique<>(mock(Instance.class), mockCalculNextGen, mockICreator);
 		IIndividu mockIIndividu1 = initMockIndividu(resultatAttendu, 50);
 		IIndividu mockIIndividu2 = initMockIndividu(new Solution(), 1);
 		when(mockICreator.creerPopInit(any(Instance.class), anyInt()))
