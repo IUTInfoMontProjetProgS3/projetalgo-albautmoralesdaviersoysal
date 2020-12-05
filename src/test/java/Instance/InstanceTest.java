@@ -52,7 +52,7 @@ public class InstanceTest {
                 }
         }
         
-        @Ignore ("Demander au prof")
+        //@Ignore ("Demander au prof")
         @Test
         public void testPiecePresente_Negative() throws Exception {
                 boolean[][] p4 = new boolean[10][10];

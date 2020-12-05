@@ -119,6 +119,7 @@ public class Instance {
      * @see Instance#plateau
      **/
     public boolean piecePresente(Coord coordonnee) {
+        if(coordonnee.getL() < 0 || coordonnee.getC() < 0) return false;
         return plateau[coordonnee.getL()][coordonnee.getC()];
     }
 
