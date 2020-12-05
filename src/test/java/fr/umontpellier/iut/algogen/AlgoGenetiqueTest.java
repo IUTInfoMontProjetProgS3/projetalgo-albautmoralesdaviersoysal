@@ -2,12 +2,8 @@ package fr.umontpellier.iut.algogen;
 
 import static org.junit.Assert.assertSame;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyCollection;
-import static org.mockito.ArgumentMatchers.anyCollectionOf;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyListOf;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -16,22 +12,18 @@ import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import org.mockito.Mock;
 
-import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBHSmartCrossingSmartMutViaPermut;
+import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBH;
 import fr.umontpellier.iut.algogen.fabriques.ICreator;
-import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
+import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 import fr.umontpellier.iut.algogen.strategies.CroisementMutationV1;
-import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
 
 public class AlgoGenetiqueTest {
 
-	@Ignore
 	@Test
 	public void testRun() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -43,20 +35,20 @@ public class AlgoGenetiqueTest {
 		Coord sp4 = new Coord(0, 0);
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
-		GDBHSmartCrossingSmartMut individu = new GDBHSmartCrossingSmartMut(in4);
+		GDBHSimple individu = new GDBHSimple(in4);
 		individu.trajet.clear();
 		individu.trajet.add('d');
 		individu.trajet.add('d');
 		individu.trajet.add('d');
 		individu.trajet.add('b');
-		GDBHSmartCrossingSmartMut individu_ = new GDBHSmartCrossingSmartMut(in4);
+		GDBHSimple individu_ = new GDBHSimple(in4);
 		individu_.trajet.clear();
 		individu_.trajet.add('b');
 		individu_.trajet.add('d');
 		individu_.trajet.add('d');
 		individu_.trajet.add('b');
 
-		AlgoGenetique ag = new AlgoGenetique(in4, new CreationIndividuGDBHSmartCrossingSmartMutViaPermut());
+		AlgoGenetique ag = new AlgoGenetique(in4, new CreationIndividuGDBH());
 		assertDoesNotThrow(() -> ag.run(2, 30));
 	}
 
