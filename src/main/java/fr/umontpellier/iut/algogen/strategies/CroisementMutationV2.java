@@ -26,12 +26,19 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
 public class CroisementMutationV2<T extends IIndividu<T>> extends StrategieCalculNextGen<T> {
 
     /**
-     * @param pop : Une population
-     * @return une nouvelle generation qui contient les meilleurs individu de pop
-     *         ainsi que des individu fils.
+     * Probabilité de mutation.
      * 
-     **/
-    public ArrayList<T> calculerNextGen(ArrayList<T> pop) {
+     * @see CroisementMutationV2#CroisementMutationV2(double)
+     */
+    private double probaMutation;
+
+    public CroisementMutationV2(double probaMutation) {
+        this.probaMutation = probaMutation;
+    }
+
+    @Override
+    protected ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop) {
+        // TODO Auto-generated method stub
         return null;
     }
 
