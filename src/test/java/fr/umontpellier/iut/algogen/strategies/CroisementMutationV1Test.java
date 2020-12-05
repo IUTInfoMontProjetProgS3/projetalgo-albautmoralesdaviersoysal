@@ -1,21 +1,21 @@
 package fr.umontpellier.iut.algogen.strategies;
 
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-import org.junit.Test;
 import org.junit.Ignore;
+import org.junit.Test;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
+import fr.umontpellier.iut.algogen.individus.GDBHSimple;
 import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
-import fr.umontpellier.iut.algogen.individus.IIndividu;
 
-public class CroisementMutationV1Test<T extends IIndividu<T>> {
+public class CroisementMutationV1Test {
 
 	@Ignore
 	@Test
@@ -32,32 +32,29 @@ public class CroisementMutationV1Test<T extends IIndividu<T>> {
 		Coord sp4 = new Coord(0, 0);
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
-		GDBHSmartCrossingSmartMut individu = new GDBHSmartCrossingSmartMut(in4);
+		GDBHSimple individu = new GDBHSimple(in4);
 		individu.trajet.clear();
 		individu.trajet.add('d');
 		individu.trajet.add('d');
 		individu.trajet.add('d');
 		individu.trajet.add('b');
-		GDBHSmartCrossingSmartMut individu_ = new GDBHSmartCrossingSmartMut(in4);
+		GDBHSimple individu_ = new GDBHSimple(in4);
 		individu_.trajet.clear();
 		individu_.trajet.add('b');
 		individu_.trajet.add('d');
 		individu_.trajet.add('d');
 		individu_.trajet.add('b');
-		ArrayList<GDBHSmartCrossingSmartMut> pop = new ArrayList(Arrays.asList(individu, individu_));
+		ArrayList<GDBHSimple> pop = new ArrayList<>(Arrays.asList(individu, individu_));
 
-		ArrayList<GDBHSmartCrossingSmartMut> selected = new CroisementMutationV1(0.1).calculerNextGen(pop);
-		GDBHSmartCrossingSmartMut selected1 = (GDBHSmartCrossingSmartMut) new CroisementMutationV1(0.1)
-				.selectionRoulette(pop);
+		CroisementMutationV1<GDBHSimple> croisementMutationV1 = new CroisementMutationV1<>(0.1);
+		ArrayList<GDBHSimple> selected = croisementMutationV1.calculerNextGen(pop);
+		GDBHSimple selected1 = croisementMutationV1.selectionRoulette(pop);
 		assertTrue(selected.contains(selected1));
 
 		selected.removeAll(pop);
-		for (GDBHSmartCrossingSmartMut i : pop) {
-			for (GDBHSmartCrossingSmartMut j : selected)
-				assertFalse(i.trajet.equals(j.trajet));
-
-		}
-
+		for (GDBHSimple i : pop)
+			for (GDBHSimple j : selected)
+				assertEquals(i.trajet, j.trajet);
 	}
 
 	@Ignore
