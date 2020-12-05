@@ -1,6 +1,7 @@
 package fr.umontpellier.iut.algogen.strategies;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 
@@ -38,8 +39,29 @@ public class CroisementMutationV2<T extends IIndividu<T>> extends StrategieCalcu
 
     @Override
     protected ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop) {
-        // TODO Auto-generated method stub
-        return null;
+        ArrayList<T> newPop = new ArrayList<>();
+        for (int i = 0; i < pop.size() - 2; i++) {
+            ArrayList<T> parents = selectionParentsAvecChanceMutation(pop);
+            newPop.add(croiserLesParents(parents));
+        }
+        return newPop;
+    }
+
+    private T croiserLesParents(ArrayList<T> parents) {
+        return parents.get(0).calculerCroisement(parents.get(1));
+    }
+
+    private ArrayList<T> selectionParentsAvecChanceMutation(ArrayList<T> pop) {
+        ArrayList<T> parents = selectionParentsAvecChanceMutation(pop);
+        for (int i = 0; i < parents.size(); i++) {
+            if (estMute())
+                parents.set(i, parents.get(i).calculerMutation());
+        }
+        return parents;
+    }
+
+    private boolean estMute() {
+        return new Random().nextDouble() < probaMutation;
     }
 
 }
