@@ -1,6 +1,11 @@
 package fr.umontpellier.iut.algogen.strategies;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Random;
 
 import fr.umontpellier.iut.algogen.individus.IIndividu;
 
@@ -33,6 +38,7 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
     private double probaMutation;
 
     public CroisementMutationV1(double probaMutation) {
+        this.probaMutation = probaMutation;
     }
 
     /**
@@ -43,8 +49,37 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
      **/
     @Override
     public ArrayList<T> calculerNextGen(ArrayList<T> pop) {
+        ArrayList<T> newPop = nouveauxFilsDeLaPopu(pop);
+        newPop.addAll(deuxMeilleurIndividus(pop));
+        return newPop;
+    }
 
-        return null;
+    private ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop) {
+        ArrayList<T> newPop = new ArrayList<>();
+        for (int i = 0; i < pop.size() - 2; i++) {
+            T fils = calculerNouveauFils(pop);
+            if (filsEstMute())
+                fils = fils.calculerMutation();
+            newPop.add(fils);
+        }
+        return newPop;
+    }
+
+    private Collection<T> deuxMeilleurIndividus(ArrayList<T> pop) {
+        T meilleurIndividu1 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
+        ArrayList<T> popSansMeilleur = new ArrayList<>(pop);
+        popSansMeilleur.remove(meilleurIndividu1);
+        T meilleurIndividu2 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
+        return Arrays.asList(meilleurIndividu1, meilleurIndividu2);
+    }
+
+    private boolean filsEstMute() {
+        return new Random().nextDouble() < probaMutation;
+    }
+
+    private T calculerNouveauFils(ArrayList<T> pop) {
+        ArrayList<T> parents = selectionParents(pop);
+        return parents.get(0).calculerCroisement(parents.get(1));
     }
 
 }
