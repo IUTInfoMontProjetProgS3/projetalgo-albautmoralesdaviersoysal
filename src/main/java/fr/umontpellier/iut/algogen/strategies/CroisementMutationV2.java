@@ -48,6 +48,7 @@ public class CroisementMutationV2<T extends IIndividu<T>> extends StrategieCalcu
     }
 
     private T croiserLesParents(ArrayList<T> parents) {
+        //TODO Voir si randomise le croisement
         return parents.get(0).calculerCroisement(parents.get(1));
     }
 
