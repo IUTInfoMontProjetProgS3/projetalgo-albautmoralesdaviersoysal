@@ -40,7 +40,12 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * 
      **/
     public PermutSimple calculerCroisement(PermutSimple individu2) {
-        return null;
+        ArrayList<Integer> sortedSet = new ArrayList<>(permut.subList(0, indexRandom()));
+        for (Integer integer : individu2.permut)
+            if (!sortedSet.contains(integer))
+                sortedSet.add(integer);
+        // TODO l'ordre est-il bon ?
+        return new PermutSimple(instance, new ArrayList<>(sortedSet));
     }
 
     /**
@@ -55,8 +60,7 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Tire aléatoirement deux variables x,y . Permute les
-     * cases à l'indice x et y.
+     * Tire aléatoirement deux variables x,y . Permute les cases à l'indice x et y.
      * 
      * @return un individu fils muté de type GDBHSimple.
      * 
