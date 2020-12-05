@@ -69,7 +69,7 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
         T meilleurIndividu1 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
         ArrayList<T> popSansMeilleur = new ArrayList<>(pop);
         popSansMeilleur.remove(meilleurIndividu1);
-        T meilleurIndividu2 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
+        T meilleurIndividu2 = Collections.max(popSansMeilleur, Comparator.comparing(T::evaluerFitness));
         return Arrays.asList(meilleurIndividu1, meilleurIndividu2);
     }
 

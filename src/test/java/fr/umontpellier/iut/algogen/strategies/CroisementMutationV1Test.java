@@ -48,7 +48,6 @@ public class CroisementMutationV1Test {
 		ArrayList<GDBHSimple> selected = croisementMutationV1.calculerNextGen(pop);
 		GDBHSimple selected1 = croisementMutationV1.selectionRoulette(pop);
 		assertTrue(selected.contains(selected1));
-		// TODO Prendre toujours les deux meilleurs, pop taille deux ?
 
 		selected.removeAll(pop);
 		for (GDBHSimple i : pop)
