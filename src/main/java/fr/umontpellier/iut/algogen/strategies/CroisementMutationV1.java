@@ -26,7 +26,7 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
  * @see StrategieCalculNextGen
  * @see IIndividu
  * 
- * @version 1.0
+ * @version 2.0
  */
 public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalculNextGen<T> {
 
@@ -41,20 +41,8 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
         this.probaMutation = probaMutation;
     }
 
-    /**
-     * @param pop : Une population
-     * @return une nouvelle generation qui contient les meilleurs individu de pop
-     *         ainsi que des individu fils.
-     * 
-     **/
     @Override
-    public ArrayList<T> calculerNextGen(ArrayList<T> pop) {
-        ArrayList<T> newPop = nouveauxFilsDeLaPopu(pop);
-        newPop.addAll(deuxMeilleurIndividus(pop));
-        return newPop;
-    }
-
-    private ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop) {
+    protected ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop) {
         ArrayList<T> newPop = new ArrayList<>();
         for (int i = 0; i < pop.size() - 2; i++) {
             T fils = calculerNouveauFils(pop);
@@ -63,14 +51,6 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
             newPop.add(fils);
         }
         return newPop;
-    }
-
-    private Collection<T> deuxMeilleurIndividus(ArrayList<T> pop) {
-        T meilleurIndividu1 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
-        ArrayList<T> popSansMeilleur = new ArrayList<>(pop);
-        popSansMeilleur.remove(meilleurIndividu1);
-        T meilleurIndividu2 = Collections.max(popSansMeilleur, Comparator.comparing(T::evaluerFitness));
-        return Arrays.asList(meilleurIndividu1, meilleurIndividu2);
     }
 
     private boolean filsEstMute() {
