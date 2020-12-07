@@ -2,21 +2,31 @@ package fr.umontpellier.iut.algogen.individus;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doCallRealMethod;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.withSettings;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
-public class GDBHSimpleTest {
+class GDBHSimpleTest {
 
-	@Disabled
 	@Test
-	public void testCalculerCroisement() throws Exception {
+	void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
 			for (int j = 0; j < p4[0].length; j += 2) {
@@ -56,12 +66,32 @@ public class GDBHSimpleTest {
 
 		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
 		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
-
 	}
 
-	@Disabled
 	@Test
-	public void testCalculerMutation() throws Exception {
+	void testCalculerMutation_avecNormalisation() {
+		boolean[][] p4 = new boolean[10][10];
+		Coord sp4 = new Coord(9, 5);
+		int k4 = p4.length * p4.length / 10;
+		Instance instance = new Instance(p4, sp4, k4);
+		GDBHSimple gdbhSimple = new GDBHSimple(instance,
+				new ArrayList<>(Arrays.asList(new Character[] { 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd' })));
+		assertTrue(instance.estValide(gdbhSimple.calculerCroisement(gdbhSimple).calculerSol()));
+	}
+
+	@Test
+	void testCalculerCroisement_avecNormalisation() {
+		boolean[][] p4 = new boolean[10][10];
+		Coord sp4 = new Coord(9, 5);
+		int k4 = p4.length * p4.length / 10;
+		Instance instance = new Instance(p4, sp4, k4);
+		GDBHSimple gdbhSimple = new GDBHSimple(instance,
+				new ArrayList<>(Arrays.asList(new Character[] { 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd' })));
+		assertTrue(instance.estValide(gdbhSimple.calculerMutation().calculerSol()));
+	}
+
+	@Test
+	void testCalculerMutation() throws Exception {
 
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
