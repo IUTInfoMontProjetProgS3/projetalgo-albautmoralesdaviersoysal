@@ -25,6 +25,6 @@ public class CreationIndividuGDBH extends ICreator<GDBHSimple> {
      */
     @Override
     protected GDBHSimple create(Instance instance) {
-        return null;
+        return new GDBHSimple(instance);
     }
 }
