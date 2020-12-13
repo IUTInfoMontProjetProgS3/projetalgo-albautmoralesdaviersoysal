@@ -41,16 +41,16 @@ public class Direction {
         int prochaineColonne = coordActuelle.getC();
         switch (direction) {
             case HAUT:
-                prochaineLigne++;
-                break;
-            case BAS:
                 prochaineLigne--;
                 break;
+            case BAS:
+                prochaineLigne++;
+                break;
             case GAUCHE:
-                prochaineColonne++;
+                prochaineColonne--;
                 break;
             case DROITE:
-                prochaineColonne--;
+                prochaineColonne++;
                 break;
             default:
                 break;

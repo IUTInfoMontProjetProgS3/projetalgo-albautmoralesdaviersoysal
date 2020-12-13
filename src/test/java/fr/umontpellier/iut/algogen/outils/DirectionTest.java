@@ -37,9 +37,9 @@ class DirectionTest {
 
     private static Stream<Arguments> genererArgumentsPourtestCalculerProchaineCoord() {
         return Stream.of(//
-                Arguments.of(new Coord(0, 0), Direction.BAS, new Coord(-1, 0)), //
-                Arguments.of(new Coord(0, 0), Direction.HAUT, new Coord(1, 0)), //
-                Arguments.of(new Coord(0, 0), Direction.DROITE, new Coord(0, -1)), //
-                Arguments.of(new Coord(0, 0), Direction.GAUCHE, new Coord(0, 1)));
+                Arguments.of(new Coord(0, 0), Direction.BAS, new Coord(1, 0)), //
+                Arguments.of(new Coord(0, 0), Direction.HAUT, new Coord(-1, 0)), //
+                Arguments.of(new Coord(0, 0), Direction.DROITE, new Coord(0, 1)), //
+                Arguments.of(new Coord(0, 0), Direction.GAUCHE, new Coord(0, -1)));
     }
 }
