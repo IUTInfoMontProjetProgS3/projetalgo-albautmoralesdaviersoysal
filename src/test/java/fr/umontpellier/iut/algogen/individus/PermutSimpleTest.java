@@ -44,25 +44,6 @@ public class PermutSimpleTest {
 		assertFalse(Collections.disjoint(result.permut, individu.get(0).permut));
 		assertFalse(Collections.disjoint(result.permut, individu.get(1).permut));
 	}
-
-	@Test
-	public void testCalculerCroisement_deuxMemeIndividus() throws Exception {
-		boolean[][] p4 = new boolean[10][10];
-		for (int i = 0; i < p4.length; i++) {
-			for (int j = 0; j < p4[0].length; j += 2) {
-
-				p4[i][j] = true;
-
-			}
-		}
-		Coord sp4 = new Coord(9, 5);
-		int k4 = p4.length * p4.length / 10;
-		Instance instance = new Instance(p4, sp4, k4);
-		PermutSimple individu = new PermutSimple(instance);
-		PermutSimple individuCroise = individu.calculerCroisement(individu);
-		assertEquals(individu.permut, individuCroise.permut);
-	}
-
 	@Test
 	public void testCalculerMutation() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
