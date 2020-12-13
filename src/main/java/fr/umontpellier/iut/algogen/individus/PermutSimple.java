@@ -58,10 +58,10 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Permute indice1 et indice2
+     * Permute index1 et index2
      * 
-     * @param indice1 : indice du premier mouvement
-     * @param indice2 : indice du deuxieme mouvement
+     * @param index1 : indice du premier mouvement
+     * @param index2 : indice du deuxieme mouvement
      * 
      **/
     private void mutationAux(int index1, int index2) {
