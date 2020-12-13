@@ -29,7 +29,7 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Tire au hasard deux variables x,y comprit en 0 et k-1. Prend les cases de x à
+     * Tire au hasard deux variable x,y comprit en 0 et k-1. Prend les cases de x à
      * y de this. Puis les combines avec les cases d'individu2 non compris dans
      * l'intervalle x,y.
      * 
@@ -42,19 +42,19 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Permute index1 et index2
+     * Permute indice1 et indice2
      * 
-     * @param index1 : index du premier mouvement
-     * @param index2 : index du deuxieme mouvement
+     * @param indice1 : indice du premier mouvement
+     * @param indice2 : indice du deuxieme mouvement
      * 
      **/
-    private void mutationAux(int index1, int index2) {
+    private void mutationAux(int indice1, int indice2) {
 
     }
 
     /**
      * Tire aléatoirement deux variables x,y compris entre 0 et k-1. Permute les
-     * cases à l'index x et y.
+     * cases à l'indice x et y.
      * 
      * @return un individu fils muté de type GDBHSimple.
      * @see PermutSimple#calculerCroisement(PermutSimple)
