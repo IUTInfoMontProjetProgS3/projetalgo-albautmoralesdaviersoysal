@@ -1,6 +1,8 @@
 package fr.umontpellier.iut.algogen.individus;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import fr.umontpellier.iut.algogen.Instance;
 
@@ -17,7 +19,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * </p>
  * 
  * @see IIndividu
- * @version 1.0
+ * @version 1.0.1
  */
 public class PermutSimple extends IndividuPermut<PermutSimple> {
     public PermutSimple(Instance instance, ArrayList<Integer> permutations) {
@@ -38,7 +40,12 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * 
      **/
     public PermutSimple calculerCroisement(PermutSimple individu2) {
-        return null;
+        ArrayList<Integer> sortedSet = new ArrayList<>(permut.subList(0, indexRandom()));
+        for (Integer integer : individu2.permut)
+            if (!sortedSet.contains(integer))
+                sortedSet.add(integer);
+        // TODO l'ordre est-il bon ?
+        return new PermutSimple(instance, new ArrayList<>(sortedSet));
     }
 
     /**
@@ -48,19 +55,24 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * @param indice2 : indice du deuxieme mouvement
      * 
      **/
-    private void mutationAux(int indice1, int indice2) {
-
+    private void mutationAux(int index1, int index2) {
+        Collections.swap(permut, index1, index2);
     }
 
     /**
-     * Tire aléatoirement deux variables x,y compris entre 0 et k-1. Permute les
-     * cases à l'indice x et y.
+     * Tire aléatoirement deux variables x,y . Permute les cases à l'indice x et y.
      * 
      * @return un individu fils muté de type GDBHSimple.
-     * @see PermutSimple#calculerCroisement(PermutSimple)
+     * 
+     * @since 1.0.1
      **/
     public PermutSimple calculerMutation() {
-        return null;
+        ArrayList<Integer> permutMute = new ArrayList<>(permut);
+        Collections.swap(permutMute, indexRandom(), indexRandom());
+        return new PermutSimple(instance, permutMute);
     }
 
+    private int indexRandom() {
+        return new SecureRandom().nextInt(permut.size());
+    }
 }

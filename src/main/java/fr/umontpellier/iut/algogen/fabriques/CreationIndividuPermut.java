@@ -25,6 +25,6 @@ public class CreationIndividuPermut extends ICreator<PermutSimple> {
      */
     @Override
     protected PermutSimple create(Instance instance) {
-        return null;
+        return new PermutSimple(instance);
     }
 }
