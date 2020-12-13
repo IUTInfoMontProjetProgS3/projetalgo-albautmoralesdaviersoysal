@@ -1,6 +1,10 @@
 package fr.umontpellier.iut.algogen.strategies;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 
 import fr.umontpellier.iut.algogen.individus.IIndividu;
@@ -10,7 +14,8 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
  * génération en fonction de la population initial et en suivant trois étapes
  * principales (Sélection, Mutation, Croisement).
  * <p>
- * De plus StrategieCalculNextGen est par généricité une liste d'objet qui extends {@link IIndividu}. 
+ * De plus StrategieCalculNextGen est par généricité une liste d'objet qui
+ * extends {@link IIndividu}.
  * </p>
  * 
  * @see IIndividu
@@ -36,7 +41,7 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
     * 
     **/
    protected T selectionRoulette(ArrayList<T> pop) {
-      int s=0;
+      int s = 0;
       Random random = new Random();
 
       // Calcul de de la somme S
@@ -48,14 +53,14 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
       int r = random.nextInt(s);
 
       // Sélectionne l'individu
-      s=0;
+      s = 0;
       for (T t : pop) {
          s += t.evaluerFitness();
          if (s > r) {
             return t;
          }
       }
-      return pop.get(pop.size()-1);
+      return pop.get(pop.size() - 1);
    }
 
    /**
@@ -74,5 +79,25 @@ public abstract class StrategieCalculNextGen<T extends IIndividu<T>> {
       return parents;
    }
 
-   public abstract ArrayList<T> calculerNextGen(ArrayList<T> pop);
+   /**
+    * @param pop : Une population
+    * @return une nouvelle generation qui contient les meilleurs individu de pop
+    *         ainsi que des individu fils.
+    * 
+    **/
+   public ArrayList<T> calculerNextGen(ArrayList<T> pop) {
+      ArrayList<T> newPop = nouveauxFilsDeLaPopu(pop);
+      newPop.addAll(deuxMeilleurIndividus(pop));
+      return newPop;
+   }
+
+   protected abstract ArrayList<T> nouveauxFilsDeLaPopu(ArrayList<T> pop);
+
+   private Collection<T> deuxMeilleurIndividus(ArrayList<T> pop) {
+      T meilleurIndividu1 = Collections.max(pop, Comparator.comparing(T::evaluerFitness));
+      ArrayList<T> popSansMeilleur = new ArrayList<>(pop);
+      popSansMeilleur.remove(meilleurIndividu1);
+      T meilleurIndividu2 = Collections.max(popSansMeilleur, Comparator.comparing(T::evaluerFitness));
+      return Arrays.asList(meilleurIndividu1, meilleurIndividu2);
+   }
 }
