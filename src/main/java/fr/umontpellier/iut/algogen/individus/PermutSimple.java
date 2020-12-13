@@ -67,9 +67,9 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * @since 1.0.1
      **/
     public PermutSimple calculerMutation() {
-        ArrayList<Integer> permutMute = new ArrayList<>(permut);
-        Collections.swap(permutMute, indexRandom(), indexRandom());
-        return new PermutSimple(instance, permutMute);
+        PermutSimple individuMute = new PermutSimple(instance, new ArrayList<>(permut));
+        individuMute.mutationAux(indexRandom(), indexRandom());
+        return individuMute;
     }
 
     private int indexRandom() {
