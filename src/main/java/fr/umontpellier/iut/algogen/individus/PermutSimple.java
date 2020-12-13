@@ -45,11 +45,10 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
         return new PermutSimple(instance, new ArrayList<>(permutCroise));
     }
 
-    private void fusion(ArrayList<Integer> permiereParti, ArrayList<Integer> parti) {
-        for (Integer integer : parti)
-            if (!permiereParti.contains(integer))
-                permiereParti.add(integer);
-        // TODO l'ordre est-il bon ?
+    private void fusion(ArrayList<Integer> permutCroise, ArrayList<Integer> permutParent) {
+        for (Integer integer : permutParent)
+            if (!permutCroise.contains(integer))
+                permutCroise.add(integer);
     }
 
     private ArrayList<Integer> partitionAleatoire() {
