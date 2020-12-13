@@ -19,7 +19,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * </p>
  * 
  * @see IIndividu
- * @version 1.0.1
+ * @version 1.0.3
  */
 public class PermutSimple extends IndividuPermut<PermutSimple> {
     public PermutSimple(Instance instance, ArrayList<Integer> permutations) {
@@ -54,7 +54,7 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     private ArrayList<Integer> partitionAleatoire() {
         int d = indexRandom();
         int f = indexRandom();
-        return new ArrayList<>(permut.subList(Math.min(d, f), Math.max(d, f)));
+        return new ArrayList<>(permut.subList(Math.min(d, f), Math.max(d, f) + 1));
     }
 
     /**
