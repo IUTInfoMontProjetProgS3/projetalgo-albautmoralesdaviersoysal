@@ -31,21 +31,31 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Tire au hasard deux variable x,y comprit en 0 et k-1. Prend les cases de x à
+     * Tire au hasard deux variables d,f comprit en 0 et k-1. Prend les cases de d f
      * y de this. Puis les combines avec les cases d'individu2 non compris dans
-     * l'intervalle x,y.
+     * l'intervalle d,f.
      * 
      * @param individu2 : Un deuxieme individu qui sera sujet au croisement
      * @return un individu fils de type {@link GDBHSimple}.
      * 
      **/
     public PermutSimple calculerCroisement(PermutSimple individu2) {
-        ArrayList<Integer> sortedSet = new ArrayList<>(permut.subList(0, indexRandom()));
-        for (Integer integer : individu2.permut)
-            if (!sortedSet.contains(integer))
-                sortedSet.add(integer);
+        ArrayList<Integer> permutCroise = partitionAleatoire();
+        fusion(permutCroise, individu2.permut);
+        return new PermutSimple(instance, new ArrayList<>(permutCroise));
+    }
+
+    private void fusion(ArrayList<Integer> permiereParti, ArrayList<Integer> parti) {
+        for (Integer integer : parti)
+            if (!permiereParti.contains(integer))
+                permiereParti.add(integer);
         // TODO l'ordre est-il bon ?
-        return new PermutSimple(instance, new ArrayList<>(sortedSet));
+    }
+
+    private ArrayList<Integer> partitionAleatoire() {
+        int d = indexRandom();
+        int f = indexRandom();
+        return new ArrayList<>(permut.subList(Math.min(d, f), Math.max(d, f)));
     }
 
     /**
