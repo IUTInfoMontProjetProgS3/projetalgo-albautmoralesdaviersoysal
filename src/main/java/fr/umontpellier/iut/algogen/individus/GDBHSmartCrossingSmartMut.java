@@ -47,12 +47,14 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @see GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
-        return null;
+        GDBHSmartCrossing iSmartCrossing1 = new GDBHSmartCrossing(instance, trajet);
+        GDBHSmartCrossing iSmartCrossing2 = new GDBHSmartCrossing(individu2.instance, individu2.trajet);
+        return new GDBHSmartCrossingSmartMut(instance, iSmartCrossing1.calculerCroisement(iSmartCrossing2).trajet);
     }
 
     /**
-     * Mettre direction2 dans l'indice x et mettre direction1 dans l'indice x+1 et enlever deux
-     * directions a la fin.
+     * Mettre direction2 dans l'indice x et mettre direction1 dans l'indice x+1 et
+     * enlever deux directions a la fin.
      * 
      * @param indice     : Un indice
      * @param direction1 : Un premier Mouvement

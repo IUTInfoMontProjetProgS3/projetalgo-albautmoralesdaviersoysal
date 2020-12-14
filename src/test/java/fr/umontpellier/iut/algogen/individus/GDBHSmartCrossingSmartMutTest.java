@@ -16,7 +16,6 @@ import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSmartCrossingSmartMutTest {
 
-	@Ignore
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
