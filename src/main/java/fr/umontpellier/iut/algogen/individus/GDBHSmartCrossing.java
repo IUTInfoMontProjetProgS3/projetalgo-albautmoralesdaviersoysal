@@ -50,7 +50,7 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
         return new GDBHSmartCrossing(instance, trajetCroise);
     }
 
-    private int indexRandom() {
+    int indexRandom() {
         return new SecureRandom().nextInt(instance.getK() / 2);
     }
 
