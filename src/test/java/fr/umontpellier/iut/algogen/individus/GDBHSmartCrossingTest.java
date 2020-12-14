@@ -25,6 +25,7 @@ class GDBHSmartCrossingTest {
 	@Ignore("Test non-validé")
 	@Test
 	void testCalculerCroisementCasConcret() {
+		//FIXME Le test doit mocker la méthode privé indexRandom() 
 		boolean[][] p4 = new boolean[10][10];
 		Coord sp4 = new Coord(0, 0);
 		int k4 = p4.length * p4.length / 10;
