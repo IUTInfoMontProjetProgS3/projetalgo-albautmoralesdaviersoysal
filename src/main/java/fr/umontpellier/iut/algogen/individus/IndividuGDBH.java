@@ -76,8 +76,8 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     /**
-     * Renvoi les coordonnées {@code Coord} résultantes après avoir fait un pas dans
-     * la {@code direction} donnée en paramètre. A partir des coordonnées initiaux
+     * Renvoi les coordonnées {@code Coord} résultante après avoir faire un pas dans
+     * la {@code direction} donnée en paramètre. A partir des coordonnée initial
      * {@code coordInitial} qui ont étaient données en paramètre.
      * 
      * @param coordInitial : coordonnées initial avant de faire un pas
@@ -119,7 +119,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
 
     /**
      * La fitness d'un individu est la fonction qui prend en compte le nombre de
-     * pièces récoltées après le trajet.
+     * pièces récolté après le trajet.
      * 
      * @return {@code int} fitness
      */

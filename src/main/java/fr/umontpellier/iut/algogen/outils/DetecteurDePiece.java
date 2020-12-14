@@ -18,8 +18,8 @@ public class DetecteurDePiece {
     }
 
     /**
-     * Retourne la pièce la plus proche par rapport à {@link Coord} donnée en
-     * paramètre, la pièce est choisie parmis les pièces données en paramètre
+     * Retourne la pièce la plus proche par rapport à la {@link Coord} donnée en
+     * paramètre, la pièce est choisi parmis les pièces donnée en paramètre
      * {@code piecesDejaRecolte}
      * 
      * @param coordCourante : Coordonée courante
