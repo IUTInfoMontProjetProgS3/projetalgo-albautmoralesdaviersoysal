@@ -67,7 +67,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     private void genereTrajetFromSolution(Solution solution) {
-        convertieEnTrajet(solution);
+        trajet = convertieEnTrajet(solution);
     }
 
     protected ArrayList<Character> convertieEnTrajet(Solution solution) {
