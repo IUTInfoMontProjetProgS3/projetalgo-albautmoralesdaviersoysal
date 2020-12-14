@@ -67,12 +67,17 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     private void genereTrajetFromSolution(Solution solution) {
-        trajet = new ArrayList<>();
+        convertieEnTrajet(solution);
+    }
+
+    protected ArrayList<Character> convertieEnTrajet(Solution solution) {
+        ArrayList<Character> result = new ArrayList<>();
         Coord coordCourant = solution.get(0);
         for (int i = 1; i < solution.size(); i++) {
-            trajet.add(Direction.trouverDirectionEmprunte(coordCourant, solution.get(i)));
+            result.add(Direction.trouverDirectionEmprunte(coordCourant, solution.get(i)));
             coordCourant = solution.get(i);
         }
+        return result;
     }
 
     /**
