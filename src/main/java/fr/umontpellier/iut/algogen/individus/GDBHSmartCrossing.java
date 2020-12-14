@@ -13,7 +13,7 @@ import fr.umontpellier.iut.algogen.outils.PetitPoucet;
  * un peut plus intélligente.
  * 
  * @see IndividuGDBH
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
 
@@ -35,12 +35,12 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
      * @param individu2 : Un deuxieme individu
      * @return un individu fils de type {@code GDBHSimple}.
      * 
-     * @since 1.0.1
+     * @since 1.0.2
      **/
     public GDBHSmartCrossing calculerCroisement(GDBHSmartCrossing individu2) {
         int p = indexRandom();
-        Coord coord1 = calculerSol().get(p);
-        Coord coord2 = individu2.calculerSol().get(p);
+        Coord coord2 = calculerSol().get(p);
+        Coord coord1 = individu2.calculerSol().get(p);
         Solution transition = PetitPoucet.getPlusCourtChemin(coord1, coord2);
         transition.add(0, coord1);
         ArrayList<Character> trajetCroise = new ArrayList<>(trajet.subList(0, p));

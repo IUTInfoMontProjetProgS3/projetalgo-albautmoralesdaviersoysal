@@ -26,7 +26,6 @@ class GDBHSmartCrossingTest {
 		return new ArrayList<Character>(Arrays.asList(directions));
 	}
 
-	@Disabled("Non validé")
 	@Test
 	void testCalculerCroisementCasConcret() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
