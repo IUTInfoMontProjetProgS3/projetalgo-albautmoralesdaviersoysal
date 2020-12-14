@@ -62,7 +62,7 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
      * @see GDBHSimple#calculerMutation()
      **/
     public GDBHSmartCrossing calculerMutation() {
-        return null;
+        GDBHSimple gdbhSimple = new GDBHSimple(instance, trajet);
+        return new GDBHSmartCrossing(instance, gdbhSimple.calculerMutation().trajet);
     }
-
 }

@@ -127,7 +127,6 @@ class GDBHSmartCrossingTest {
 
 	}
 
-	@Disabled
 	@Test
 	void testCalculerMutation() throws Exception {
 
