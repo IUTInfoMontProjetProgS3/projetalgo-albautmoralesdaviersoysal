@@ -19,7 +19,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * </p>
  * 
  * @see IIndividu
- * @version 1.0.1
+ * @version 1.0.3
  */
 public class PermutSimple extends IndividuPermut<PermutSimple> {
     public PermutSimple(Instance instance, ArrayList<Integer> permutations) {
@@ -31,28 +31,37 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     }
 
     /**
-     * Tire au hasard deux variable x,y comprit en 0 et k-1. Prend les cases de x à
+     * Tire au hasard deux variables d,f comprit en 0 et k-1. Prend les cases de d f
      * y de this. Puis les combines avec les cases d'individu2 non compris dans
-     * l'intervalle x,y.
+     * l'intervalle d,f.
      * 
      * @param individu2 : Un deuxieme individu qui sera sujet au croisement
      * @return un individu fils de type {@link GDBHSimple}.
      * 
      **/
     public PermutSimple calculerCroisement(PermutSimple individu2) {
-        ArrayList<Integer> sortedSet = new ArrayList<>(permut.subList(0, indexRandom()));
-        for (Integer integer : individu2.permut)
-            if (!sortedSet.contains(integer))
-                sortedSet.add(integer);
-        // TODO l'ordre est-il bon ?
-        return new PermutSimple(instance, new ArrayList<>(sortedSet));
+        ArrayList<Integer> permutCroise = partitionAleatoire();
+        fusion(permutCroise, individu2.permut);
+        return new PermutSimple(instance, new ArrayList<>(permutCroise));
+    }
+
+    private void fusion(ArrayList<Integer> permutCroise, ArrayList<Integer> permutParent) {
+        for (Integer integer : permutParent)
+            if (!permutCroise.contains(integer))
+                permutCroise.add(integer);
+    }
+
+    private ArrayList<Integer> partitionAleatoire() {
+        int d = indexRandom();
+        int f = indexRandom();
+        return new ArrayList<>(permut.subList(Math.min(d, f), Math.max(d, f) + 1));
     }
 
     /**
-     * Permute indice1 et indice2
+     * Permute index1 et index2
      * 
-     * @param indice1 : indice du premier mouvement
-     * @param indice2 : indice du deuxieme mouvement
+     * @param index1 : indice du premier mouvement
+     * @param index2 : indice du deuxieme mouvement
      * 
      **/
     private void mutationAux(int index1, int index2) {
@@ -67,9 +76,9 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * @since 1.0.1
      **/
     public PermutSimple calculerMutation() {
-        ArrayList<Integer> permutMute = new ArrayList<>(permut);
-        Collections.swap(permutMute, indexRandom(), indexRandom());
-        return new PermutSimple(instance, permutMute);
+        PermutSimple individuMute = new PermutSimple(instance, new ArrayList<>(permut));
+        individuMute.mutationAux(indexRandom(), indexRandom());
+        return individuMute;
     }
 
     private int indexRandom() {
