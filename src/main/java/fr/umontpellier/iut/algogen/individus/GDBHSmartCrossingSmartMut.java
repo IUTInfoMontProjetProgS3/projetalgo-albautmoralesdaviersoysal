@@ -62,7 +62,13 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      **/
     public void mutationAux(int indice, char direction1, char direction2) {
+        insererAvecSupressionDuDernier(indice + 1, direction2);
+        insererAvecSupressionDuDernier(indice, direction1);
+    }
 
+    private void insererAvecSupressionDuDernier(int indice, char direction) {
+        trajet.add(indice, direction);
+        trajet.remove(trajet.size() - 1);
     }
 
     /**
