@@ -6,18 +6,40 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Disabled;
 
 import fr.umontpellier.iut.algogen.Coord;
 import fr.umontpellier.iut.algogen.Instance;
 
-public class GDBHSmartCrossingTest {
+class GDBHSmartCrossingTest {
+
+	private ArrayList<Character> trajet(Character... directions) {
+		return new ArrayList<Character>(Arrays.asList(directions));
+	}
+
+	@Ignore("Test non-validé")
+	@Test
+	void testCalculerCroisementCasConcret() {
+		boolean[][] p4 = new boolean[10][10];
+		Coord sp4 = new Coord(0, 0);
+		int k4 = p4.length * p4.length / 10;
+		Instance in4 = new Instance(p4, sp4, k4);
+		GDBHSmartCrossing individu = new GDBHSmartCrossing(in4,
+				trajet('b', 'd', 'd', 'h', 'd', 'd', 'b', 'b', 'd', 'h'));
+		GDBHSmartCrossing individu1 = new GDBHSmartCrossing(in4,
+				trajet('d', 'b', 'd', 'b', 'g', 'b', 'b', 'b', 'd', 'b'));
+
+		assertEquals(trajet('b', 'd', 'd', 'h', 'h', 'h', 'g', 'b', 'b', 'b'),
+				individu.calculerCroisement(individu1).trajet);
+	}
 
 	@Test
-	public void testCalculerCroisement() throws Exception {
+	void testCalculerCroisement() throws Exception {
 
 		boolean[][] p4 = new boolean[10][10];
 		for (int i = 0; i < p4.length; i++) {
