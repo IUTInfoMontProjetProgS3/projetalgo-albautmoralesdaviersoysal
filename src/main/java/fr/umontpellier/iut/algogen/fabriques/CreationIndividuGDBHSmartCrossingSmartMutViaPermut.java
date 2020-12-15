@@ -29,6 +29,6 @@ public class CreationIndividuGDBHSmartCrossingSmartMutViaPermut extends ICreator
      */
     @Override
     protected GDBHSmartCrossingSmartMut create(Instance instance) {
-        return null;
+        return new GDBHSmartCrossingSmartMut(instance);
     }
 }

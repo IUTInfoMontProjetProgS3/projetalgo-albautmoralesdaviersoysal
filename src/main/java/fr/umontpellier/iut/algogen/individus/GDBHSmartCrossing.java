@@ -49,8 +49,10 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
         trajetCroise.addAll(convertieEnTrajet(transition));
         if (trajetCroise.size() < in.getK())
             trajetCroise.addAll(individu2.t.subList(p, p + in.getK() - trajetCroise.size()));
-        return new GDBHSmartCrossing(in, trajetCroise);
-        // TODO faut-il normaliser ?
+        GDBHSmartCrossing individuCroise = new GDBHSmartCrossing(in, trajetCroise);
+        if (!in.estValide(individuCroise.calculerSol()))
+            individuCroise.normaliseTrajet();
+        return individuCroise;
     }
 
     int indexRandom() {
