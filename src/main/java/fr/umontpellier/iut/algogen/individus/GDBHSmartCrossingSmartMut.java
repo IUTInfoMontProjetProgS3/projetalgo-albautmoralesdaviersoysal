@@ -14,7 +14,7 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * intéligente.
  * 
  * @see IndividuGDBH
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
@@ -81,7 +81,7 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      * @return un individu fils muté de type GDBHSimple.
      * 
-     * @since 1.0.2
+     * @since 1.0.3
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
         GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
@@ -94,6 +94,8 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
                 Collections.swap(individuMute.trajet, p, p + 1);
         } else
             Collections.swap(individuMute.trajet, p - 1, p);
+        if (!instance.estValide(calculerSol()))
+            normaliseTrajet();
         return individuMute;
     }
 
