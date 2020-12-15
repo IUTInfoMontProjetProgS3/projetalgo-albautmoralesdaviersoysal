@@ -5,6 +5,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.withSettings;
 
@@ -28,9 +31,9 @@ class GDBHSmartCrossingTest {
 
 	@Test
 	void testCalculerCroisementCasConcret() throws Exception {
-		boolean[][] p4 = new boolean[10][10];
-		Coord sp4 = new Coord(0, 0);
-		int k4 = p4.length * p4.length / 10;
+		boolean[][] p4 = new boolean[50][50];
+		Coord sp4 = new Coord(25, 25);
+		int k4 = 10;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSmartCrossing individu = new GDBHSmartCrossing(in4,
 				trajet('b', 'd', 'd', 'h', 'd', 'd', 'b', 'b', 'd', 'h'));
@@ -43,13 +46,9 @@ class GDBHSmartCrossingTest {
 
 	private GDBHSmartCrossing calculerCroisementAvecSpy(GDBHSmartCrossing individu1, GDBHSmartCrossing individu2,
 			int nombreRandom) throws Exception {
-		GDBHSmartCrossing mock = Mockito.mock(GDBHSmartCrossing.class,
-				withSettings().useConstructor(individu1.in, individu1.t));
-		when(mock.indexRandom()).thenReturn(nombreRandom);
-		when(mock.convertieEnTrajet(any(Solution.class))).thenCallRealMethod();
-		when(mock.calculerSol()).thenCallRealMethod();
-		when(mock.calculerCroisement(any(GDBHSmartCrossing.class))).thenCallRealMethod();
-		return mock.calculerCroisement(individu2);
+		GDBHSmartCrossing spy = Mockito.spy(new GDBHSmartCrossing(individu1.in, individu1.t));
+		when(spy.indexRandom()).thenReturn(nombreRandom);
+		return spy.calculerCroisement(individu2);
 	}
 
 	@Test
