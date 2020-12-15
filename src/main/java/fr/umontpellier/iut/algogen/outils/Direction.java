@@ -11,7 +11,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * <b>Direction est la classe qui regroupe tous les outils concernant les
  * directions.</b>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 1.2.0
  */
 public class Direction {

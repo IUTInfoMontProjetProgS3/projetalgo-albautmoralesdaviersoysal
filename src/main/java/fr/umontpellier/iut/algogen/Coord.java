@@ -5,17 +5,17 @@ import java.util.Objects;
 /**
  * <b>Coord est la classe représentant une coordonnée sur le plateau de jeu.</b>
  * <p>
- * Une instance du Coord est caractérisé par les informations suivantes :
- * <ul>
- * <li>Un numéro de ligne qui indique sur quelle ligne il se trouve. </li>
- * <li>Un numéro de colonne qui indique sur quelle colonne il se trouve. </li>
- * </ul>
+ * Une instance du Coord est caractérisée par les informations suivantes :
  * </p>
+ * <ul>
+ * <li>Un numéro de ligne</li>
+ * <li>Un numéro de colonne</li>
+ * </ul>
  * 
  * @version 1.0.4
  * 
- * @author @MathieuSoysal 
- * @author @bastian-albaut
+ * @author MathieuSoysal
+ * @author bastian-albaut
  */
 public class Coord {
 
@@ -25,7 +25,7 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getL()
      */
-    private final int indexLigne;
+    private final int l;
 
     /**
      * La colonne sur laquelle se trouve this.
@@ -33,11 +33,11 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getC()
      */
-    private final int indexColonne;
+    private final int c;
 
     public Coord(int indexLigne, int indexColonne) {
-        this.indexLigne = indexLigne;
-        this.indexColonne = indexColonne;
+        this.l = indexLigne;
+        this.c = indexColonne;
     }
 
     /**
@@ -50,16 +50,18 @@ public class Coord {
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return indexColonne < nbColonne && indexLigne < nbLigne && nbLigne >= 0 && nbColonne >= 0 && indexColonne >= 0
-                && indexLigne >= 0;
+        return c < nbColonne && l < nbLigne && nbLigne >= 0 && nbColonne >= 0 && c >= 0
+                && l >= 0;
     }
 
     /**
      * Vérifie si la {@code Coord} donné en paramétre est adjacent à this.
      * 
      * @param coordCible : Coordonnée dont on va vérifié la distance
+     * 
      * @return {@code true} si this est de distance 1 de la coordonnée coord
      * 
+     * @see #distanceFrom(Coord)
      **/
     public boolean estADistanceUn(Coord coordCible) {
         return distanceFrom(coordCible) == 1;
@@ -69,18 +71,21 @@ public class Coord {
      * Renvoi la distance entre this et {@code coordCible} donné en paramètre
      * 
      * @param coordCible : Coordonnée ciblé
+     * 
      * @return {@code int} distance entre this et la coordonnée ciblé
      *         {@code coordCible}
      * 
+     * @see #getC()
+     * @see #getL()
      **/
     public int distanceFrom(Coord coordCible) {
         int coordLigne = coordCible.getL();
         int coordColonne = coordCible.getC();
-        return Math.abs(indexLigne - coordLigne) + Math.abs(indexColonne - coordColonne);
+        return Math.abs(l - coordLigne) + Math.abs(c - coordColonne);
     }
 
     public String toString() {
-        return "(" + indexLigne + "," + indexColonne + ")";
+        return "(" + l + "," + c + ")";
     }
 
     @Override
@@ -90,12 +95,12 @@ public class Coord {
         if (o == null || getClass() != o.getClass())
             return false;
         Coord coord = (Coord) o;
-        return indexLigne == coord.indexLigne && indexColonne == coord.indexColonne;
+        return l == coord.l && c == coord.c;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(indexLigne, indexColonne);
+        return Objects.hash(l, c);
     }
 
     /**
@@ -103,10 +108,10 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de ligne de this.
      * 
-     * @see Coord#indexLigne
+     * @see Coord#l
      */
     public int getL() {
-        return indexLigne;
+        return l;
     }
 
     /**
@@ -114,9 +119,9 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de colonne de this.
      * 
-     * @see Coord#indexColonne
+     * @see Coord#c
      */
     public int getC() {
-        return indexColonne;
+        return c;
     }
 }

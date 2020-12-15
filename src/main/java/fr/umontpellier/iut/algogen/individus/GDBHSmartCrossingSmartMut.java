@@ -46,25 +46,28 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * Cette fonction est la même que
      * {@link GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)}
      * 
-     * @param individu2 : Un deuxieme individu
+     * @param individu2 : Un deuxieme individu avec le quel le croisement doit être
+     *                  opéré.
+     * 
      * @return un individu fils de type GDBHSmartCrossingSmartMut.
      * 
      * @see GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
-        GDBHSmartCrossing iSmartCrossing1 = new GDBHSmartCrossing(instance, trajet);
-        GDBHSmartCrossing iSmartCrossing2 = new GDBHSmartCrossing(individu2.instance, individu2.trajet);
-        return new GDBHSmartCrossingSmartMut(instance, iSmartCrossing1.calculerCroisement(iSmartCrossing2).trajet);
+        GDBHSmartCrossing iSmartCrossing1 = new GDBHSmartCrossing(in, t);
+        GDBHSmartCrossing iSmartCrossing2 = new GDBHSmartCrossing(individu2.in, individu2.t);
+        return new GDBHSmartCrossingSmartMut(in, iSmartCrossing1.calculerCroisement(iSmartCrossing2).t);
     }
 
     /**
-     * Mettre direction2 dans l'indice x et mettre direction1 dans l'indice x+1 et
+     * Mettre direction2 à l'indice x + 1 et mettre direction1 à l'indice x et
      * enlever deux directions a la fin.
      * 
      * @param indice     : Un indice
      * @param direction1 : Un premier Mouvement
      * @param direction2 : Un deuxieme Mouvement
      * 
+     * @see #insererAvecSupressionDuDernier(int, char)
      **/
     public void mutationAux(int indice, char direction1, char direction2) {
         insererAvecSupressionDuDernier(indice + 1, direction2);
@@ -72,8 +75,8 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     private void insererAvecSupressionDuDernier(int indice, char direction) {
-        trajet.add(indice, direction);
-        trajet.remove(trajet.size() - 1);
+        t.add(indice, direction);
+        t.remove(t.size() - 1);
     }
 
     /**
@@ -82,24 +85,31 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @return un individu fils muté de type GDBHSimple.
      * 
      * @since 1.0.3
+     * 
+     * @see #mutationAux(int, char, char)
+     * @see Collections#swap(java.util.List, int, int)
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
-        GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
+        GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(in, new ArrayList<>(t));
         int p = indexRandom();
-        if (individuMute.trajet.get(p - 1).equals(individuMute.trajet.get(p))) {
-            if (individuMute.trajet.get(p).equals(individuMute.trajet.get(p + 1))) {
-                char directionCrochet = Direction.getDirectionLateralDe(individuMute.trajet.get(p));
+        if (individuMute.t.get(p - 1).equals(individuMute.t.get(p))) {
+            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1))) {
+                char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
                 individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
+                if (!in.estValide(individuMute.calculerSol())) {
+                    individuMute.t.set(p, inv(individuMute.t.get(p)));
+                    individuMute.t.set(p + 2, inv(individuMute.t.get(p + 2)));
+                }
             } else
-                Collections.swap(individuMute.trajet, p, p + 1);
+                Collections.swap(individuMute.t, p, p + 1);
         } else
-            Collections.swap(individuMute.trajet, p - 1, p);
-        if (!instance.estValide(individuMute.calculerSol()))
+            Collections.swap(individuMute.t, p - 1, p);
+        if (!in.estValide(individuMute.calculerSol()))
             individuMute.normaliseTrajet();
         return individuMute;
     }
 
     private int indexRandom() {
-        return new SecureRandom().nextInt(instance.getK() - 2) + 1;
+        return new SecureRandom().nextInt(in.getK() - 2) + 1;
     }
 }

@@ -17,7 +17,6 @@ import fr.umontpellier.iut.algogen.individus.IIndividu;
  * <li>Génération d'un fils.</li>
  * <li>Mutation du fils.</li>
  * </ul>
- * </p>
  * <p>
  * De plus, on ajoute aussi les deux meilleurs parents de la génération
  * précédente à la nouvelle génération.
@@ -35,10 +34,10 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
      * 
      * @see CroisementMutationV1#CroisementMutationV1(double)
      */
-    private double probaMutation;
+    private double pmutation;
 
     public CroisementMutationV1(double probaMutation) {
-        this.probaMutation = probaMutation;
+        this.pmutation = probaMutation;
     }
 
     @Override
@@ -54,7 +53,7 @@ public class CroisementMutationV1<T extends IIndividu<T>> extends StrategieCalcu
     }
 
     private boolean filsEstMute() {
-        return new Random().nextDouble() < probaMutation;
+        return new Random().nextDouble() < pmutation;
     }
 
     private T calculerNouveauFils(ArrayList<T> pop) {

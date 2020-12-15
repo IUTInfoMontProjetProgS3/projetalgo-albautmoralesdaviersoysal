@@ -36,17 +36,17 @@ public class AlgoGenetiqueTest {
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple individu_ = new GDBHSimple(in4);
-		individu_.trajet.clear();
-		individu_.trajet.add('b');
-		individu_.trajet.add('d');
-		individu_.trajet.add('d');
-		individu_.trajet.add('b');
+		individu_.t.clear();
+		individu_.t.add('b');
+		individu_.t.add('d');
+		individu_.t.add('d');
+		individu_.t.add('b');
 
 		AlgoGenetique ag = new AlgoGenetique(in4, new CreationIndividuGDBH());
 		assertDoesNotThrow(() -> ag.run(2, 30));

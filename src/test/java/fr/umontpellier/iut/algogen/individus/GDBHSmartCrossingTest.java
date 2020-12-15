@@ -38,13 +38,13 @@ class GDBHSmartCrossingTest {
 				trajet('d', 'b', 'd', 'b', 'g', 'b', 'b', 'b', 'd', 'b'));
 
 		assertEquals(trajet('b', 'd', 'd', 'h', 'h', 'h', 'g', 'b', 'b', 'b'),
-				calculerCroisementAvecSpy(individu, individu1, 4).trajet);
+				calculerCroisementAvecSpy(individu, individu1, 4).t);
 	}
 
 	private GDBHSmartCrossing calculerCroisementAvecSpy(GDBHSmartCrossing individu1, GDBHSmartCrossing individu2,
 			int nombreRandom) throws Exception {
 		GDBHSmartCrossing mock = Mockito.mock(GDBHSmartCrossing.class,
-				withSettings().useConstructor(individu1.instance, individu1.trajet));
+				withSettings().useConstructor(individu1.in, individu1.t));
 		when(mock.indexRandom()).thenReturn(nombreRandom);
 		when(mock.convertieEnTrajet(any(Solution.class))).thenCallRealMethod();
 		when(mock.calculerSol()).thenCallRealMethod();
@@ -67,32 +67,32 @@ class GDBHSmartCrossingTest {
 		int k4 = p4.length * p4.length / 10;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSmartCrossing individu = new GDBHSmartCrossing(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSmartCrossing individu1 = new GDBHSmartCrossing(in4);
-		individu1.trajet.clear();
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
+		individu1.t.clear();
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('d');
+		individu1.t.add('d');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('d');
 		int distance = 0;
 		Coord previous = sp4;
-		for (char c : individu.trajet) {
+		for (char c : individu.t) {
 			Coord next = individu.calculerNextCoord(previous, c);
 			distance += (next.distanceFrom(previous));
 			previous = next;
@@ -101,7 +101,7 @@ class GDBHSmartCrossingTest {
 
 		int distance1 = 0;
 		previous = sp4;
-		for (char c : individu1.trajet) {
+		for (char c : individu1.t) {
 			Coord next = individu1.calculerNextCoord(previous, c);
 			distance1 += (next.distanceFrom(previous));
 			previous = next;
@@ -111,7 +111,7 @@ class GDBHSmartCrossingTest {
 		GDBHSmartCrossing result = individu1.calculerCroisement(individu);
 		int distance2 = 0;
 		previous = sp4;
-		for (char c : result.trajet) {
+		for (char c : result.t) {
 			Coord next = result.calculerNextCoord(previous, c);
 			distance2 += (next.distanceFrom(previous));
 			previous = next;
@@ -122,8 +122,8 @@ class GDBHSmartCrossingTest {
 		assertEquals(10, distance1);
 		assertEquals(10, distance2);
 
-		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
-		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
+		assertFalse(Collections.disjoint(result.t, individu.t));
+		assertFalse(Collections.disjoint(result.t, individu1.t));
 
 	}
 
@@ -142,25 +142,25 @@ class GDBHSmartCrossingTest {
 		int k4 = p4.length * p4.length / 10;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSmartCrossing individu = new GDBHSmartCrossing(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSmartCrossing result = null;
 		ArrayList<Boolean> equals = new ArrayList<>();
 		for (int i = 0; i < 30; i++) {
 			result = individu.calculerMutation();
-			equals.add(result.trajet.equals(individu.trajet));
+			equals.add(result.t.equals(individu.t));
 		}
 		assertNotEquals(30, Collections.frequency(equals, true));
-		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
+		assertFalse(Collections.disjoint(result.t, individu.t));
 		assertTrue(in4.estValide(individu.calculerSol()));
 
 	}

@@ -7,7 +7,7 @@ import fr.umontpellier.iut.algogen.Solution;
  * <b>PetitPoucet est la classe utilitaire permetant de retrouver le plus court
  * chemin entre deux {@link Coord}.</b>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 1.0
  */
 public class PetitPoucet {
@@ -19,8 +19,8 @@ public class PetitPoucet {
     /**
      * Retourne le chemin le plus court entre coordDepart et coordArrivee.
      * 
-     * @param coordDepart
-     * @param coordArrivee
+     * @param coordDepart  : Coordonnées de départ
+     * @param coordArrivee : Coordonnées d'arrivée
      * 
      * @return {@link Solution} le chemin le plus cours.
      */
