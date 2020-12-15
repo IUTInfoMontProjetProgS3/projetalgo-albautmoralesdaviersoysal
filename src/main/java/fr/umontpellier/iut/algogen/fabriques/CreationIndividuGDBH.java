@@ -20,8 +20,8 @@ public class CreationIndividuGDBH extends ICreator<GDBHSimple> {
      * 
      * @return Un individu {@link GDBHSimple}.
      * 
-     * @see GDBHSimple
      * @see Instance
+     * @see GDBHSimple#GDBHSimple(Instance)
      */
     @Override
     protected GDBHSimple create(Instance instance) {

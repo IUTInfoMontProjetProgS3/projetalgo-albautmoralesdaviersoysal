@@ -20,11 +20,11 @@ public class CreationIndividuPermut extends ICreator<PermutSimple> {
      * 
      * @return Un individu {@link PermutSimple}
      * 
-     * @see PermutSimple
      * @see Instance
+     * @see PermutSimple#PermutSimple(Instance)
      */
     @Override
     protected PermutSimple create(Instance instance) {
-        return null;
+        return new PermutSimple(instance);
     }
 }

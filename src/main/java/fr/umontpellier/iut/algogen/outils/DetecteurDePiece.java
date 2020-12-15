@@ -5,10 +5,10 @@ import java.util.Collection;
 import fr.umontpellier.iut.algogen.Coord;
 
 /**
- * <b>DetecteurDePiece est la classe utilitaire permetant de recherche de
+ * <b>DetecteurDePiece est la classe utilitaire permetant de rechercher des
  * pièces.</b>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 2.0
  */
 public class DetecteurDePiece {
@@ -18,8 +18,8 @@ public class DetecteurDePiece {
     }
 
     /**
-     * Retourne la pièce la plus proche par rapport à {@link Coord} donnée en
-     * paramètre, la pièce est choisie parmis les pièces données en paramètre
+     * Retourne la pièce la plus proche par rapport à la {@link Coord} donnée en
+     * paramètre, la pièce est choisi parmis les pièces donnée en paramètre
      * {@code piecesDejaRecolte}
      * 
      * @param coordCourante : Coordonée courante

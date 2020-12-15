@@ -1,5 +1,7 @@
 package fr.umontpellier.iut.algogen.outils;
 
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidParameterException;
 import java.security.SecureRandom;
 
 import fr.umontpellier.iut.algogen.Coord;
@@ -9,7 +11,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * <b>Direction est la classe qui regroupe tous les outils concernant les
  * directions.</b>
  * 
- * @author @MathieuSoysal
+ * @author MathieuSoysal
  * @version 1.2.0
  */
 public class Direction {
@@ -41,16 +43,16 @@ public class Direction {
         int prochaineColonne = coordActuelle.getC();
         switch (direction) {
             case HAUT:
-                prochaineLigne++;
-                break;
-            case BAS:
                 prochaineLigne--;
                 break;
+            case BAS:
+                prochaineLigne++;
+                break;
             case GAUCHE:
-                prochaineColonne++;
+                prochaineColonne--;
                 break;
             case DROITE:
-                prochaineColonne--;
+                prochaineColonne++;
                 break;
             default:
                 break;
@@ -59,7 +61,7 @@ public class Direction {
     }
 
     public static char directionRandom() {
-        return DIRECTIONS[new SecureRandom().nextInt(4)];
+        return DIRECTIONS[new SecureRandom().nextInt(DIRECTIONS.length)];
     }
 
     public static char trouverDirectionEmprunte(Coord coordDepart, Coord coordArrivee) {
@@ -74,5 +76,36 @@ public class Direction {
         if (ecartLigne < 0)
             return 'b';
         throw new ArithmeticException();
+    }
+
+    public static char inverse(char direction) {
+        switch (direction) {
+            case HAUT:
+                return BAS;
+            case BAS:
+                return HAUT;
+            case DROITE:
+                return GAUCHE;
+            case GAUCHE:
+                return DROITE;
+            default:
+                throw new InvalidParameterException();
+        }
+    }
+
+    public static char getDirectionLateralDe(Character direction) {
+        boolean random = new SecureRandom().nextBoolean();
+        switch (direction) {
+            case HAUT:
+                return GAUCHE;
+            case BAS:
+                return DROITE;
+            case DROITE:
+                return BAS;
+            case GAUCHE:
+                return HAUT;
+            default:
+                throw new InvalidParameterException();
+        }
     }
 }

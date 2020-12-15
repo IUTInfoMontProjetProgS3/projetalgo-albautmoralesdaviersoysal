@@ -2,6 +2,7 @@ package fr.umontpellier.iut.algogen.individus;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +17,6 @@ import fr.umontpellier.iut.algogen.fabriques.CreationIndividuPermut;
 
 public class PermutSimpleTest {
 
-	@Ignore
 	@Test
 	public void testCalculerCroisement() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
@@ -44,8 +44,6 @@ public class PermutSimpleTest {
 		assertFalse(Collections.disjoint(result.permut, individu.get(0).permut));
 		assertFalse(Collections.disjoint(result.permut, individu.get(1).permut));
 	}
-
-	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 		boolean[][] p4 = new boolean[10][10];
