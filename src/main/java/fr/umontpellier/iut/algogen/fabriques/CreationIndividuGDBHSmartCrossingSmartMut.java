@@ -25,6 +25,6 @@ public class CreationIndividuGDBHSmartCrossingSmartMut extends ICreator<GDBHSmar
      */
     @Override
     protected GDBHSmartCrossingSmartMut create(Instance instance) {
-        return null;
+        return new GDBHSmartCrossingSmartMut(instance);
     }
 }

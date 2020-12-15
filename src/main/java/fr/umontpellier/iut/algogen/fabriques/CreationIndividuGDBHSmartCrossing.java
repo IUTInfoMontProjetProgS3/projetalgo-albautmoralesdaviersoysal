@@ -10,7 +10,7 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossing;
  * @see ICreator
  * @see GDBHSmartCrossing
  * 
- * @version 1.0
+ * @version 1.0.1
  */
 public class CreationIndividuGDBHSmartCrossing extends ICreator<GDBHSmartCrossing> {
 
@@ -22,9 +22,11 @@ public class CreationIndividuGDBHSmartCrossing extends ICreator<GDBHSmartCrossin
      * 
      * @see GDBHSmartCrossing
      * @see Instance
+     * 
+     * @since 1.0.1
      */
     @Override
     protected GDBHSmartCrossing create(Instance instance) {
-        return null;
+        return new GDBHSmartCrossing(instance);
     }
 }
