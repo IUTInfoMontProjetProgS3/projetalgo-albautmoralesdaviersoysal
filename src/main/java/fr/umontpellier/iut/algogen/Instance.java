@@ -17,7 +17,6 @@ import java.util.Iterator;
  * <li>Un nombre de pas autorisé.</li>
  * <li>Une liste des coordonnées des pièces sur le plateau.</li>
  * </ul>
- * </p>
  * 
  * @version 1.0.4
  */
@@ -138,7 +137,6 @@ public class Instance {
                                                 // mouvement)
         if (nbMouvements != k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
-
         Coord coordCourante = solution.get(0);
         for (Coord coord : solution) {
             if (coord != solution.get(0) && !coord.estADistanceUn(coordCourante)
@@ -147,7 +145,6 @@ public class Instance {
             }
             coordCourante = coord;
         }
-
         return true;
     }
 
@@ -156,6 +153,7 @@ public class Instance {
      * @return {@code int} le nombre de piéces récolté
      * 
      * @see Solution
+     * @see #piecePresente(Coord)
      **/
     public int evaluerSolution(Solution solution) {
         int nbpieces = 0;
@@ -255,7 +253,7 @@ public class Instance {
      * @return {@code ArrayList<Coord>} liste des coordonnées dans pièces du
      *         plateau.
      * 
-     * @see InslisteCoordPiecese#listeCoordPieces
+     * @see Instance#listeCoordPieces
      * @see java.util.ArrayList
      */
     public ArrayList<Coord> getListeCoordPieces() {

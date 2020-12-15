@@ -8,7 +8,7 @@ import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
 
 /**
- * GDBHsimple est la classe représentant une fonctionnalité de croisement
+ * GDBHsimple est la classe représentant une fonctionnalité de croisement et de
  * mutation basique.
  * 
  * @see IndividuGDBH
@@ -29,13 +29,16 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
 
     /**
      * Les individus {@code this} et {@code individu2} sont croisés avec des
-     * partitions de taille aléatoire, puis l'individu résultant est normalisé.
+     * partitions de taille aléatoire de façon à générer un individu, puis
+     * l'individu résultant est normalisé.
      * 
      * @param individu2 : individu avec le quel le croisement doit être opéré
      * 
      * @return un individu fils de type GDBHSimple.
      * 
      * @since 1.0.5
+     * 
+     * @see #normaliseTrajet()
      **/
     public GDBHSimple calculerCroisement(GDBHSimple individu2) {
         int indexSeparation = indexRandom();
@@ -52,10 +55,14 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      * @return un individu muté de type GDBHSimple.
      * 
      * @since 1.0.5
+     * 
+     * @see #normaliseTrajet()
+     * @see Collections#swap(java.util.List, int, int)
      **/
     public GDBHSimple calculerMutation() {
         ArrayList<Character> trajetMute = new ArrayList<>(trajet);
-        //TODO: Est-ce que l'on laisse la possibilité de tiré deux fois le même nombre ?
+        // TODO: Est-ce que l'on laisse la possibilité de tiré deux fois le même nombre
+        // ?
         Collections.swap(trajetMute, indexRandom(), indexRandom());
         GDBHSimple mute = new GDBHSimple(instance, trajetMute);
         mute.normaliseTrajet();
