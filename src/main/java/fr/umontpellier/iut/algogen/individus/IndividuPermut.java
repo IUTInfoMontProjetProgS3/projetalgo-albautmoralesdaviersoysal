@@ -26,14 +26,13 @@ import fr.umontpellier.iut.algogen.outils.PetitPoucet;
  * @version 1.0.4
  */
 public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIndividu<T> {
-
     /**
      * Cet attribut représente l'instance du jeu.
      * 
      * @see IndividuPermut#IndividuPermut(Instance)
      * @see IndividuPermut#IndividuPermut(Instance, ArrayList)
      */
-    protected Instance instance;
+    protected Instance inst;
 
     /**
      * Cet attribut représente l'ordre de récolte des pièces. Elle contient l'index
@@ -47,14 +46,14 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
      * Constructeur IndidivuPermut.
      * 
      * @param instance : l'instance du jeu.
-     * @param p        : une list des index des pièces récoltées.
+     * @param permut : une list des index des pièces récoltées.
      * 
      * @see Instance
      * @see #permut
      */
-    public IndividuPermut(Instance instance, ArrayList<Integer> p) {
-        this.instance = instance;
-        permut = p;
+    public IndividuPermut(Instance instance, ArrayList<Integer> permut) {
+        this.inst = instance;
+        this.permut = permut;
     }
 
     /**
@@ -93,7 +92,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     }
 
     public Instance getInstance() {
-        return instance;
+        return inst;
     }
 
     @Override
@@ -111,15 +110,15 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     @Override
     public Solution calculerSol() {
         Solution solution = new Solution();
-        Coord coordCourante = instance.getStartingP();
+        Coord coordCourante = inst.getStartingP();
         solution.add(coordCourante);
         for (Integer indexPiece : permut) {
-            Coord coordPiece = instance.getListeCoordPieces().get(indexPiece);
+            Coord coordPiece = inst.getListeCoordPieces().get(indexPiece);
             solution.addAll(PetitPoucet.getPlusCourtChemin(coordCourante, coordPiece));
             coordCourante = coordPiece;
         }
-        if (solution.size() > instance.getK() + 1)
-            solution.troncker(instance.getK() + 1);
+        if (solution.size() > inst.getK() + 1)
+            solution.troncker(inst.getK() + 1);
         return solution;
     }
 
@@ -130,6 +129,6 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
      * @return {@code int} fitness
      */
     public int evaluerFitness() {
-        return 1 + 10 * instance.evaluerSolution(calculerSol());
+        return 1 + 10 * inst.evaluerSolution(calculerSol());
     }
 }

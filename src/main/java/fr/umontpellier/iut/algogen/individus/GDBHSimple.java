@@ -42,9 +42,9 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      **/
     public GDBHSimple calculerCroisement(GDBHSimple individu2) {
         int indexSeparation = indexRandom();
-        ArrayList<Character> trajetFils = new ArrayList<>(trajet.subList(0, indexSeparation));
-        trajetFils.addAll(individu2.trajet.subList(indexSeparation, trajet.size()));
-        GDBHSimple croise = new GDBHSimple(instance, trajetFils);
+        ArrayList<Character> trajetFils = new ArrayList<>(t.subList(0, indexSeparation));
+        trajetFils.addAll(individu2.t.subList(indexSeparation, t.size()));
+        GDBHSimple croise = new GDBHSimple(in, trajetFils);
         croise.normaliseTrajet();
         return croise;
     }
@@ -60,17 +60,17 @@ public class GDBHSimple extends IndividuGDBH<GDBHSimple> {
      * @see Collections#swap(java.util.List, int, int)
      **/
     public GDBHSimple calculerMutation() {
-        ArrayList<Character> trajetMute = new ArrayList<>(trajet);
+        ArrayList<Character> trajetMute = new ArrayList<>(t);
         // TODO: Est-ce que l'on laisse la possibilité de tiré deux fois le même nombre
         // ?
         Collections.swap(trajetMute, indexRandom(), indexRandom());
-        GDBHSimple mute = new GDBHSimple(instance, trajetMute);
+        GDBHSimple mute = new GDBHSimple(in, trajetMute);
         mute.normaliseTrajet();
         return mute;
     }
 
     private int indexRandom() {
-        return new SecureRandom().nextInt(trajet.size());
+        return new SecureRandom().nextInt(t.size());
     }
 
 }

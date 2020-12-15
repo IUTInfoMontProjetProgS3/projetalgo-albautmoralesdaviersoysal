@@ -31,17 +31,17 @@ public class CroisementMutationV1Test {
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple individu_ = new GDBHSimple(in4);
-		individu_.trajet.clear();
-		individu_.trajet.add('b');
-		individu_.trajet.add('d');
-		individu_.trajet.add('d');
-		individu_.trajet.add('b');
+		individu_.t.clear();
+		individu_.t.add('b');
+		individu_.t.add('d');
+		individu_.t.add('d');
+		individu_.t.add('b');
 		ArrayList<GDBHSimple> pop = new ArrayList<>(Arrays.asList(individu, individu_));
 
 		CroisementMutationV1<GDBHSimple> croisementMutationV1 = new CroisementMutationV1<>(0.1);
@@ -52,7 +52,7 @@ public class CroisementMutationV1Test {
 		selected.removeAll(pop);
 		for (GDBHSimple i : pop)
 			for (GDBHSimple j : selected)
-				assertEquals(i.trajet, j.trajet);
+				assertEquals(i.t, j.t);
 	}
 
 	@Test
@@ -70,23 +70,23 @@ public class CroisementMutationV1Test {
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple individu_ = new GDBHSimple(in4);
-		individu_.trajet.clear();
-		individu_.trajet.add('b');
-		individu_.trajet.add('d');
-		individu_.trajet.add('d');
-		individu_.trajet.add('b');
+		individu_.t.clear();
+		individu_.t.add('b');
+		individu_.t.add('d');
+		individu_.t.add('d');
+		individu_.t.add('b');
 		GDBHSimple individu1 = new GDBHSimple(in4);
-		individu1.trajet.clear();
-		individu1.trajet.add('d');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('h');
+		individu1.t.clear();
+		individu1.t.add('d');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('h');
 
 		ArrayList<Integer> scores = new ArrayList<>();
 		ArrayList<Integer> avg1 = new ArrayList<>();
@@ -135,23 +135,23 @@ public class CroisementMutationV1Test {
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple individu_ = new GDBHSimple(in4);
-		individu_.trajet.clear();
-		individu_.trajet.add('b');
-		individu_.trajet.add('d');
-		individu_.trajet.add('d');
-		individu_.trajet.add('b');
+		individu_.t.clear();
+		individu_.t.add('b');
+		individu_.t.add('d');
+		individu_.t.add('d');
+		individu_.t.add('b');
 		GDBHSimple individu1 = new GDBHSimple(in4);
-		individu1.trajet.clear();
-		individu1.trajet.add('d');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('h');
+		individu1.t.clear();
+		individu1.t.add('d');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('h');
 
 		ArrayList<Integer> scores = new ArrayList<>();
 		ArrayList<Integer> avg1 = new ArrayList<>();

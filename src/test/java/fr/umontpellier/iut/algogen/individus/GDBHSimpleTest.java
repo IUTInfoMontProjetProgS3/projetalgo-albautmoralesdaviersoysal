@@ -39,33 +39,33 @@ class GDBHSimpleTest {
 		int k4 = p4.length * p4.length / 10;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple individu1 = new GDBHSimple(in4);
-		individu1.trajet.clear();
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
-		individu1.trajet.add('b');
-		individu1.trajet.add('d');
-		individu1.trajet.add('d');
+		individu1.t.clear();
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('d');
+		individu1.t.add('d');
+		individu1.t.add('b');
+		individu1.t.add('d');
+		individu1.t.add('d');
 		GDBHSimple result = individu1.calculerCroisement(individu);
 
-		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
-		assertFalse(Collections.disjoint(result.trajet, individu1.trajet));
+		assertFalse(Collections.disjoint(result.t, individu.t));
+		assertFalse(Collections.disjoint(result.t, individu1.t));
 	}
 
 	@Test
@@ -105,25 +105,25 @@ class GDBHSimpleTest {
 		int k4 = p4.length * p4.length / 10;
 		Instance in4 = new Instance(p4, sp4, k4);
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
+		individu.t.clear();
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('d');
+		individu.t.add('b');
 		GDBHSimple result = null;
 		ArrayList<Boolean> equals = new ArrayList<>();
 		for (int i = 0; i < 30; i++) {
 			result = individu.calculerMutation();
-			equals.add(result.trajet.equals(individu.trajet));
+			equals.add(result.t.equals(individu.t));
 		}
 		assertNotEquals(30, Collections.frequency(equals, true));
-		assertFalse(Collections.disjoint(result.trajet, individu.trajet));
+		assertFalse(Collections.disjoint(result.t, individu.t));
 
 	}
 
