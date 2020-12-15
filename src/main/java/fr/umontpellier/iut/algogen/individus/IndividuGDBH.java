@@ -36,18 +36,18 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * @see IndividuGDBH#IndividuGDBH(Instance, ArrayList)
      * @see IndividuGDBH#IndividuGDBH(Instance, Solution)
      */
-    protected Instance instance;
+    protected Instance in;
 
     /**
      * Un {@code trajet} contient l'ensemble des directions emprunté par l'individu.
      * 
      * @see IndividuGDBH#IndividuGDBH(Instance, ArrayList)
      */
-    public ArrayList<Character> trajet;
+    public ArrayList<Character> t;
 
     public IndividuGDBH(Instance instance, ArrayList<Character> trajet) {
-        this.trajet = trajet;
-        this.instance = instance;
+        this.t = trajet;
+        this.in = instance;
     }
 
     /**
@@ -64,7 +64,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * @see #normaliseTrajet()
      */
     public IndividuGDBH(Instance instance) {
-        this.instance = instance;
+        this.in = instance;
         initTrajetRandom();
         normaliseTrajet();
     }
@@ -85,17 +85,17 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      */
     public IndividuGDBH(Instance instance, Solution solution) {
         genereTrajetFromSolution(solution);
-        this.instance = instance;
+        this.in = instance;
     }
 
     private void initTrajetRandom() {
-        trajet = new ArrayList<>();
-        for (int i = 0; i < instance.getK(); i++)
-            trajet.add(Direction.directionRandom());
+        t = new ArrayList<>();
+        for (int i = 0; i < in.getK(); i++)
+            t.add(Direction.directionRandom());
     }
 
     private void genereTrajetFromSolution(Solution solution) {
-        trajet = convertieEnTrajet(solution);
+        t = convertieEnTrajet(solution);
     }
 
     /**
@@ -138,12 +138,12 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
 
     @Override
     public Instance getInstance() {
-        return instance;
+        return in;
     }
 
     @Override
     public String toString() {
-        return trajet + "";
+        return t + "";
     }
 
     /**
@@ -151,15 +151,15 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * 
      * @return {@code Solution} les {@link Coord} obtenues à la suite du trajet.
      * 
-     * @see #trajet
+     * @see #t
      * @see Solution
      **/
     @Override
     public Solution calculerSol() {
         Solution solution = new Solution();
-        solution.add(instance.getStartingP());
+        solution.add(in.getStartingP());
         Coord coordCourant = solution.get(0);
-        for (char direction : trajet) {
+        for (char direction : t) {
             coordCourant = calculerNextCoord(coordCourant, direction);
             solution.add(coordCourant);
         }
@@ -176,7 +176,7 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      */
     @Override
     public int evaluerFitness() {
-        return 1 + 10 * instance.evaluerSolution(calculerSol());
+        return 1 + 10 * in.evaluerSolution(calculerSol());
     }
 
     /**
@@ -185,29 +185,29 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * 
      **/
     public void normaliseTrajet() {
-        Coord coordonnee = instance.getStartingP();
+        Coord coordonnee = in.getStartingP();
         ArrayList<Character> nouveauTrajet = new ArrayList<>();
-        for (char direction : trajet) {
+        for (char direction : t) {
 
             Coord next = calculerNextCoord(coordonnee, direction);
-            if (next.estDansPlateau(instance.getNbL(), instance.getNbC())) {
+            if (next.estDansPlateau(in.getNbL(), in.getNbC())) {
                 nouveauTrajet.add(direction);
                 coordonnee = next;
             }
         }
-        while (nouveauTrajet.size() < trajet.size()) {
+        while (nouveauTrajet.size() < t.size()) {
             boolean ok = false;
             while (!ok) {
                 char directionRandom = Direction.directionRandom();
                 Coord prochaineCoord = calculerNextCoord(coordonnee, directionRandom);
-                if (prochaineCoord.estDansPlateau(instance.getNbL(), instance.getNbC())) {
+                if (prochaineCoord.estDansPlateau(in.getNbL(), in.getNbC())) {
                     nouveauTrajet.add(directionRandom);
                     coordonnee = prochaineCoord;
                     ok = true;
                 }
             }
         }
-        trajet = nouveauTrajet;
+        t = nouveauTrajet;
     }
 
 }

@@ -42,7 +42,7 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
     public PermutSimple calculerCroisement(PermutSimple individu2) {
         ArrayList<Integer> permutCroise = partitionAleatoire();
         fusion(permutCroise, individu2.permut);
-        return new PermutSimple(instance, new ArrayList<>(permutCroise));
+        return new PermutSimple(inst, new ArrayList<>(permutCroise));
     }
 
     private void fusion(ArrayList<Integer> permutCroise, ArrayList<Integer> permutParent) {
@@ -76,7 +76,7 @@ public class PermutSimple extends IndividuPermut<PermutSimple> {
      * @since 1.0.1
      **/
     public PermutSimple calculerMutation() {
-        PermutSimple individuMute = new PermutSimple(instance, new ArrayList<>(permut));
+        PermutSimple individuMute = new PermutSimple(inst, new ArrayList<>(permut));
         individuMute.mutationAux(indexRandom(), indexRandom());
         return individuMute;
     }

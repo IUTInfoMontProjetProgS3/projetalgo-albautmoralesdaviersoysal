@@ -28,15 +28,15 @@ public class IndividuGDBHTest {
 		Instance in4 = new Instance(p4, sp4, k4);
 
 		GDBHSimple individu = new GDBHSimple(in4);
-		int occurrences = Collections.frequency(individu.trajet, 'h');
-		int occurrences1 = Collections.frequency(individu.trajet, 'b');
-		int occurrences2 = Collections.frequency(individu.trajet, 'd');
-		int occurrences3 = Collections.frequency(individu.trajet, 'g');
+		int occurrences = Collections.frequency(individu.t, 'h');
+		int occurrences1 = Collections.frequency(individu.t, 'b');
+		int occurrences2 = Collections.frequency(individu.t, 'd');
+		int occurrences3 = Collections.frequency(individu.t, 'g');
 		assertNotEquals(10, occurrences);
 		assertNotEquals(10, occurrences1);
 		assertNotEquals(10, occurrences2);
 		assertNotEquals(10, occurrences3);
-		assertEquals(10, individu.trajet.size());
+		assertEquals(10, individu.t.size());
 
 	}
 
@@ -76,7 +76,7 @@ public class IndividuGDBHTest {
 		c.add(new Coord(8, 6));
 		GDBHSimple individu = new GDBHSimple(in4, c);
 
-		assertEquals(trajet, individu.trajet);
+		assertEquals(trajet, individu.t);
 	}
 
 	@Test
@@ -92,17 +92,17 @@ public class IndividuGDBHTest {
 		Instance in4 = new Instance(p4, sp4, k4);
 
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('h');
-		individu.trajet.add('g');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('h');
+		individu.t.clear();
+		individu.t.add('h');
+		individu.t.add('g');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('h');
 		Solution c = new Solution();
 		c.add(new Coord(9, 5));
 		c.add(new Coord(8, 5));
@@ -134,17 +134,17 @@ public class IndividuGDBHTest {
 		Instance in4 = new Instance(p4, sp4, k4);
 
 		GDBHSimple individu = new GDBHSimple(in4);
-		individu.trajet.clear();
-		individu.trajet.add('h');
-		individu.trajet.add('g');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('h');
-		individu.trajet.add('d');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('b');
-		individu.trajet.add('h');
+		individu.t.clear();
+		individu.t.add('h');
+		individu.t.add('g');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('h');
+		individu.t.add('d');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('b');
+		individu.t.add('h');
 		assertEquals(61, individu.evaluerFitness());
 
 	}

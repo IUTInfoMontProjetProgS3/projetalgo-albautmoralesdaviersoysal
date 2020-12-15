@@ -54,9 +54,9 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @see GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)
      **/
     public GDBHSmartCrossingSmartMut calculerCroisement(GDBHSmartCrossingSmartMut individu2) {
-        GDBHSmartCrossing iSmartCrossing1 = new GDBHSmartCrossing(instance, trajet);
-        GDBHSmartCrossing iSmartCrossing2 = new GDBHSmartCrossing(individu2.instance, individu2.trajet);
-        return new GDBHSmartCrossingSmartMut(instance, iSmartCrossing1.calculerCroisement(iSmartCrossing2).trajet);
+        GDBHSmartCrossing iSmartCrossing1 = new GDBHSmartCrossing(in, t);
+        GDBHSmartCrossing iSmartCrossing2 = new GDBHSmartCrossing(individu2.in, individu2.t);
+        return new GDBHSmartCrossingSmartMut(in, iSmartCrossing1.calculerCroisement(iSmartCrossing2).t);
     }
 
     /**
@@ -75,8 +75,8 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     private void insererAvecSupressionDuDernier(int indice, char direction) {
-        trajet.add(indice, direction);
-        trajet.remove(trajet.size() - 1);
+        t.add(indice, direction);
+        t.remove(t.size() - 1);
     }
 
     /**
@@ -90,21 +90,21 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @see Collections#swap(java.util.List, int, int)
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
-        GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
+        GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(in, new ArrayList<>(t));
         int p = indexRandom();
-        if (individuMute.trajet.get(p - 1).equals(individuMute.trajet.get(p))) {
-            if (individuMute.trajet.get(p).equals(individuMute.trajet.get(p + 1))) {
-                char directionCrochet = Direction.getDirectionLateralDe(individuMute.trajet.get(p));
+        if (individuMute.t.get(p - 1).equals(individuMute.t.get(p))) {
+            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1))) {
+                char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
                 individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
             } else
-                Collections.swap(individuMute.trajet, p, p + 1);
+                Collections.swap(individuMute.t, p, p + 1);
         } else
-            Collections.swap(individuMute.trajet, p - 1, p);
+            Collections.swap(individuMute.t, p - 1, p);
         return individuMute;
         //TODO Faut-il normaliser ?
     }
 
     private int indexRandom() {
-        return new SecureRandom().nextInt(instance.getK() - 2) + 1;
+        return new SecureRandom().nextInt(in.getK() - 2) + 1;
     }
 }

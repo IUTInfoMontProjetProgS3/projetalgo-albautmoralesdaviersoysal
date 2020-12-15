@@ -25,7 +25,7 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getL()
      */
-    private final int indexLigne;
+    private final int l;
 
     /**
      * La colonne sur laquelle se trouve this.
@@ -33,11 +33,11 @@ public class Coord {
      * @see Coord#Coord(int, int)
      * @see Coord#getC()
      */
-    private final int indexColonne;
+    private final int c;
 
     public Coord(int indexLigne, int indexColonne) {
-        this.indexLigne = indexLigne;
-        this.indexColonne = indexColonne;
+        this.l = indexLigne;
+        this.c = indexColonne;
     }
 
     /**
@@ -50,8 +50,8 @@ public class Coord {
      * 
      **/
     public boolean estDansPlateau(int nbLigne, int nbColonne) {
-        return indexColonne < nbColonne && indexLigne < nbLigne && nbLigne >= 0 && nbColonne >= 0 && indexColonne >= 0
-                && indexLigne >= 0;
+        return c < nbColonne && l < nbLigne && nbLigne >= 0 && nbColonne >= 0 && c >= 0
+                && l >= 0;
     }
 
     /**
@@ -81,11 +81,11 @@ public class Coord {
     public int distanceFrom(Coord coordCible) {
         int coordLigne = coordCible.getL();
         int coordColonne = coordCible.getC();
-        return Math.abs(indexLigne - coordLigne) + Math.abs(indexColonne - coordColonne);
+        return Math.abs(l - coordLigne) + Math.abs(c - coordColonne);
     }
 
     public String toString() {
-        return "(" + indexLigne + "," + indexColonne + ")";
+        return "(" + l + "," + c + ")";
     }
 
     @Override
@@ -95,12 +95,12 @@ public class Coord {
         if (o == null || getClass() != o.getClass())
             return false;
         Coord coord = (Coord) o;
-        return indexLigne == coord.indexLigne && indexColonne == coord.indexColonne;
+        return l == coord.l && c == coord.c;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(indexLigne, indexColonne);
+        return Objects.hash(l, c);
     }
 
     /**
@@ -108,10 +108,10 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de ligne de this.
      * 
-     * @see Coord#indexLigne
+     * @see Coord#l
      */
     public int getL() {
-        return indexLigne;
+        return l;
     }
 
     /**
@@ -119,9 +119,9 @@ public class Coord {
      * 
      * @return un {@code int} qui correspond au numéro de colonne de this.
      * 
-     * @see Coord#indexColonne
+     * @see Coord#c
      */
     public int getC() {
-        return indexColonne;
+        return c;
     }
 }

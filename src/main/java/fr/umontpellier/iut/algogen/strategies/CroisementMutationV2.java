@@ -30,10 +30,10 @@ public class CroisementMutationV2<T extends IIndividu<T>> extends StrategieCalcu
      * 
      * @see CroisementMutationV2#CroisementMutationV2(double)
      */
-    private double probaMutation;
+    private double pmutation;
 
     public CroisementMutationV2(double probaMutation) {
-        this.probaMutation = probaMutation;
+        this.pmutation = probaMutation;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class CroisementMutationV2<T extends IIndividu<T>> extends StrategieCalcu
     }
 
     private boolean estMute() {
-        return new Random().nextDouble() < probaMutation;
+        return new Random().nextDouble() < pmutation;
     }
 
 }

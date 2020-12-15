@@ -28,11 +28,12 @@ import fr.umontpellier.iut.algogen.strategies.StrategieCalculNextGen;
  *
  * @version 1.0.1
  */
+
 class AlgoGenetique<T extends IIndividu<T>> {
 
-    private Instance instance;
-    private StrategieCalculNextGen<T> calculGen;
-    private ICreator<T> createurIndividu;
+    private Instance inn;
+    private StrategieCalculNextGen<T> utt;
+    private ICreator<T> crr;
 
     /**
      * @param instance         : instance
@@ -41,9 +42,9 @@ class AlgoGenetique<T extends IIndividu<T>> {
      *
      */
     public AlgoGenetique(Instance instance, StrategieCalculNextGen<T> calculGen, ICreator<T> createurIndividu) {
-        this.instance = instance;
-        this.calculGen = calculGen;
-        this.createurIndividu = createurIndividu;
+        this.inn = instance;
+        this.utt = calculGen;
+        this.crr = createurIndividu;
     }
 
     /**
@@ -52,9 +53,9 @@ class AlgoGenetique<T extends IIndividu<T>> {
      *
      */
     public AlgoGenetique(Instance instance, ICreator<T> createurIndividu) {
-        this.instance = instance;
-        calculGen = new CroisementMutationV1<>(0.1);
-        this.createurIndividu = createurIndividu;
+        this.inn = instance;
+        utt = new CroisementMutationV1<>(0.1);
+        this.crr = createurIndividu;
     }
 
     /**
@@ -67,9 +68,9 @@ class AlgoGenetique<T extends IIndividu<T>> {
      *
      */
     public Solution run(int taillePop, int nbGeneration) {
-        ArrayList<T> population = createurIndividu.creerPopInit(instance, taillePop);
+        ArrayList<T> population = crr.creerPopInit(inn, taillePop);
         for (int i = 0; i < nbGeneration; i++) {
-            population = calculGen.calculerNextGen(population);
+            population = utt.calculerNextGen(population);
         }
         T meilleurIndividu = Collections.max(population, Comparator.comparing(T::evaluerFitness));
         return meilleurIndividu.calculerSol();
