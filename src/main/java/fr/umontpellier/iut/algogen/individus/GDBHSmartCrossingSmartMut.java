@@ -94,8 +94,8 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
                 Collections.swap(individuMute.trajet, p, p + 1);
         } else
             Collections.swap(individuMute.trajet, p - 1, p);
-        if (!instance.estValide(calculerSol()))
-            normaliseTrajet();
+        if (!instance.estValide(individuMute.calculerSol()))
+            individuMute.normaliseTrajet();
         return individuMute;
     }
 
