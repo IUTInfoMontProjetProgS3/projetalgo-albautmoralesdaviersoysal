@@ -93,20 +93,24 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
         GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(in, new ArrayList<>(t));
         int p = indexRandom();
         if (individuMute.t.get(p - 1).equals(individuMute.t.get(p))) {
-            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1))) {
-                char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
-                individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
-                if (!in.estValide(individuMute.calculerSol())) {
-                    individuMute.t.set(p, inv(individuMute.t.get(p)));
-                    individuMute.t.set(p + 2, inv(individuMute.t.get(p + 2)));
-                }
-            } else
+            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1)))
+                creerCrochet(individuMute, p);
+            else
                 Collections.swap(individuMute.t, p, p + 1);
         } else
             Collections.swap(individuMute.t, p - 1, p);
         if (!in.estValide(individuMute.calculerSol()))
             individuMute.normaliseTrajet();
         return individuMute;
+    }
+
+    void creerCrochet(GDBHSmartCrossingSmartMut individuMute, int p) {
+        char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
+        individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
+        if (!in.estValide(individuMute.calculerSol())) {
+            individuMute.t.set(p, inv(individuMute.t.get(p)));
+            individuMute.t.set(p + 2, inv(individuMute.t.get(p + 2)));
+        }
     }
 
     private int indexRandom() {
