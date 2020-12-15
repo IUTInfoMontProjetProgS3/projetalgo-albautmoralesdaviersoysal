@@ -30,9 +30,11 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
     }
 
     /**
-     * Faire le croisement intelligent entre this et individu2 comme dans le texte.
+     * Fait le croisement intelligent entre this et individu2 comme dans le texte.
      * 
-     * @param individu2 : Un deuxieme individu
+     * @param individu2 : Un deuxieme individu avec le quel le croisement doit être
+     *                  opéré.
+     * 
      * @return un individu fils de type {@code GDBHSimple}.
      * 
      * @since 1.0.2
@@ -48,6 +50,7 @@ public class GDBHSmartCrossing extends IndividuGDBH<GDBHSmartCrossing> {
         if (trajetCroise.size() < instance.getK())
             trajetCroise.addAll(individu2.trajet.subList(p, p + instance.getK() - trajetCroise.size()));
         return new GDBHSmartCrossing(instance, trajetCroise);
+        // TODO faut-il normaliser ?
     }
 
     int indexRandom() {

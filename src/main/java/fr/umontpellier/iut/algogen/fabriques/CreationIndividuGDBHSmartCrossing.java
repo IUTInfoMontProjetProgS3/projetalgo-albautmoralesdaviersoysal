@@ -15,13 +15,13 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossing;
 public class CreationIndividuGDBHSmartCrossing extends ICreator<GDBHSmartCrossing> {
 
     /**
-     * Fabrique un individu de type {@link GDBHSmartCrossing} en fonction du
+     * Fabrique un individu de type {@link GDBHSmartCrossing} en fonction de
      * l'instance de jeu donnée en paramètre.
      * 
      * @return Un individu {@link GDBHSmartCrossing}.
      * 
-     * @see GDBHSmartCrossing
      * @see Instance
+     * @see GDBHSmartCrossing#GDBHSmartCrossing(Instance)
      * 
      * @since 1.0.1
      */

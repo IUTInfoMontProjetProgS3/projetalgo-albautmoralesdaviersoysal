@@ -46,7 +46,9 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * Cette fonction est la même que
      * {@link GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)}
      * 
-     * @param individu2 : Un deuxieme individu
+     * @param individu2 : Un deuxieme individu avec le quel le croisement doit être
+     *                  opéré.
+     * 
      * @return un individu fils de type GDBHSmartCrossingSmartMut.
      * 
      * @see GDBHSmartCrossing#calculerCroisement(GDBHSmartCrossing)
@@ -58,13 +60,14 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     /**
-     * Mettre direction2 dans l'indice x et mettre direction1 dans l'indice x+1 et
+     * Mettre direction2 à l'indice x + 1 et mettre direction1 à l'indice x et
      * enlever deux directions a la fin.
      * 
      * @param indice     : Un indice
      * @param direction1 : Un premier Mouvement
      * @param direction2 : Un deuxieme Mouvement
      * 
+     * @see #insererAvecSupressionDuDernier(int, char)
      **/
     public void mutationAux(int indice, char direction1, char direction2) {
         insererAvecSupressionDuDernier(indice + 1, direction2);
@@ -82,6 +85,9 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * @return un individu fils muté de type GDBHSimple.
      * 
      * @since 1.0.2
+     * 
+     * @see #mutationAux(int, char, char)
+     * @see Collections#swap(java.util.List, int, int)
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
         GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
@@ -95,6 +101,7 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
         } else
             Collections.swap(individuMute.trajet, p - 1, p);
         return individuMute;
+        //TODO Faut-il normaliser ?
     }
 
     private int indexRandom() {
