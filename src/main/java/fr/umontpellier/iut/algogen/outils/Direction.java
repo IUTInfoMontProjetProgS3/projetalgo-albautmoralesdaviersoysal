@@ -90,5 +90,22 @@ public class Direction {
                 return DROITE;
             default:
                 throw new InvalidParameterException();
+        }
+    }
+
+    public static char getDirectionLateralDe(Character direction) {
+        boolean random = new SecureRandom().nextBoolean();
+        switch (direction) {
+            case HAUT:
+                return GAUCHE;
+            case BAS:
+                return DROITE;
+            case DROITE:
+                return BAS;
+            case GAUCHE:
+                return HAUT;
+            default:
+                throw new InvalidParameterException();
+        }
     }
 }

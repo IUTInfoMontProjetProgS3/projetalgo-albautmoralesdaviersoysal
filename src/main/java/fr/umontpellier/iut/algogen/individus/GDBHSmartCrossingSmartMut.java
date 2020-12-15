@@ -14,7 +14,7 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * intéligente.
  * 
  * @see IndividuGDBH
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
@@ -81,14 +81,16 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      * @return un individu fils muté de type GDBHSimple.
      * 
+     * @since 1.0.2
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
         GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
         int p = indexRandom();
         if (individuMute.trajet.get(p - 1).equals(individuMute.trajet.get(p))) {
-            if (individuMute.trajet.get(p).equals(individuMute.trajet.get(p + 1)))
-                individuMute.mutationAux(p - 1, inv(individuMute.trajet.get(p)), inv(individuMute.trajet.get(p)));
-            else
+            if (individuMute.trajet.get(p).equals(individuMute.trajet.get(p + 1))) {
+                char directionCrochet = Direction.getDirectionLateralDe(individuMute.trajet.get(p));
+                individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
+            } else
                 Collections.swap(individuMute.trajet, p, p + 1);
         } else
             Collections.swap(individuMute.trajet, p - 1, p);
