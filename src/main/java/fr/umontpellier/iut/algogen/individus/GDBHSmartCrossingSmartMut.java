@@ -14,7 +14,7 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * intéligente.
  * 
  * @see IndividuGDBH
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
@@ -84,7 +84,7 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      * @return un individu fils muté de type GDBHSimple.
      * 
-     * @since 1.0.2
+     * @since 1.0.3
      * 
      * @see #mutationAux(int, char, char)
      * @see Collections#swap(java.util.List, int, int)
@@ -93,15 +93,24 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
         GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(in, new ArrayList<>(t));
         int p = indexRandom();
         if (individuMute.t.get(p - 1).equals(individuMute.t.get(p))) {
-            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1))) {
-                char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
-                individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
-            } else
+            if (individuMute.t.get(p).equals(individuMute.t.get(p + 1)))
+                creerCrochet(individuMute, p);
+            else
                 Collections.swap(individuMute.t, p, p + 1);
         } else
             Collections.swap(individuMute.t, p - 1, p);
+        if (!in.estValide(individuMute.calculerSol()))
+            individuMute.normaliseTrajet();
         return individuMute;
-        //TODO Faut-il normaliser ?
+    }
+
+    void creerCrochet(GDBHSmartCrossingSmartMut individuMute, int p) {
+        char directionCrochet = Direction.getDirectionLateralDe(individuMute.t.get(p));
+        individuMute.mutationAux(p, directionCrochet, inv(directionCrochet));
+        if (!in.estValide(individuMute.calculerSol())) {
+            individuMute.t.set(p, inv(individuMute.t.get(p)));
+            individuMute.t.set(p + 2, inv(individuMute.t.get(p + 2)));
+        }
     }
 
     private int indexRandom() {
