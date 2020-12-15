@@ -1,5 +1,6 @@
 package fr.umontpellier.iut.algogen.individus;
 
+import static fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingTest.trajet;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
@@ -89,6 +90,17 @@ public class GDBHSmartCrossingSmartMutTest {
 		assertFalse(Collections.disjoint(result.t, individu.t));
 		assertFalse(Collections.disjoint(result.t, individu1.t));
 
+	}
+
+	@Test
+	public void testCreerCrochet() {
+		boolean[][] p4 = new boolean[10][10];
+		Coord sp4 = new Coord(0, 5);
+		int k4 = 4;
+		Instance in4 = new Instance(p4, sp4, k4);
+		GDBHSmartCrossingSmartMut individu = new GDBHSmartCrossingSmartMut(in4, trajet('g', 'g', 'g', 'g'));
+		individu.creerCrochet(individu, 1);
+		assertTrue(in4.estValide(individu.calculerSol()));
 	}
 
 	@Test

@@ -22,7 +22,7 @@ import fr.umontpellier.iut.algogen.Solution;
 
 class GDBHSmartCrossingTest {
 
-	private ArrayList<Character> trajet(Character... directions) {
+	static ArrayList<Character> trajet(Character... directions) {
 		return new ArrayList<Character>(Arrays.asList(directions));
 	}
 
