@@ -19,7 +19,7 @@ import fr.umontpellier.iut.algogen.outils.PetitPoucet;
  * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
- * <li>Un premut {@code ArrayList<Integer>}.</li>
+ * <li>L'ordre de récolte des pièces {@code ArrayList<Integer>}.</li>
  * </ul>
  * 
  * @see IIndividu
@@ -36,17 +36,40 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
     protected Instance instance;
 
     /**
-     * Cet attribut représente la list des index des pièces récoltés
+     * Cet attribut représente l'ordre de récolte des pièces. Elle contient l'index
+     * des pièces.
      * 
      * @see IndividuPermut#IndividuPermut(Instance, ArrayList)
      */
     protected ArrayList<Integer> permut;
 
+    /**
+     * Constructeur IndidivuPermut.
+     * 
+     * @param instance : l'instance du jeu.
+     * @param p        : une list des index des pièces récoltées.
+     * 
+     * @see Instance
+     * @see #permut
+     */
     public IndividuPermut(Instance instance, ArrayList<Integer> p) {
         this.instance = instance;
         permut = p;
     }
 
+    /**
+     * Constructeur IndividuPermut.
+     * <p>
+     * A la construction d'un individu de type IndividuPermut, la liste des index
+     * des pièces récoltés est généré aléatoirement.
+     * </p>
+     * 
+     * @param instance : L'iinstance du jeu.
+     * 
+     * @see Instance#getListeCoordPieces()
+     * @see Instance
+     * @see Collections#shuffle(java.util.List)
+     */
     public IndividuPermut(Instance instance) {
         permut = new ArrayList<>();
         for (int i = 0; i < instance.getListeCoordPieces().size(); i++)
@@ -59,9 +82,11 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
      * 
      * @param c1 : premiere coordonnée
      * @param c2 : deuxieme coordonnée
+     * 
      * @return {@code ArrayList<Coord>} la liste des coordonnées emprunté par le
      *         plus court chemin
      * 
+     * @see PetitPoucet#getPlusCourtChemin(Coord, Coord)
      **/
     public static ArrayList<Coord> plusCourtChemin(Coord c1, Coord c2) {
         return PetitPoucet.getPlusCourtChemin(c1, c2);
@@ -76,6 +101,13 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
         return permut + "";
     }
 
+    /**
+     * Génére une {@link Solution} en fonction de l'attribut permut de this.
+     * 
+     * @return Une {@link Solution}.
+     * 
+     * @see #permut
+     */
     @Override
     public Solution calculerSol() {
         Solution solution = new Solution();

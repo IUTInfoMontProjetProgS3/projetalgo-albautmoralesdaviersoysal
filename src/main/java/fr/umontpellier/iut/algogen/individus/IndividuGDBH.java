@@ -9,7 +9,7 @@ import fr.umontpellier.iut.algogen.outils.Direction;
 
 /**
  * <b>IndividuGDBH est la classe représentant un encodage consistant à créer k
- * mouvement aléatoire ou chaque mouvement peut prendre une des 4 direction : G,
+ * mouvement aléatoire où chaque mouvement peut prendre une des 4 direction : G,
  * D, H, B</b>
  * <p>
  * Un individu de type IndividuGDBH est caractérisé par les informations
@@ -17,7 +17,8 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
- * <li>Du trajet effectué {@code ArrayList<Character>}.</li>
+ * <li>Le trajet effectué {@code ArrayList<Character>} qui contient l'historique
+ * des directions empruntés.</li>
  * </ul>
  * <p>
  * De plus, IndividuGDBH possède une méthode permettant de normaliser un trajet.
@@ -49,12 +50,39 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
         this.instance = instance;
     }
 
+    /**
+     * Constructeur IndividuGDBH.
+     * <p>
+     * A la construction d'un IndividuGDBH, le trajet est généré aléatoirement en
+     * fonction de l'{@code instance} donnée en paramètre.
+     * </p>
+     * 
+     * @param instance : instance du jeu
+     * 
+     * @see Instance
+     * @see #initTrajetRandom()
+     * @see #normaliseTrajet()
+     */
     public IndividuGDBH(Instance instance) {
         this.instance = instance;
         initTrajetRandom();
         normaliseTrajet();
     }
 
+    /**
+     * Constructeur IndividuGDBH.
+     * <p>
+     * A la construction d'un IndividuGDBH, le trajet est généré en fonction de la
+     * {@code solution} donnée en paramètre.
+     * </p>
+     * 
+     * @param instance : l'instance du jeu.
+     * @param solution : la solution utilisé pour généré le trajet
+     * 
+     * @see #genereTrajetFromSolution(Solution)
+     * @see Solution
+     * @see Instance
+     */
     public IndividuGDBH(Instance instance, Solution solution) {
         genereTrajetFromSolution(solution);
         this.instance = instance;
@@ -70,6 +98,17 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
         trajet = convertieEnTrajet(solution);
     }
 
+    /**
+     * Renvoie la liste des directions emprunté en fonction de la {@code solution}
+     * donnée en paramètre.
+     * 
+     * @param solution : solution devant être convertie.
+     * 
+     * @return une {@code ArrayList<Character>} de directions empruntées.
+     * 
+     * @see Direction#trouverDirectionEmprunte(Coord, Coord)
+     * @see Solution
+     */
     protected ArrayList<Character> convertieEnTrajet(Solution solution) {
         ArrayList<Character> result = new ArrayList<>();
         Coord coordCourant = solution.get(0);
@@ -87,8 +126,11 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
      * 
      * @param coordInitial : coordonnées initial avant de faire un pas
      * @param direction    : la direction dans la quelle le pas doit être effectué
+     * 
      * @return {@code Coord} les coordonnées final une fois le pas effectué
      * 
+     * @see Coord
+     * @see Direction#calculerProchaineCoord(Coord, char)
      **/
     static Coord calculerNextCoord(Coord coordInitial, char direction) {
         return Direction.calculerProchaineCoord(coordInitial, direction);
@@ -105,9 +147,11 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
     }
 
     /**
+     * Génére une {@link Solution} en fonction du trajet.
      * 
-     * @return {@code Solution} les coordonnées des k mouvements comme solution.
+     * @return {@code Solution} les {@link Coord} obtenues à la suite du trajet.
      * 
+     * @see #trajet
      * @see Solution
      **/
     @Override
@@ -124,9 +168,11 @@ public abstract class IndividuGDBH<T extends IndividuGDBH<T>> implements IIndivi
 
     /**
      * La fitness d'un individu est la fonction qui prend en compte le nombre de
-     * pièces récolté après le trajet.
+     * pièces récoltées après le trajet.
      * 
      * @return {@code int} fitness
+     * 
+     * @see Instance#evaluerSolution(Solution)
      */
     @Override
     public int evaluerFitness() {

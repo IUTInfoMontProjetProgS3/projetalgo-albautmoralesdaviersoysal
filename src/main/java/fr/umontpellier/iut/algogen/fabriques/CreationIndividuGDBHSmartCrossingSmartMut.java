@@ -15,13 +15,13 @@ import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
 public class CreationIndividuGDBHSmartCrossingSmartMut extends ICreator<GDBHSmartCrossingSmartMut> {
 
     /**
-     * Fabrique un individu de type {@link GDBHSmartCrossingSmartMut} en fonction du
+     * Fabrique un individu de type {@link GDBHSmartCrossingSmartMut} en fonction de
      * l'instance de jeu donnée en paramètre.
      * 
      * @return Un individu {@link GDBHSmartCrossingSmartMut}.
      * 
-     * @see GDBHSmartCrossingSmartMut
      * @see Instance
+     * @see GDBHSmartCrossingSmartMut#GDBHSmartCrossingSmartMut(Instance)
      */
     @Override
     protected GDBHSmartCrossingSmartMut create(Instance instance) {

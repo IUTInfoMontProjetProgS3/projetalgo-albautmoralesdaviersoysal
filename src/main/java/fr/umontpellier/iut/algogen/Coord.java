@@ -5,16 +5,16 @@ import java.util.Objects;
 /**
  * <b>Coord est la classe représentant une coordonnée sur le plateau de jeu.</b>
  * <p>
- * Une instance du Coord est caractérisé par les informations suivantes :
+ * Une instance du Coord est caractérisée par les informations suivantes :
  * </p>
  * <ul>
- * <li>Un numéro de ligne qui indique sur quelle ligne il se trouve. </li>
- * <li>Un numéro de colonne qui indique sur quelle colonne il se trouve. </li>
+ * <li>Un numéro de ligne</li>
+ * <li>Un numéro de colonne</li>
  * </ul>
  * 
  * @version 1.0.4
  * 
- * @author MathieuSoysal 
+ * @author MathieuSoysal
  * @author bastian-albaut
  */
 public class Coord {
@@ -58,8 +58,10 @@ public class Coord {
      * Vérifie si la {@code Coord} donné en paramétre est adjacent à this.
      * 
      * @param coordCible : Coordonnée dont on va vérifié la distance
+     * 
      * @return {@code true} si this est de distance 1 de la coordonnée coord
      * 
+     * @see #distanceFrom(Coord)
      **/
     public boolean estADistanceUn(Coord coordCible) {
         return distanceFrom(coordCible) == 1;
@@ -69,9 +71,12 @@ public class Coord {
      * Renvoi la distance entre this et {@code coordCible} donné en paramètre
      * 
      * @param coordCible : Coordonnée ciblé
+     * 
      * @return {@code int} distance entre this et la coordonnée ciblé
      *         {@code coordCible}
      * 
+     * @see #getC()
+     * @see #getL()
      **/
     public int distanceFrom(Coord coordCible) {
         int coordLigne = coordCible.getL();

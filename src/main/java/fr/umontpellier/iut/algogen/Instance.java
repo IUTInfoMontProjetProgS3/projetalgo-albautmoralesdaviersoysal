@@ -136,7 +136,6 @@ public class Instance {
                                                 // mouvement)
         if (nbMouvements != k || solution.isEmpty() || !solution.get(0).equals(startingP))
             return false;
-
         Coord coordCourante = solution.get(0);
         for (Coord coord : solution) {
             if (coord != solution.get(0) && !coord.estADistanceUn(coordCourante)
@@ -145,7 +144,6 @@ public class Instance {
             }
             coordCourante = coord;
         }
-
         return true;
     }
 
@@ -154,6 +152,7 @@ public class Instance {
      * @return {@code int} le nombre de piéces récolté
      * 
      * @see Solution
+     * @see #piecePresente(Coord)
      **/
     public int evaluerSolution(Solution solution) {
         int nbpieces = 0;

@@ -5,7 +5,7 @@ import java.util.Collection;
 import fr.umontpellier.iut.algogen.Coord;
 
 /**
- * <b>DetecteurDePiece est la classe utilitaire permetant de recherche de
+ * <b>DetecteurDePiece est la classe utilitaire permetant de rechercher des
  * pièces.</b>
  * 
  * @author MathieuSoysal

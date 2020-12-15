@@ -15,7 +15,7 @@ import fr.umontpellier.iut.algogen.Instance;
  * </p>
  * <ul>
  * <li>L'instance du jeu {@code instance}.</li>
- * <li>le trajet de l'individu {@code permutations}.</li>
+ * <li>L'ordre de récolte des pièces {@code permutations}.</li>
  * </ul>
  * 
  * @see IIndividu
