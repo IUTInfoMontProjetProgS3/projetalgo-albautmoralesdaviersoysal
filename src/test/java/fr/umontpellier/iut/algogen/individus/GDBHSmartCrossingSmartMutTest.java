@@ -16,7 +16,6 @@ import fr.umontpellier.iut.algogen.Instance;
 
 public class GDBHSmartCrossingSmartMutTest {
 
-	@Ignore
 	@Test
 	public void testCalculerCroisement() throws Exception {
 
@@ -92,7 +91,6 @@ public class GDBHSmartCrossingSmartMutTest {
 
 	}
 
-	@Ignore
 	@Test
 	public void testMutationAux() throws Exception {
 
@@ -133,7 +131,7 @@ public class GDBHSmartCrossingSmartMutTest {
 		individu1.trajet.add('b');
 		individu1.trajet.add('b');
 
-		assertTrue(individu.trajet.equals(individu1.trajet));
+		assertEquals(individu.trajet, individu1.trajet);
 
 		individu.mutationAux(1, 'b', 'd');
 
@@ -159,7 +157,6 @@ public class GDBHSmartCrossingSmartMutTest {
 
 	}
 
-	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 
