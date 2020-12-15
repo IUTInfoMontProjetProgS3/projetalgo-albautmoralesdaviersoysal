@@ -78,13 +78,17 @@ public class Direction {
         throw new ArithmeticException();
     }
 
-    public static char inverseRandom(char direction) {
-        int random = new SecureRandom().nextInt(DIRECTIONS.length - 1) + 1;
-        for (char c : DIRECTIONS) {
-            if (c == direction)
-                return DIRECTIONS[random];
-            random++;
-        }
-        throw new InvalidParameterException();
+    public static char inverse(char direction) {
+        switch (direction) {
+            case HAUT:
+                return BAS;
+            case BAS:
+                return HAUT;
+            case DROITE:
+                return GAUCHE;
+            case GAUCHE:
+                return DROITE;
+            default:
+                throw new InvalidParameterException();
     }
 }

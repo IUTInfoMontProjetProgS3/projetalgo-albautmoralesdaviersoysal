@@ -14,7 +14,7 @@ import fr.umontpellier.iut.algogen.outils.Direction;
  * intéligente.
  * 
  * @see IndividuGDBH
- * @version 1.0
+ * @version 1.0.1
  */
 public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSmartMut> {
 
@@ -35,9 +35,11 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      * @return L'inverse de la direction.
      * 
+     * @since 1.0.1
+     * 
      **/
     private static char inv(char direction) {
-        return Direction.inverseRandom(direction);
+        return Direction.inverse(direction);
     }
 
     /**
