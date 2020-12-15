@@ -57,8 +57,7 @@ public class Instance {
     /**
      * @param plateau     : grille du jeu
      * @param coordDepart : coordonnée de depart
-     * @param k           : nombre de pas autorisé
-     * 
+     * @param k           : nombre de pas autorisé 
      **/
     public Instance(boolean[][] plateau, Coord coordDepart, int k) {
         this.plateau = plateau;
