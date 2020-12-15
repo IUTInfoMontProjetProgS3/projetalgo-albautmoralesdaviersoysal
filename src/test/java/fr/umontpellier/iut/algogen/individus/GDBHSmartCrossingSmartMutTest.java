@@ -157,7 +157,6 @@ public class GDBHSmartCrossingSmartMutTest {
 
 	}
 
-	@Ignore
 	@Test
 	public void testCalculerMutation() throws Exception {
 

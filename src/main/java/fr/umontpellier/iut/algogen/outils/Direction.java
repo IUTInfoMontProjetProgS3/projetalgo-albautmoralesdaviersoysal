@@ -1,5 +1,7 @@
 package fr.umontpellier.iut.algogen.outils;
 
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidParameterException;
 import java.security.SecureRandom;
 
 import fr.umontpellier.iut.algogen.Coord;
@@ -59,7 +61,7 @@ public class Direction {
     }
 
     public static char directionRandom() {
-        return DIRECTIONS[new SecureRandom().nextInt(4)];
+        return DIRECTIONS[new SecureRandom().nextInt(DIRECTIONS.length)];
     }
 
     public static char trouverDirectionEmprunte(Coord coordDepart, Coord coordArrivee) {
@@ -74,5 +76,15 @@ public class Direction {
         if (ecartLigne < 0)
             return 'b';
         throw new ArithmeticException();
+    }
+
+    public static char inverseRandom(char direction) {
+        int random = new SecureRandom().nextInt(DIRECTIONS.length - 1) + 1;
+        for (char c : DIRECTIONS) {
+            if (c == direction)
+                return DIRECTIONS[random];
+            random++;
+        }
+        throw new InvalidParameterException();
     }
 }

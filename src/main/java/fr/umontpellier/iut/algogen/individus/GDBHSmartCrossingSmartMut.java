@@ -1,9 +1,12 @@
 package fr.umontpellier.iut.algogen.individus;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import fr.umontpellier.iut.algogen.Instance;
 import fr.umontpellier.iut.algogen.Solution;
+import fr.umontpellier.iut.algogen.outils.Direction;
 
 /**
  * GDBHSmartCrossingSmartMut est la classe représentant une fonctionnalité de
@@ -28,13 +31,13 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
     }
 
     /**
-     * @param direction : Une direction emprinté
+     * @param direction : Une direction
      * 
      * @return L'inverse de la direction.
      * 
      **/
     private static char inv(char direction) {
-        return '-';
+        return Direction.inverseRandom(direction);
     }
 
     /**
@@ -78,6 +81,19 @@ public class GDBHSmartCrossingSmartMut extends IndividuGDBH<GDBHSmartCrossingSma
      * 
      **/
     public GDBHSmartCrossingSmartMut calculerMutation() {
-        return null;
+        GDBHSmartCrossingSmartMut individuMute = new GDBHSmartCrossingSmartMut(instance, new ArrayList<>(trajet));
+        int p = indexRandom();
+        if (individuMute.trajet.get(p - 1).equals(individuMute.trajet.get(p))) {
+            if (individuMute.trajet.get(p).equals(individuMute.trajet.get(p + 1)))
+                individuMute.mutationAux(p - 1, inv(individuMute.trajet.get(p)), inv(individuMute.trajet.get(p)));
+            else
+                Collections.swap(individuMute.trajet, p, p + 1);
+        } else
+            Collections.swap(individuMute.trajet, p - 1, p);
+        return individuMute;
+    }
+
+    private int indexRandom() {
+        return new SecureRandom().nextInt(instance.getK() - 2) + 1;
     }
 }
