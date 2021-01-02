@@ -1,5 +1,6 @@
-<a href="https://mathieusoysal.github.io/stats/algogen/jacoco"> <img src="https://img.shields.io/badge/JaCoCo%20Coverage-81%25-63c128.svg?style=flat-square" alt="Coverage">
-<a href="https://mathieusoysal.github.io/stats/algogen/javadoc"> <img src="https://img.shields.io/badge/JavaDoc-Online-green" alt="JavaDoc">
+<a href="https://mathieusoysal.github.io/stats/algogen/jacoco"><img src="https://img.shields.io/badge/JaCoCo%20Coverage-81%25-63c128.svg?style=flat-square" alt="Coverage"></a> 
+<a href="https://mathieusoysal.github.io/stats/algogen/javadoc"><img src="https://img.shields.io/badge/JavaDoc-Online-green" alt="JavaDoc"></a> 
+<a href="https://gitmoji.dev"><img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji"></a>
 # ![Logo IUT Montpellier](ressources/logo.jpeg) Projet de programmation en Semestre 3
 
 ### IUT Montpellier-Sète – Département Informatique
