@@ -1,4 +1,6 @@
-# ![](ressources/logo.jpeg) Projet de programmation en Semestre 3
+<a href="https://mathieusoysal.github.io/stats/algogen/jacoco"> <img src="https://img.shields.io/badge/JaCoCo%20Coverage-81%25-63c128.svg?style=flat-square" alt="Coverage">
+<a href="https://mathieusoysal.github.io/stats/algogen/javadoc"> <img src="https://img.shields.io/badge/JavaDoc-Online-green" alt="JavaDoc">
+# ![Logo IUT Montpellier](ressources/logo.jpeg) Projet de programmation en Semestre 3
 
 ### IUT Montpellier-Sète – Département Informatique
 
