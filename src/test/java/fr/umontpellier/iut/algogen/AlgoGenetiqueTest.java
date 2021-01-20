@@ -17,9 +17,15 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBH;
+import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBHSmartCrossing;
+import fr.umontpellier.iut.algogen.fabriques.CreationIndividuGDBHSmartCrossingSmartMut;
+import fr.umontpellier.iut.algogen.fabriques.CreationIndividuPermut;
 import fr.umontpellier.iut.algogen.fabriques.ICreator;
 import fr.umontpellier.iut.algogen.individus.GDBHSimple;
+import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossing;
+import fr.umontpellier.iut.algogen.individus.GDBHSmartCrossingSmartMut;
 import fr.umontpellier.iut.algogen.individus.IIndividu;
+import fr.umontpellier.iut.algogen.individus.PermutSimple;
 import fr.umontpellier.iut.algogen.strategies.CroisementMutationV1;
 
 public class AlgoGenetiqueTest {
@@ -35,21 +41,57 @@ public class AlgoGenetiqueTest {
 		Coord sp4 = new Coord(0, 0);
 		int k4 = 4;
 		Instance in4 = new Instance(p4, sp4, k4);
-		GDBHSimple individu = new GDBHSimple(in4);
-		individu.t.clear();
-		individu.t.add('d');
-		individu.t.add('d');
-		individu.t.add('d');
-		individu.t.add('b');
-		GDBHSimple individu_ = new GDBHSimple(in4);
-		individu_.t.clear();
-		individu_.t.add('b');
-		individu_.t.add('d');
-		individu_.t.add('d');
-		individu_.t.add('b');
 
-		AlgoGenetique ag = new AlgoGenetique(in4, new CreationIndividuGDBH());
-		assertDoesNotThrow(() -> ag.run(2, 30));
+		AlgoGenetique<GDBHSimple> ag = new AlgoGenetique(in4, new CreationIndividuGDBH());
+		assertDoesNotThrow(() -> ag.run(30, 1000));
+	}
+
+	@Test
+	public void testRun_SmartCrossing() throws Exception {
+		boolean[][] p4 = new boolean[10][10];
+		for (int i = 0; i < p4.length; i++) {
+			for (int j = 0; j < p4[0].length; j += 2) {
+				p4[i][j] = true;
+			}
+		}
+		Coord sp4 = new Coord(0, 0);
+		int k4 = 4;
+		Instance in4 = new Instance(p4, sp4, k4);
+
+		AlgoGenetique<GDBHSmartCrossing> ag = new AlgoGenetique(in4, new CreationIndividuGDBHSmartCrossing());
+		assertDoesNotThrow(() -> ag.run(30, 1000));
+	}
+
+	@Test
+	public void testRun_SmartCrossingSmartMut() throws Exception {
+		boolean[][] p4 = new boolean[10][10];
+		for (int i = 0; i < p4.length; i++) {
+			for (int j = 0; j < p4[0].length; j += 2) {
+				p4[i][j] = true;
+			}
+		}
+		Coord sp4 = new Coord(0, 0);
+		int k4 = 4;
+		Instance in4 = new Instance(p4, sp4, k4);
+
+		AlgoGenetique<GDBHSmartCrossingSmartMut> ag = new AlgoGenetique(in4, new CreationIndividuGDBHSmartCrossingSmartMut());
+		assertDoesNotThrow(() -> ag.run(30, 1000));
+	}
+
+	@Test
+	public void testRun_PermutSimple() throws Exception {
+		boolean[][] p4 = new boolean[10][10];
+		for (int i = 0; i < p4.length; i++) {
+			for (int j = 0; j < p4[0].length; j += 2) {
+				p4[i][j] = true;
+			}
+		}
+		Coord sp4 = new Coord(0, 0);
+		int k4 = 4;
+		Instance in4 = new Instance(p4, sp4, k4);
+
+		AlgoGenetique<PermutSimple> ag = new AlgoGenetique(in4, new CreationIndividuPermut());
+		assertDoesNotThrow(() -> ag.run(30, 1000));
 	}
 
 	@Test
