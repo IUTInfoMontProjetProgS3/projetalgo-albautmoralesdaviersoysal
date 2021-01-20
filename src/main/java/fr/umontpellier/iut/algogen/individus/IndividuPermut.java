@@ -71,6 +71,7 @@ public abstract class IndividuPermut<T extends IndividuPermut<T>> implements IIn
      */
     public IndividuPermut(Instance instance) {
         permut = new ArrayList<>();
+        inst = instance;
         for (int i = 0; i < instance.getListeCoordPieces().size(); i++)
             permut.add(i);
         Collections.shuffle(permut);
